@@ -1,5 +1,5 @@
 ---
 layout: default
 ---
-# {{site.title}}
-{{site.description}}
+# {{site.title}} yo where is this
+{{site.description}} and this description
