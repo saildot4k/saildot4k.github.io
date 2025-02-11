@@ -13,10 +13,22 @@ navigation:
     url: cc-diagrams
   - title: DMS4
     url: dms4
+  - title: ---Usage
+    url: dms4-usage
+  - title: ---Install Diagrams
+    url: dms4-diagrams
   - title: Ghost 2 v2
     url: ghost2v2
+  - title: ---Usage
+    url: ghost-usage
+  - title: ---Install Diagrams
+    url: ghost-diagrams
   - title: Matrix Infinity
     url: matrixinfinity
+  - title: ---Usage
+    url: mi-usage
+  - title: ---Install Diagrams
+    url: mi-diagrams
   - Title: Modbo
     url: modbo
   - Title: Special Thanks and Links
