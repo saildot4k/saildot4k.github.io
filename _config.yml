@@ -1,7 +1,7 @@
 theme: jekyll-theme-minimal
 title: PS2 Modchip Tutorials
 description: Show your superiority of FMCB and PS2BBL!
-show_downloads: True
+show_downloads: False
 navigation:
   - title: Home
     url: /
