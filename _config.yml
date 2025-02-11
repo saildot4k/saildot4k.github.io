@@ -5,5 +5,13 @@ show_downloads: True
 navigation:
   - title: Home
     url: /
-  - title: Setup
-    url: setup
+  - title: Crystal Chips
+    url: crystal-chips
+  - title: DMS4
+    url: dms4
+  - title: Ghost 2 v2
+    url: ghost2v2
+  - title: Matrix Infinity
+    url: matrixinfinity
+  - Title: Modbo
+    url: modbo
