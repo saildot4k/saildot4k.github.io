@@ -7,6 +7,10 @@ navigation:
     url: /
   - title: Crystal Chips
     url: crystal-chips
+  - title: ---Usage
+    url: cc-usage
+  - title: ---Install Diagrams
+    url: cc-diagrams
   - title: DMS4
     url: dms4
   - title: Ghost 2 v2
@@ -15,3 +19,5 @@ navigation:
     url: matrixinfinity
   - Title: Modbo
     url: modbo
+  - Title: Special Thanks and Links
+    url: thanksandlinks
