@@ -1,20 +1,19 @@
 atheme: jekyll-theme-minimal
 title: PS2 Modchip Tutorials
-description: Show your superiority of FMCB and PS2BBL!
+description: <info@ps2modchiptutorials.com>
 show_downloads: False
-email: <info@ps2modchiptutorials.com>
 navigation:
   - title: Home
     url: /
   - title: Crystal Chips
     url: crystal-chips
-  - title: --- CC Usage
+  - title:     CC Usage
     url: cc-usage
-  - title: --- CC Install Diagrams
+  - title:     CC Install Diagrams
     url: cc-diagrams
   - title: DMS4
     url: dms4
-  - title: --- DMS4 Usage
+  - title:     DMS4 Usage
     url: dms4-usage
   - title: --- DMS4 Install Diagrams
     url: dms4-diagrams
