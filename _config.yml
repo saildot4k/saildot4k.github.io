@@ -7,29 +7,27 @@ navigation:
     url: /
   - title: Crystal Chips
     url: crystal-chips
-  - title: ---Usage
+  - title: ---CC Usage
     url: cc-usage
-  - title: ---Install Diagrams
+  - title: ---CC Install Diagrams
     url: cc-diagrams
   - title: DMS4
     url: dms4
-  - title: ---Usage
+  - title: ---DMS4 Usage
     url: dms4-usage
-  - title: ---Install Diagrams
+  - title: ---DMS4 Install Diagrams
     url: dms4-diagrams
   - title: Ghost 2 v2
     url: ghost2v2
-  - title: ---Usage
+  - title: ---Ghost Usage
     url: ghost-usage
-  - title: ---Install Diagrams
+  - title: ---Ghost Install Diagrams
     url: ghost-diagrams
   - title: Matrix Infinity
     url: matrixinfinity
-  - title: ---Usage
+  - title: ---MI Usage
     url: mi-usage
-  - title: ---Install Diagrams
+  - title: ---MI Install Diagrams
     url: mi-diagrams
   - Title: Modbo
-    url: modbo
-  - Title: Special Thanks and Links
-    url: thanks
+    url: mi-diagrams
