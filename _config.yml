@@ -10,9 +10,9 @@ navigation:
     url: /
   - title: Crystal Chips
     url: crystal-chips
-  - title:     CC Usage
+  - title: -CC Usage
     url: cc-usage
-  - title:     CC Install Diagrams
+  - title: -CC Install Diagrams
     url: cc-diagrams
   - title: DMS4
     url: dms4
