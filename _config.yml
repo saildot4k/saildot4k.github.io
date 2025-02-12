@@ -29,5 +29,5 @@ navigation:
     url: mi-usage
   - title: ---MI Install Diagrams
     url: mi-diagrams
-  - Title: Modbo
-    url: mi-diagrams
+  - Title: Modbo 3.0-5.0
+    url: modbo-diagrams
