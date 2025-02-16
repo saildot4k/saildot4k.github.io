@@ -3,20 +3,12 @@
 In Progress as of 2/14/2025
 
 ![Crystal Chip QR Code](https://ps2modchiptutorials.com/crystal-chips/Crystal_Chip_QR_Code.png){ width="270" align=left }
-
 If you happened to come to this page due 
 to this sticker then I thank you very much! 
 Please email me [here](mailto:info@ps2modchiptutorials.com) so that 
 we may discuss futher.  
 
-
-
-
-
-
-
-
-
+<br>
 Features: 
   Dashboard (aka BootManager) with configuration and app launcher/installer  
   Dashboard is fully scriptable by end user  
