@@ -1,8 +1,10 @@
 # Info regarding Crystal Chips
 
-If you happened to come to this page due to this sticker:
 
-![Crystal Chip QR Code](https://ps2modchiptutorials.com/crystal-chips/Crystal_Chip_QR_Code.png =100x)
+
+![Crystal Chip QR Code](https://ps2modchiptutorials.com/crystal-chips/Crystal_Chip_QR_Code.png){ width="150" }{ align=left }
+
+If you happened to come to this page due to this sticker:
 
 then I thank you very much! 
 
