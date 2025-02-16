@@ -2,7 +2,7 @@
 
 
 
-![Crystal Chip QR Code](https://ps2modchiptutorials.com/crystal-chips/Crystal_Chip_QR_Code.png){ width="150" }{ align=left }
+![Crystal Chip QR Code](https://ps2modchiptutorials.com/crystal-chips/Crystal_Chip_QR_Code.png){ width="250" align=left}
 
 If you happened to come to this page due to this sticker:
 
