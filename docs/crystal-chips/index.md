@@ -13,10 +13,13 @@ we may discuss futher.
 <br>
 <br>  
 <div class="grid" markdown>
+
 === "Features"
+
   * Dashboard (aka BootManager) with configuration and app launcher/installer  
   * Dashboard is fully scriptable by end user  
   * v1.0 - v1.2 Dashboard is ran from memory card 1 or 2, or hard drive  
   * v2.0 Pro and v2.0 Pro SLE Dashboard is ran from on chip flash  
   * Firmware and Dashboard scripting is open/documented. Closed source dahsboard and CLPD.
+  
 </div> 
