@@ -12,7 +12,7 @@ we may discuss futher.
 <br>
 <br>
 <br>
-Features: 
+Features:  
   Dashboard (aka BootManager) with configuration and app launcher/installer  
   Dashboard is fully scriptable by end user  
   v1.0 - v1.2 Dashboard is ran from memory card 1 or 2, or hard drive  
