@@ -1,0 +1,1 @@
+[Crystal Chips Archived Website](https://web.archive.org/web/20060110225905/http://crystal-chips.com/main/)

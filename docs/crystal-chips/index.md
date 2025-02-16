@@ -1,0 +1,1 @@
+# Info regarding crystal chips

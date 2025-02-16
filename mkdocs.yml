@@ -1,0 +1,63 @@
+site_name: PS2 Modchip Tutorials
+site_url: https://ps2modchiptutorials.com
+
+theme:
+  name: material
+  language: en 
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+        
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - search.suggest
+    - search.highlight
+    - search.share
+plugins:
+  - search
+  
+
+# Page tree
+nav:
+  - Home: index.md
+  - Crystal Chips:
+    - crystal-chips/index.md
+    - Install Diagrams: cc-install.md
+    - Video Tutorials: cc-vids.md
+    - Written Tutorials: cc-writeups.md
+    - Files: cc-files.md
+    - Archived Website: cc-archived.md
+  - DMS 4:
+    - dms4/index.md
+    - Install Diagrams: dms4-install.md
+    - Video Tutorials: dms4-vids.md
+    - Written Tutorials: dms4-writeups.md
+    - Files: dms4-files.md
+    - Archived Website: dms4-archived.md
+  - Ghost 2:
+    - ghost2/index.md
+    - Install Diagrams: ghost2-install.md
+    - Video Tutorials: ghost2-vids.md
+    - Written Tutorials: ghost2-writeups.md
+    - Files: ghost2-files.md
+    - Archived Website: ghost2-archived
+  - Matrix Infinity and clones:
+    - mi/index.md
+    - Install Diagrams: mi-install.md
+    - Video Tutorials: mi-vids.md
+    - Written Tutorials: mi-writeups.md
+    - Files: mi-files.md
+    - Archived Website: mi-archived.md
+  - Thanks and contributers:
+    - thanks/index.md
+
+
+
+    
