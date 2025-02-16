@@ -8,8 +8,10 @@ I have not uploaded the 1.0 install in the interest to keep things simpler with 
 
 ## PHAT PS2s
 
+### V1/2 GH-004
 ![V1/V2 GH-004](https://ps2modchiptutorials.com/crystal-chips/install-diagrams/cc11_v1.jpg)
 
+### V1/2 GH-005
 ![V1/V2 GH-005](https://ps2modchiptutorials.com/crystal-chips/install-diagrams/cc11_v2.jpg)
 
 ![V3](https://ps2modchiptutorials.com/crystal-chips/install-diagrams/cc11_v3.jpg)
