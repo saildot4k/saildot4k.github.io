@@ -7,7 +7,10 @@ In Progress as of 2/14/2025
 If you happened to come to this page due 
 to this sticker then I thank you very much! 
 Please email me [here](mailto:info@ps2modchiptutorials.com) so that 
-we may discuss futher.
+we may discuss futher.\
+\
+\
+\
 
 
 
