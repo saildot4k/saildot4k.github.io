@@ -14,7 +14,7 @@ we may discuss futher.
 <br>  
 <div class="grid" markdown>
 
-Features:
+## Features:
 
   * Dashboard (aka BootManager) with configuration and app launcher/installer  
   * Dashboard is fully scriptable by end user  
