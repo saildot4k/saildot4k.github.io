@@ -34,6 +34,8 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
+  - attr_list
+  - md_in_html
   
 
 # Page tree
