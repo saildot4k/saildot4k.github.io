@@ -1,0 +1,1 @@
+[Crystal Chip FW R34 v3 with updated Dashboard Scripts](https://github.com/saildot4k/Crystal-Chip-R34-v3/releases)
