@@ -26,6 +26,9 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.blocks.caption
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
   
 
 # Page tree
@@ -59,6 +62,7 @@ nav:
     - Written Tutorials: mi-writeups.md
     - Files: mi-files.md
     - Archived Website: mi-archived.md
+  - Thanks and Links: thanks.md
 
 
 
