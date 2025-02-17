@@ -47,11 +47,11 @@ chips in the hands of enthusiasts.
 | 2.0 Pro      | :material-close: | :material-close: | :material-close: | :material-close: | :material-check: 1MB             | :material-check |
 | 2.0 Pro SLE  | :material-close: | :material-close: | :material-close: | :material-close: | :material-check: 2MB             | :material-check |
 
-!!! note "BootManager"
-    Bootmanager therefor must be installed to either Dataflash, MemoryCard or HDD. This is not your usual Matrix Infinity.
+???+ note "BootManager"
+    Bootmanager therefore must be installed to either Dataflash, MemoryCard or HDD. This is not your usual Matrix Infinity.
     It is much much better
 
-???+ note "Dataflash Upgrade Parts"
+    ???+ note "Dataflash Upgrade Parts"
         
         v1.2 and later can be upgraded with 4MB dataflash: AT45DB321D-S or AT45DB321D-MW. I have several dozen in stock.
         v1.2 then would need to flash the 2.0 firmware.  Eventually I shall script to ask user if they have installed the larger dataflash.
