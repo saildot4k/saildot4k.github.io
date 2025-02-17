@@ -1,3 +1,5 @@
+# Install Diagrams
+
 ???+ soldering-iron "Crystal Chip 1.0 Install Note"
 
     Crystal Chip 1.0 may use the same install diagrams as CC 1.1 and later
