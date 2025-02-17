@@ -41,7 +41,7 @@ chips in the hands of enthusiasts.
 ## Dashboard "BootManager" may be installed to and ran from
 | Crystal Chip | Memcard 1        | Memcard 2        | USB              | HDD               | On-Chip Flash                    | PC Host          |
 | :----------: | :--------------: | :--------------: | :--------------: | :--------------:  | :------------------------------: | :--------------: |
-| 1.0 Lite     | :material-check: | :material-check: | In Progress      | :material-check:  | :material-close: 4KB EEPROM      | :material-check: |
+| 1.0 Lite     | :check-circle:   | :material-check: | In Progress      | :material-check:  | :material-close: 4KB EEPROM      | :material-check: |
 | 1.1 Lite     | :material-check: | :material-check: | In Progress      | :material-check:  | :material-close: 4KB EEPROM      | :material-check: |
 | 1.2 Lite     | :material-check: | :material-check: | In Progress      | :material-check:  | :material-close: 128KB Dataflash | :material-check: |
 | 2.0 Pro      | :material-close: | :material-close: | :material-close: | :material-close:  | :material-check: 1MB             | :material-check: |
@@ -58,9 +58,9 @@ chips in the hands of enthusiasts.
         Go to BM/FWS/LATEST delete all but "FWARE20.CCI". Rename to "FWARE12DEV0.CCI". Then upgrade firmware choosing option 1.
 
 ## BootManager Run/Install/Remove device support
-| CD/DVD           | USB Exfat/Fat    | Memory Card      | MMCE device      | HDD              | PC Host          |
-| :--------------: | :--------------: | :--------------: | :--------------: | :--------------: | :--------------: |
-| :material-check: | :material-check: | :material-check: | :material-check: | :material-check: | :material-check: |
+| CD/DVD           | USB Exfat/Fat    | Memory Card      | MMCE device          | HDD              | PC Host          |
+| :--------------: | :--------------: | :--------------: | :------------------: | :--------------: | :--------------: |
+| :material-check: | :material-check: | :material-check: | :alert-circle-check: | :material-check: | :material-check: |
 
 ???+ note "PC Host"
     
@@ -73,7 +73,7 @@ chips in the hands of enthusiasts.
 ???+ note "MMCE devices"
 
     It is best to install apps to MMCE devices using your PC. It seems there are bugs such as moving files
-    between mc0/1 and mmmce0/1
+    between mc0/1 and mmmce0/1. I hope for updated IRXs or it just may be a limitation to the SIO2 Bus.
 
 
 
