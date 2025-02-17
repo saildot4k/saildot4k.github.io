@@ -6,8 +6,9 @@ Additions since 2007:
 
 Release 34 V3 by R3Z3N Jan 26 2025 (RUNNING CHANGES. I update the date as I go...)
     Fixes/Changes
+        
         - CC1.X firmware options to run BM from MemCard1 or 2. makeit_nocd does have scripts to
-	      build FW for running from USB/HDD but seems pointless. Options added in BM for full ease
+	          build FW for running from USB/HDD but seems pointless. Options added in BM for full ease
               of use.
 
         - MMCE device support for example SD2PSX, PsxMemCardGen2, MemCardPro2.
@@ -15,14 +16,14 @@ Release 34 V3 by R3Z3N Jan 26 2025 (RUNNING CHANGES. I update the date as I go..
               one would for the BM folder. As long as APPINFO.PBT (each app needs one)
               points to where the ELF exists, then any app can be anywhere, not just
               device:/BM/APPS/APPFOLDERHEREwithAPPINFO.PBT
-	      UPDATE: A few issues still exist. Keep in mind not all apps support running
-	      from all devices. However I plan on making a change so that user can choose 
+	          UPDATE: A few issues still exist. Keep in mind not all apps support running
+	          from all devices. However I plan on making a change so that user can choose 
               to autoload USB and/or MMCE just like HDD is currently. Please be patient. 
               REASON: sometimes some device drivers interfere with others especially USB
               with other devices.
-	      https://sd2psxtd.github.io/
+	          https://sd2psxtd.github.io/
 
-	- Security Settings added: when pin is set, advanced settings are unaccessible. 
+	    - Security Settings added: when pin is set, advanced settings are unaccessible. 
 
         - Updated bminit.pbat to load IRX drivers from where BM is running from,
               otherwise with DEV1/2 would not see/run apps from mc0/1/USB/HDD.
@@ -38,7 +39,7 @@ Release 34 V3 by R3Z3N Jan 26 2025 (RUNNING CHANGES. I update the date as I go..
         - Commented out install script for USB FW as currently not working.
               Others can experiment as needed by editing BM/FWS/LATEST/FWINFO.PBT
 	
-        - Used El Isras USB drivers for exfat support: BDM Assault (https://github.com/israpps/BDMAssault)
+        - Used El Isras USB drivers for exfat support: [BDM Assault](https://github.com/israpps/BDMAssault)
   	
         - Changed scripts to allow apps to be installed when booted from recovery cd.
   	
@@ -50,11 +51,22 @@ Release 34 V3 by R3Z3N Jan 26 2025 (RUNNING CHANGES. I update the date as I go..
        
         - Show Info gives a little more clarity IE where is BM executed from, what console region codes stand for etc.
 
-	- Cotton Candy theme added, each version of the Crystal Chip is represented!
+	    - Cotton Candy theme added, each version of the Crystal Chip is represented!
 
-	- Added Italian and Spanish language translations.
+	    - Added Italian and Spanish language translations.
+
+## To Do
+- [ ] SAS support (Apps from root with prefixes IE mc?:/APP_WLE-ISR-EXFAT-MMCE or mc?:/APP_OPL-MMCE-BETA2)
+- [ ] SAS build for BootManager and it's folder structure
+- [ ] CC1.X Boot method failover IE try next memcard
+- [ ] CC1.X BootManager boots from USB 
+- [ ] CC2.0 8MB Dataflash support in FW
+    * [ ] 1056 Page Support for AT45DB642D in testing
+    * [ ] 256 Page Support for AT45DB621E in testing
 
 
 ## APPINFO.PBT Example
-Example APPINFO.PBT
+Example APPINFO.PBT Incoming
+
+## APPINFO.PBT w 3 Boot Options Example
 
