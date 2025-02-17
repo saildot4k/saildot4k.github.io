@@ -42,13 +42,13 @@ chips in the hands of enthusiasts.
 <br>
 
 ## Dashboard "BootManager" may be installed to and ran from:
-| Crystal Chip | Memcard 1        | Memcard 2        | USB              | HDD              | On-Chip Flash                    | PC Host         |
-| :----------: | :--------------: | :--------------: | :--------------: | :--------------: | :------------------------------: | :-------------: |
-| 1.0 Lite     | :material-check: | :material-check: | :material-close: | :material-check  | :material-close: 4KB EEPROM      | :material-check |
-| 1.1 Lite     | :material-check: | :material-check: | :material-close: | :material-check  | :material-close: 4KB EEPROM      | :material-check |
-| 1.2 Lite     | :material-check: | :material-check: | :material-close: | :material-check  | :material-close: 128KB Dataflash | :material-check |
-| 2.0 Pro      | :material-close: | :material-close: | :material-close: | :material-close: | :material-check: 1MB             | :material-check |
-| 2.0 Pro SLE  | :material-close: | :material-close: | :material-close: | :material-close: | :material-check: 2MB             | :material-check |
+| Crystal Chip | Memcard 1        | Memcard 2        | USB              | HDD              | On-Chip Flash                    | PC Host          |
+| :----------: | :--------------: | :--------------: | :--------------: | :--------------: | :------------------------------: | :--------------: |
+| 1.0 Lite     | :material-check: | :material-check: | :material-close: | :material-check  | :material-close: 4KB EEPROM      | :material-check: |
+| 1.1 Lite     | :material-check: | :material-check: | :material-close: | :material-check  | :material-close: 4KB EEPROM      | :material-check: |
+| 1.2 Lite     | :material-check: | :material-check: | :material-close: | :material-check  | :material-close: 128KB Dataflash | :material-check: |
+| 2.0 Pro      | :material-close: | :material-close: | :material-close: | :material-close: | :material-check: 1MB             | :material-check: |
+| 2.0 Pro SLE  | :material-close: | :material-close: | :material-close: | :material-close: | :material-check: 2MB             | :material-check: |
 
 ???+ note "BootManager"
     Bootmanager therefore must be installed to either Dataflash, MemoryCard or HDD. This is not your usual Matrix Infinity.
