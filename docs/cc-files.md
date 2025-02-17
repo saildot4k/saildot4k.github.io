@@ -9,7 +9,7 @@ Release 34 V3 by R3Z3N Jan 26 2025 (RUNNING CHANGES. I update the date as I go..
         
         - CC1.X firmware options to run BM from MemCard1 or 2. makeit_nocd does have scripts to
 	          build FW for running from USB/HDD but seems pointless. Options added in BM for full ease
-              of use.
+              of use. HDD workign but I need to think about how to direct users to install BM.
 
         - MMCE device support for example SD2PSX, PsxMemCardGen2, MemCardPro2.
               Follow the same structure on root of MMCE device SD card as 
