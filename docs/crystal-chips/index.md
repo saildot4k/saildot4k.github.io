@@ -57,7 +57,7 @@ chips in the hands of enthusiasts.
         v1.2 then would need to flash the 2.0 firmware.  Eventually I shall script to ask user if they have installed the larger dataflash.
         Go to BM/FWS/LATEST delete all but "FWARE20.CCI". Rename to "FWARE12DEV0.CCI". Then upgrade firmware choosing option 1.
 
-## Devices supported to run homebrew from
+## BootManager Run/Install/Remove device support
 | CD/DVD           | USB Exfat/Fat    | Memory Card      | MMCE device      | HDD              | PC Host          |
 | :--------------: | :--------------: | :--------------: | :--------------: | :--------------: | :--------------: |
 | :material-check: | :material-check: | :material-check: | :material-check: | :material-check: | :material-check: |
@@ -69,6 +69,11 @@ chips in the hands of enthusiasts.
     Homebrew must be in same folder thatn PS2 Client is running from. 
     IE: ~/PS2Client/BM/APPS/APPFOLDER/
     You still need an associated APPINFO.PBT
+
+???+ note "MMCE devices"
+
+    It is best to install apps to MMCE devices using your PC. It seems there are bugs such as moving files
+    between mc0/1 and mmmce0/1
 
 
 
