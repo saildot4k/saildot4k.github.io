@@ -58,9 +58,9 @@ chips in the hands of enthusiasts.
         Go to BM/FWS/LATEST delete all but "FWARE20.CCI". Rename to "FWARE12DEV0.CCI". Then upgrade firmware choosing option 1.
 
 ## BootManager Run/Install/Remove device support
-| :material-disc: CD/DVD  | :material-usb: USB Exfat/Fat | Memory Card      | :material-sd: MMCE device            | :material-harddisk: HDD | :lan-connect: PC Host   |
-| :---------------------: | :--------------------------: | :---------------------: | :---------------------------: | :---------------------: | :---------------------: |
-| :material-check-circle: | :material-check-circle:      | :material-check-circle: | :material-alert-circle-check: | :material-check-circle: | :material-check-circle: |
+| :material-disc: CD/DVD  | :material-usb: USB Exfat/Fat | Memory Card      | :material-sd: MMCE device            | :material-harddisk: HDD | :material-lan-connect: PC Host   |
+| :---------------------: | :--------------------------: | :---------------------: | :---------------------------: | :---------------------: | :------------------------------: |
+| :material-check-circle: | :material-check-circle:      | :material-check-circle: | :material-alert-circle-check: | :material-check-circle: | :material-check-circle:          |
 
 ???+ note "PC Host"
     
