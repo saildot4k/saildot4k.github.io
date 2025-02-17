@@ -16,6 +16,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  logo: assets/website_logo1.png
   icon:
     admonition:
       soldering: material/soldering-iron
