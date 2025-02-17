@@ -16,6 +16,9 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  icon:
+    admonition:
+      <type>: <icon> 
   features:
     - search.suggest
     - search.highlight
