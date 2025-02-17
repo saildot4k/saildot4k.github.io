@@ -39,7 +39,7 @@ Release 34 V3 by R3Z3N Jan 26 2025 (RUNNING CHANGES. I update the date as I go..
   - Commented out install script for USB FW as currently not working.
     Others can experiment as needed by editing BM/FWS/LATEST/FWINFO.PBT
 	
-  - Used El Isras USB drivers for exfat support: [BDM Assault](https://github.com/israpps/BDMAssault)
+  - Exfat USB support via [BDM Assault](https://github.com/israpps/BDMAssault)
   	
   - Changed scripts to allow apps to be installed when booted from recovery cd.
   	
