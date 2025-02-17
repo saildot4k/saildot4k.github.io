@@ -60,7 +60,7 @@ chips in the hands of enthusiasts.
 ## Devices supported to run homebrew from
 | CD/DVD           | USB Exfat/Fat    | Memory Card      | MMCE device      | HDD              | PC Host          |
 | :--------------: | :--------------: | :--------------: | :--------------: | :--------------: | :--------------: |
-| :material-check: | :material-check: | :material-check: | :material-check: | :material-check  | :material-check: |
+| :material-check: | :material-check: | :material-check: | :material-check: | :material-check: | :material-check: |
 
 ???+ note "PC Host"
     
