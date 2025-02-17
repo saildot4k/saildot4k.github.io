@@ -18,7 +18,7 @@ theme:
         name: Switch to light mode
   icon:
     admonition:
-      <type>: <icon> 
+      <type>: material/soldering-iron 
   features:
     - search.suggest
     - search.highlight
