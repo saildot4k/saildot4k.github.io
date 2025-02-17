@@ -3,6 +3,7 @@
 In Progress as of 2/14/2025
 
 ## Option to repurchase
+
 ![Crystal Chip QR Code](https://ps2modchiptutorials.com/crystal-chips/Crystal_Chip_QR_Code.png){ width="270" align=left }
 If you happened to come to this page due 
 to this sticker then I thank you very much! 
@@ -10,9 +11,11 @@ Please email me [here](mailto:info@ps2modchiptutorials.com) so that
 we may discuss futher as I would love to keep these
 chips in the hands of enthusiasts.
 <br>
+<br>
+<br>
 
 
-## Crystal Chip versions
+## Crystal Chip versions { align=left }
     
 ![Crystal Chip Models](https://ps2modchiptutorials.com/crystal-chips/cc-site-backup/img/cc_hw_history.gif){ align=left }
 ???+ note "Feature Differences"
