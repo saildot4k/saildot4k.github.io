@@ -4,7 +4,8 @@ In Progress as of 2/14/2025
 
 ## Option to repurchase
 
-![Crystal Chip QR Code](https://ps2modchiptutorials.com/crystal-chips/Crystal_Chip_QR_Code.png){ width="270" align=left }
+![Crystal Chip QR Code](https://ps2modchiptutorials.com/crystal-chips/Crystal_Chip_QR_Code.png){ width="2900" align=left }
+
 If you happened to come to this page due 
 to this sticker then I thank you very much! 
 Please email me [here](mailto:info@ps2modchiptutorials.com) so that 
