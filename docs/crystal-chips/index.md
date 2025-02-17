@@ -41,7 +41,7 @@ chips in the hands of enthusiasts.
 ## Dashboard "BootManager" may be installed to and ran from
 | Crystal Chip | Memcard 1        | Memcard 2        | USB              | HDD               | On-Chip Flash                    | PC Host          |
 | :----------: | :--------------: | :--------------: | :--------------: | :--------------:  | :------------------------------: | :--------------: |
-| 1.0 Lite     | :check-circle:   | :material-check: | In Progress      | :material-check:  | :material-close: 4KB EEPROM      | :material-check: |
+| 1.0 Lite     | :material-check-circle:   | :material-check: | In Progress      | :material-check:  | :material-close: 4KB EEPROM      | :material-check: |
 | 1.1 Lite     | :material-check: | :material-check: | In Progress      | :material-check:  | :material-close: 4KB EEPROM      | :material-check: |
 | 1.2 Lite     | :material-check: | :material-check: | In Progress      | :material-check:  | :material-close: 128KB Dataflash | :material-check: |
 | 2.0 Pro      | :material-close: | :material-close: | :material-close: | :material-close:  | :material-check: 1MB             | :material-check: |
