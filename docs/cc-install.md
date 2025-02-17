@@ -14,10 +14,10 @@
 
 ## Phat PS2s
 
-#### V1/V2 GH-004
+#### V1 V2 GH-004
 ![V1/V2 GH-004](https://ps2modchiptutorials.com/crystal-chips/install-diagrams/cc11_v1.jpg)
 
-#### V1/V2 GH-005
+#### V1 V2 GH-005
 ![V1/V2 GH-005](https://ps2modchiptutorials.com/crystal-chips/install-diagrams/cc11_v2.jpg)
 
 #### V3
@@ -35,7 +35,7 @@
 #### V9
 ![V9](https://ps2modchiptutorials.com/crystal-chips/install-diagrams/cc11_v9.jpg)
 
-#### V10/V11
+#### V10 V11
 ![V10/V11](https://ps2modchiptutorials.com/crystal-chips/install-diagrams/cc11_v10.jpg)
 
 
