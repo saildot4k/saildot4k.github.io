@@ -1,12 +1,16 @@
 
 ## Crystal Chip 1.0 and 1.1+ install difference NOTE!
-IMPORTANT^1^: Crystal Chip 1.0 may use the same install diagrams as CC 1.1 and later
-HOWEVER the 1.0 does NOT use the TO (Tray Open) on v9 PS2s or later, and does 
-NOT use the HA point for any install.
 
-IMPORTANT^2^: No installs use the SD point on the Crystal Chip if it has it. (1.1 and later)
+!!! note "Crystal Chip 1.0 Install Note"
 
-I have not uploaded the 1.0 install in the interest to keep things simpler with the above note.
+    Crystal Chip 1.0 may use the same install diagrams as CC 1.1 and later
+    HOWEVER the 1.0 does NOT use the TO (Tray Open) on v9 PS2s or later, and does 
+    NOT use the HA point for any install.
+
+    !!! "SD point is never used
+        
+        No installs use the SD point on the Crystal Chip if it has it. (1.1 and later)
+    
 
 ## Phat PS2s
 
