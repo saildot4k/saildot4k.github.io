@@ -17,6 +17,7 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   logo: assets/website_logo1.png
+  favicon: assets/website_logo1.png
   icon:
     admonition:
       soldering: material/soldering-iron
@@ -44,6 +45,7 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - tables
   
 
 # Page tree
