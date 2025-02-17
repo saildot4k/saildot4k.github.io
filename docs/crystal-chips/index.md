@@ -37,11 +37,29 @@ chips in the hands of enthusiasts.
 | 2.0 Pro      | :material-close: | :material-close: | :material-close: | :material-close: | :material-check: 1MB             |
 | 2.0 Pro SLE  | :material-close: | :material-close: | :material-close: | :material-close: | :material-check: 2MB             |
 
+!!! note "BootManager"
+    Bootmanager therefor must be installed to either Dataflash, MemoryCard or HDD. This is not your usual Matrix Infinity.
+    It is much much better
+
 ???+ note "Dataflash Upgrade Parts"
         
         v1.2 and later can be upgraded with 4MB dataflash: AT45DB321D-S or AT45DB321D-MW. I have several dozen in stock.
         v1.2 then would need to flash the 2.0 firmware.  Eventually I shall script to ask user if they have installed the larger dataflash.
         Go to BM/FWS/LATEST delete all but "FWARE20.CCI". Rename to "FWARE12DEV0.CCI". Then upgrade firmware choosing option 1.
+
+## Devices supported to run homebrew from
+| CD/DVD           | USB Exfat/Fat    | Memory Card      | MMCE device      | HDD              | PC Host          |
+| :--------------: | :--------------: | :--------------: | :--------------: | :--------------: | :--------------: |
+| :material-check: | :material-check: | :material-check: | :material-check: | :material-check  | :material-check: |
+
+???+ note "PC Host"
+    
+    Use [PS2 Client](https://github.com/ps2dev/ps2client) and from where you installed/extracted run:
+    ```ps2client -h hostname/ip listen```
+    Homebrew must be in same folder thatn PS2 Client is running from. 
+    IE: ~/PS2Client/BM/APPS/APPFOLDER/
+    You still need an associated APPINFO.PBT
+
 
 
 
