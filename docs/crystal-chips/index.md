@@ -4,7 +4,7 @@ In Progress as of 2/14/2025
 
 ## Option to repurchase
 
-![Crystal Chip QR Code](https://ps2modchiptutorials.com/crystal-chips/Crystal_Chip_QR_Code.png){ width="2900" align=left }
+![Crystal Chip QR Code](https://ps2modchiptutorials.com/crystal-chips/Crystal_Chip_QR_Code.png){ width="290" align=left }
 
 If you happened to come to this page due 
 to this sticker then I thank you very much! 
@@ -27,9 +27,25 @@ chips in the hands of enthusiasts.
     Crystal Chip Flash. If an app expects other files in the root directory of the application folder, it will 
     NOT be able to use those files. For example WLE will not see IPCONFIG.DAT nor LAUNCHELF.CNF
 
-    !!! note
+
+## Dashboard "BootManager" Boot from options
+| Crystal Chip | Memcard 1        | Memcard 2        | USB              | HDD              | On-Chip Flash                    |
+| :----------: | :--------------: | :--------------: | :--------------: | :--------------: | :------------------------------: |
+| 1.0 Lite     | :material-check: | :material-check: | :material-close: | :material-check  | :material-close: 4KB EEPROM      |
+| 1.1 Lite     | :material-check: | :material-check: | :material-close: | :material-check  | :material-close: 4KB EEPROM      |
+| 1.2 Lite     | :material-check: | :material-check: | :material-close: | :material-check  | :material-close: 128KB Dataflash |
+| 2.0 Pro      | :material-close: | :material-close: | :material-close: | :material-close: | :material-check: 1MB             |
+| 2.0 Pro SLE  | :material-close: | :material-close: | :material-close: | :material-close: | :material-check: 2MB             |
+
+???+ note "Dataflash Upgrade Parts"
         
         v1.2 and later can be upgraded with 4MB dataflash: AT45DB321D-S or AT45DB321D-MW. I have several dozen in stock.
         v1.2 then would need to flash the 2.0 firmware.  Eventually I shall script to ask user if they have installed the larger dataflash.
         Go to BM/FWS/LATEST delete all but "FWARE20.CCI". Rename to "FWARE12DEV0.CCI". Then upgrade firmware choosing option 1.
+
+
+
+
+
+
 
