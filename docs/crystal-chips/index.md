@@ -27,6 +27,11 @@ chips in the hands of enthusiasts.
     Crystal Chip Flash. If an app expects other files in the root directory of the application folder, it will 
     NOT be able to use those files. For example WLE will not see IPCONFIG.DAT nor LAUNCHELF.CNF
 
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ## Dashboard "BootManager" may be installed to and ran from:
 | Crystal Chip | Memcard 1        | Memcard 2        | USB              | HDD              | On-Chip Flash                    | PC Host         |
