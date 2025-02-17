@@ -10,9 +10,7 @@ Please email me [here](mailto:info@ps2modchiptutorials.com) so that
 we may discuss futher as I would love to keep these
 chips in the hands of enthusiasts.
 <br>
-<br>
-<br>
-<br>  
+
 
 ## Crystal Chip versions
     
