@@ -6,7 +6,7 @@ In Progress as of 2/14/2025
 
 If you happened to come to this page due 
 to this sticker then I thank you very much! 
-Please email me [here](mailto:info@ps2modchiptutorials.com) so that 
+Please email me [here]<info@ps2modchiptutorials.com> so that 
 we may discuss futher.  
 <br>
 <br>
@@ -20,6 +20,9 @@ we may discuss futher.
   * Dashboard is fully scriptable by end user  
   * v1.0 - v1.2 Dashboard is ran from memory card 1 or 2, or hard drive  
   * v2.0 Pro and v2.0 Pro SLE Dashboard is ran from on chip flash  
-  * Firmware and Dashboard scripting is open/documented. Closed source dahsboard and CLPD.
+  * Firmware and Dashboard scripting is open/documented. Closed source dahsboard and FPGA.
 
 </div> 
+
+![Crystal Chip Models](https://ps2modchiptutorials.com/crystal-chips/cc-site-backup/img/cc_hw_history.gif){ align=left }
+
