@@ -13,7 +13,6 @@ we may discuss futher as I would love to keep these
 chips in the hands of enthusiasts.
 <br>
 <br>
-<br>
 
 
 ## Crystal Chip versions { align=left }
@@ -27,6 +26,10 @@ chips in the hands of enthusiasts.
     Crystal Chip Flash. If an app expects other files in the root directory of the application folder, it will 
     NOT be able to use those files. For example WLE will not see IPCONFIG.DAT nor LAUNCHELF.CNF
 
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
