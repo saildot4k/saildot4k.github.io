@@ -18,9 +18,6 @@ theme:
         name: Switch to light mode
   logo: assets/website_logo1.png
   favicon: assets/favicon.png
-  icon:
-    admonition:
-      soldering: material/soldering-iron
   features:
     - search.suggest
     - search.highlight
@@ -32,9 +29,11 @@ theme:
     - navigation.path
     - content.code.copy
     - content.code.select
+    - content.code.annotate
 
 plugins:
   - search
+
 markdown_extensions:
   - attr_list
   - md_in_html
