@@ -97,6 +97,7 @@ will display a widget to store a value between 0 and 99 in the variable MY_NUMBE
 AXIS : to set axis numbers (X,Y)
 
 ```ADDWIDGET "AXIS" "Title" "Description" "VALUE_X" "VALUE_Y" "0" "1920" "1" "0" "1920" "2"```
+
 will display the widget which let the user to select a value for VALUE_X between 0 and 1920 with an increment of 1 and for VALUE_Y between 0 and 1920 with an increment of 2.
 
 
