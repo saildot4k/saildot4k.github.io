@@ -12,33 +12,19 @@
         of use. HDD workign but I need to think about how to direct users to install BM.
 
         - MMCE device support for example SD2PSX, PsxMemCardGen2, MemCardPro2.
-        Follow the same structure on root of MMCE device SD card as 
-        one would for the BM folder. As long as APPINFO.PBT (each app needs one)
-        points to where the ELF exists, then any app can be anywhere, not just
-        ```device:/BM/APPS/APPFOLDERHEREwithAPPINFO.PBT```
-	    UPDATE: A few issues still exist. Keep in mind not all apps support running
-	    from all devices. However I plan on making a change so that user can choose 
-        to autoload USB and/or MMCE just like HDD is currently. Please be patient. 
 	    [SD2PSXTD](https://sd2psxtd.github.io/)
+        [MCP2](https://8bitmods.com/memcard-pro2-for-ps2-and-ps1-smoke-black/)
+
+        - Exfat USB support via [BDM Assault](https://github.com/israpps/BDMAssault)
 
         - Security Settings added: when pin is set, advanced settings are unaccessible. 
 
         - Updated bminit.pbat to load IRX drivers from where BM is running from,
         otherwise with DEV1/2 would not see/run apps from mc0/1/USB/HDD.
 	
-        - Updated source OSDPAY.S to load USBHDFSD.IRX instead of the outdated
-        USB_MASS.IRX. Booting from Dev2 (USB) is still broken
-	
         - Updated HDDMOUNT.IRX and BM/SCRIPTS/HDDLOAD.PBT to load __common HDD partition
         instead of +Crystal. This is to keep things consistent with the homebrew community
-	
-        - Edited BM/FWS/LATEST/FWINFO.PBT to give FW boot choices as to where to load BM from
-	
-        - Commented out install script for USB FW as currently not working.
-         Others can experiment as needed by editing BM/FWS/LATEST/FWINFO.PBT
-	
-        - Exfat USB support via [BDM Assault](https://github.com/israpps/BDMAssault)
-  	
+	    
         - Changed scripts to allow apps to be installed when booted from recovery cd.
   	
         - Changed scripts to only show options for chip installed! IE no more seeing DFFS
@@ -61,7 +47,10 @@
 - [ ] CC2.0 8MB Dataflash support in FW
     * [ ] 1056 Page Support for AT45DB642D in testing
     * [ ] 256 Page Support for AT45DB621E in testing
-
+-[x] BM can be ran from Hard Drive 
+    * [ ] Script for ease of use
+    * [ ] Document of ease of use
+- [ ] HDD IRXs not installed for V14 and later PS2s
 
 ## APPINFO.PBT Example
 ```
