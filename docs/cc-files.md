@@ -108,7 +108,7 @@
 
 
 ## APPINFO.PBT w 3 Boot Options Example
-??? note "APPINFO.PBT Example w 3 Boot Options"
+??? material-script-text "APPINFO.PBT Example w 3 Boot Options"
     ```
     # Change this information to describe the application.
     SET "TITLE" "APP TITLE"
