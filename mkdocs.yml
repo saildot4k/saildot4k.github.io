@@ -17,7 +17,7 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   logo: assets/website_logo1.png
-  favicon: assets/website_logo1.png
+  favicon: assets/favicon.png
   icon:
     admonition:
       soldering: material/soldering-iron
@@ -30,6 +30,9 @@ theme:
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.path
+    - content.code.copy
+    - content.code.select
+
 plugins:
   - search
 markdown_extensions:
