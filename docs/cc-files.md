@@ -14,14 +14,12 @@
         - MMCE device support for example SD2PSX, PsxMemCardGen2, MemCardPro2.
         Follow the same structure on root of MMCE device SD card as 
         one would for the BM folder. As long as APPINFO.PBT (each app needs one)
-    points to where the ELF exists, then any app can be anywhere, not just
-    device:/BM/APPS/APPFOLDERHEREwithAPPINFO.PBT
-	UPDATE: A few issues still exist. Keep in mind not all apps support running
-	from all devices. However I plan on making a change so that user can choose 
-    to autoload USB and/or MMCE just like HDD is currently. Please be patient. 
-    REASON: sometimes some device drivers interfere with others especially USB
-    with other devices.
-	https://sd2psxtd.github.io/
+        points to where the ELF exists, then any app can be anywhere, not just
+        device:/BM/APPS/APPFOLDERHEREwithAPPINFO.PBT
+	    UPDATE: A few issues still exist. Keep in mind not all apps support running
+	    from all devices. However I plan on making a change so that user can choose 
+        to autoload USB and/or MMCE just like HDD is currently. Please be patient. 
+	    [SD2PSXTD](https://sd2psxtd.github.io/)
 
   - Security Settings added: when pin is set, advanced settings are unaccessible. 
 
