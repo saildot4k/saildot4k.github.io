@@ -66,11 +66,7 @@ Release 34 V3 by R3Z3N Jan 26 2025 (RUNNING CHANGES. I update the date as I go..
 
 
 ## APPINFO.PBT Example
-```
-#
-# Application Manager Script for BootManager 2.1.6
-#
-
+``` hl_lines="2-5,22,24"
 # Change this information to describe the application.
 SET "TITLE" "APP TITLE"
 SET "VERSION" "version here"
