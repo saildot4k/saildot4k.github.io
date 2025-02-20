@@ -15,7 +15,7 @@ to a well respected care-taker.
 
 ## Progress Checklist
 
-#### Crystal Chip Documentation
+#### Crystal Chip Progress
 - [ ] Crystal Chip documentation
     * [x] Install Diagrams
     * [ ] Video Tutorials
@@ -36,7 +36,7 @@ to a well respected care-taker.
         * [x] Crystal Chip wiki
 
 
-#### Ghost 2 Documentation
+#### Ghost 2 Progress
 - [ ] Ghost2v2 documentation
     * [x] Install Diagrams
     * [ ] Video Tutorials
@@ -50,7 +50,7 @@ to a well respected care-taker.
     * [x] Archived Websites
 
 
-#### DMS4 Documentation
+#### DMS4 Progress
 - [ ] DMS4 documentation
     * [ ] Install Diagrams
     * [ ] Video Tutorials
@@ -62,7 +62,7 @@ to a well respected care-taker.
         * [ ] Toxic OS
     * [x] Archived Websites
 
-#### Matrix Infinity Documentation
+#### Matrix Infinity Progress
 - [ ] Matrix Infinity documentation
     * [ ] Install Diagrams
     * [ ] Video Tutorials
