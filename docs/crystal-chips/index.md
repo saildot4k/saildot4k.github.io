@@ -41,11 +41,11 @@ chips in the hands of enthusiasts.
 ## Dashboard "BootManager" may be installed to and ran from
 | Crystal Chip | Memcard 1                       | Memcard 2                       | :material-usb: USB              | :material-harddisk: HDD          | :material-memory: On-Chip Flash                 | :material-lan-connect: PC Host |
 | :----------: | :-----------------------------: | :-----------------------------: | :-----------------------------: | :-----------------------------:  | :---------------------------------------------: | :----------------------------: |
-| 1.0 Lite     | :material-check-circle:         | :material-check-circle:         | In Progress                     | :material-check-circle:          | :material-close-circle-outline: 4KB EEPROM      | :material-check-circle:        |
-| 1.1 Lite     | :material-check-circle:         | :material-check-circle:         | In Progress                     | :material-check-circle:          | :material-close-circle-outline: 4KB EEPROM      | :material-check-circle:        |
-| 1.2 Lite     | :material-check-circle:         | :material-check-circle:         | In Progress                     | :material-check-circle:          | :material-close-circle-outline: 128KB Dataflash | :material-check-circle:        |
-| 2.0 Pro      | :material-close-circle-outline: | :material-close-circle-outline: | :material-close-circle-outline: | :material-close-circle-outline:  | :material-check-circle: 1MB                     | :material-check-circle:        |
 | 2.0 Pro SLE  | :material-close-circle-outline: | :material-close-circle-outline: | :material-close-circle-outline: | :material-close-circle-outline:  | :material-check-circle: 2MB                     | :material-check-circle:        |
+| 2.0 Pro      | :material-close-circle-outline: | :material-close-circle-outline: | :material-close-circle-outline: | :material-close-circle-outline:  | :material-check-circle: 1MB                     | :material-check-circle:        |
+| 1.2 Lite     | :material-check-circle:         | :material-check-circle:         | In Progress                     | :material-check-circle:          | :material-close-circle-outline: 128KB Dataflash | :material-check-circle:        |
+| 1.1 Lite     | :material-check-circle:         | :material-check-circle:         | In Progress                     | :material-check-circle:          | :material-close-circle-outline: 4KB EEPROM      | :material-check-circle:        |
+| 1.0 Lite     | :material-check-circle:         | :material-check-circle:         | In Progress                     | :material-check-circle:          | :material-close-circle-outline: 4KB EEPROM      | :material-check-circle:        |
 
 ???+ note "BootManager"
     Bootmanager therefore must be installed to either Dataflash, MemoryCard or HDD. This is not your usual Matrix Infinity.
@@ -56,6 +56,7 @@ chips in the hands of enthusiasts.
         v1.2 and later can be upgraded with 4MB dataflash: AT45DB321D-S or AT45DB321D-MW. I have several dozen in stock.
         v1.2 then would need to flash the 2.0 firmware.  Eventually I shall script to ask user if they have installed the larger dataflash.
         Go to BM/FWS/LATEST delete all but "FWARE20.CCI". Rename to "FWARE12DEV0.CCI". Then upgrade firmware choosing option 1.
+
 
 ## BootManager Run/Install/Remove device support
 | :material-disc: CD/DVD  | :material-usb: USB Exfat/Fat | Memory Card             | :material-sd: MMCE device     | :material-harddisk: HDD | :material-lan-connect: PC Host   |
