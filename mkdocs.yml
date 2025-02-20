@@ -30,7 +30,6 @@ theme:
     - content.code.copy
     - content.code.select
     - content.code.annotate
-    - header.autohide
 
 plugins:
   - search
