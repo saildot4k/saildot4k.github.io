@@ -12,3 +12,44 @@ so that users have a quick way to have pre-setup memory cards.
 
 Should I ever leave the scene, email/DM me so that I can transfer domain ownership and github repository
 to a well respected care-taker.
+
+- [ ] Crystal Chip documentation
+    * [x] Install Diagrams
+    * [ ] Video Tutorials
+        * [x] Firmware & BootManager Installation
+        * [x] Installing and Running Apps
+        * [x] R34 v3 Changes (out of date), MMCE added
+        * [ ] Configuration options overview
+        * [ ] Adding apps not in my Megapack
+        * [ ] Using PS2Client/Link to help debug
+    * [ ] Written Tutorials
+    * [ ] Files
+        * [ ] Firmware/Bootmanager
+        * [ ] BM Megapack by R3Z3N
+        * [x] Default APPINFO.PBT
+    * [ ] PBT Scripting overview (wiki is outdated)
+    * [x] Archived Websites
+        * [x] Crystal Chip website
+        * [x] Crystal Chip wiki
+
+- [ ] Ghost2v2 documentation
+    * [ ] Install Diagrams
+    * [ ] Video Tutorials
+        * [ ] Firmware, G2 Loader & Manager
+        * [ ] Adding apps
+    * [ ] Written Tutorials
+    * [ ] Files
+        * [ ] Recovery CDs
+        * [ ] G2 Loader & Manager
+        * [ ] G2 Eraser
+    * [x] Archived Websites
+- [ ] DMS4 documentation
+    * [ ] Install Diagrams
+    * [ ] Video Tutorials
+    * [x] Archived Websites
+- [ ] Matrix Infinity documentation
+    * [ ] Install Diagrams
+    * [ ] Video Tutorials
+    * [x] Archived Websites
+
+; Note finish checklists for DMS4 and MI
