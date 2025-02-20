@@ -1,4 +1,4 @@
-https://ps2modchiptutorials.com/assets/animatedbannder1/index.html
+<html>https://ps2modchiptutorials.com/assets/animatedbannder1/index.html</html>
 
 In Progress as of 2/14/2025
 
