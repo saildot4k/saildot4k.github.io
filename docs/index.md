@@ -1,5 +1,3 @@
-# Home
-
 ![HomeBanner](https://ps2modchiptutorials.com/assets/homebanner3.png)
 In Progress as of 2/14/2025
 
@@ -13,6 +11,8 @@ so that users have a quick way to have pre-setup memory cards.
 Should I ever leave the scene, email/DM me so that I can transfer domain ownership and github repository
 to a well respected care-taker.
 
+
+# Progress Checklist
 - [ ] Crystal Chip documentation
     * [x] Install Diagrams
     * [ ] Video Tutorials
