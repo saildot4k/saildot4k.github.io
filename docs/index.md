@@ -1,4 +1,4 @@
-![AnimatedBanner](https://ps2modchiptutorials.com/assets/animatedbanner1.webm)
+![AnimatedBanner](https://ps2modchiptutorials.com/assets/animatedbanner1.gif)
 
 In Progress as of 2/14/2025
 
