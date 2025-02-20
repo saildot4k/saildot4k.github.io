@@ -34,7 +34,7 @@ to a well respected care-taker.
         * [x] Crystal Chip wiki
 
 - [ ] Ghost2v2 documentation
-    * [ ] Install Diagrams
+    * [x] Install Diagrams
     * [ ] Video Tutorials
         * [ ] Firmware, G2 Loader & Manager
         * [ ] Adding apps
