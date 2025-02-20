@@ -1,4 +1,4 @@
-![HomeBanner](https://ps2modchiptutorials.com/assets/homebanner3.png)
+![HomeBanner](https://ps2modchiptutorials.com/assets/animatedbannder1/index.html)
 In Progress as of 2/14/2025
 
 This sites intended purpose is to give comprehensive install and usage of the last best PS2 modchips.
@@ -12,7 +12,7 @@ Should I ever leave the scene, email/DM me so that I can transfer domain ownersh
 to a well respected care-taker.
 
 
-# Progress Checklist
+## Progress Checklist
 - [ ] Crystal Chip documentation
     * [x] Install Diagrams
     * [ ] Video Tutorials
