@@ -24,12 +24,13 @@ chips in the hands of enthusiasts.
     from it's internal dataflash storage. Otherwise BootManager will need to be installed to Memcard1,2 or HDD. 
     Full install of BootManager takes 875KB. If there is more storage avaliable, more apps can be installed to 
     Crystal Chip Flash. If an app expects other files in the root directory of the application folder, it will 
-    NOT be able to use those files. For example WLE will not see IPCONFIG.DAT nor LAUNCHELF.CNF
+    NOT be able to use those files. For example WLE will not see IPCONFIG.DAT nor LAUNCHELF.CNF  
 
 
 
 <br>
 <br>
+
 
 
 ## Dashboard "BootManager" may be installed to and ran from
