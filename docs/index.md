@@ -14,6 +14,8 @@ to a well respected care-taker.
 
 
 ## Progress Checklist
+
+#### Crystal Chip Documentation
 - [ ] Crystal Chip documentation
     * [x] Install Diagrams
     * [ ] Video Tutorials
@@ -33,6 +35,8 @@ to a well respected care-taker.
         * [x] Crystal Chip website
         * [x] Crystal Chip wiki
 
+
+#### Ghost 2 Documentation
 - [ ] Ghost2v2 documentation
     * [x] Install Diagrams
     * [ ] Video Tutorials
@@ -44,13 +48,27 @@ to a well respected care-taker.
         * [ ] G2 Loader & Manager
         * [ ] G2 Eraser
     * [x] Archived Websites
+
+
+#### DMS4 Documentation
 - [ ] DMS4 documentation
     * [ ] Install Diagrams
     * [ ] Video Tutorials
+        * [ ] Firmware, Toxic Config/OS
+        * [ ] Adding apps
+    * [ ] Written Tutorials
+    * [ ] Files
+        * [ ] Recovery CDs
+        * [ ] Toxic OS
     * [x] Archived Websites
+
+#### Matrix Infinity Documentation
 - [ ] Matrix Infinity documentation
     * [ ] Install Diagrams
     * [ ] Video Tutorials
+        * [ ] Firmware, Config
+        * [ ] Adding apps
+    * [ ] Written Tutorials
+    * [ ] Files
+        * [ ] Recovery CDs, Infinity Manager
     * [x] Archived Websites
-
-; Note finish checklists for DMS4 and MI
