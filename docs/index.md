@@ -1,6 +1,6 @@
-![AnimatedBanner](https://ps2modchiptutorials.com/assets/animatedbanner1.gif)
+![AnimatedBanner](https://ps2modchiptutorials.com/assets/homebanner3.gif)
 
-<img src="https://ps2modchiptutorials.com/assets/animatedbanner1/index.html" alt="PS2 Modchip Tutorials Banner" style="height: 100px; width:100px;"/>
+
 In Progress as of 2/14/2025
 
 This sites intended purpose is to give comprehensive install and usage of the last best PS2 modchips.
