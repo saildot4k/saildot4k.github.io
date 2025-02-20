@@ -24,7 +24,7 @@ to a well respected care-taker.
         * [ ] Using PS2Client/Link to help debug
     * [ ] Written Tutorials
     * [ ] Files
-        * [ ] Firmware/Bootmanager
+        * [x] Firmware/Bootmanager
         * [ ] BM Megapack by R3Z3N
         * [x] Default APPINFO.PBT
     * [ ] PBT Scripting overview (wiki is outdated)
