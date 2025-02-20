@@ -30,9 +30,11 @@ theme:
     - content.code.copy
     - content.code.select
     - content.code.annotate
+    - header.autohide
 
 plugins:
   - search
+  - blog
 
 markdown_extensions:
   - attr_list
@@ -91,6 +93,8 @@ nav:
     - Written Tutorials: mi-writeups.md
     - Files: mi-files.md
     - Archived Website: mi-archived.md
+  - Blog:
+    - blog/index.md
   - Thanks and Links: thanks.md
 
 
