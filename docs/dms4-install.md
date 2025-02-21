@@ -12,7 +12,7 @@
 #### V4 GH-08 GH-013
 ![V4](https://ps2modchiptutorials.com/dms4/install-diagrams/dms4se_v4_gh-008_13.jpg)
 
-#### v5 v6 GH-015
+#### V5 V6 GH-015
 ![V5/V6](https://ps2modchiptutorials.com/dms4/install-diagrams/dms4se_v5_6_gh-0015.jpg)
 
 #### V7 V8 GH-009 GH-022
@@ -34,7 +34,7 @@
 ![V14 GH-036](https://ps2modchiptutorials.com/dms4/install-diagrams/dms4se_v14_gh-0036_40.jpg)
 
 #### V14 GH-037 GH-041
-!V14 GH-037](https://ps2modchiptutorials.com/dms4/install-diagrams/dms4se_v14_gh-0037_41.jpg)
+![V14 GH-037](https://ps2modchiptutorials.com/dms4/install-diagrams/dms4se_v14_gh-0037_41.jpg)
 
 #### V14 GH-040-12
 ![V14 GH-040-12](https://ps2modchiptutorials.com/dms4/install-diagrams/dms4se_v14_gh-0040_12.jpg)
