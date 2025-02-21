@@ -52,7 +52,7 @@ to a well respected care-taker.
 
 #### DMS4 Progress
 - [ ] DMS4 documentation
-    * [ ] Install Diagrams
+    * [x] Install Diagrams
     * [ ] Video Tutorials
         * [ ] Firmware, Toxic Config/OS
         * [ ] Adding apps
