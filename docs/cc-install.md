@@ -25,10 +25,10 @@
 #### V4
 ![V4](https://ps2modchiptutorials.com/crystal-chips/install-diagrams/cc11_v4.jpg)
 
-#### V5/V6
+#### V5 V6
 ![V5/V6](https://ps2modchiptutorials.com/crystal-chips/install-diagrams/cc11_v5.jpg)
 
-#### V7/V8
+#### V7 V8
 ![V7/V8](https://ps2modchiptutorials.com/crystal-chips/install-diagrams/cc11_v7.jpg)
 
 #### V9
