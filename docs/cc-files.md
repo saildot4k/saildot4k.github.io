@@ -1,9 +1,7 @@
-## R34 V3 Firmware and Dashboard by R3Z3N
-
-[Crystal Chip FW R34 v3 with updated Dashboard Scripts](https://github.com/saildot4k/Crystal-Chip-R34-v3/releases)
+## [Crystal Chip FW R34 v3 with updated Dashboard Scripts by R3Z3N](https://github.com/saildot4k/Crystal-Chip-R34-v3/releases)
 
 
-??? note "Additions by R3Z3N 1/26/25"
+??? note "Additions by R3Z3N 2/22/25"
     Release 34 V3 by R3Z3N Jan 26 2025 (RUNNING CHANGES. I update the date as I go...)
        
         
@@ -32,6 +30,9 @@
  	
         - Changed scripts so that FW choices are only applicable to the chip installed.
         IE CC1.0-1.2 can choose BM run point, CC2.0 DFFS only.
+
+        - BootManager app install no longer installs FW files to the dffs: partition to save 
+        51KB for CC2.0 owners.
        
         - Show Info gives a little more clarity IE where is BM executed from, what console region codes stand for etc.
 
@@ -39,7 +40,6 @@
 
         - Added Italian and Spanish language translations.
 
-        - Bootmanager install scripts no longer install FW to dffs:/BM/FWS/LATEST to save space
 
 ## To Do
 - [ ] SAS support (Apps from root with prefixes IE mc?:/APP_WLE-ISR-EXFAT-MMCE or mc?:/APP_OPL-MMCE-BETA2)
