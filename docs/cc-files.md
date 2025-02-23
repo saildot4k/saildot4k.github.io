@@ -7,9 +7,9 @@
     Release 34 V3 by R3Z3N Jan 26 2025 (RUNNING CHANGES. I update the date as I go...)
        
         
-        - CC1.X firmware options to run BM from MemCard1 or 2. makeit_nocd does have scripts to
+        - CC1.X firmware options to run BM from MemCard1 or 2 and HDD. makeit_nocd does have scripts to
 	    build FW for running from USB/HDD but seems pointless. Options added in BM for full ease
-        of use. HDD workign but I need to think about how to direct users to install BM.
+        of use. HDD boot needs HDD drivers on mc0:/BM/SHARED/
 
         - MMCE device support for example SD2PSX, PsxMemCardGen2, MemCardPro2.
 	    [SD2PSXTD](https://sd2psxtd.github.io/)
@@ -38,6 +38,8 @@
         - Cotton Candy theme added, each version of the Crystal Chip is represented!
 
         - Added Italian and Spanish language translations.
+
+        - Bootmanager install scripts no longer install FW to dffs:/BM/FWS/LATEST to save space
 
 ## To Do
 - [ ] SAS support (Apps from root with prefixes IE mc?:/APP_WLE-ISR-EXFAT-MMCE or mc?:/APP_OPL-MMCE-BETA2)
