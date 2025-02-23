@@ -49,7 +49,7 @@
 - [ ] CC2.0 8MB Dataflash support in FW
     * [ ] 1056 Page Support for AT45DB642D in testing
     * [ ] 256 Page Support for AT45DB621E in testing
-- [x] BM can be ran from Hard Drive (drivesr on mc0)
+- [x] BM can be ran from Hard Drive (HDD drivers MUST be installed tp mc0)
     * [ ] Uploaded to github
     * [ ] Script for ease of use
     * [ ] Document for ease of use
