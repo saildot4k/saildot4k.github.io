@@ -3,10 +3,10 @@
 ## Phat PS2s
 
 ### USA V1 V2 GH-004
-![USA V1 V2](//docs/mi/install-diagrams/USA-GH004.JPG)
+![USA V1 V2](/mi/install-diagrams/USA-GH004.JPG)
 
 ### USA V3
-![USA V3](//docs/mi/install-diagrams/USA-V3.JPG)
+![USA V3](mi/install-diagrams/USA-V3.JPG)
 
 ### ASIA V3
 ![ASIA V3](//docs/mi/install-diagrams/Japan-Taiwan-V3.JPG)
