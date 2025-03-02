@@ -36,7 +36,7 @@ From STANDBY >> RESET (wait for blue led on), RESET (..), RESET (..), RESET (..)
 
 ???+ note "PSTwo Slim"
 
-    For v12 (scph70k) : You can use the Green Led as Timing Indication since there is no Blue Led anymore on this sytem.
+    For v12+ (SCPH-70k+) : You can use the Green Led as Timing Indication since there is no Blue Led anymore on this sytem.
 
 
 ##Boot Hotkey options:
