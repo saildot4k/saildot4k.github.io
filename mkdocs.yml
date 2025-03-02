@@ -32,6 +32,9 @@ theme:
     - content.code.annotate
     - toc.follow
 
+extra_css:
+  - stylesheets/extra.css
+
 plugins:
   - search
   - blog
