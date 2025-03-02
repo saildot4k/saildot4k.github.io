@@ -1,4 +1,4 @@
-#BOOT MODE FOR G.2
+##BOOT MODE FOR G.2
 
 
 Tap RESET button on PS2 a number of times after power up. The modes are as follows:
@@ -39,7 +39,7 @@ From STANDBY >> RESET (wait for blue led on), RESET (..), RESET (..), RESET (..)
     For v12 (scph70k) : You can use the Green Led as Timing Indication since there is no Blue Led anymore on this sytem.
 
 
-#Boot Hotkey options:
+##Boot Hotkey options:
 
 
 - L1 = Force Games to load in PSX mode (if you want to skip auto-detect,
