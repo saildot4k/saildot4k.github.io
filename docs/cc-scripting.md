@@ -15,7 +15,7 @@ To set a new variable, you have to specify the type :
 
 - U32/S32 : Signed/Unsigned 32-bits number
 
-???+ Signed/Unsigned definition
+???+ note "Signed/Unsigned definition"
 
     Signed numbers can be negatives, Unsigned can only be positives.
 
