@@ -49,7 +49,7 @@ when you know the disk is PSX format).
 card must be present in slot 1.
 - O = Dev Mode (starts file boot.elf).
 - X = Override Dev Mode (if it's been selected as default mode in GH2 Manager).
-- Arrow UP = load boot0.elf from memory card.
-- Arrow RIGHT = load boot1.elf from memory card.
-- Arrow DOWN = load boot2.elf from memory card.
-- Arrow LEFT = load boot3.elf from memory card 
+- Arrow UP = load boot0.elf from memory card 1.
+- Arrow RIGHT = load boot1.elf from memory card 1.
+- Arrow DOWN = load boot2.elf from memory card 1.
+- Arrow LEFT = load boot3.elf from memory card 1. 
