@@ -19,7 +19,7 @@ It might look complicated, but it's not :). As we stated above the only mode you
 From STANDBY, when you press RESET the machine is switched on and you have 2 seconds to tap RESET again after the BLUE LED turns on. When you tap RESET again the BLUE LED goes off and when it turns on again you've got 2 seconds to tap RESET if needed, etc…
 
 | Mode          | Number of Reset Taps |
-| :---------_-: | :------------------: |
+| :-----------: | :------------------: |
 | Default       | 1                    |
 | Ghost         | 2                    |
 | Chip Off      | 3                    |
