@@ -68,5 +68,5 @@
 ![V15 GH-051-51](https://ps2modchiptutorials.com/crystal-chips/install-diagrams/cc11_v15b.jpg)
 
 #### V15 GH-061-12S
-![V15 GH-061-12](https://ps2modchiptutorials.com/crystal-chips/install-diagrams/cc11_v16a.jpg)
+![V15 GH-061-12](https://ps2modchiptutorials.com/crystal-chips/install-diagrams/cc20_16a.jpg)
 
