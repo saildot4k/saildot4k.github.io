@@ -2,8 +2,8 @@
 
 ## Phat PS2s
 
-#### V0 V1
-![V0/V1](https://ps2modchiptutorials.com/ghost2/install-diagrams/g2_v0-v2.jpg)
+#### V0 V2
+![V0/V2](https://ps2modchiptutorials.com/ghost2/install-diagrams/g2_v0-v2.jpg)
 
 #### V3
 ![V3](https://ps2modchiptutorials.com/ghost2/install-diagrams/g2_v3.jpg)
