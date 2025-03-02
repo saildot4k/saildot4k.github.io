@@ -7,17 +7,17 @@ To set a new variable, you have to specify the type :
 
 **Possible types are:**
 
-STRING : string
+- STRING : string (assumed if nothing is set)
 
+- U8/S8 : Signed/Unsigned 8-bits number
 
-U8/S8 : Signed/Unsigned 8-bits number
+- U16/S16 : Signed/Unsigned 16-bits number
 
-U16/S16 : Signed/Unsigned 16-bits number
+- U32/S32 : Signed/Unsigned 32-bits number
 
-U32/S32 : Signed/Unsigned 32-bits number
+???+ Signed/Unsigned definition
 
-
-Signed numbers can be negatives, Unsigned can only be positives.
+    Signed numbers can be negatives, Unsigned can only be positives.
 
 
 **Examples**
@@ -27,9 +27,10 @@ Signed numbers can be negatives, Unsigned can only be positives.
 
 ```SET "S32" "MY_OTHER_DIGIT" "-3420"```
 
+???+ Where to save defined variables:
 
-The best place to define your variables and their types is in the file DEFCONF.PBT.
-If you want your variable to be saved in the configuration file of Boot Manager, the name MUST begin with "BM.CNF".
+    The best place to define your variables and their types is in the file DEFCONF.PBT.
+    If you want your variable to be saved in the configuration file of Boot Manager, the name MUST begin with "BM.CNF".
 
 
 Once the type is set, you can assign a new value to the variable :
@@ -42,7 +43,7 @@ To call an already defined variable, you have to surround it with ```$``` :
 
 ```ECHO "$MY_DIGIT$"```
 
-will display 34 in the output console.
+will display ```34``` in the output console for example PS2Client.
 
 
 ## Messages
