@@ -25,7 +25,7 @@ But PS2? That was much more difficult. Things were rapidly changing. 16+ version
 only a few hundred PS2 modchips back then, and that started with the last gen: Matrix Infinity, DMS4, and Crystal Chip. 
 Crystal Chips kicked ass. They were so much better. More features, easier to use (if user had pre-built scripts per app like the BM Megapack)
 and didn't randomly die when installing like DMS4. Matrix was fine...but yawn. Oh so booring. And you had to remember boot controller key combos.
-LAME. Crystal Chip could use just about any key command you wanted so long as it wasn't x, select, joysticks or D-PAD) But I never really learned 
+LAME. Crystal Chip could use just about any key command you wanted so long as it wasn't x, select, joysticks or D-PAD. But I never really learned 
 to script the dashboard as was allowed. Seemed gibberish. 
 
 As far as 2002-2007:
