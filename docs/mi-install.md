@@ -28,7 +28,7 @@
 ![PAL V4](mi/install-diagrams/PAL-V4.JPG)
 
 ### V5 USA
-![USA V5](mi/install-diagrams/USA-V5.JPG)
+![USA V5](mi/install-diagrams/USA-v5.JPG)
 
 ### V5 ASIA
 ![ASIA V5](mi/install-diagrams/Japan-Taiwan-V5.JPG)
@@ -100,7 +100,7 @@
 ![V15 GH05151](mi/install-diagrams/V15-GH051-51.JPG)
 
 ### V16 GH-061-12
-![V15 GH05151](mi/install-diagrams/V16-GH061-12.JPG)
+![V15 GH05151](mi/install-diagrams/V16-GH061-12.jpg)
 
 
 ## PSX DESR 
