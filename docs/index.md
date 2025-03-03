@@ -80,68 +80,68 @@ to a well respected care-taker.
 
     ---
 
-- [ ] Crystal Chip documentation
-    * [x] Install Diagrams
-    * [ ] Video Tutorials
-        * [x] Firmware & BootManager Installation
-        * [x] Installing and Running Apps
-        * [x] R34 v3 Changes (out of date), MMCE added
-        * [ ] Configuration options overview
-        * [ ] Adding apps not in my Megapack
-        * [ ] Using PS2Client/Link to help debug
-    * [ ] Written Tutorials
-    * [ ] Files
-        * [x] Firmware/Bootmanager
-        * [ ] BM Megapack by R3Z3N
-        * [x] Default APPINFO.PBT
-    * [ ] PBT Scripting overview (wiki is outdated)
-    * [x] Archived Websites
-        * [x] Crystal Chip website
-        * [x] Crystal Chip wiki
+    - [ ] Crystal Chip documentation
+        * [x] Install Diagrams
+        * [ ] Video Tutorials
+            * [x] Firmware & BootManager Installation
+            * [x] Installing and Running Apps
+            * [x] R34 v3 Changes (out of date), MMCE added
+            * [ ] Configuration options overview
+            * [ ] Adding apps not in my Megapack
+            * [ ] Using PS2Client/Link to help debug
+        * [ ] Written Tutorials
+        * [ ] Files
+            * [x] Firmware/Bootmanager
+            * [ ] BM Megapack by R3Z3N
+            * [x] Default APPINFO.PBT
+        * [ ] PBT Scripting overview (wiki is outdated)
+        * [x] Archived Websites
+            * [x] Crystal Chip website
+            * [x] Crystal Chip wiki
 
 -   :material-clock-fast:{ .lg .middle } __DMS4 Progress__
 
     ---
 
-- [ ] DMS4 documentation
-    * [x] Install Diagrams
-    * [ ] Video Tutorials
-        * [ ] Firmware, Toxic Config/OS
-        * [ ] Adding apps
-    * [ ] Written Tutorials
-    * [ ] Files
-        * [ ] Recovery CDs
-        * [ ] Toxic OS
-    * [x] Archived Websites
+    - [ ] DMS4 documentation
+        * [x] Install Diagrams
+        * [ ] Video Tutorials
+            * [ ] Firmware, Toxic Config/OS
+            * [ ] Adding apps
+        * [ ] Written Tutorials
+        * [ ] Files
+            * [ ] Recovery CDs
+            * [ ] Toxic OS
+        * [x] Archived Websites
 
 -   :material-simple-ghostery:{ .lg .middle } __Ghost 2 Progress__
 
     ---
 
-- [ ] Ghost2v2 documentation
-    * [x] Install Diagrams
-    * [ ] Video Tutorials
-        * [ ] Firmware, G2 Loader & Manager
-        * [ ] Adding apps
-    * [ ] Written Tutorials
-    * [ ] Files
-        * [ ] Recovery CDs
-        * [ ] G2 Loader & Manager
-        * [ ] G2 Eraser
-    * [x] Archived Websites
+    - [ ] Ghost2v2 documentation
+        * [x] Install Diagrams
+        * [ ] Video Tutorials
+            * [ ] Firmware, G2 Loader & Manager
+            * [ ] Adding apps
+        * [ ] Written Tutorials
+        * [ ] Files
+            * [ ] Recovery CDs
+            * [ ] G2 Loader & Manager
+            * [ ] G2 Eraser
+        * [x] Archived Websites
 
 -   :material-simple-matrix:{ .lg .middle } __Matrix Infinity Progress__
 
     ---
 
-- [ ] Matrix Infinity documentation
-    * [x] Install Diagrams
-    * [ ] Video Tutorials
-        * [ ] Firmware, Config
-        * [ ] Adding apps
-    * [ ] Written Tutorials
-    * [ ] Files
-        * [ ] Recovery CDs, Infinity Manager
-    * [x] Archived Websites
+    - [ ] Matrix Infinity documentation
+        * [x] Install Diagrams
+        * [ ] Video Tutorials
+            * [ ] Firmware, Config
+            * [ ] Adding apps
+        * [ ] Written Tutorials
+        * [ ] Files
+            * [ ] Recovery CDs, Infinity Manager
+        * [x] Archived Websites
 
 </div>
