@@ -76,7 +76,7 @@ to a well respected care-taker.
 
 <div class="grid cards" markdown>
 
--   :material-simple-crystal:{ .lg .middle } __Crystal Chip Progress__
+-   :material-clock-fast:{ .lg .middle } __Crystal Chip Progress__
 
     ---
 
@@ -114,7 +114,11 @@ to a well respected care-taker.
             * [ ] Toxic OS
         * [x] Archived Websites
 
--   :material-simple-ghostery:{ .lg .middle } __Ghost 2 Progress__
+</div>
+
+<div class="grid cards" markdown>
+
+-   :material-clock-fast:{ .lg .middle } __Ghost 2 Progress__
 
     ---
 
@@ -130,7 +134,7 @@ to a well respected care-taker.
             * [ ] G2 Eraser
         * [x] Archived Websites
 
--   :material-simple-matrix:{ .lg .middle } __Matrix Infinity Progress__
+-   :material-clock-fast:{ .lg .middle } __Matrix Infinity Progress__
 
     ---
 
