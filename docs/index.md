@@ -64,7 +64,7 @@ to a well respected care-taker.
 
 #### Matrix Infinity Progress
 - [ ] Matrix Infinity documentation
-    * [ ] Install Diagrams
+    * [x] Install Diagrams
     * [ ] Video Tutorials
         * [ ] Firmware, Config
         * [ ] Adding apps
