@@ -27,7 +27,7 @@ To set a new variable, you have to specify the type :
 
 ```SET "S32" "MY_OTHER_DIGIT" "-3420"```
 
-???+ Where to save defined variables:
+???+ note "Where to save defined variables:"
 
     The best place to define your variables and their types is in the file DEFCONF.PBT.
     If you want your variable to be saved in the configuration file of Boot Manager, the name MUST begin with "BM.CNF".
