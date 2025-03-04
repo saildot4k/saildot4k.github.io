@@ -1,3 +1,3 @@
-[Crystal Chips Archived Website](crystal-chips/cc-site-backup/index.htm)
+[Crystal Chips Archived Website](cc-site-backup/index.htm)
 
-[Crystal Chips Archived Wiki](crystal-chips/cc-site-backup/ccwiki-index.htm)
+[Crystal Chips Archived Wiki](cc-site-backup/ccwiki-index.htm)
