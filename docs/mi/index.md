@@ -1,15 +1,17 @@
-#Overview
+# Overview
 
 ## Matrix Infinity Documentation Progress
-- [ ] Matrix Infinity documentation
-    * [x] Install Diagrams
-    * [ ] Video Tutorials
-        * [ ] Firmware, Config
-        * [ ] Adding apps
-    * [ ] Written Tutorials
-    * [ ] Files
-        * [ ] Recovery CDs, Infinity Manager
-    * [x] Archived Websites
+???+ note "Progress as of 3/3/2025"
+
+    - [ ] Matrix Infinity documentation
+        * [x] Install Diagrams
+        * [ ] Video Tutorials
+            * [ ] Firmware, Config
+            * [ ] Adding apps
+        * [ ] Written Tutorials
+        * [ ] Files
+            * [ ] Recovery CDs, Infinity Manager
+        * [x] Archived Websites
 
 
 ## Matrix Infinity Dot meaning:
