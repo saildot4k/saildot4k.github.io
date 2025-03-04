@@ -1,7 +1,18 @@
 #Overview
 
+## Matrix Infinity Documentation Progress
+- [ ] Matrix Infinity documentation
+    * [x] Install Diagrams
+    * [ ] Video Tutorials
+        * [ ] Firmware, Config
+        * [ ] Adding apps
+    * [ ] Written Tutorials
+    * [ ] Files
+        * [ ] Recovery CDs, Infinity Manager
+    * [x] Archived Websites
 
-#Matrix Infinity Dot meaning:
+
+## Matrix Infinity Dot meaning:
 
 |                     | Yellow Dot  | Red Dot | Green Dot Homebrew | Blue Dot | Green Dot | 
 | :------------------:| :---------: | :-----: | :----------------: | :------: | :-------: |
