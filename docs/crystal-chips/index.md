@@ -1,26 +1,29 @@
 # Overview
 
-## Crystal Chip Documentation Progress
-In Progress as of 2/14/2025
 
-- [ ] Crystal Chip documentation
-    * [x] Install Diagrams
-    * [ ] Video Tutorials
-        * [x] Firmware & BootManager Installation
-        * [x] Installing and Running Apps
-        * [x] R34 v3 Changes (out of date), MMCE added
-        * [ ] Configuration options overview
-        * [ ] Adding apps not in my Megapack
-        * [ ] Using PS2Client/Link to help debug
-    * [ ] Written Tutorials
-    * [ ] Files
-        * [x] Firmware/Bootmanager
-        * [ ] BM Megapack by R3Z3N
-        * [x] Default APPINFO.PBT
-    * [ ] PBT Scripting overview (wiki is outdated)
-    * [x] Archived Websites
-        * [x] Crystal Chip website
-        * [x] Crystal Chip wiki
+???+ note "## Crystal Chip Documentation Progress"
+
+    In Progress as of 2/14/2025
+
+    - [ ] Crystal Chip documentation
+        * [x] Install Diagrams
+        * [ ] Video Tutorials
+            * [x] Firmware & BootManager Installation
+            * [x] Installing and Running Apps
+            * [x] R34 v3 Changes (out of date), MMCE added
+            * [ ] Configuration options overview
+            * [ ] Adding apps not in my Megapack
+            * [ ] Using PS2Client/Link to help debug
+        * [ ] Written Tutorials
+        * [ ] Files
+            * [x] Firmware/Bootmanager
+            * [ ] BM Megapack by R3Z3N
+            * [x] Default APPINFO.PBT
+        * [ ] PBT Scripting overview (wiki is outdated)
+        * [x] Archived Websites
+            * [x] Crystal Chip website
+            * [x] Crystal Chip wiki
+
 
 ## Option to repurchase
 
