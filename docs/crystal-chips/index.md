@@ -24,7 +24,7 @@ In Progress as of 2/14/2025
 
 ## Option to repurchase
 
-![Crystal Chip QR Code](https://ps2modchiptutorials.com/crystal-chips/Crystal_Chip_QR_Code.png){ width="290" align=left }
+![Crystal Chip QR Code](Crystal_Chip_QR_Code.png){ width="290" align=left }
 
 If you happened to come to this page due 
 to this sticker then I thank you very much! 
@@ -37,7 +37,7 @@ chips in the hands of enthusiasts.
 
 ## Crystal Chip versions
     
-![Crystal Chip Models](https://ps2modchiptutorials.com/crystal-chips/cc-site-backup/img/cc_hw_history.gif)
+![Crystal Chip Models](cc-site-backup/img/cc_hw_history.gif)
 
 
 ## Dashboard "BootManager" may be installed to and ran from
