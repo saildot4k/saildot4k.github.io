@@ -23,17 +23,15 @@
             * [x] Crystal Chip wiki
 
 ## Option to repurchase
+???+ note "Option to Repurchase"
 
-![Crystal Chip QR Code](Crystal_Chip_QR_Code.png){ width="290" align=left }
+    ![Crystal Chip QR Code](Crystal_Chip_QR_Code.png){ width="290" align=left }
 
-If you happened to come to this page due 
-to this sticker then I thank you very much! 
-Please email me [here](mailto:info@ps2modchiptutorials.com) so that 
-we may discuss futher as I would love to keep these
-chips in the hands of enthusiasts.
-<br>
-<br>
-<br>
+    If you happened to come to this page due 
+    to this sticker then I thank you very much! 
+    Please email me [here](mailto:info@ps2modchiptutorials.com) so that 
+    we may discuss futher as I would love to keep these
+    chips in the hands of enthusiasts.
 
 
 ## Crystal Chip versions
