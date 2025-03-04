@@ -69,12 +69,12 @@ nav:
   - Home: index.md
   - Crystal Chips:
     - crystal-chips/index.md
-    - Install Diagrams: cc-install.md
-    - Video Tutorials: cc-vids.md
-    - Written Tutorials: cc-writeups.md
-    - Files: cc-files.md
-    - PBT Scripting: cc-scripting.md
-    - Archived Website: cc-archived.md
+    - Install Diagrams: crystal-chips/cc-install.md
+    - Video Tutorials: crystal-chips/cc-vids.md
+    - Written Tutorials: crystal-chips/cc-writeups.md
+    - Files: crystal-chips/cc-files.md
+    - PBT Scripting: crystal-chips/cc-scripting.md
+    - Archived Website: crystal-chips/cc-archived.md
   - DMS4:
     - dms4/index.md
     - Install Diagrams: dms4-install.md
