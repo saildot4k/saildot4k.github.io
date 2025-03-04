@@ -1,9 +1,7 @@
 # Overview
 
-
-???+ note "## Crystal Chip Documentation Progress"
-
-    In Progress as of 2/14/2025
+## Crystal Chip Documentation Progress
+???+ note "Progress as of 3/3/2025"
 
     - [ ] Crystal Chip documentation
         * [x] Install Diagrams
@@ -24,7 +22,6 @@
             * [x] Crystal Chip website
             * [x] Crystal Chip wiki
 
-
 ## Option to repurchase
 
 ![Crystal Chip QR Code](Crystal_Chip_QR_Code.png){ width="290" align=left }
@@ -34,6 +31,7 @@ to this sticker then I thank you very much!
 Please email me [here](mailto:info@ps2modchiptutorials.com) so that 
 we may discuss futher as I would love to keep these
 chips in the hands of enthusiasts.
+<br>
 <br>
 <br>
 
