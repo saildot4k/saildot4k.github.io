@@ -77,25 +77,25 @@ nav:
     - Archived Website: crystal-chips/cc-archived.md
   - DMS4:
     - dms4/index.md
-    - Install Diagrams: dms4-install.md
-    - Video Tutorials: dms4-vids.md
-    - Written Tutorials: dms4-writeups.md
-    - Files: dms4-files.md
-    - Archived Website: dms4-archived.md
+    - Install Diagrams: dms4/dms4-install.md
+    - Video Tutorials: dms4/dms4-vids.md
+    - Written Tutorials: dms4/dms4-writeups.md
+    - Files: dms4/dms4-files.md
+    - Archived Website: dms4/dms4-archived.md
   - Ghost 2:
     - ghost2/index.md
-    - Install Diagrams: ghost2-install.md
-    - Video Tutorials: ghost2-vids.md
-    - Written Tutorials: ghost2-writeups.md
-    - Files: ghost2-files.md
-    - Archived Website: ghost2-archived
+    - Install Diagrams: ghost2/ghost2-install.md
+    - Video Tutorials: ghost2/ghost2-vids.md
+    - Written Tutorials: ghost2/ghost2-writeups.md
+    - Files: ghost2/ghost2-files.md
+    - Archived Website: ghost2/ghost2-archived
   - Matrix Infinity and clones:
     - mi/index.md
-    - Install Diagrams: mi-install.md
-    - Video Tutorials: mi-vids.md
-    - Written Tutorials: mi-writeups.md
-    - Files: mi-files.md
-    - Archived Website: mi-archived.md
+    - Install Diagrams: mi/mi-install.md
+    - Video Tutorials: mi/mi-vids.md
+    - Written Tutorials: mi/mi-writeups.md
+    - Files: mi/mi-files.md
+    - Archived Website: mi/mi-archived.md
   - Thanks and Links: thanks.md
   - Blog:
     - blog/index.md
