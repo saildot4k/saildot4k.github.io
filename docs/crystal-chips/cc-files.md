@@ -1,4 +1,6 @@
-## [Crystal Chip FW R34 v3 with updated Dashboard Scripts by R3Z3N](https://github.com/saildot4k/Crystal-Chip-R34-v3/releases)
+## Crystal Chip FW R34 v3
+
+[Crystal Chip FW R34 v3 with updated Dashboard Scripts by R3Z3N](https://github.com/saildot4k/Crystal-Chip-R34-v3/releases)
 
 ??? note "Additions by R3Z3N 2/22/25"
     Release 34 V3 by R3Z3N Feb 26 2025 (RUNNING CHANGES. I update the date as I go...)
@@ -59,7 +61,7 @@ Apps Included:
 | HDD Tester                | :material-check-circle:         | :material-check-circle:         |                                 |
 | Memory Card Annihilator   | :material-check-circle:         | :material-check-circle:         |                                 |
 | Mechacon Crash Test       | :material-check-circle:         | :material-check-circle:         |                                 |
-| NeuTrino                  | :material-check-circle:         | :material-check-circle:         |                                 |
+| Neutrino                  | :material-check-circle:         | :material-check-circle:         |                                 |
 | NHDDL                     | :material-check-circle:         | :material-check-circle:         |                                 |
 | OPL 1.2 Beta 2199         | :material-check-circle:         | :material-check-circle:         |                                 |
 | OPL 1.2 Beta 2201         | :material-check-circle:         | :material-check-circle:         |                                 |
