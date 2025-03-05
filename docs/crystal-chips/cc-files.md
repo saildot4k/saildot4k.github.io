@@ -4,15 +4,15 @@
     Release 34 V3 by R3Z3N Feb 26 2025 (RUNNING CHANGES. I update the date as I go...)
        
         
-        - CC1.X firmware options to run BM from MemCard1 or 2 and HDD. makeit_nocd does have scripts to
-	    build FW for running from USB/HDD but seems pointless. Options added in BM for full ease
-        of use. HDD boot needs HDD drivers on mc0:/BM/SHARED/
+        - CC1.X firmware options to run BM from MemCard1,2, HDD and USB. HDD/USB boot needs HDD drivers on mc0:/BM/SHARED/
+        HDD and USB are commented out, go ahead and uncomment out in BM/FWS/LATEST/FWINFO.PBT to experiment
 
         - MMCE device support for example SD2PSX, PsxMemCardGen2, MemCardPro2.
 	    [SD2PSXTD](https://sd2psxtd.github.io/)
         [MCP2](https://8bitmods.com/memcard-pro2-for-ps2-and-ps1-smoke-black/)
 
-        - Exfat USB support via [BDM Assault](https://github.com/israpps/BDMAssault)
+        -  ~~Used El Isras USB drivers for exfat support: BDM Assault (https://github.com/israpps/BDMAssault)~~
+	    REASON: Unable to get EXFAT drivers to run apps from USB. Needs further testing.
 
         - Security Settings added: when pin is set, advanced settings are unaccessible. 
 
@@ -25,7 +25,7 @@
         - Changed scripts to allow apps to be installed when booted from recovery cd.
   	
         - Changed scripts to only show options for chip installed! IE no more seeing DFFS
-        options on CC 1.0 and 1.1. 1.2 no longer shows remove dffs:/BM
+        options on CC 1.XS
  	
         - Changed scripts so that FW choices are only applicable to the chip installed.
         IE CC1.0-1.2 can choose BM run point, CC2.0 DFFS only.
@@ -58,7 +58,7 @@ Unzip and merge contents to root of your SD2PSX/PSXMemcard Gen2 MMCE Device
     * [ ] 1056 Page Support for AT45DB642D in testing
     * [ ] 256 Page Support for AT45DB621E in testing
 - [x] BM can be ran from Hard Drive (HDD drivers MUST be installed tp mc0)
-    * [ ] Uploaded to github
+    * [x] Uploaded to github
     * [ ] Script for ease of use
     * [ ] Document for ease of use
 - [ ] HDD IRXs not installed for V14 and later PS2s
