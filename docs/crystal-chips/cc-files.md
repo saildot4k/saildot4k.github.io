@@ -52,6 +52,7 @@ Unzip and merge with the Firmware Download or move the the root of your USB stic
 Unzip and merge contents to root of your SD2PSX/PSXMemcard Gen2 MMCE Device (THIS WILL WIPE YOUR BOOT CARD!)
 
 Apps Included:
+
 | Application               | USB                             | SD2PSXtd 64MB Boot Card         | MemCardPro 2 in progress        |
 | :-----------------------: | :-----------------------------: | :-----------------------------: | :-----------------------------: |
 | Apollo Save Tool          | :material-check-circle:         | :material-check-circle:         |                                 |
