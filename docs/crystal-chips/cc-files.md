@@ -1,8 +1,7 @@
 ## [Crystal Chip FW R34 v3 with updated Dashboard Scripts by R3Z3N](https://github.com/saildot4k/Crystal-Chip-R34-v3/releases)
 
-
 ??? note "Additions by R3Z3N 2/22/25"
-    Release 34 V3 by R3Z3N Jan 26 2025 (RUNNING CHANGES. I update the date as I go...)
+    Release 34 V3 by R3Z3N Feb 26 2025 (RUNNING CHANGES. I update the date as I go...)
        
         
         - CC1.X firmware options to run BM from MemCard1 or 2 and HDD. makeit_nocd does have scripts to
@@ -41,6 +40,15 @@
         - Added Italian and Spanish language translations.
 
 
+## [BM MegaPack for CD/USB](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MegaPack_by_R3Z3N.zip)
+
+Unzip and merge with the Firmware Download or move the the root of your USB stick
+
+## [BM MegaPack for SD2PSX/PSXMemcard Gen2](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MegaPack_by_R3Z3N_SD2PSX.zip)
+
+Unzip and merge contents to root of your SD2PSX/PSXMemcard Gen2 MMCE Device
+
+
 ## To Do
 - [ ] SAS support (Apps from root with prefixes IE mc?:/APP_WLE-ISR-EXFAT-MMCE or mc?:/APP_OPL-MMCE-BETA2)
 - [ ] SAS build for BootManager and it's folder structure
@@ -54,6 +62,7 @@
     * [ ] Script for ease of use
     * [ ] Document for ease of use
 - [ ] HDD IRXs not installed for V14 and later PS2s
+
 
 ## APPINFO.PBT Example
 ??? note "APPINFO.PBT Example"
@@ -110,7 +119,7 @@
     May need to use if an app does not start
 
 
-## APPINFO.PBT w 3 Boot Options Example
+## APPINFO.PBT with 3 Boot Options Example
 ??? material-script-text "APPINFO.PBT Example w 3 Boot Options"
     ```
     # Change this information to describe the application.
