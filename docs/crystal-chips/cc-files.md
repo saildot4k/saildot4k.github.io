@@ -54,7 +54,7 @@ Unzip and merge contents to root of your SD2PSX/PSXMemcard Gen2 MMCE Device (THI
 Apps Included:
 
 | Application               | USB                             | SD2PSXtd 64MB Boot Card         | MemCardPro 2 in progress        |
-| :-----------------------: | :-----------------------------: | :-----------------------------: | :-----------------------------: |
+| :------------------------ | :-----------------------------: | :-----------------------------: | :-----------------------------: |
 | Apollo Save Tool          | :material-check-circle:         | :material-check-circle:         |                                 |
 | HDD Tester                | :material-check-circle:         | :material-check-circle:         |                                 |
 | Memory Card Annihilator   | :material-check-circle:         | :material-check-circle:         |                                 |
