@@ -49,7 +49,7 @@ Unzip and merge with the Firmware Download or move the the root of your USB stic
 
 [BM MegaPack for SD2PSX/PSXMemcard Gen2](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MegaPack_by_R3Z3N_SD2PSX.zip)
 
-Unzip and merge contents to root of your SD2PSX/PSXMemcard Gen2 MMCE Device (THIS MAY WIPE YOUR BOOT DEVICE!)
+Unzip and merge contents to root of your SD2PSX/PSXMemcard Gen2 MMCE Device (THIS WILL WIPE YOUR BOOT CARD!)
 
 Apps Included:
 | Application               | USB                             | SD2PSXtd 64MB Boot Card         | MemCardPro 2 in progress        |
