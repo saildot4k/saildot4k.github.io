@@ -80,7 +80,7 @@ Apps Included:
 | XEB+ launch script        | :material-check-circle:         | :material-close-circle-outline: |                                 |
 | XEB+                      | :material-close-circle-outline: | :material-close-circle-outline: |                                 |
 
-???+ note "Missing App Notes"
+??? note "Missing App Notes"
 
     - XEB+ Xmas Edition must be acquired from official sources due to license
         - Can only be ran from USB
