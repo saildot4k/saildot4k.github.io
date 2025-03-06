@@ -38,6 +38,7 @@ extra_css:
 plugins:
   - search
   - blog
+  - glightbox
 
 markdown_extensions:
   - attr_list
