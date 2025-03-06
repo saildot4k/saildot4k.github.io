@@ -62,7 +62,7 @@
 
     [:material-cloud-download: SD2PSX](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MegaPack_by_R3Z3N_SD2PSX.zip)
 
--   __MemCard Pro 2__
+-   __MemCardPro 2__
 
     ---
 
@@ -74,7 +74,7 @@
 
 Apps Included:
 
-| Application               | USB (Fat16/32)                  | SD2PSXtd 64MB Boot Card         | MemCardPro 2 8BM Card                           |
+| Application               | USB (Fat16/32)                  | SD2PSXtd 64MB Boot Card         | MemCardPro 2 8MB Card                           |
 | :------------------------ | :-----------------------------: | :-----------------------------: | :---------------------------------------------  |
 | NHDDL                     | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 1  |
 | OPL 1.2 Beta 2201         | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 1  |
@@ -113,6 +113,7 @@ Apps Included:
 
 
 ## To Do
+
 - [ ] SAS support (Apps from root with prefixes IE mc?:/APP_WLE-ISR-EXFAT-MMCE or mc?:/APP_OPL-MMCE-BETA2)
 - [ ] SAS build for BootManager and it's folder structure
 - [ ] CC1.X Boot method failover IE try next memcard
@@ -128,6 +129,7 @@ Apps Included:
 
 
 ## APPINFO.PBT Example
+
 ??? note "APPINFO.PBT Example"
     ```
     # Change this information to describe the application.
@@ -183,6 +185,7 @@ Apps Included:
 
 
 ## APPINFO.PBT with 3 Boot Options Example
+
 ??? material-script-text "APPINFO.PBT Example w 3 Boot Options"
     ```
     # Change this information to describe the application.
