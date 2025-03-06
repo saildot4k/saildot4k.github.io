@@ -13,7 +13,7 @@
             * [ ] Using App MegaPacks
             * [ ] Using PS2Client/Link to help debug
         * [ ] Written Tutorials
-        * [ ] Files
+        * [x] Files
             * [x] Firmware/Bootmanager
             * [x] BM Megapack by R3Z3N
                 * [x] CD/USB Megapack
