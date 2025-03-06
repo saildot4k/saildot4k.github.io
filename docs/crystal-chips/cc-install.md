@@ -14,59 +14,59 @@
 ## Phat PS2s
 
 #### V1 V2 GH-004
-![V1/V2 GH-004](install-diagrams/cc11_v1.jpg)
+![V1/V2 GH-004](install-diagrams/cc11_v1.jpg){ width="800" }
 
 #### V1 V2 GH-005
-![V1/V2 GH-005](install-diagrams/cc11_v2.jpg)
+![V1/V2 GH-005](install-diagrams/cc11_v2.jpg){ width="800" }
 
 #### V3
-![V3](install-diagrams/cc11_v3.jpg)
+![V3](install-diagrams/cc11_v3.jpg){ width="800" }
 
 #### V4
-![V4](install-diagrams/cc11_v4.jpg)
+![V4](install-diagrams/cc11_v4.jpg){ width="800" }
 
 #### V5 V6
-![V5/V6](install-diagrams/cc11_v5.jpg)
+![V5/V6](install-diagrams/cc11_v5.jpg){ width="800" }
 
 #### V7 V8
-![V7/V8](install-diagrams/cc11_v7.jpg)
+![V7/V8](install-diagrams/cc11_v7.jpg){ width="800" }
 
 #### V9
-![V9](install-diagrams/cc11_v9.jpg)
+![V9](install-diagrams/cc11_v9.jpg){ width="800" }
 
 #### V10 V11
-![V10/V11](install-diagrams/cc11_v10.jpg)
+![V10/V11](install-diagrams/cc11_v10.jpg){ width="800" }
 
 
 ## Slim PS2s
 
 #### V12 GH-032-XX
-![V12 GH-032-XX](install-diagrams/cc11_v12.jpg)
+![V12 GH-032-XX](install-diagrams/cc11_v12.jpg){ width="800" }
 
 #### V12 GH-035-XX
-![V12 GH-035-XX](install-diagrams/cc11_v12b.jpg)
+![V12 GH-035-XX](install-diagrams/cc11_v12b.jpg){ width="800" }
 
 #### V14 GH-037-XX
-![V14 GH-037-XX](install-diagrams/cc11_v14.jpg)
+![V14 GH-037-XX](install-diagrams/cc11_v14.jpg){ width="800" }
 
 #### V14 GH-041-03
-![V14 GH-041-03](install-diagrams/cc11_v14a.jpg)
+![V14 GH-041-03](install-diagrams/cc11_v14a.jpg){ width="800" }
 
 #### V14 GH-040-52
-![V14 GH-040-52](install-diagrams/cc11_v14b.jpg)
+![V14 GH-040-52](install-diagrams/cc11_v14b.jpg){ width="800" }
 
 #### V14 GH-040-52
-![V14 GH-040-52](install-diagrams/cc11_v14b2.jpg)
+![V14 GH-040-52](install-diagrams/cc11_v14b2.jpg){ width="800" }
 
 #### V14 GH-036-51
-![V14 GH-036-51](install-diagrams/cc11_v14c.jpg)
+![V14 GH-036-51](install-diagrams/cc11_v14c.jpg){ width="800" }
 
 #### V15 GH-051-02
-![V1 GH-051-02](install-diagrams/cc11_v15a.jpg)
+![V1 GH-051-02](install-diagrams/cc11_v15a.jpg){ width="800" }
 
 #### V15 GH-051-51
-![V15 GH-051-51](install-diagrams/cc11_v15b.jpg)
+![V15 GH-051-51](install-diagrams/cc11_v15b.jpg){ width="800" }
 
 #### V15 GH-061-12S
-![V15 GH-061-12](install-diagrams/cc20_16a.jpg)
+![V15 GH-061-12](install-diagrams/cc20_16a.jpg){ width="800" }
 
