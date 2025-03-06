@@ -31,12 +31,12 @@ to a well respected care-taker.
             * [ ] Using App MegaPacks
             * [ ] Using PS2Client/Link to help debug
         * [ ] Written Tutorials
-        * [ ] Files
+        * [x] Files
             * [x] Firmware/Bootmanager
             * [ ] BM Megapack by R3Z3N
                 * [x] CD/USB Megapack
                 * [x] SD2PSX/PSXMemcard Gen 2 Megapack
-                * [ ] MemcardPro 2 Megapack
+                * [x] MemcardPro 2 Megapack
             * [x] Default APPINFO.PBT
         * [ ] PBT Scripting overview (wiki is outdated)
         * [x] Archived Websites
