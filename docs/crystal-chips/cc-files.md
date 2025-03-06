@@ -77,6 +77,7 @@ Apps Included:
 | Application               | USB (Fat16/32)                  | SD2PSXtd 64MB Boot Card         | MemCardPro 2 8MB Card                           |
 | :------------------------ | :-----------------------------: | :-----------------------------: | :---------------------------------------------  |
 | Crystal Chips BootManager | :material-close-circle-outline: | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 1-2 |                       |
+| BM Themes/Languages       | :material-check-circle:         | :material-check-circle:         | :material-close-circle-outline:                 |
 | NHDDL                     | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 1  |
 | OPL 1.2 Beta 2201         | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 1  |
 | OPL 1.2 Beta 2049         | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 1  |
