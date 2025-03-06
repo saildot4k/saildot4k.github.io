@@ -44,20 +44,6 @@
 
 ## BootManager MegaPack Downloads
 
-[BM MegaPack for USB](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MegaPack_by_R3Z3N.zip)
-
-Unzip and merge with the Firmware Download or move the the root of your USB stick
-
-
-[BM MegaPack for SD2PSX/PSXMemcard Gen2](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MegaPack_by_R3Z3N_SD2PSX.zip)
-
-Unzip and merge contents to root of your SD2PSX/PSXMemcard Gen2 MMCE Device (THIS WILL WIPE YOUR BOOT CARD!)
-
-
-[BM MegaPack for MemCardPro 2](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MegaPack_by_R3Z3N_MCP2.zip)
-
-Unzip and merge contents to root of your MemCardPro 2
-
 <div class="grid cards" markdown>
 
 -   __USB__
