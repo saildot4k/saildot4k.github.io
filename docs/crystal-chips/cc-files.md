@@ -46,7 +46,7 @@
 
 <div class="grid cards" markdown>
 
--   __USB__
+-   __USB (Fat16/32)__
 
     ---
 
