@@ -99,7 +99,7 @@ Apps Included:
 | Mechacon Crash Test       | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 2  |
 | Pad Tester                | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 2  |
 | PS2 Temps                 | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 2  |
-| Neutrino                  | :material-check-circle:         | :material-check-circle:         | :material-close-circle-outline:                 |
+| Neutrino                  | :material-check-circle:         | :material-check-circle:         | :material-check-circle:                         |
 
 
 
