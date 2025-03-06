@@ -6,6 +6,7 @@ theme:
   language: en 
   font:
     text: Turret Road
+    code: Roboto Mono
   palette: 
     # Palette toggle for light mode
     - scheme: default
