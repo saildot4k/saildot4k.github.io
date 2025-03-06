@@ -75,7 +75,7 @@
 Apps Included:
 
 | Application               | USB (Fat16/32)                  | SD2PSXtd 64MB Boot Card         | MemCardPro 2 8BM Card                           |
-| :------------------------ | :-----------------------------: | :-----------------------------: | :---------------------------------------------: |
+| :------------------------ | :-----------------------------: | :-----------------------------: | :---------------------------------------------  |
 | NHDDL                     | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 1  |
 | OPL 1.2 Beta 2201         | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 1  |
 | OPL 1.2 Beta 2049         | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 1  |
@@ -99,7 +99,7 @@ Apps Included:
 | Mechacon Crash Test       | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 2  |
 | Pad Tester                | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 2  |
 | PS2 Temps                 | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 2  |
-| Neutrino                  | :material-check-circle:         | :material-check-circle:         |                                 |
+| Neutrino                  | :material-check-circle:         | :material-check-circle:         | :material-close-circle-outline:                 |
 
 
 
