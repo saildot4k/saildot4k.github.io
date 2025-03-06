@@ -4,6 +4,8 @@ site_url: https://ps2modchiptutorials.com
 theme:
   name: material
   language: en 
+  font:
+    text: Turret Road
   palette: 
     # Palette toggle for light mode
     - scheme: default
