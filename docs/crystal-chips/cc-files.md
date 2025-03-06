@@ -44,7 +44,7 @@
 
 ## BootManager MegaPack Downloads
 
-[BM MegaPack for CD/USB](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MegaPack_by_R3Z3N.zip)
+[BM MegaPack for USB](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MegaPack_by_R3Z3N.zip)
 
 Unzip and merge with the Firmware Download or move the the root of your USB stick
 
@@ -53,43 +53,77 @@ Unzip and merge with the Firmware Download or move the the root of your USB stic
 
 Unzip and merge contents to root of your SD2PSX/PSXMemcard Gen2 MMCE Device (THIS WILL WIPE YOUR BOOT CARD!)
 
+
+[BM MegaPack for MemCardPro 2](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MegaPack_by_R3Z3N_MCP2.zip)
+
+Unzip and merge contents to root of your MemCardPro 2
+
+<div class="grid cards" markdown>
+
+-   __USB__
+
+    ---
+
+    Unzip and merge with the Firmware Download or move the the root of your USB stick
+
+    [:material-cloud-download: USB](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MegaPack_by_R3Z3N.zip)
+
+-   __SD2PSX/PSXMemCard Gen2__
+
+    ---
+
+    Unzip and merge contents to root of your SD2PSX/PSXMemcard Gen2 MMCE Device (THIS WILL WIPE YOUR BOOT CARD!)
+
+    [:material-cloud-download: SD2PSX](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MegaPack_by_R3Z3N_SD2PSX.zip)
+
+-   __MemCard Pro 2__
+
+    ---
+
+    Unzip and merge contents to root of your MemCardPro 2
+
+    [:material-cloud-download: MCP2](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MegaPack_by_R3Z3N_MCP2.zip)
+
+</div>
+
 Apps Included:
 
-| Application               | USB                             | SD2PSXtd 64MB Boot Card         | MemCardPro 2 in progress        |
-| :------------------------ | :-----------------------------: | :-----------------------------: | :-----------------------------: |
-| Apollo Save Tool          | :material-check-circle:         | :material-check-circle:         |                                 |
-| HDD Tester                | :material-check-circle:         | :material-check-circle:         |                                 |
-| Memory Card Annihilator   | :material-check-circle:         | :material-check-circle:         |                                 |
-| Mechacon Crash Test       | :material-check-circle:         | :material-check-circle:         |                                 |
+| Application               | USB                             | SD2PSXtd 64MB Boot Card         | MemCardPro 2 8BM Card                           |
+| :------------------------ | :-----------------------------: | :-----------------------------: | :---------------------------------------------: |
+| NHDDL                     | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 1  |
+| OPL 1.2 Beta 2201         | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 1  |
+| OPL 1.2 Beta 2049         | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 1  |
+| OPL 1.2 MMCE Beta 2       | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 1  |
+| OPL 1.2 for RetroGem      | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 1  |
+| RetroGem Disc Launcher    | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 1  |
+| Simple Media System       | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 1  |
+| RetroLauncher             | :material-check-circle:         | :material-close-circle-outline: | :material-close-circle-outline:                 |
+| OSDXMB                    | :material-check-circle:         | :material-close-circle-outline: | :material-close-circle-outline:                 |
+| XEB+ launch script        | :material-check-circle:         | :material-close-circle-outline: | :material-close-circle-outline:                 |
+| XEB+                      | :material-close-circle-outline: | :material-close-circle-outline: | :material-close-circle-outline:                 |
+| Apollo Save Tool          | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 2  |
+| wLaunchElf by ISR         | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 2  |
+| wLaunchElf by kHn         | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 2  |
+| wLaunchElf Official       | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 2  |
+| Memory Card Annihilator   | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 2  |
+| PS2 Link                  | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 2  |
+| PS2 Link HL               | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 2  |
+| HDD Tester                | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 2  |
+| PS2 RDRAM Test            | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 2  |
+| Mechacon Crash Test       | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 2  |
+| Pad Tester                | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 2  |
+| PS2 Temps                 | :material-check-circle:         | :material-check-circle:         | :material-check-circle: Crystal Chip Channel 2  |
 | Neutrino                  | :material-check-circle:         | :material-check-circle:         |                                 |
-| NHDDL                     | :material-check-circle:         | :material-check-circle:         |                                 |
-| OPL 1.2 Beta 2199         | :material-check-circle:         | :material-check-circle:         |                                 |
-| OPL 1.2 Beta 2201         | :material-check-circle:         | :material-check-circle:         |                                 |
-| OPL 1.2 Beta 2049         | :material-check-circle:         | :material-check-circle:         |                                 |
-| OPL 1.2 MMCE Beta 2       | :material-check-circle:         | :material-check-circle:         |                                 |
-| OPL 1.2 for RetroGem      | :material-check-circle:         | :material-check-circle:         |                                 |
-| OSDXMB                    | :material-check-circle:         | :material-close-circle-outline: |                                 |
-| Pad Tester                | :material-check-circle:         | :material-check-circle:         |                                 |
-| PS2 Link                  | :material-check-circle:         | :material-check-circle:         |                                 |
-| PS2 Link HL               | :material-check-circle:         | :material-check-circle:         |                                 |
-| PS2 RDRAM Test            | :material-check-circle:         | :material-check-circle:         |                                 |
-| PS2 Temps                 | :material-check-circle:         | :material-check-circle:         |                                 |
-| RetroLauncher             | :material-check-circle:         | :material-close-circle-outline: |                                 |
-| RetroGem Disc Launcher    | :material-check-circle:         | :material-check-circle:         |                                 |
-| Simple Media System       | :material-check-circle:         | :material-check-circle:         |                                 |
-| wLaunchElf by ISR         | :material-check-circle:         | :material-check-circle:         |                                 |
-| wLaunchElf by kHn         | :material-check-circle:         | :material-check-circle:         |                                 |
-| wLaunchElf Official       | :material-check-circle:         | :material-check-circle:         |                                 |
-| XEB+ launch script        | :material-check-circle:         | :material-close-circle-outline: |                                 |
-| XEB+                      | :material-close-circle-outline: | :material-close-circle-outline: |                                 |
+
+
 
 ??? note "Missing App Notes"
 
     - XEB+ Xmas Edition must be acquired from official sources due to license
-        - Can only be ran from USB
+        - Can only be ran from USB!
     - RetroLauncher is unable to be burned to CD
-        - Can only be ran from USB
-    - OSDXMB can only be ran from USB
+        - Can only be ran from USB!
+    - OSDXMB can only be ran from USB!
 
 
 ## To Do
