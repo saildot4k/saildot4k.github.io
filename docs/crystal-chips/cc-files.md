@@ -66,7 +66,7 @@
 
     ---
 
-    Unzip and merge contents to root of your MemCardPro 2
+    Unzip and merge contents to root of your MemCardPro 2. Set Crystal Chip Channel 1 as your boot card.
 
     [:material-cloud-download: MCP2](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MegaPack_by_R3Z3N_MCP2.zip)
 
