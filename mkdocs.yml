@@ -68,14 +68,14 @@ markdown_extensions:
       custom_checkbox: true
   - tables
   
-  extra:
-    social:
-    - icon: /fontawesome/regular/envelope
-      name: send me an email
-      link: mailto:info@ps2modchiptutorials.com
-    - icon: fontawesome/brands/x-twitter
-      name: R3Z3N on X
-      link: hhttps://x.com/rezenclowd3
+extra:
+  social:
+  - icon: /fontawesome/regular/envelope
+    name: send me an email
+    link: mailto:info@ps2modchiptutorials.com
+  - icon: fontawesome/brands/x-twitter
+    name: R3Z3N on X
+    link: hhttps://x.com/rezenclowd3
 
 # Page tree
 nav:
