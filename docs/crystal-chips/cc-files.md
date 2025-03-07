@@ -58,7 +58,7 @@
 
     ---
 
-    Unzip and merge contents to root of your SD2PSX/PSXMemcard Gen2 MMCE device (THIS WILL WIPE YOUR BOOT CARD!)
+    Unzip and merge contents to root of your SD2PSX/PSXMemcard Gen2 MMCE device (THIS WILL WIPE YOUR BOOT CARD!) MUST BE ON [FW 1.1.1 or later!](https://sd2psxtd.github.io/download)
 
     [:material-cloud-download: SD2PSX](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MegaPack_by_R3Z3N_SD2PSX.zip)
 
@@ -66,7 +66,7 @@
 
     ---
 
-    Unzip and merge contents to root of your MemCardPro 2 MMCE device. Set Crystal Chip Channel 1 as your boot card.
+    Unzip and merge contents to root of your MemCardPro 2 MMCE device. Set Crystal Chip Channel 1 as your boot card. MUST BE ON [FW 1.4.0 or later!](https://distribution.appcake.co.uk/install/8bitmods/apps/memcard-pro2/public)
 
     [:material-cloud-download: MCP2](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MegaPack_by_R3Z3N_MCP2.zip)
 
