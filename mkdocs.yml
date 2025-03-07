@@ -3,9 +3,10 @@ site_url: https://ps2modchiptutorials.com
 
 theme:
   name: material
+  custom_dir: overrides
   language: en 
   font:
-    text: Turret Road
+    text: Oxanium
     code: Roboto Mono
   palette: 
     # Palette toggle for light mode
@@ -67,6 +68,14 @@ markdown_extensions:
       custom_checkbox: true
   - tables
   
+extra:
+  social:
+  - icon: /fontawesome/regular/envelope
+    name: send me an email
+    link: mailto:info@ps2modchiptutorials.com
+  - icon: fontawesome/brands/x-twitter
+    name: R3Z3N on X
+    link: https://x.com/rezenclowd3
 
 # Page tree
 nav:

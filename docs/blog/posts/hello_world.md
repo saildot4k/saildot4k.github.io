@@ -5,6 +5,7 @@ categories:
   - Collections
   - Introduction
   - Show and Tell
+comments: true
 ---
 
 # Hello world!
@@ -65,7 +66,6 @@ So here begins my journey to update the Crystal Chip and document it along with 
 I hope you enjoy and follow along my journey to helping others enjoy these sweet sweet pieces of history should you ever find one.
 
 ## R3Z3N's Collection:
-![R3Z3NCollection1](https://ps2modchiptutorials.com/assets/blog/R3Z3NCollection1.jpg)
+![R3Z3NCollection1](https://ps2modchiptutorials.com/assets/blog/R3Z3NCollection1.jpg){ width="800" }
 
-![R3Z3NCollection2](https://ps2modchiptutorials.com/assets/blog/R3Z3NCollection2.jpg)
-
+![R3Z3NCollection2](https://ps2modchiptutorials.com/assets/blog/R3Z3NCollection2.jpg){ width="800" }
