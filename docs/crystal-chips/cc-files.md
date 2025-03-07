@@ -13,7 +13,7 @@
 	    [SD2PSXTD](https://sd2psxtd.github.io/)
         [MCP2](https://8bitmods.com/memcard-pro2-for-ps2-and-ps1-smoke-black/)
 
-        -  ~~Used El Isras USB drivers for exfat support: BDM Assault (https://github.com/israpps/BDMAssault)~~
+        -  ~~Used El Isras USB drivers for exfat support: [BDM Assault](https://github.com/israpps/BDMAssault)~~
 	    REASON: Unable to get EXFAT drivers to run apps from USB. Needs further testing.
 
         - Security Settings added: when pin is set, advanced settings are unaccessible. 
