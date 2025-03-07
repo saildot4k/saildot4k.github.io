@@ -72,7 +72,7 @@
 
 </div>
 
-Apps Included:
+Apps Included and updated as of 3/7/2027:
 
 | Application               | USB (Fat16/32)                  | MMCE Device                       |
 | :------------------------ | :-----------------------------: | :-------------------------------: |
@@ -104,7 +104,6 @@ Apps Included:
 | Neutrino                  | :material-check-circle:         | :material-check-circle: MMCE root |
 
 
-
 ??? note "Missing App Notes"
 
     - XEB+ Xmas Edition must be acquired from official sources due to license
@@ -112,22 +111,6 @@ Apps Included:
     - RetroLauncher is unable to be burned to CD
         - Can only be ran from USB!
     - OSDXMB can only be ran from USB!
-
-
-## To Do
-
-- [ ] SAS support (Apps from root with prefixes IE mc?:/APP_WLE-ISR-EXFAT-MMCE or mc?:/APP_OPL-MMCE-BETA2)
-- [ ] SAS build for BootManager and it's folder structure
-- [ ] CC1.X Boot method failover IE try next memcard
-- [ ] CC1.X BootManager boots from USB 
-- [ ] CC2.0 8MB Dataflash support in FW
-    * [ ] 1056 Page Support for AT45DB642D in testing
-    * [ ] 256 Page Support for AT45DB621E in testing
-- [x] BM can be ran from Hard Drive (HDD drivers MUST be installed tp mc0)
-    * [x] Uploaded to github
-    * [ ] Script for ease of use
-    * [ ] Document for ease of use
-- [ ] HDD IRXs not installed for V14 and later PS2s
 
 
 ## APPINFO.PBT Example
@@ -254,3 +237,19 @@ Apps Included:
         LOADEXEC "PBAT" "$BM.SCRIPTS$/LOADEXEC.PBT" "$PWD$/WLE.ELF"
         EXIT 0
     ```
+
+
+## To Do
+
+- [ ] SAS support (Apps from root with prefixes IE mc?:/APP_WLE-ISR-EXFAT-MMCE or mc?:/APP_OPL-MMCE-BETA2)
+- [ ] SAS build for BootManager and it's folder structure
+- [ ] CC1.X Boot method failover IE try next memcard
+- [ ] CC1.X BootManager boots from USB 
+- [ ] CC2.0 8MB Dataflash support in FW
+    * [ ] 1056 Page Support for AT45DB642D in testing
+    * [ ] 256 Page Support for AT45DB621E in testing
+- [x] BM can be ran from Hard Drive (HDD drivers MUST be installed tp mc0)
+    * [x] Uploaded to github
+    * [ ] Script for ease of use
+    * [ ] Document for ease of use
+- [ ] HDD IRXs not installed for V14 and later PS2s
