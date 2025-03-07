@@ -3,6 +3,7 @@ site_url: https://ps2modchiptutorials.com
 
 theme:
   name: material
+  custom_dir: overrides
   language: en 
   font:
     text: Oxanium

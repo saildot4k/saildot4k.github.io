@@ -5,6 +5,7 @@ categories:
   - Collections
   - Introduction
   - Show and Tell
+comments: true
 ---
 
 # Hello world!
