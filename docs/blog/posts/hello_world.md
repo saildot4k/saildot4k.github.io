@@ -1,11 +1,11 @@
 ---
+comments: true
 draft: false 
 date: 2025-02-28
 categories:
   - Collections
   - Introduction
   - Show and Tell
-comments: true
 ---
 
 # Hello world!
