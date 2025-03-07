@@ -2,44 +2,43 @@
 
 [Crystal Chip FW R34 v3 with updated Dashboard Scripts by R3Z3N](https://github.com/saildot4k/Crystal-Chip-R34-v3/releases)
 
-??? note "Additions by R3Z3N 2/22/25"
-    Release 34 V3 by R3Z3N Feb 26 2025 (RUNNING CHANGES. I update the date as I go...)
-       
-        
-        - CC1.X firmware options to run BM from MemCard1,2, HDD and USB. HDD/USB boot needs HDD drivers on mc0:/BM/SHARED/
-        HDD and USB are commented out, go ahead and uncomment out in BM/FWS/LATEST/FWINFO.PBT to experiment
+Release 34 V3 by R3Z3N Feb 26 2025 (RUNNING CHANGES. I update the date as I go...)
+    
+    
+    - CC1.X firmware options to run BM from MemCard1,2, HDD and USB. HDD/USB boot needs HDD drivers on mc0:/BM/SHARED/
+    HDD and USB are commented out, go ahead and uncomment out in BM/FWS/LATEST/FWINFO.PBT to experiment
 
-        - MMCE device support for example SD2PSX, PsxMemCardGen2, MemCardPro2.
-	    [SD2PSXTD](https://sd2psxtd.github.io/)
-        [MCP2](https://8bitmods.com/memcard-pro2-for-ps2-and-ps1-smoke-black/)
+    - MMCE device support for example SD2PSX, PsxMemCardGen2, MemCardPro2.
+    [SD2PSXTD](https://sd2psxtd.github.io/)
+    [MCP2](https://8bitmods.com/memcard-pro2-for-ps2-and-ps1-smoke-black/)
 
-        -  ~~Used El Isras USB drivers for exfat support: [BDM Assault](https://github.com/israpps/BDMAssault)~~
-	    REASON: Unable to get EXFAT drivers to run apps from USB. Needs further testing.
+    -  ~~Used El Isras USB drivers for exfat support: [BDM Assault](https://github.com/israpps/BDMAssault)~~
+    REASON: Unable to get EXFAT drivers to run apps from USB. Needs further testing.
 
-        - Security Settings added: when pin is set, advanced settings are unaccessible. 
+    - Security Settings added: when pin is set, advanced settings are unaccessible. 
 
-        - Updated bminit.pbat to load IRX drivers from where BM is running from,
-        otherwise with DEV1/2 would not see/run apps from mc0/1/USB/HDD.
-	
-        - Updated HDDMOUNT.IRX and BM/SCRIPTS/HDDLOAD.PBT to load __common HDD partition
-        instead of +Crystal. This is to keep things consistent with the homebrew community
-	    
-        - Changed scripts to allow apps to be installed when booted from recovery cd.
-  	
-        - Changed scripts to only show options for chip installed! IE no more seeing DFFS
-        options on CC 1.XS
- 	
-        - Changed scripts so that FW choices are only applicable to the chip installed.
-        IE CC1.0-1.2 can choose BM run point, CC2.0 DFFS only.
+    - Updated bminit.pbat to load IRX drivers from where BM is running from,
+    otherwise with DEV1/2 would not see/run apps from mc0/1/USB/HDD.
 
-        - BootManager app install no longer installs FW files to the dffs: partition to save 
-        51KB for CC2.0 owners.
-       
-        - Show Info gives a little more clarity IE where is BM executed from, what console region codes stand for etc.
+    - Updated HDDMOUNT.IRX and BM/SCRIPTS/HDDLOAD.PBT to load __common HDD partition
+    instead of +Crystal. This is to keep things consistent with the homebrew community
+    
+    - Changed scripts to allow apps to be installed when booted from recovery cd.
 
-        - Cotton Candy theme added, each version of the Crystal Chip is represented!
+    - Changed scripts to only show options for chip installed! IE no more seeing DFFS
+    options on CC 1.XS
 
-        - Added Italian and Spanish language translations.
+    - Changed scripts so that FW choices are only applicable to the chip installed.
+    IE CC1.0-1.2 can choose BM run point, CC2.0 DFFS only.
+
+    - BootManager app install no longer installs FW files to the dffs: partition to save 
+    51KB for CC2.0 owners.
+    
+    - Show Info gives a little more clarity IE where is BM executed from, what console region codes stand for etc.
+
+    - Cotton Candy theme added, each version of the Crystal Chip is represented!
+
+    - Added Italian and Spanish language translations.
 
 
 ## BootManager MegaPack Downloads
