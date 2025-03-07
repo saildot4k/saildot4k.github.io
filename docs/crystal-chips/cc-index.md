@@ -61,7 +61,7 @@
 
 
 ## BootManager Run/Install/Remove device support
-| :material-disc: CD/DVD  | :material-usb: USB Exfat/Fat | Memory Card             | :material-sd: MMCE device     | :material-harddisk: HDD | :material-lan-connect: PC Host   |
+| :material-disc: CD/DVD  | :material-usb: USB Fat16/32 | Memory Card             | :material-sd: MMCE device     | :material-harddisk: HDD | :material-lan-connect: PC Host   |
 | :---------------------: | :--------------------------: | :---------------------: | :---------------------------: | :---------------------: | :------------------------------: |
 | :material-check-circle: | :material-check-circle:      | :material-check-circle: | :material-alert-circle-check: | :material-check-circle: | :material-check-circle:          |
 
@@ -77,6 +77,11 @@
 
     It is best to install apps to MMCE devices using your PC. It seems there are bugs such as moving files
     between mc0/1 and mmmce0/1. I hope for updated IRXs or it just may be a limitation to the SIO2 Bus.
+
+???+ note "USB Exfat"
+
+    In Progress...Using BDM Assault for Exfat allows Install/Remove but oddly not Run. BDM Assault hotswap does work. I hope to fix.
+
 
 
 
