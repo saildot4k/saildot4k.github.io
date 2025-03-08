@@ -14,7 +14,9 @@
     ---
 
     !(assets/dms4-pics/dms4lite_big.jpg){ width="200"}
+</div>
 
+<div class="grid cards" markdown>
 
 -   __DMS4 SE Lite__
 
