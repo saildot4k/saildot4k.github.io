@@ -1,6 +1,12 @@
 # Overview
 ![Ghost2Modchip](assets/press_tools/puce.png){ width="200" }
 
+Ghost 2 v1.x supports v0-v12
+
+Ghost 2 v2 supports v0 to v15. HOWEVER, problem is that the software "G2 Mananager" does not work for FW past 1.31. Release Candidate FW 2.0 and later works for V14+ but again read the caveat prior....The team never delivered...
+
+So consider G2 v2 as only supporting v0-v13 and PSX
+
 ## Ghost 2 Documentation Progress
 ???+ note "Progress as of 3/3/2025"
 
