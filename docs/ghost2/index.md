@@ -1,5 +1,5 @@
 # Overview
-![Ghost2Modchip](assets/press_tools/puce.png) { width="200" }
+![Ghost2Modchip](assets/press_tools/puce.png){ width="200" }
 
 ## Ghost 2 Documentation Progress
 ???+ note "Progress as of 3/3/2025"
