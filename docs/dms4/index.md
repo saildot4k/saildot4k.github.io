@@ -32,6 +32,8 @@
     v1-v10 Phat PS2
 
     v12-v14 Slim PSTwo
+
+    
 -   __DMS4 SE Pro__
 
     ---
@@ -39,7 +41,7 @@
     ![DMS4SEPro](assets/dms4-pics/dms_chipw_black.gif){ width="200" }
 
     v1-v10 Phat PS2
-    
+
     v12-v14 Slim PSTwo
 
 </div>
