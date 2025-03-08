@@ -13,7 +13,7 @@
 
     ---
 
-    ![DMS4Pro](assets/dms4-pics/dms4lite_big.jpg){ width="200" }
+    ![DMS4Pro](assets/dms4-pics/dms4pro_big.jpg){ width="200" }
 </div>
 
 <div class="grid cards" markdown>
