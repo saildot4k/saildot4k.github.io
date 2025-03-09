@@ -219,3 +219,49 @@ SWITCH "$BM.CNF_VMODE$"
 You can see that the BREAK command is used to go out of the SWITCH as soon as a case has been treated. You can add DEFAULT to take in consideration this CASE if non corresponds.
 
 ## File Manipulation
+
+File manipulation is useful for installation scripts (in APPINFO.PBT). You can manipulate files on any device :
+
+    - mc0 (for memory card 0)
+    - mc1 (for memory card 1)
+    - mass (for USB device)
+    - mmce (for MMCE device)
+    - pfs0 (for HDD __common partition)
+    - dffs (for internal Chip flash memory CC 2.0 ONLY)
+    - host (for remote host. Only available if ps2client is launched on the PC and the network and the host server are started on Boot Manager) 
+
+COPY : To copy file/directory from source to destination :
+
+```COPY "host:/FOLDER/FILE.TXT" "mass:/FOLDER1/FOLDER2/FILE.TXT"```
+
+RM : To delete a file or directory
+
+```RM "mc0:/TMPFOLDER"
+
+will completely delete the folder TMPFOLDER and its contains.```
+
+MKDIR : To create a new folder.
+
+```MKDIR "mass:/MYFOLDER"```
+
+ will create a folder MYFOLDER in the USB mass storage.
+
+EXISTS : To know if a file/folder exists or not. This command should be used in a IF statement :
+
+```
+IF EXISTS "mc0:/MYFOLDER/MYSCRIPT.PBT"
+    COPY "mc0:/MYFOLDER/MYSCRIPT.PBT" "mass:/MYFOLDER/MYSCRIPT.PBT"
+ENDIF
+```
+
+FPRINT : To write out text into a file.
+
+```FPRINT "mass:/MY_TEXT.TXT"  "This text will be written into MY_TEXT.TXT."```
+
+Be careful, if the file exists already, the content will be replaced.
+
+LOADEXEC : To execute an external file.
+
+```LOADEXEC "PBAT" "MY_FILE.PBT" "MY_ARGUMENT1" "MY_ARGUMENT2"```
+
+will execute a PBAT file named MY_FILE.PBT with the arguments specified. Most of the time, you'll specify a section of the PBAT script to be executed as the argument. 
