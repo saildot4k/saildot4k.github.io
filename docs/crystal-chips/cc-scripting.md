@@ -139,13 +139,17 @@ The text ARG_2 and ARG_3 will be available in the section THE_SECTION by calling
 
 ## Other Widget Commands
 
+#### CLEARWIDGETS
+
 ```CLEARWIDGETS``` without arguments will clear the screen of any widget.
+
+#### SETTITLE
 
 ```SETTITLE``` will set the title of the current screen.
 
 
 ## Sections
-
+#### GOTO
 A PBAT script is divided into sections. You can define a new section using the sign ":"
 
 You can navigate thru sections with the GOTO command.
@@ -172,6 +176,7 @@ If this script is called, the section MAIN_MENU will be executed first because o
 
 ## Conditions
 
+#### IF EQU
 You can execute code with conditions thanks to the IF statement.
 
 ```
@@ -181,7 +186,7 @@ ELSE
     MESSAGE "The Variable was not equal to 1"
 ENDIF
 ```
-
+#### IF NEQ
 You can also turn this code differently :
 
 ```
@@ -191,7 +196,7 @@ ELSE
     MESSAGE "The Variable was equal to 0"
 ENDIF
 ```
-
+#### ELSEIF
 you can imbricate more than one IF with the keyword ```ELSIF``` :
 
 ```
@@ -204,6 +209,7 @@ ENDIF
 
 You'll use the ```ELSEIF``` statement when you want the second condition to be verified only if the first was true.
 
+#### SWITCH
 When you have many case to treat, you can also use the ```SWITCH``` function.
 
 ```
@@ -246,27 +252,32 @@ File manipulation is useful for installation scripts (in APPINFO.PBT). You can m
 - dffs (for internal Chip flash memory CC 2.0 ONLY, don't forget 1.1/1.2 can be turned into 2.0!)
 - host (for remote host. Only available if ps2client is launched on the PC and the network and the host server are started on Boot Manager) 
 
-COPY : To copy file/directory from source to destination :
+#### COPY
+To copy file/directory from source to destination :
 
 ```COPY "host:/FOLDER/FILE.TXT" "mass:/FOLDER1/FOLDER2/FILE.TXT"```
 
-RM : To delete a file or directory
+#### RM
+To delete a file or directory
 
 ```RM "mc0:/TMPFOLDER"```
 
 will completely delete the folder TMPFOLDER and its contains.```
 
-RRM: To delete a file or directy and it's sub-folders (recursively remove). For Example mc0:/TMPFOLDER/SUBFOLDER1
+#### RRM
+To delete a file or directy and it's sub-folders (recursively remove). For Example mc0:/TMPFOLDER/SUBFOLDER1
 
 ```RRM "mc0:/TMPFOLDER```
 
-MKDIR : To create a new folder.
+#### MKDIR
+To create a new folder.
 
 ```MKDIR "mass:/MYFOLDER"```
 
  will create a folder MYFOLDER in the USB mass storage.
 
-EXISTS : To know if a file/folder exists or not. This command should be used in a IF statement
+#### EXISTS
+To know if a file/folder exists or not. This command should be used in a IF statement
 
 ```
 IF EXISTS "mc0:/MYFOLDER/MYSCRIPT.PBT"
@@ -274,7 +285,8 @@ IF EXISTS "mc0:/MYFOLDER/MYSCRIPT.PBT"
 ENDIF
 ```
 
-FAIL : Combine with other commands to execute if command failed.
+#### FAIL
+Combine with other commands to execute if command failed.
 
 ```
 IF FAIL COPY "mass:/MYFOLDER" "mc0:/MYFOLDER
@@ -283,13 +295,15 @@ IF FAIL COPY "mass:/MYFOLDER" "mc0:/MYFOLDER
 ENDIF"
 ```
 
-FPRINT : To write out text into a file.
+#### FPRINT
+To write out text into a file.
 
 ```FPRINT "mass:/MY_TEXT.TXT"  "This text will be written into MY_TEXT.TXT."```
 
 Be careful, if the file exists already, the content will be replaced.
 
-LOADEXEC : To execute an external file.
+#### LOADEXEC
+To execute an external file.
 
 ```LOADEXEC "PBAT" "MY_FILE.PBT" "MY_ARGUMENT1" "MY_ARGUMENT2"```
 
