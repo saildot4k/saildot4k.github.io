@@ -250,12 +250,21 @@ MKDIR : To create a new folder.
 
  will create a folder MYFOLDER in the USB mass storage.
 
-EXISTS : To know if a file/folder exists or not. This command should be used in a IF statement :
+EXISTS : To know if a file/folder exists or not. This command should be used in a IF statement
 
 ```
 IF EXISTS "mc0:/MYFOLDER/MYSCRIPT.PBT"
     COPY "mc0:/MYFOLDER/MYSCRIPT.PBT" "mass:/MYFOLDER/MYSCRIPT.PBT"
 ENDIF
+```
+
+FAIL : Combine with other commands to execute if command failed.
+
+```
+IF FAIL COPY "mass:/MYFOLDER" "mc0:/MYFOLDER
+    MESSAGE "Failed to copy MYFOLDER"
+    RRM "mc0:/MYFOLDER"
+ENDIF"
 ```
 
 FPRINT : To write out text into a file.
