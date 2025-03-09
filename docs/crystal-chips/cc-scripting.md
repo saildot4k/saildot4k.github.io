@@ -192,28 +192,28 @@ When you have many case to treat, you can also use the ```SWITCH``` function.
 
 ```
 SWITCH "$BM.CNF_VMODE$"
-       CASE 1
-       # PAL
-           SET "BM.CNF_SCREEN_X" "0"
-           SET "BM.CNF_SCREEN_Y" "0"
-           BREAK
-       CASE 2
-       # VGA
-           SET "BM.CNF_SCREEN_X" "0"
-           SET "BM.CNF_SCREEN_Y" "0"
-           BREAK
-       CASE 3
-       # 480P
-           SET "BM.CNF_SCREEN_X" "0"
-           SET "BM.CNF_SCREEN_Y" "0"
-           BREAK
-       CASE 0
-       # NTSC
-       DEFAULT
-           SET "BM.CNF_SCREEN_X" "0"
-           SET "BM.CNF_SCREEN_Y" "0"
-           BREAK
-   ENDS
+    CASE 1
+    # PAL
+        SET "BM.CNF_SCREEN_X" "0"
+        SET "BM.CNF_SCREEN_Y" "0"
+        BREAK
+    CASE 2
+    # VGA
+        SET "BM.CNF_SCREEN_X" "0"
+        SET "BM.CNF_SCREEN_Y" "0"
+        BREAK
+    CASE 3
+    # 480P
+        SET "BM.CNF_SCREEN_X" "0"
+        SET "BM.CNF_SCREEN_Y" "0"
+        BREAK
+    CASE 0
+    # NTSC
+    DEFAULT
+        SET "BM.CNF_SCREEN_X" "0"
+        SET "BM.CNF_SCREEN_Y" "0"
+        BREAK
+ENDS
 ```
 
 You can see that the BREAK command is used to go out of the SWITCH as soon as a case has been treated. You can add DEFAULT to take in consideration this CASE if non corresponds.
