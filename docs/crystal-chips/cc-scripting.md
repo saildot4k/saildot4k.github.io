@@ -320,3 +320,59 @@ To execute an external file.
 ```LOADEXEC "PBAT" "MY_FILE.PBT" "MY_ARGUMENT1" "MY_ARGUMENT2"```
 
 will execute a PBAT file named MY_FILE.PBT with the arguments specified. Most of the time, you'll specify a section of the PBAT script to be executed as the argument. 
+
+
+#### Needs documentation:
+
+EVAL SETTITLE
+
+EVAL ADDWIDGET
+
+SKIPBACK
+
+RETURN 0/-1
+
+EXIT 0/-1
+
+FORMAT
+
+$BM.MAJOR_VER$
+
+$BM.MINOR_VER$
+
+$BM.PATCH_VER$
+
+
+$BM.CC_MAJOR_VER$
+
+$BM.CC_MINOR_VER$
+
+CYCLETRAY
+
+PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE"
+
+KEEP
+
+LOADEXEC "EEELF" "$ARG1$" $ARG2$
+
+LOADEXEC "PBAT" "$ARG1$" $ARG2$
+
+LOADEXEC "IRX" 
+
+IF MATCHES
+
+REBOOTIOP "rom0:UDNL rom0:OSDCNF"
+
+PEEK
+
+POKE
+
+IF NOT MODLOADED "dev9_driver"
+
+UNMOUNT 
+
+SAVEVARS
+
+```*``` wildcard(s)
+
+```?``` single character wildcard
