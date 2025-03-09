@@ -240,6 +240,10 @@ RM : To delete a file or directory
 
 will completely delete the folder TMPFOLDER and its contains.```
 
+RRM: To delete a file or directy and it's sub-folders (recursively remove). For Example mc0:/TMPFOLDER/SUBFOLDER1
+
+```RRM "mc0:/TMPFOLDER```
+
 MKDIR : To create a new folder.
 
 ```MKDIR "mass:/MYFOLDER"```
