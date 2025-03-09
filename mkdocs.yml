@@ -35,6 +35,9 @@ theme:
     - content.code.select
     - content.code.annotate
     - toc.follow
+  icon:
+    admonition:
+      soldering: material/soldering-iron
 
 extra_css:
   - stylesheets/extra.css
