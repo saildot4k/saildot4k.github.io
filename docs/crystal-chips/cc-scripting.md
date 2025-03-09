@@ -3,9 +3,10 @@
 ## Variables
 Variables are used to store values.
 To set a new variable, you have to specify the type :
+
 ```SET "STRING" "MY_VARIABLE" "Mod your life"```
 
-**Possible types are:**
+**Possible variable types are:**
 
 - STRING : string (assumed if nothing is set)
 
