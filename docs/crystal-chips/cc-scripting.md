@@ -120,3 +120,102 @@ CALL : to call another section of the code
 
 will call the section "THE_SECTION" of the file $ARG0$ ($ARG0$ will be the file where this widget is executed. The section THE_SECTION is inside the same file). with arguments ARG_2 and ARG_3.
 The text ARG_2 and ARG_3 will be available in the section THE_SECTION by calling variables $ARG2$ and $ARG3$. (see Sections below)
+
+## Other Widget Commands
+
+```CLEARWIDGETS``` without arguments will clear the screen of any widget.
+
+```SETTITLE``` will set the title of the current screen.
+
+
+## Sections
+
+A PBAT script is divided into sections. You can define a new section using the sign ":"
+
+You can navigate thru sections with the GOTO command.
+
+Here is a piece of code to understand how sections work :
+
+```
+GOTO "MAIN_MENU"
+
+:A_SECTION
+    ECHO "We are in the A_SECTION section".
+
+:MAIN_MENU
+    ADDWIDGET INT "Value to export" "Choose a number that will be exported to another section" "THE_NUMBER" "0" "10" "1"
+    ADDWIDGET CALL "Go to Config Menu" "Will display the Config Menu" "$ARG0$" "CONFIG_MENU" " "$THE_NUMBER$"
+
+:CONFIG_MENU
+    CLEARWIDGETS
+    MESSAGE "The Number you choose was : $ARG2$"
+```
+
+
+If this script is called, the section MAIN_MENU will be executed first because of the GOTO. In MAIN_MENU, the variable $THE_NUMBER$ is choosen by the user and the code will jump to CONFIG_MENU with the variable exported.
+
+## Conditions
+
+You can execute code with conditions thanks to the IF statement.
+
+```
+IF EQU "$MY_VARIABLE$" "1"
+    MESSAGE "The Variable was equal to 1"
+ELSE
+    MESSAGE "The Variable was not equal to 1"
+ENDIF
+```
+
+You can also turn this code differently :
+
+```
+IF NEQ "$MY_VARIABLE$" "0"
+    MESSAGE "The Variable was not equal to 0"
+ELSE
+    MESSAGE "The Variable was equal to 0"
+ENDIF
+```
+
+you can imbricate more than one IF with the keyword ```ELSIF``` :
+
+```
+IF EQU "$MY_VARIABLE$" "1"
+    MESSAGE "The Variable was equal to 1"
+ELSEIF EQU "$MY_VARIABLE$" "2"
+    MESSAGE "The Variable was equal to 2"
+ENDIF
+```
+
+You'll use the ```ELSEIF``` statement when you want the second condition to be verified only if the first was true.
+
+When you have many case to treat, you can also use the ```SWITCH``` function.
+
+```
+SWITCH "$BM.CNF_VMODE$"
+       CASE 1
+       # PAL
+           SET "BM.CNF_SCREEN_X" "0"
+           SET "BM.CNF_SCREEN_Y" "0"
+           BREAK
+       CASE 2
+       # VGA
+           SET "BM.CNF_SCREEN_X" "0"
+           SET "BM.CNF_SCREEN_Y" "0"
+           BREAK
+       CASE 3
+       # 480P
+           SET "BM.CNF_SCREEN_X" "0"
+           SET "BM.CNF_SCREEN_Y" "0"
+           BREAK
+       CASE 0
+       # NTSC
+       DEFAULT
+           SET "BM.CNF_SCREEN_X" "0"
+           SET "BM.CNF_SCREEN_Y" "0"
+           BREAK
+   ENDS
+```
+
+You can see that the BREAK command is used to go out of the SWITCH as soon as a case has been treated. You can add DEFAULT to take in consideration this CASE if non corresponds.
+
+## File Manipulation
