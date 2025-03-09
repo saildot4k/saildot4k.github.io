@@ -23,15 +23,11 @@ To set a new variable, you have to specify the type :
 
 **Examples**
 
+#### SET : to store a string or number
 
 ```SET "U8" "MY_DIGIT" "235"```
 
 ```SET "S32" "MY_OTHER_DIGIT" "-3420"```
-
-???+ note "Where to save defined variables:"
-
-    The best place to define your variables and their types is in the file DEFCONF.PBT.
-    If you want your variable to be saved in the configuration file of Boot Manager, the name MUST begin with "BM.CNF".
 
 
 Once the type is set, you can assign a new value to the variable :
@@ -47,18 +43,35 @@ To call an already defined variable, you have to surround it with ```$``` :
 will display ```34``` in the output console for example PS2Client.
 
 
+!!! note "Where to save defined variables:"
+
+    The best place to define your variables and their types is in the file DEFCONF.PBT.
+    If you want your variable to be saved in the configuration file of Boot Manager, the name MUST begin with "BM.CNF".
+
+```SET "BM.CNF_MY_DEFINITION" "$MY_DIGIT$"```
+
+
+#### UNSET : to remove a string or number
+
+```UNSET "MY_DIGIT"```
+
+
 ## Messages
 Messages can be displayed either on the output console, or in the TV screen.
+
+#### ECHO : to output text to console (PS2Client)
 
 ```ECHO "The value of MY_DIGIT is : $MY_DIGIT$"```
 
 will return the text and the contain of the variable in the output console which will be in most case the console where you launched ps2client.
 
+#### MESSAGE : to display text on the tv screen
 
 ```MESSAGE "Installation Complete"```
 
-will return the text in the TV screen.
+will return the text on the TV screen.
 
+#### Escaping characters
 
 You can escape a character with ^
 
@@ -70,7 +83,7 @@ The ^ will tell the MESSAGE command not to interpret the " next to it as the end
 ## Widgets
 Widgets is used to display menus in the screen. There are many Widget types to feet different needs.
 
-
+#### ADDWIDGET : to display a menu item
 ```ADDWIDGET "LABEL" "Main Menu"```
 
 Types of Widgets:
