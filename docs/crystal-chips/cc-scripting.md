@@ -222,13 +222,13 @@ You can see that the BREAK command is used to go out of the SWITCH as soon as a 
 
 File manipulation is useful for installation scripts (in APPINFO.PBT). You can manipulate files on any device :
 
-    - mc0 (for memory card 0)
-    - mc1 (for memory card 1)
-    - mass (for USB device)
-    - mmce (for MMCE device)
-    - pfs0 (for HDD __common partition)
-    - dffs (for internal Chip flash memory CC 2.0 ONLY)
-    - host (for remote host. Only available if ps2client is launched on the PC and the network and the host server are started on Boot Manager) 
+- mc0 (for memory card 0)
+- mc1 (for memory card 1)
+- mass (for USB device)
+- mmce (for MMCE device)
+- pfs0 (for HDD __common partition)
+- dffs (for internal Chip flash memory CC 2.0 ONLY)
+- host (for remote host. Only available if ps2client is launched on the PC and the network and the host server are started on Boot Manager) 
 
 COPY : To copy file/directory from source to destination :
 
@@ -236,7 +236,7 @@ COPY : To copy file/directory from source to destination :
 
 RM : To delete a file or directory
 
-```RM "mc0:/TMPFOLDER"
+```RM "mc0:/TMPFOLDER"```
 
 will completely delete the folder TMPFOLDER and its contains.```
 
