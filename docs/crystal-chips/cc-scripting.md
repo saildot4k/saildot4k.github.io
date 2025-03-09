@@ -77,7 +77,7 @@ To display text on the tv screen
 
 will return the text on the TV screen.
 
-#### Escaping characters
+**Escaping characters**
 
 You can escape a character with ^
 
