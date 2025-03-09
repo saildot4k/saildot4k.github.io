@@ -226,7 +226,7 @@ File manipulation is useful for installation scripts (in APPINFO.PBT). You can m
 - mc1 (for memory card 1)
 - mass (for USB device)
 - mmce (for MMCE device)
-- pfs0 (for HDD __common partition)
+- pfs0 (for internal HDD, uses __common partition)
 - dffs (for internal Chip flash memory CC 2.0 ONLY)
 - host (for remote host. Only available if ps2client is launched on the PC and the network and the host server are started on Boot Manager) 
 
