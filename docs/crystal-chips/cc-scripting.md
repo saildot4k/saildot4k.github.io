@@ -2,6 +2,7 @@
 
 ## Variables
 Variables are used to store values.
+
 To set a new variable, you have to specify the type :
 
 ```SET "STRING" "MY_VARIABLE" "Mod your life"```
@@ -16,7 +17,7 @@ To set a new variable, you have to specify the type :
 
 - U32/S32 : Signed/Unsigned 32-bits number
 
-???+ note "Signed/Unsigned definition"
+!!! note "Signed/Unsigned definition"
 
     Signed numbers can be negatives, Unsigned can only be positives.
 
@@ -46,6 +47,7 @@ will display ```34``` in the output console for example PS2Client.
 !!! note "Where to save defined variables:"
 
     The best place to define your variables and their types is in the file DEFCONF.PBT.
+
     If you want your variable to be saved in the configuration file of Boot Manager, the name MUST begin with "BM.CNF".
 
 ```SET "BM.CNF_MY_DEFINITION" "$MY_DIGIT$"```
@@ -132,6 +134,7 @@ to set variables IP_ADRESS_1, IP_ADDRESS_2. For example, if you wish to display 
 ```ADDWIDGET "CALL" "Title" "Description" "$ARG0$" "THE_SECTION" "ARG_2" "ARG_3"...```
 
 will call the section "THE_SECTION" of the file $ARG0$ ($ARG0$ will be the file where this widget is executed. The section THE_SECTION is inside the same file). with arguments ARG_2 and ARG_3.
+
 The text ARG_2 and ARG_3 will be available in the section THE_SECTION by calling variables $ARG2$ and $ARG3$. (see Sections below)
 
 ## Other Widget Commands
