@@ -10,8 +10,8 @@ Keep in mind the team never finished this firmware nor released version 2 of the
 
 # Ghost 2 Firmware Manager
 
-Note: G2 Manager Version displayed was never fixed by team. Shows FW version, NOT G2 Manager version!
+[:material-cloud-download: G2 Manager v1.30](firmware/gh2mangr_1.30.rar)
 
 ![G2Manager 1.31 Pic](assets/g2manager130.png){ width="200" }
 
-[:material-cloud-download: G2 Manager v1.30](firmware/gh2mangr_1.30.rar)
+Note: G2 Manager Version displayed was never fixed by team. Shows FW version, NOT G2 Manager version!
