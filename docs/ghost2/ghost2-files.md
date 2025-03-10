@@ -6,7 +6,9 @@
 
 [:material-cloud-alert: Ghost 2 PAL Recovery FW RC4 2.22](firmware/G2_Fw_RC4_v2-22.rar)
 
-Keep in mind the team never finished this firmware nor released version 2 of the Ghost 2 Firmware Manager. This version does not work fully with G2 Manager v1.30
+Press Reset 5x to boot recovery disc, each press between 1-2 seconds apart.
+
+Keep in mind the team never finished RC4 v2.22 nor released version 2 of the Ghost 2 Firmware Manager which was planned one month before team disappeared. VW RC4 2.22 does not work fully with G2 Manager v1.30
 
 # Ghost 2 Firmware Manager
 
