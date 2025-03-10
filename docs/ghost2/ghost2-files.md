@@ -14,4 +14,4 @@ Note: G2 Manager Version displayed was never fixed by team. Shows FW version, NO
 
 ![G2Manager 1.31 Pic](assets/g2manager130.png){ width="200" }
 
-[:material-cloud-download: Ghost 2 PAL Recovery FW v1.30](firmware/gh2mangr_1.30.rar)
+[:material-cloud-download: G2 Manager v1.30](firmware/gh2mangr_1.30.rar)
