@@ -1,8 +1,8 @@
 # Firmware
 
-[:material-cloud-download: Ghost 2 NTSC Recovery FW v1.31](firmware/gh2_ntsc_sw_1.31.rar)
+[:material-cloud-download: Ghost 2 NTSC Recovery FW v1.31](firmware/gh2_ntsc_sw_1.31.rar) America/ JAP
 
-[:material-cloud-download: Ghost 2 PAL Recovery FW v1.31](firmware/gh2_pal_sw_1.31.rar)
+[:material-cloud-download: Ghost 2 PAL Recovery FW v1.31](firmware/gh2_pal_sw_1.31.rar) America/ PAL
 
 [:material-cloud-alert: Ghost 2 PAL Recovery FW RC4 2.22](firmware/G2_Fw_RC4_v2-22.rar)
 
@@ -15,3 +15,7 @@ Keep in mind the team never finished this firmware nor released version 2 of the
 ![G2Manager 1.31 Pic](assets/g2manager130.png){ width="200" }
 
 Note: G2 Manager Version displayed was never fixed by team. Shows FW version, NOT G2 Manager version!
+
+# Ghost 2 Eraser
+
+[:material-cloud-download: G2 Eraser](firmware/gh2erase.rar)
