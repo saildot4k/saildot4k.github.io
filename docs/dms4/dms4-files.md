@@ -1,4 +1,4 @@
-# Firmware
+## Firmware
 
 [:material-cloud-download: Offical Flash v0.6](firmware/DMS4-Official-Flash-0.6.zip) ALL DMS4 modchips
 
@@ -8,6 +8,7 @@
 
 [:material-cloud-download: Toxic OS Manual](firmware/toxicos_manual.pdf)
 
-# USB Driver for Toxic OS
+
+## USB Driver for Toxic OS
 
 [:material-cloud-download: USB Drivers](firmware/DMS4-Official-Flash-0.6.zip) DMS4 Pro and DMS4 SE Pro
