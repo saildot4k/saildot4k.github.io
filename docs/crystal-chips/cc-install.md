@@ -67,6 +67,6 @@
 #### V15 GH-051-51
 ![V15 GH-051-51](install-diagrams/cc11_v15b.jpg){ width="800" }
 
-#### V15 GH-061-12S
+#### V16a GH-061-12S
 ![V15 GH-061-12](install-diagrams/cc20_16a.jpg){ width="800" }
 
