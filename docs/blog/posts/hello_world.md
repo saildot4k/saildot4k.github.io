@@ -23,13 +23,13 @@ What makes a third gen modchip? Boot from something other than CD/DVD:
 
 I was heavily involved in Xbox modding. But that was easy. I could have one done in ~30 minutes ready to go for a customer.
 But PS2? That was much more difficult. Things were rapidly changing. 16+ versions of potential motherboard variations. I had installed
-only a few hundred PS2 modchips back then, and that started with the last gen: Matrix Infinity, DMS4, and Crystal Chip. 
+only a few hundred PS2 modchips back then, and that started with the last gen: Matrix Infinity, DMS4, and Crystal Chip.
+<!-- more --> 
 Crystal Chips kicked ass. They were so much better. More features, easier to use (if user had pre-built scripts per app like the BM Megapack)
 and didn't randomly die when installing like DMS4. Matrix was fine...but yawn. Oh so booring. And you had to remember boot controller key combos.
 LAME. Crystal Chip could use just about any key command you wanted so long as it wasn't x, select, joysticks or D-PAD. But I never really learned 
 to script the dashboard as was allowed. Seemed gibberish. 
 
-<!-- more -->
 
 As far as 2002-2007:
 Needing to burn discs, no organization for where to put files. Info was hard to get or non-existant. Teams advertising features that were not

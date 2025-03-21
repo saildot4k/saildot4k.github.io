@@ -17,10 +17,10 @@ So alas a sneak peak:
 
 <!-- more -->
 
-![PMAP_70k](/docs/assets/blog/V12_PMAP_Flex.png){ width="400" }
+![PMAP_70k](https://ps2modchiptutorials.com/assets/blog/V12_PMAP_Flex.png){ width="400" }
 
 
-![V12 PicFix](/docs/assets/blog/PicFix_V3_Thin.png){ width="400" }
+![V12 PicFix](https://ps2modchiptutorials.com/assets/blog/PicFix_V3_Thin.png){ width="400" }
 
 
 I will be posting when done. The V12 PicFix first prototype should arrive in a week or so....
