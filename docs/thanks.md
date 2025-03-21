@@ -27,7 +27,7 @@
 
     PCB/Soldering help and documentation
 
-    [![Atheris Logo](thanks/atherismods.bmp){ height="75" alight="middle" }](https://linktr.ee/atherismods)
+    [![Atheris Logo](thanks/atherismods.bmp){ width="75" alight="middle" }](https://linktr.ee/atherismods)
 
 
 -   __Modzville USA__
