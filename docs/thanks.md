@@ -9,7 +9,7 @@
 
     Modchip Github Repository
 
-    [SylverRez and his modchip repository](https://github.com/m4x10187/ps2-modchip-files)
+    [![SylverRezLogo](thanks/SylverReZ_new_logo.png){ width="150" alight="middle" }](https://github.com/m4x10187/ps2-modchip-files)
 
 
 -   __Will's Console Mods__
@@ -18,9 +18,8 @@
 
     Showcase of just about every PS2 Modchip
 
-    ![Will's Console Mods and pictures/info of many many modchips](thanks/willsconsolemods.png){ width="150" alight="middle" }
+    [![Will's Console Mods and pictures/info of many many modchips](thanks/willsconsolemods.png){ width="150" alight="middle" }]((https://www.willsconsolemodifications.co.uk/ps2-wiki/chips.php))
 
-    [Wills Modchip Collection](https://www.willsconsolemodifications.co.uk/ps2-wiki/chips.php)
 
 -   __Atheris Mods__
 
@@ -28,9 +27,8 @@
 
     PCB/Soldering help and documentation
 
-    ![Atheris Logo](thanks/atherismods.bmp){ width="150" alight="middle" }
+    [![Atheris Logo](thanks/atherismods.bmp){ width="100" alight="middle" }](https://linktr.ee/atherismods)
 
-    [Atheris Mods UK](https://linktr.ee/atherismods)
 
 -   __Modzville USA__
 
@@ -40,6 +38,5 @@
 
     [![Modzville Logo](thanks/mvusalogo.avif){ width="150" alight="middle" }](https://modzvilleusa.com/)
 
-    [Modzville USA](https://modzvilleusa.com/)
 
 </div>
