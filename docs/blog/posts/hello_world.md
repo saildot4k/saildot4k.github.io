@@ -29,6 +29,7 @@ and didn't randomly die when installing like DMS4. Matrix was fine...but yawn. O
 LAME. Crystal Chip could use just about any key command you wanted so long as it wasn't x, select, joysticks or D-PAD. But I never really learned 
 to script the dashboard as was allowed. Seemed gibberish. 
 
+<!-- more -->
 
 As far as 2002-2007:
 Needing to burn discs, no organization for where to put files. Info was hard to get or non-existant. Teams advertising features that were not
