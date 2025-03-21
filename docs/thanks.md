@@ -38,7 +38,7 @@
 
     Modchip Installs
 
-    ![Modzville Logo](thanks/mvusalogo.avif){ width="150" alight="middle" }
+    [![Modzville Logo](thanks/mvusalogo.avif){ width="150" alight="middle" }](https://modzvilleusa.com/)
 
     [Modzville USA](https://modzvilleusa.com/)
 
