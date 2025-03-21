@@ -9,16 +9,16 @@
 
     Modchip Github Repository
 
-    [![SylverRezLogo](thanks/SylverReZ_new_logo.png){ width="150" alight="middle" }](https://github.com/m4x10187/ps2-modchip-files)
+    [![SylverRezLogo](thanks/SylverReZ_new_logo.png){ width="200" alight="middle" }](https://github.com/m4x10187/ps2-modchip-files)
 
 
 -   __Will's Console Mods__
 
     ---
 
-    Showcase of just about every PS2 Modchip
+    Modchip Showcase
 
-    [![Will's Console Mods and pictures/info of many many modchips](thanks/willsconsolemods.png){ width="150" alight="middle" }]((https://www.willsconsolemodifications.co.uk/ps2-wiki/chips.php))
+    [![Will's Console Mods and pictures/info of many many modchips](thanks/willsconsolemods.png){ width="200" alight="middle" }](https://www.willsconsolemodifications.co.uk/ps2-wiki/chips.php)
 
 
 -   __Atheris Mods__
@@ -36,7 +36,7 @@
 
     Modchip Installs
 
-    [![Modzville Logo](thanks/mvusalogo.avif){ width="150" alight="middle" }](https://modzvilleusa.com/)
+    [![Modzville Logo](thanks/mvusalogo.avif){ width="200" alight="middle" }](https://modzvilleusa.com/)
 
 
 </div>
