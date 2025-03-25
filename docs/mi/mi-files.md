@@ -59,7 +59,6 @@
 
     -----------------------------------------------
 
-
     INFINITY Firmware Upgrade V1.91 20/10/2006
     Release 1.91 of Firmware.
 
@@ -181,7 +180,7 @@
 
     To enter the configuration menu press TRIANGLE + CIRCLE during PS2 Boot Up.
 
------------------------------------------------
+    -----------------------------------------------
 
     Feature already included from previous Infinity Manager Versions:
     Infinity options configuration screen.
@@ -241,5 +240,5 @@
     Files already in Bin/Cue format and ready to be burned to CD.
 
     Added extra error management support for memory card installation procedure.
-    
+
     When Infinity Manager is launched from Memory Card it will automatically display the list of installed applications.
