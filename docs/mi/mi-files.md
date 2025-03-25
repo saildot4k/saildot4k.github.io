@@ -1,6 +1,3 @@
-## Firmware
-
-
 ### Firmware ISOs
 
 ???+ note "I.ELF"
