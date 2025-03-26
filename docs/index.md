@@ -88,8 +88,13 @@ to a well respected care-taker.
             * [ ] Firmware, Config
             * [ ] Adding apps
         * [ ] Written Tutorials
+            * [x] Key Combos
+            * [ ] What to add?
         * [ ] Files
-            * [ ] Recovery CDs, Infinity Manager
+            * [x] Recovery ISOs
+            * [x] Infinity Manager
+            * [x] HDD Manager (DEV2)
+            * [ ] Ready to go Memory Card w APPS and FW updates
         * [x] Archived Websites
 
 </div>
