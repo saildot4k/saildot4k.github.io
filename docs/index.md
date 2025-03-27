@@ -73,9 +73,10 @@ to a well respected care-taker.
             * [ ] Adding apps
         * [ ] Written Tutorials
         * [ ] Files
-            * [ ] Recovery CDs
-            * [ ] G2 Loader & Manager
-            * [ ] G2 Eraser
+            * [x] Recovery CDs
+            * [x] G2 Loader & Manager
+            * [x] G2 Eraser
+            * [ ] SD2PSX/MCP2 setups
         * [x] Archived Websites
 
 -   :material-clock-fast:{ .lg .middle } __Matrix Infinity Progress__

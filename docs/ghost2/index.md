@@ -17,9 +17,10 @@ So consider G2 v2 as only supporting v0-v13 and PSX
             * [ ] Adding apps
         * [ ] Written Tutorials
         * [ ] Files
-            * [ ] Recovery CDs
-            * [ ] G2 Loader & Manager
-            * [ ] G2 Eraser
+            * [x] Recovery CDs
+            * [x] G2 Loader & Manager
+            * [x] G2 Eraser
+            * [ ] SD2PSX/MCP2 setups
         * [x] Archived Websites
 
 ## Versions
