@@ -288,6 +288,13 @@ To create a new folder.
 
  will create a folder MYFOLDER in the USB mass storage.
 
+ #### REDIRFILE
+ To symlink a file to another location. Only works if the environment you use doesn't reboot IOP too soon IE PS2LINK
+
+ ```REDIRFILE "$PWD$/IPCONFIG.DAT" "$BM.BM_PATH$/CONFIG/IPCONFIG.DAT"```
+
+ ```"$PWD$/IPCONFIG.DAT"``` is where you want the file to "appear" and ```"$BM.BM_PATH$/CONFIG/IPCONFIG.DAT"``` is where the file currently resides.
+
 #### EXISTS
 To know if a file/folder exists or not. This command should be used in a IF statement
 
