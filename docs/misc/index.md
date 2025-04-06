@@ -44,6 +44,8 @@
 
     [![MCP2](https://cdn11.bigcommerce.com/s-l8hbi0olq7/images/stencil/1280x1280/products/474/2111/iso-console__25786.1699006494.jpg){ height="75" align="middle" }](https://8bitmods.com/memcard-pro2-for-ps2-and-ps1-charcoal-black/)
 
+    [:material-cloud-download: MCP2 Firmware](https://install.appcenter.ms/orgs/beta-ucu9/apps/memcard-pro2/distribution_groups/public)
+
 
 -   SD2PSX
 
