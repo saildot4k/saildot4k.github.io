@@ -58,7 +58,7 @@
     [:material-cloud-download: SD2PSXtd Firmware](https://sd2psxtd.github.io/)
 
 
--   SD2PSX
+-   PSXMemCard Gen 2
 
     ---
 
