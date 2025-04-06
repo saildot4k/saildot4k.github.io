@@ -48,6 +48,7 @@ Pic 12F508 files, choose based on your programmer:
 
 ## Programming PIC12F508
 
+
 ### Tools needed:
 
 [:material-cloud-download: PicKit 3 Programmer Software 3.10](assets/picfix/PICkit3%20Programmer%20Application%20Setup%20v3.10.zip)
@@ -60,6 +61,10 @@ Tutorial incoming....sorry. If you'd like to help please reach out!
 
 
 ## Flex PCBs
+
+### SCPH-500XX Flex PCB
+
+Need PS2 motherboard to design one.
 
 ### SCPH-700XX Flex PCB
 
