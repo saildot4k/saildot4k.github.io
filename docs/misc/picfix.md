@@ -48,23 +48,22 @@ Pic 12F508 files, choose based on your programmer:
 
 ## Programming PIC12F508
 
+### Tools needed:
+
+[:material-cloud-download: PicKit 3 Programmer Software 3.10](assets/picfix/PICkit3%20Programmer%20Application%20Setup%20v3.10.zip)
+
+[PicKit 3](https://www.amazon.com/Gosono-PICKIT3-Programmer-Programming-Universal/dp/B07D1443M5/ref=sr_1_13_sspa?crid=2T75QRA5FHZDI&dib=eyJ2IjoiMSJ9.YevQ8Jf0hTdiqUtSofPn9aQN35WtDal5rQHtHAFc6W6zPtKX7LZky4ZC4m7z0KeY4cNpvX01FMz3HNMwouxwub8csjFjD9uYDBTkE64VUWVNeYa04OkCtY0yMC2nACelf_7Pds0z8L1rZAVKml-Fwa30i4t2NcAAz7WRm42R9LkCOD7E9C9_T-O29B3sPvp6PsSdu0bl8Sk6yJUrMsRmwG_sO0rW3--F4y-m-c3-yz0K-RKAwMMX_ku8yTvkcpJDp4EF4ZLvntKw00hqDq99cTU0GSktjWLmtCuqmOnOFms.ss9JZldEX7IeF-1XSAfcpQwL7uqoHXkjZLyh78jlaFI&dib_tag=se&keywords=pic+kit+3&qid=1743917759&s=industrial&sprefix=pic+kit+3%2Cindustrial%2C150&sr=1-13-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1)
+
+[SOP8 to DIP8 adapter](https://www.amazon.com/HiLetgo-Programmer-Adapter-Socket-Converter/dp/B01HTC5DKS/ref=sr_1_5?crid=2UBCL6KVM78KW&dib=eyJ2IjoiMSJ9.0YtQZfQXY8SM_my4pw3Wp7w_zM3WItFnLhs9jBkH_YEiGTXrB2-ZpUPMZmPnI1jAVSFudzCoLeNbiC6bhV8jo7jxFkhXp56jsdliK5SHjxIiMoIzB6rlV0wtNVJK131NK7ugAmFtRJhUxqYojQtj03JX2azkew_zxVkDBT6VF1XI92JY-7Ke3ZO0HRRKYnvsgWPPfRszVEBvGCW9Fc6_lbPPJtGS76fkVCN2C-hGDfQ.N9zJPfDjsMyo4oBLfYXw0N8hqByAffVQ5wub2oZIM-U&dib_tag=se&keywords=soic+adapter&qid=1743917897&sprefix=soic+adapter%2Caps%2C180&sr=8-5)
+
 Tutorial incoming....sorry. If you'd like to help please reach out!
 
 
-## V9 Flex
+## Flex PCBs
 
-Waiting for V9 PCB to design one
-
-
-## V10 Flex
-
-Waiting for V10 PCB to design one
-
-
-## V12 Flex
+### SCPH-700XX Flex PCB
 
 Gerbers will be released once a small batch of 52 is sold! 300 PCBs ordered. If you are an installer and would like a sample, please let me [know!](mailto:info@ps2modchiptutorials.com)
-
 
 ![V12 Flex Front](assets/picfix/SCPH-700XX/PicFix_V5_Thin.png)
 
