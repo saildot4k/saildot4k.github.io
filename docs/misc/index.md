@@ -36,4 +36,35 @@
     [![Methylene](https://gusse.in/uploads/2023/08/image.png){ height="75" align="middle" }](https://gusse.in/shop/)
 
 
+-   MemCard PRO2
+
+    ---
+
+    Multipurpose Memory Card Emulator
+
+    [![MCP2](https://cdn11.bigcommerce.com/s-l8hbi0olq7/images/stencil/1280x1280/products/474/2111/iso-console__25786.1699006494.jpg){ height="75" align="middle" }](https://8bitmods.com/memcard-pro2-for-ps2-and-ps1-charcoal-black/)
+
+
+-   SD2PSX
+
+    ---
+
+    Open Source Multipurpose Memory Card Emulator
+
+    [![MCP2](https://sd2psx.net/assets/images/sd2psx.jpg){ height="75" align="middle" }](https://sd2psx.net/)
+
+    [:material-cloud-download: SD2PSXtd Firmware](https://sd2psxtd.github.io/)
+
+
+-   SD2PSX
+
+    ---
+
+    Open Source Multipurpose Memory Card Emulator bsed on SD2PSX
+
+    [![PSXMEMCARDGEN2](https://www.bitfunx.com/wp-content/uploads/2024/12/PsxMemCard-Gen2-4-600x600.jpg){ height="75" align="middle" }](https://www.bitfunx.com/product/psxmemcard-gen2-memory-card-for-playstation1-ps-one-playstation2-game-consoles/)
+
+    [:material-cloud-download: SD2PSXtd Firmware](https://sd2psxtd.github.io/)
+
+
 </div>
