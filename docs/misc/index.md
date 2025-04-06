@@ -1,6 +1,6 @@
 <div class="grid cards" markdown>
 
--   Matrix Picfix
+-   Matrix Picfix Flex PCB
 
     ---
 
