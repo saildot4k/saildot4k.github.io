@@ -62,7 +62,7 @@
 
     ---
 
-    Open Source Multipurpose Memory Card Emulator bsed on SD2PSX
+    Open Source Multipurpose Memory Card Emulator based on SD2PSX
 
     [![PSXMEMCARDGEN2](https://www.bitfunx.com/wp-content/uploads/2024/12/PsxMemCard-Gen2-4-600x600.jpg){ height="75" align="middle" }](https://www.bitfunx.com/product/psxmemcard-gen2-memory-card-for-playstation1-ps-one-playstation2-game-consoles/)
 
