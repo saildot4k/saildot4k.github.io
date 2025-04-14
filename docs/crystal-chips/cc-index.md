@@ -53,11 +53,11 @@
     Bootmanager therefore must be installed to either Dataflash, MemoryCard or HDD. This is not your usual Matrix Infinity.
     It is much much better
 
-    ???+ note "Dataflash Upgrade Parts"
-        
-        v1.1 and later can be upgraded with 4MB dataflash: AT45DB321D-S or AT45DB321D-MW. I have several dozen in stock. [Email me](info@ps2modchiptutorials.com) if you would like to upgrade. There are no changes needed in software/firmware/scripting. Solder on and go! Reference the attached picture to see where pin 1 (the black dimple dot on the EEPROM/DATAFLASH) is and how the flash is rotated 90 degrees clockwise from the CC1.1 to the CC1.2 and later. In this case it was already a CC2.0.
 
-        ![CC11to2conversion](assets/CC11to2_conversion.jpg){ width="290"}
+## CC 1.1 to 2.0 Conversion
+CC 1.1 and later can be upgraded with 4MB dataflash: AT45DB321D-S or AT45DB321D-MW. I have several dozen in stock. [Email me](info@ps2modchiptutorials.com) if you would like to upgrade. There are no changes needed in software/firmware/scripting. Solder on and go! Reference the attached picture to see where pin 1 (the black dimple dot on the EEPROM/DATAFLASH) is and how the flash is rotated 90 degrees clockwise from the CC1.1 to the CC1.2 and later. In this case it was already a CC2.0.
+
+![CC11to2conversion](assets/CC11to2_conversion.jpg){ width="400"}
 
 
 ## BootManager Run/Install/Remove device support
