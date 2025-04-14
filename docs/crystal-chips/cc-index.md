@@ -55,9 +55,9 @@
 
     ???+ note "Dataflash Upgrade Parts"
         
-        v1.2 and later can be upgraded with 4MB dataflash: AT45DB321D-S or AT45DB321D-MW. I have several dozen in stock. [Email me](info@ps2modchiptutorials.com) if you would like to upgrade.
-        v1.2 then would need to flash the 2.0 firmware.  Eventually I shall script to ask user if they have installed the larger dataflash.
-        Go to BM/FWS/LATEST delete all but "FWARE20.CCI". Rename to "FWARE12DEV0.CCI". Then upgrade firmware choosing option 1.
+        v1.1 and later can be upgraded with 4MB dataflash: AT45DB321D-S or AT45DB321D-MW. I have several dozen in stock. [Email me](info@ps2modchiptutorials.com) if you would like to upgrade. There are no changes needed in software/firmware/scripting. Solder on and go! Reference the attached picture to see where pin 1 (the black dimple dot on the EEPROM/DATAFLASH) is and how the flash is rotated 90 degrees clockwise from the CC1.1 to the CC1.2 and later. In this case it was already a CC2.0.
+
+        ![CC11to2conversion](assets/CC11to2_conversion.jpg){ width="290"}
 
 
 ## BootManager Run/Install/Remove device support
