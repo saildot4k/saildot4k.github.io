@@ -39,6 +39,11 @@
     
 ![Crystal Chip Models](cc-site-backup/img/cc_hw_history.gif)
 
+???+ note "CC 1.1 to 2.0 Conversion"
+    CC 1.1 and later can be upgraded with 4MB dataflash: AT45DB321D-S or AT45DB321D-MW. I have several dozen in stock. [Email me](info@ps2modchiptutorials.com) if you would like to upgrade. There are no changes needed in software/firmware/scripting. Solder on and go! Reference the attached picture to see where pin 1 (the black dimple dot on the EEPROM/DATAFLASH) is and how the flash is rotated 90 degrees clockwise from the CC1.1 to the CC1.2 and later. In this case it was already a CC2.0.
+
+    ![CC11to2conversion](assets/CC11to2_conversion.jpg){ width="400"}
+
 
 ## Dashboard "BootManager" may be installed to and ran from
 | Crystal Chip | Memcard 1                       | Memcard 2                       | :material-usb: USB              | :material-harddisk: HDD          | :material-memory: On-Chip Flash                 | :material-lan-connect: PC Host |
@@ -75,18 +80,3 @@
 ???+ note "USB Exfat"
 
     In Progress...Using BDM Assault for Exfat allows Install/Remove but oddly not Run. BDM Assault hotswap does work. I hope to fix.
-
-
-## CC 1.1 to 2.0 Conversion
-CC 1.1 and later can be upgraded with 4MB dataflash: AT45DB321D-S or AT45DB321D-MW. I have several dozen in stock. [Email me](info@ps2modchiptutorials.com) if you would like to upgrade. There are no changes needed in software/firmware/scripting. Solder on and go! Reference the attached picture to see where pin 1 (the black dimple dot on the EEPROM/DATAFLASH) is and how the flash is rotated 90 degrees clockwise from the CC1.1 to the CC1.2 and later. In this case it was already a CC2.0.
-
-![CC11to2conversion](assets/CC11to2_conversion.jpg){ width="400"}
-
-
-
-
-
-
-
-
-
