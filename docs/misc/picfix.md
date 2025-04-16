@@ -61,15 +61,22 @@ Tutorial incoming....sorry. If you'd like to help please reach out!
 
 
 ## Flex PCBs
+Gerbers will be released once a small batch of 52 is sold! 300 PCBs ordered. If you are an installer and would like a sample, please let me [know!](mailto:info@ps2modchiptutorials.com)
 
 ### SCPH-500XX Flex PCB
 
-Need PS2 motherboard to design one.
+#### GH-023 aka V9
+to come....
+
+#### GH-026 aka V10
+![GH-026 Flex Front](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Front%20Render.png)
+
+![GH-026 Flex Back](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Back%20Render.png)
 
 ### SCPH-700XX Flex PCB
 
-Gerbers will be released once a small batch of 52 is sold! 300 PCBs ordered. If you are an installer and would like a sample, please let me [know!](mailto:info@ps2modchiptutorials.com)
-
 ![V12 Flex Front](assets/picfix/SCPH-700XX/PicFix_V5_Thin.png)
 
-![V12 Flex Front](assets/picfix/SCPH-700XX/PicFix_V5_Thin%20back.png)
+![V12 Flex Back](assets/picfix/SCPH-700XX/PicFix_V5_Thin%20back.png)
+
+![V12 Installed](assets/picfix/SCPH-700XX/70K%20Installed.jpg)
