@@ -36,6 +36,8 @@ Gerbers will be released once a small batch of 52 is sold! 300 PCBs ordered. If 
 
 #### GH-023 aka V9
 
+<div class="grid cards" markdown>
+
 -   SCPH-500XX GH0-23 Flex Front
 
     ---
@@ -54,7 +56,9 @@ Gerbers will be released once a small batch of 52 is sold! 300 PCBs ordered. If 
 
     ---
 
-    Picture Placeholder
+    Placeholder, not completed
+
+</div>
 
 
 #### GH-026 aka V10
