@@ -207,21 +207,21 @@ to come....
 
  <div class="grid cards" markdown>
     
-    -   SCPH-500XX GH026 Flex Front
+    -   SCPH-700XX Flex Front
     
         ---
     
         ![V12 Flex Front](assets/picfix/SCPH-700XX/PicFix_V5_Thin.png)
     
     
-    -   SCPH-500XX GH026 Flex Rear
+    -   SCPH-700XX Flex Rear
     
         ---
     
         ![V12 Flex Back](assets/picfix/SCPH-700XX/PicFix_V5_Thin%20back.png)
 
 
-    -   Installed (pics to come)
+    -   SCPH-700XX Installed
 
         ---
 
