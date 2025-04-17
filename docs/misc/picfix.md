@@ -96,7 +96,7 @@ Tutorial incoming....sorry. If you'd like to help please reach out!
 
 3.  Programming your PIC12F508
 
-        <div class="grid cards" markdown>
+    <div class="grid cards" markdown>
     
     -   Step 1: Device Family>Baseline
     
@@ -176,7 +176,7 @@ to come....
 
 #### GH-026 aka V10
 
- <div class="grid cards" markdown>
+<div class="grid cards" markdown>
     
     -   SCPH-500XX GH026 Flex Front
     
@@ -199,13 +199,13 @@ to come....
         Picture Placeholder
 
     
-    </div>
+</div>
 
 
 
 ### SCPH-700XX Flex PCB
 
- <div class="grid cards" markdown>
+<div class="grid cards" markdown>
     
     -   SCPH-700XX Flex Front
     
@@ -228,4 +228,4 @@ to come....
         ![V12 Installed](assets/picfix/SCPH-700XX/70K%20Installed.jpg)
 
     
-    </div>
+</div>
