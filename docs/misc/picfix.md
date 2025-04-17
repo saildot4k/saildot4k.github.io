@@ -98,41 +98,41 @@ Tutorial incoming....sorry. If you'd like to help please reach out!
 
     <div class="grid cards" markdown>
     
-        -   Step 1: Device Family>Baseline
-        
-            ---
-        
-            ![Baseline](assets/picfix/Tutorial/Baseline.png){ width="200" }
-        
-        
-        -   Step 2: Select Device>PIC12F508
-        
-            ---
-        
-            ![Device Selection](assets/picfix/Tutorial/Select%2012F508.png){ width="200" }
+    -   Step 1: Device Family>Baseline
+    
+        ---
+    
+        ![Baseline](assets/picfix/Tutorial/Baseline.png){ width="200" }
+    
+    
+    -   Step 2: Select Device>PIC12F508
+    
+        ---
+    
+        ![Device Selection](assets/picfix/Tutorial/Select%2012F508.png){ width="200" }
 
 
-        -   Step 3: Read your PIC12F508
+    -   Step 3: Read your PIC12F508
 
-            ---
+        ---
 
-            ![Read](assets/picfix/Tutorial/Read.png){ width="200" }
+        ![Read](assets/picfix/Tutorial/Read.png){ width="200" }
 
-            We do this to ensure our OSSCAL (oscilator tuning) is not lost
-
-
-        -   Step 4: Import Hex
-        
-            ---
-
-            ![Import Hex](assets/picfix/Tutorial/Import%20HEX.png)
+        We do this to ensure our OSSCAL (oscilator tuning) is not lost
 
 
-        -   Step 5: Write to PIC12F508
+    -   Step 4: Import Hex
+    
+        ---
 
-            ---
+        ![Import Hex](assets/picfix/Tutorial/Import%20HEX.png)
 
-        ![Write](assets/picfix/Tutorial/Write.png)
+
+    -   Step 5: Write to PIC12F508
+
+        ---
+
+    ![Write](assets/picfix/Tutorial/Write.png)
 
     
     </div>
@@ -178,25 +178,25 @@ to come....
 
 <div class="grid cards" markdown>
     
-    -   SCPH-500XX GH026 Flex Front
-    
-        ---
-    
-        ![GH-026 Flex Front](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Front%20Render.png)
-    
-    
-    -   SCPH-500XX GH026 Flex Rear
-    
-        ---
-    
-        ![GH-026 Flex Back](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Back%20Render.png)
+-   SCPH-500XX GH026 Flex Front
+
+    ---
+
+    ![GH-026 Flex Front](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Front%20Render.png)
 
 
-    -   Installed (pics to come)
+-   SCPH-500XX GH026 Flex Rear
 
-        ---
+    ---
 
-        Picture Placeholder
+    ![GH-026 Flex Back](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Back%20Render.png)
+
+
+-   Installed (pics to come)
+
+    ---
+
+    Picture Placeholder
 
     
 </div>
@@ -207,25 +207,25 @@ to come....
 
 <div class="grid cards" markdown>
     
-    -   SCPH-700XX Flex Front
-    
-        ---
-    
-        ![V12 Flex Front](assets/picfix/SCPH-700XX/PicFix_V5_Thin.png)
-    
-    
-    -   SCPH-700XX Flex Rear
-    
-        ---
-    
-        ![V12 Flex Back](assets/picfix/SCPH-700XX/PicFix_V5_Thin%20back.png)
+-   SCPH-700XX Flex Front
+
+    ---
+
+    ![V12 Flex Front](assets/picfix/SCPH-700XX/PicFix_V5_Thin.png)
 
 
-    -   SCPH-700XX Installed
+-   SCPH-700XX Flex Rear
 
-        ---
+    ---
 
-        ![V12 Installed](assets/picfix/SCPH-700XX/70K%20Installed.jpg)
+    ![V12 Flex Back](assets/picfix/SCPH-700XX/PicFix_V5_Thin%20back.png)
+
+
+-   SCPH-700XX Installed
+
+    ---
+
+    ![V12 Installed](assets/picfix/SCPH-700XX/70K%20Installed.jpg)
 
     
 </div>
