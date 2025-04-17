@@ -92,7 +92,13 @@ Tutorial incoming....sorry. If you'd like to help please reach out!
 
     1.  Download install and run the [PicKit 3](assets/picfix/PICkit3%20Programmer%20Application%20Setup%20v3.10.zip) software.
 
-    2.  Install the PICkit Operating System by going to: "Tools>Download PICkit Operating System". Navigate to where you installed PicKit 3 and select "PK3OSV020005.hex". Most likely located at "C:\Program Files (x86)\Microchip\PICkit 3 v3\PK3OSV020005.hex"
+    2.  Install the PICkit Operating System by going to: 
+    
+    "Tools>Download PICkit Operating System".
+    
+    Navigate to where you installed PicKit 3 and select "PK3OSV020005.hex". Most likely located at:
+    
+    "C:\Program Files (x86)\Microchip\PICkit 3 v3\PK3OSV020005.hex"
 
 3.  Programming your PIC12F508
 
