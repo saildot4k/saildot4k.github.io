@@ -29,6 +29,90 @@ El Isra made a PS2 app which identifies if your console is safe, unsafe or uknow
 ## Appreciation and Thanks to:
 [Atheris](https://linktr.ee/atherismods), [SylverRez](https://github.com/m4x10187) and [PCM720](https://github.com/pcm720) for kicad, electrical and logo help! Thanks to [Team Matrix](https://web.archive.org/web/20051228080334/http://infinitymod.com/matrix/) for the code and initial wiring. [ModzvilleUSA](https://modzvilleusa.com/products/ps2-matrix-picfix-for-v9-v12-ps2-consoles), HaloSlayer255 and [Helder](https://heldergametech.com/product-category/ps2/) for rediscovery, documentation, and circuit.
 
+## Flex PCBs
+Gerbers will be released once a small batch of 52 is sold! 300 PCBs ordered. If you are an installer and would like a sample, please let me [know!](mailto:info@ps2modchiptutorials.com)
+
+### SCPH-500XX Flex PCB
+
+#### GH-023 aka V9
+
+-   SCPH-500XX GH0-23 Flex Front
+
+    ---
+
+    Placeholder, not completed
+
+
+-   SCPH-500XX GH-023 Flex Rear
+
+    ---
+
+    Placeholder, not completed
+
+
+-   Installed (pics to come)
+
+    ---
+
+    Picture Placeholder
+
+
+#### GH-026 aka V10
+
+<div class="grid cards" markdown>
+    
+-   SCPH-500XX GH-026 Flex Front
+
+    ---
+
+    ![GH-026 Flex Front](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Front%20Render.png)
+
+
+-   SCPH-500XX GH-026 Flex Rear
+
+    ---
+
+    ![GH-026 Flex Back](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Back%20Render.png)
+
+
+-   Installed (pics to come)
+
+    ---
+
+    Picture Placeholder
+
+    
+</div>
+
+
+
+### SCPH-700XX Flex PCB
+
+<div class="grid cards" markdown>
+    
+-   SCPH-700XX Flex Front
+
+    ---
+
+    ![V12 Flex Front](assets/picfix/SCPH-700XX/PicFix_V5_Thin.png)
+
+
+-   SCPH-700XX Flex Rear
+
+    ---
+
+    ![V12 Flex Back](assets/picfix/SCPH-700XX/PicFix_V5_Thin%20back.png)
+
+
+-   SCPH-700XX Installed
+
+    ---
+
+    ![V12 Installed](assets/picfix/SCPH-700XX/70K%20Installed.jpg)
+
+    
+</div>
+
 
 ## Parts Needed
 
@@ -60,6 +144,8 @@ Pic 12F508 files, choose based on your programmer:
 Tutorial incoming....sorry. If you'd like to help please reach out!
 
 ### Programmming the PIC12F508
+
+This is neededed if you provided your own parts. If you purchased from me, this will have been done!
 
 1.  Plug in the PicKit 3, SOP8 to DIP8 Adapter and seat as shown:
 
@@ -170,68 +256,3 @@ Tutorial incoming....sorry. If you'd like to help please reach out!
 7.  Solder the K point
 
 8.  Reassemble PS2. You now have the famous Team Matrix PICFix installed! Thanks to ModzvilleUSA/HaloSlayer255 and Helder for rediscovering, and designing the main circuit.
-
-
-## Flex PCBs
-Gerbers will be released once a small batch of 52 is sold! 300 PCBs ordered. If you are an installer and would like a sample, please let me [know!](mailto:info@ps2modchiptutorials.com)
-
-### SCPH-500XX Flex PCB
-
-#### GH-023 aka V9
-to come....
-
-#### GH-026 aka V10
-
-<div class="grid cards" markdown>
-    
--   SCPH-500XX GH026 Flex Front
-
-    ---
-
-    ![GH-026 Flex Front](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Front%20Render.png)
-
-
--   SCPH-500XX GH026 Flex Rear
-
-    ---
-
-    ![GH-026 Flex Back](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Back%20Render.png)
-
-
--   Installed (pics to come)
-
-    ---
-
-    Picture Placeholder
-
-    
-</div>
-
-
-
-### SCPH-700XX Flex PCB
-
-<div class="grid cards" markdown>
-    
--   SCPH-700XX Flex Front
-
-    ---
-
-    ![V12 Flex Front](assets/picfix/SCPH-700XX/PicFix_V5_Thin.png)
-
-
--   SCPH-700XX Flex Rear
-
-    ---
-
-    ![V12 Flex Back](assets/picfix/SCPH-700XX/PicFix_V5_Thin%20back.png)
-
-
--   SCPH-700XX Installed
-
-    ---
-
-    ![V12 Installed](assets/picfix/SCPH-700XX/70K%20Installed.jpg)
-
-    
-</div>
