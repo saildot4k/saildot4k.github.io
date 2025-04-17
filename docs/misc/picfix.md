@@ -72,7 +72,7 @@ Tutorial incoming....sorry. If you'd like to help please reach out!
         ![Programmer to Seat](assets/picfix/Tutorial/Programmer_to_SeatPCB.jpg)
     
     
-    -   Socketing the SOP8 to DIP8 Adapter in the Seat
+    -   Socketing the adapter
     
         ---
     
