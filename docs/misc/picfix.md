@@ -27,7 +27,7 @@ El Isra made a PS2 app which identifies if your console is safe, unsafe or uknow
 ![Mechacon Crash Tester](https://www.psx-place.com/attachments/_e3271012_20240808144428-png.43804/)
 
 ## Appreciation and Thanks to:
-[Atheris](https://linktr.ee/atherismods), [SylverRez](https://github.com/m4x10187) and [PCM720](https://github.com/pcm720) for kicad, electrical and logo help!
+[Atheris](https://linktr.ee/atherismods), [SylverRez](https://github.com/m4x10187) and [PCM720](https://github.com/pcm720) for kicad, electrical and logo help! Thanks to [Team Matrix](https://web.archive.org/web/20051228080334/http://infinitymod.com/matrix/) for the code and initial wiring. [ModzvilleUSA](https://modzvilleusa.com/products/ps2-matrix-picfix-for-v9-v12-ps2-consoles), HaloSlayer255 and [Helder](https://heldergametech.com/product-category/ps2/) for rediscovery, documentation, and circuit.
 
 
 ## Parts Needed
