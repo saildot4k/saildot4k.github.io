@@ -1,6 +1,6 @@
 # Matrix PicFix
 
-
+## What is the PICfix and why is it needed?
 Why? In an attempt to curb piracy, $ony designed the laser to fail and burn up. Sadly this [backfired](https://www.gamesindustry.biz/sony-reaches-settlement-in-ps2-disc-read-error-case#:~:text=Now%20a%20settlement%20has%20been,their%20console%20%2D%20at%20SCEA's%20discretion.)
 
 ![Mermaid Chart](assets/picfix/whylaserburns_mermaid.jpg)
