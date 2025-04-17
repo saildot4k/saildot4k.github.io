@@ -98,39 +98,39 @@ Tutorial incoming....sorry. If you'd like to help please reach out!
 
     <div class="grid cards" markdown>
     
-    -   Step 1: Device Family>Baseline
-    
-        ---
-    
-        ![Baseline](assets/picfix/Tutorial/Baseline.png){ width="200" }
-    
-    
-    -   Step 2: Select Device>PIC12F508
-    
-        ---
-    
-        ![Device Selection](assets/picfix/Tutorial/Select%2012F508.png){ width="200" }
+        -   Step 1: Device Family>Baseline
+        
+            ---
+        
+            ![Baseline](assets/picfix/Tutorial/Baseline.png){ width="200" }
+        
+        
+        -   Step 2: Select Device>PIC12F508
+        
+            ---
+        
+            ![Device Selection](assets/picfix/Tutorial/Select%2012F508.png){ width="200" }
 
 
-    -   Step 3: Read your PIC12F508
+        -   Step 3: Read your PIC12F508
 
-        ---
+            ---
 
-        ![Read](assets/picfix/Tutorial/Read.png){ width="200" }
+            ![Read](assets/picfix/Tutorial/Read.png){ width="200" }
 
-        We do this to ensure our OSSCAL (oscilator tuning) is not lost
-
-
-    -   Step 4: Import Hex
-    
-        ---
-
-        ![Import Hex](assets/picfix/Tutorial/Import%20HEX.png)
+            We do this to ensure our OSSCAL (oscilator tuning) is not lost
 
 
-    -   Step 5: Write to PIC12F508
+        -   Step 4: Import Hex
+        
+            ---
 
-        ---
+            ![Import Hex](assets/picfix/Tutorial/Import%20HEX.png)
+
+
+        -   Step 5: Write to PIC12F508
+
+            ---
 
         ![Write](assets/picfix/Tutorial/Write.png)
 
