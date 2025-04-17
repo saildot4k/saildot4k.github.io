@@ -59,6 +59,112 @@ Pic 12F508 files, choose based on your programmer:
 
 Tutorial incoming....sorry. If you'd like to help please reach out!
 
+### Programmming the PIC12F508
+
+1.  Plug in the PicKit 3, SOP8 to DIP8 Adapter and seat as shown:
+
+    <div class="grid cards" markdown>
+    
+    -   Programmer to Seat PCB
+    
+        ---
+    
+        ![Programmer to Seat](assets/picfix/Tutorial/Programmer_to_SeatPCB.jpg){ width="200" }
+    
+    
+    -   Socketing the SOP8 to DIP8 Adapter in the Seat
+    
+        ---
+    
+        ![Programmer Socketing](assets/picfix/Tutorial/Programmer_Socketing.png){ width="200" }
+
+
+    -   Seat Jumper Settings
+
+        ---
+
+        ![Programmer Jumper Settings](assets/picfix/Tutorial/Jumper_Settings.png){ width="200" }
+
+    
+    </div>
+
+2.  PicKit 3 Software install and setup:
+
+    1.  Download install and run the [PicKit 3](assets/picfix/PICkit3%20Programmer%20Application%20Setup%20v3.10.zip) software.
+
+    2.  Install the PICkit Operating System by going to "Tools>Download PICkit Operating System". Navigate to where you installed PicKit 3 and select "PK3OSV020005.hex". Most likely located at "C:\Program Files (x86)\Microchip\PICkit 3 v3\PK3OSV020005.hex"
+
+3.  Programming your PIC12F508
+
+        <div class="grid cards" markdown>
+    
+    -   Step 1: Device Family>Baseline
+    
+        ---
+    
+        ![Baseline](assets/picfix/Tutorial/Baseline.png){ width="200" }
+    
+    
+    -   Step 2: Select Device>PIC12F508
+    
+        ---
+    
+        ![Device Selection](assets/picfix/Tutorial/Select%2012F508.png){ width="200" }
+
+
+    -   Step 3: Read your PIC12F508
+
+        ---
+
+        ![Read](assets/picfix/Tutorial/Read.png){ width="200" }
+
+        We do this to ensure our OSSCAL (oscilator tuning) is not lost
+
+
+    -   Step 4: Import Hex
+    
+        ---
+
+        ![Import Hex](assets/picfix/Tutorial/Import%20HEX.png)
+
+
+    -   Step 5: Write to PIC12F508
+
+        ---
+
+        ![Write](assets/picfix/Tutorial/Write.png)
+
+    
+    </div>
+
+### Testing your PIXFix PCB
+
+1. Solder all points except K into your PS2. Note: PS2 should be unplugged from mains power!
+
+2.  Bridge TEST and the appropriate resistor pad. 1.5K for GH-026 Phat PS2 and 70k Slim PSTwo
+
+2.  Using Kapton Tape, place a tiny piece of under point K to avoid connecting/shorts.
+
+3.  Verify no solder bridges elsewhere!
+
+4.  With your power button flex connected to PS2, plug PS2 into power.
+
+5.  Press the power button on your PS2. Power should come on (green light), then off after 3 seconds.
+
+    1. IF the PS2 did not power on, then we need a different resistor value.
+
+    2.  Disconnect your PS2 from power
+    
+    3.  Desolder your existing resistor bridge, and bridge the other resistor pad.
+
+    4.  Go back to step 3 and retest. If step 5 is succes go to step 6.
+
+6.  Desolder the TEST pads
+
+7.  Solder the K point
+
+8.  Reassemble PS2. You now have the famous Team Matrix PICFix installed! Thanks to ModzvilleUSA/HaloSlayer255 and Helder for rediscovering, and designing the main circuit.
+
 
 ## Flex PCBs
 Gerbers will be released once a small batch of 52 is sold! 300 PCBs ordered. If you are an installer and would like a sample, please let me [know!](mailto:info@ps2modchiptutorials.com)
@@ -69,14 +175,57 @@ Gerbers will be released once a small batch of 52 is sold! 300 PCBs ordered. If 
 to come....
 
 #### GH-026 aka V10
-![GH-026 Flex Front](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Front%20Render.png)
 
-![GH-026 Flex Back](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Back%20Render.png)
+ <div class="grid cards" markdown>
+    
+    -   SCPH-500XX GH026 Flex Front
+    
+        ---
+    
+        ![GH-026 Flex Front](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Front%20Render.png)
+    
+    
+    -   SCPH-500XX GH026 Flex Rear
+    
+        ---
+    
+        ![GH-026 Flex Back](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Back%20Render.png)
+
+
+    -   Installed (pics to come)
+
+        ---
+
+        Picture Placeholder
+
+    
+    </div>
+
+
 
 ### SCPH-700XX Flex PCB
 
-![V12 Flex Front](assets/picfix/SCPH-700XX/PicFix_V5_Thin.png)
+ <div class="grid cards" markdown>
+    
+    -   SCPH-500XX GH026 Flex Front
+    
+        ---
+    
+        ![V12 Flex Front](assets/picfix/SCPH-700XX/PicFix_V5_Thin.png)
+    
+    
+    -   SCPH-500XX GH026 Flex Rear
+    
+        ---
+    
+        ![V12 Flex Back](assets/picfix/SCPH-700XX/PicFix_V5_Thin%20back.png)
 
-![V12 Flex Back](assets/picfix/SCPH-700XX/PicFix_V5_Thin%20back.png)
 
-![V12 Installed](assets/picfix/SCPH-700XX/70K%20Installed.jpg)
+    -   Installed (pics to come)
+
+        ---
+
+        ![V12 Installed](assets/picfix/SCPH-700XX/70K%20Installed.jpg)
+
+    
+    </div>
