@@ -69,21 +69,21 @@ Tutorial incoming....sorry. If you'd like to help please reach out!
     
         ---
     
-        ![Programmer to Seat](assets/picfix/Tutorial/Programmer_to_SeatPCB.jpg){ width="200" }
+        ![Programmer to Seat](assets/picfix/Tutorial/Programmer_to_SeatPCB.jpg)
     
     
     -   Socketing the SOP8 to DIP8 Adapter in the Seat
     
         ---
     
-        ![Programmer Socketing](assets/picfix/Tutorial/Programmer_Socketing.png){ width="200" }
+        ![Programmer Socketing](assets/picfix/Tutorial/Programmer_Socketing.png)
 
 
     -   Seat Jumper Settings
 
         ---
 
-        ![Programmer Jumper Settings](assets/picfix/Tutorial/Jumper_Settings.png){ width="200" }
+        ![Programmer Jumper Settings](assets/picfix/Tutorial/Jumper_Settings.png)
 
     
     </div>
@@ -92,7 +92,7 @@ Tutorial incoming....sorry. If you'd like to help please reach out!
 
     1.  Download install and run the [PicKit 3](assets/picfix/PICkit3%20Programmer%20Application%20Setup%20v3.10.zip) software.
 
-    2.  Install the PICkit Operating System by going to "Tools>Download PICkit Operating System". Navigate to where you installed PicKit 3 and select "PK3OSV020005.hex". Most likely located at "C:\Program Files (x86)\Microchip\PICkit 3 v3\PK3OSV020005.hex"
+    2.  Install the PICkit Operating System by going to: "Tools>Download PICkit Operating System". Navigate to where you installed PicKit 3 and select "PK3OSV020005.hex". Most likely located at "C:\Program Files (x86)\Microchip\PICkit 3 v3\PK3OSV020005.hex"
 
 3.  Programming your PIC12F508
 
@@ -102,21 +102,21 @@ Tutorial incoming....sorry. If you'd like to help please reach out!
     
         ---
     
-        ![Baseline](assets/picfix/Tutorial/Baseline.png){ width="200" }
+        ![Baseline](assets/picfix/Tutorial/Baseline.png)
     
     
     -   Step 2: Select Device>PIC12F508
     
         ---
     
-        ![Device Selection](assets/picfix/Tutorial/Select%2012F508.png){ width="200" }
+        ![Device Selection](assets/picfix/Tutorial/Select%2012F508.png)
 
 
     -   Step 3: Read your PIC12F508
 
         ---
 
-        ![Read](assets/picfix/Tutorial/Read.png){ width="200" }
+        ![Read](assets/picfix/Tutorial/Read.png)
 
         We do this to ensure our OSSCAL (oscilator tuning) is not lost
 
