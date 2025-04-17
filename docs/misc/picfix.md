@@ -132,7 +132,7 @@ Tutorial incoming....sorry. If you'd like to help please reach out!
 
         ---
 
-    ![Write](assets/picfix/Tutorial/Write.png)
+        ![Write](assets/picfix/Tutorial/Write.png)
 
     
     </div>
