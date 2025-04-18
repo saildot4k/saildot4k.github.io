@@ -100,9 +100,6 @@ Gerbers will be released once a small batch of 52 is sold! 300 PCBs ordered. If 
 
 ### SCPH-700XX Flex PCB
 
-
-## SCPH-700XX Pictures
-
 <div class="grid cards" markdown>
     
 -   SCPH-700XX Flex Front
