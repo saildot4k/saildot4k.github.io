@@ -95,6 +95,15 @@ Gerbers will be released once a small batch of 52 is sold! 300 PCBs ordered. If 
 
 ### SCPH-700XX Flex PCB
 
+## Purchase Options:
+[Tindie](https://www.tindie.com/products/r3z3n/sony-ps2-matrix-picfix-flex-for-scph-700xx/)
+
+Tindie is a better choice for bulk purchases over 10 as it is 30% savings per unit.
+
+[Ko-Fi](https://ko-fi.com/s/fd6f83f8e7)
+
+## SCPH-700XX Pictures
+
 <div class="grid cards" markdown>
     
 -   SCPH-700XX Flex Front
