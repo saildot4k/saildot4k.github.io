@@ -136,7 +136,7 @@ Gerbers will be released once a small batch of 52 is sold! 300 PCBs ordered. If 
 
 ## Parts Needed
 
-These are needed if you purchased a bare flex PCB from me, or are designing your own based of [ModzVillUSA's circuit](https://github.com/MechaResearch/MechaPwn/tree/master/docs/Matrix%20PIC/Gerber).
+These are needed if you purchased a bare flex PCB from me, or are designing your own based off [ModzVillUSA's circuit](https://github.com/MechaResearch/MechaPwn/tree/master/docs/Matrix%20PIC/Gerber).
 
 [100nF 0603 Capacitor](https://www.mouser.com/c/passive-components/capacitors/ceramic-capacitors/mlccs-multilayer-ceramic-capacitors/multilayer-ceramic-capacitors-mlcc-smd-smt/?capacitance=0.1%20uF&case%20code%20-%20in=0603&length=1.6%20mm%20%280.063%20in%29&termination=Standard&tolerance=10%20%25&voltage%20rating%20dc=25%20VDC&width=0.8%20mm%20%280.031%20in%29&instock=y&sort=pricing)
 
