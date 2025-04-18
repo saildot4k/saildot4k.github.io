@@ -35,7 +35,7 @@ El Isra made a PS2 app which identifies if your console is safe, unsafe or uknow
 
 [Tindie](https://www.tindie.com/products/r3z3n/sony-ps2-matrix-picfix-flex-for-scph-700xx/) is a better choice for bulk purchases over 10 as it is 30% savings per unit. $10/per or $7/per 10 units and over. Shipping is $7 as it includes tracking. NOTE: product is waiting for Tindie approval
 
-[Ko-Fi](https://ko-fi.com/s/fd6f83f8e7) $10/per and shipping is $7 as it includes tracking. Gerbers, BOM and Placement file here as well!
+[Ko-Fi](https://ko-fi.com/r3z3n/shop) $10/per and shipping is $7 as it includes tracking. Gerbers, BOM and Placement file here as well!
 
 If you are an installer and would like a sample, please let me [know!](mailto:info@ps2modchiptutorials.com)
 
