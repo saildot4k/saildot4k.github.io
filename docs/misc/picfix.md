@@ -250,17 +250,17 @@ This is neededed if you provided your own parts. If you purchased assembled from
 
 1. Solder all points except K into your PS2. Note: PS2 should be unplugged from mains power!
 
-2.  Bridge TEST and the appropriate resistor pad. 1.5K for GH-026 Phat PS2 and 70k Slim PSTwo
+2.  Bridge TEST and the 1.5K resistor solder pad.
 
 2.  Using Kapton Tape, place a tiny piece under point K to avoid connecting/shorts.
 
 3.  Verify no solder bridges elsewhere!
 
-4.  With your power button flex connected to PS2, plug PS2 into power.
+4.  With your power button board connected to PS2, plug PS2 into power.
 
 5.  Press the power button on your PS2. Power should come on (green light), then off after 3 seconds.
 
-    1. IF the PS2 did not power on, then we need a different resistor value.
+    1.  If the PS2 did not power on, then we need a different resistor value.
 
     2.  Disconnect your PS2 from power
     
