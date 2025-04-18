@@ -26,8 +26,6 @@ SCPH-700XX except if your PS2 is the following model with the circutry in red, y
 
 El Isra made a PS2 app which identifies if your console is safe, unsafe or uknown. Run the ELF on your PS2 with your desired exploit/elf launcher of choice:
 
-[Mechacon Crash Tester](https://github.com/israpps/MechaconCrashTestAPP)
-
 [![Mechacon Crash Tester](https://www.psx-place.com/attachments/_e3271012_20240808144428-png.43804/)](https://github.com/israpps/MechaconCrashTestAPP)
 
 ### Appreciation and Thanks to:
