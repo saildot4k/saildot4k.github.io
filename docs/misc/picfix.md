@@ -138,6 +138,8 @@ Gerbers will be released once a small batch of 52 is sold! 300 PCBs ordered. If 
 
 ## Parts Needed
 
+These are needed if you purchased a bare flex PCB from me, or are designing your own based of [ModzVillUSA's circuit](https://github.com/MechaResearch/MechaPwn/tree/master/docs/Matrix%20PIC/Gerber).
+
 [100nF 0603 Capacitor](https://www.mouser.com/c/passive-components/capacitors/ceramic-capacitors/mlccs-multilayer-ceramic-capacitors/multilayer-ceramic-capacitors-mlcc-smd-smt/?capacitance=0.1%20uF&case%20code%20-%20in=0603&length=1.6%20mm%20%280.063%20in%29&termination=Standard&tolerance=10%20%25&voltage%20rating%20dc=25%20VDC&width=0.8%20mm%20%280.031%20in%29&instock=y&sort=pricing)
 
 [1.5K Ohm 0603 Resistor](https://www.mouser.com/c/passive-components/resistors/smd-resistors-chip-resistors/thick-film-resistors/?case%20code%20-%20in=0603&packaging=Cut%20Tape&power%20rating=250%20mW%20%281%2F4%20W%29~~333%20mW%20%281%2F3%20W%29&resistance=1.5%20kOhms&tolerance=5%20%25&instock=y&sort=pricing&rp=passive-components%2Fresistors%2Fsmd-resistors-chip-resistors%2Fthick-film-resistors%7C~Power%20Rating)
@@ -161,7 +163,6 @@ Pic 12F508 files, choose based on your programmer:
 
 [SOP8 to DIP8 adapter](https://www.amazon.com/HiLetgo-Programmer-Adapter-Socket-Converter/dp/B01HTC5DKS/ref=sr_1_5?crid=2UBCL6KVM78KW&dib=eyJ2IjoiMSJ9.0YtQZfQXY8SM_my4pw3Wp7w_zM3WItFnLhs9jBkH_YEiGTXrB2-ZpUPMZmPnI1jAVSFudzCoLeNbiC6bhV8jo7jxFkhXp56jsdliK5SHjxIiMoIzB6rlV0wtNVJK131NK7ugAmFtRJhUxqYojQtj03JX2azkew_zxVkDBT6VF1XI92JY-7Ke3ZO0HRRKYnvsgWPPfRszVEBvGCW9Fc6_lbPPJtGS76fkVCN2C-hGDfQ.N9zJPfDjsMyo4oBLfYXw0N8hqByAffVQ5wub2oZIM-U&dib_tag=se&keywords=soic+adapter&qid=1743917897&sprefix=soic+adapter%2Caps%2C180&sr=8-5)
 
-Tutorial incoming....sorry. If you'd like to help please reach out!
 
 ### Programmming the PIC12F508
 
