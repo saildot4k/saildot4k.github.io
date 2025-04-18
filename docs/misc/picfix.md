@@ -268,7 +268,7 @@ This is neededed if you provided your own parts. If you purchased assembled from
     
     3.  Desolder your existing resistor bridge, and bridge the other resistor pad.
 
-    4.  Go back to step 3 and retest. If step 5 is succes go to step 6.
+    4.  Go back to step 5 and retest. If step 5 is succes go to step 6.
 
 6.  Desolder the TEST pads
 
