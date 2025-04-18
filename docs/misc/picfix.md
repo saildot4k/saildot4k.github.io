@@ -246,7 +246,7 @@ This is neededed if you provided your own parts. If you purchased assembled from
     
     </div>
 
-### Testing your PIXFix PCB
+## Testing your PIXFix PCB
 
 1. Solder all points except K into your PS2. Note: PS2 should be unplugged from mains power!
 
