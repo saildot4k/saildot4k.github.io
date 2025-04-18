@@ -120,6 +120,13 @@ Tindie is a better choice for bulk purchases over 10 as it is 30% savings per un
     ![V12 Flex Back](assets/picfix/SCPH-700XX/PicFix_V5_Thin%20back.png)
 
 
+-   SCPH-700XX Install Diagram
+
+    ---
+
+    ![70K Matrix PICfix Install Diagram](assets/picfix/SCPH-700XX/PicFix%2070k%20Install%20Diagram.png)
+
+
 -   SCPH-700XX Installed
 
     ---
