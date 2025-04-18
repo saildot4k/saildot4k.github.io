@@ -122,7 +122,7 @@ Gerbers will be released once a small batch of 52 is sold! 300 PCBs ordered. If 
 
     ---
 
-    ![70K Matrix PICfix Install Diagram](assets/picfix/SCPH-700XX/PicFix%2070k%20Install%20Diagram.png)
+    ![70K Matrix PICfix Install Diagram](assets/picfix/SCPH-700XX/PicFix%2070k%20Install%20Diagram.jpg)
 
 
 -   SCPH-700XX Installed
