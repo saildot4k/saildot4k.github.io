@@ -30,10 +30,15 @@ El Isra made a PS2 app which identifies if your console is safe, unsafe or uknow
 
 ![Mechacon Crash Tester](https://www.psx-place.com/attachments/_e3271012_20240808144428-png.43804/)
 
-## Appreciation and Thanks to:
+### Appreciation and Thanks to:
 [Atheris](https://linktr.ee/atherismods), [SylverRez](https://github.com/m4x10187) and [PCM720](https://github.com/pcm720) for kicad, electrical and logo help! Thanks to [Team Matrix](https://web.archive.org/web/20051228080334/http://infinitymod.com/matrix/) for the code and initial wiring. [ModzvilleUSA](https://modzvilleusa.com/products/ps2-matrix-picfix-for-v9-v12-ps2-consoles), HaloSlayer255 and [Helder](https://heldergametech.com/product-category/ps2/) for rediscovery, documentation, and circuit.
 
-## Flex PCBs
+## Purchasing PCBs or Files
+
+[Tindie](https://www.tindie.com/products/r3z3n/sony-ps2-matrix-picfix-flex-for-scph-700xx/) is a better choice for bulk purchases over 10 as it is 30% savings per unit. $10/per or $7/per 10 units and over. Shipping is $7 as it includes tracking. NOTE: product is waiting for Tindie approval
+
+[Ko-Fi](https://ko-fi.com/s/fd6f83f8e7) $10/per and shipping is $7 as it includes tracking
+
 Gerbers will be released once a small batch of 52 is sold! 300 PCBs ordered. If you are an installer and would like a sample, please let me [know!](mailto:info@ps2modchiptutorials.com)
 
 ### SCPH-500XX Flex PCB
@@ -95,10 +100,6 @@ Gerbers will be released once a small batch of 52 is sold! 300 PCBs ordered. If 
 
 ### SCPH-700XX Flex PCB
 
-## Purchase Options:
-[Tindie](https://www.tindie.com/products/r3z3n/sony-ps2-matrix-picfix-flex-for-scph-700xx/) is a better choice for bulk purchases over 10 as it is 30% savings per unit. $10/per or $7/per 10 units and over. Shipping is $7 as it includes tracking.
-
-[Ko-Fi](https://ko-fi.com/s/fd6f83f8e7) $10/per and shipping is $7 as it includes tracking
 
 ## SCPH-700XX Pictures
 
