@@ -250,7 +250,7 @@ This is neededed if you provided your own parts. If you purchased assembled from
 
 2.  Bridge TEST and the appropriate resistor pad. 1.5K for GH-026 Phat PS2 and 70k Slim PSTwo
 
-2.  Using Kapton Tape, place a tiny piece of under point K to avoid connecting/shorts.
+2.  Using Kapton Tape, place a tiny piece under point K to avoid connecting/shorts.
 
 3.  Verify no solder bridges elsewhere!
 
