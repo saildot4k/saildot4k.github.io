@@ -4,4 +4,4 @@
 
 
 
-[![CC Archived Wiki](cc-site-backup/img/wiki.png)](cc-site-backup/index.htm)
+[![CC Archived Wiki](cc-site-backup/img/wiki.png)](cc-site-backup/ccwiki-index.htm)
