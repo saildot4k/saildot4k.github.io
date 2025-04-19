@@ -248,9 +248,9 @@ This is neededed if you provided your own parts. If you purchased assembled from
 
 ## Testing your PIXFix PCB
 
-1. Solder all points except K into your PS2. Note: PS2 should be unplugged from mains power!
+1.      Solder all points except K into your PS2. Note: PS2 should be unplugged from mains power!
 
-2.  Bridge TEST and the 1.5K resistor solder pad.
+2.  Bridge TEST and the 1.5K resistor pad with the middle section next to it.
 
 2.  Using Kapton Tape, place a tiny piece under point K to avoid connecting/shorts.
 
@@ -266,7 +266,7 @@ This is neededed if you provided your own parts. If you purchased assembled from
     
     3.  Desolder your existing resistor bridge, and bridge the other resistor pad.
 
-    4.  Go back to step 5 and retest. If step 5 is succes go to step 6.
+    4.  Go back to step 5 and retest. If step 5 is succes go to step 7.
 
 6.  Desolder the TEST pads
 
