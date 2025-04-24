@@ -40,6 +40,10 @@ IE CC1.0-1.2 can choose BM run point, CC2.0 DFFS only.
 
 - Added Italian and Spanish language translations.
 
+- v14 and later PS2s no longer show HDD options and do not auto load HDD drivers. 
+However the setting is still saved so swapping your memcard between PS2s if you have multiple chips still functions as you set it.
+
+- v12 and later no longer show MegaMemory Patcher option as Sony blocked it's use electrically for PSTwo Slims.
 
 ## BootManager MegaPack Downloads
 
@@ -60,7 +64,7 @@ IE CC1.0-1.2 can choose BM run point, CC2.0 DFFS only.
 
     Unzip and merge contents to root of your SD2PSX/PSXMemcard Gen2 MMCE device (THIS WILL WIPE YOUR BOOT CARD!) MUST BE ON [FW 1.1.1 or later!](https://sd2psxtd.github.io/download)
 
-    [:material-cloud-download: SD2PSX](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MegaPack_by_R3Z3N_SD2PSX.zip)
+    [:material-cloud-download: SD2PSX](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/MMCE.zip)
 
 -   __MemCardPro 2__
 
@@ -68,7 +72,7 @@ IE CC1.0-1.2 can choose BM run point, CC2.0 DFFS only.
 
     Unzip and merge contents to root of your MemCardPro 2 MMCE device. Set Crystal Chip Channel 1 as your boot card. MUST BE ON [FW 1.4.0 or later!](https://distribution.appcake.co.uk/install/8bitmods/apps/memcard-pro2/public)
 
-    [:material-cloud-download: MCP2](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MegaPack_by_R3Z3N_MCP2.zip)
+    [:material-cloud-download: MCP2](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/MMCE.zip)
 
 </div>
 
@@ -78,7 +82,7 @@ Apps Included and updated as of 3/7/2027:
 | :------------------------ | :-----------------------------: | :-------------------------------: |
 | Crystal Chips BootManager | :material-close-circle-outline: | :material-check-circle:           |
 | BM Themes/Languages       | :material-check-circle:         | :material-check-circle:           |
-| NHDDL                     | :material-check-circle:         | :material-check-circle:           |
+| NHDDL Nightly 03/29/25    | :material-check-circle:         | :material-check-circle:           |
 | OPL 1.2 Beta 2201         | :material-check-circle:         | :material-check-circle:           |
 | OPL 1.2 Beta 2049         | :material-check-circle:         | :material-check-circle:           |
 | OPL 1.2 MMCE Beta 2       | :material-check-circle:         | :material-check-circle:           |
@@ -108,7 +112,7 @@ Apps Included and updated as of 3/7/2027:
 
     - XEB+ Xmas Edition must be acquired from official sources due to license
         - Can only be ran from USB!
-    - RetroLauncher is unable to be burned to CD
+    - RetroLauncher is unable to be burned to CD so it is not included on the CD installer.
         - Can only be ran from USB!
     - OSDXMB can only be ran from USB!
 
