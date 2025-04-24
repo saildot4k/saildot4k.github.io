@@ -1,8 +1,8 @@
-## Crystal Chip FW R34 v3
+## Crystal Chip FW R34 v3 4/29/2025
 
 [Crystal Chip FW R34 v3 with updated Dashboard Scripts by R3Z3N](https://github.com/saildot4k/Crystal-Chip-R34-v3/releases)
 
-(RUNNING CHANGES as of 2/26/2025. I update the date as I go...)
+(RUNNING CHANGES as of 4/29/2025. I update the date as I go...)
     
     
 - CC1.X firmware options to run BM from MemCard1,2, HDD and USB. HDD/USB boot needs HDD drivers on mc0:/BM/SHARED/
@@ -41,9 +41,12 @@ IE CC1.0-1.2 can choose BM run point, CC2.0 DFFS only.
 - Added Italian and Spanish language translations.
 
 - v14 and later PS2s no longer show HDD options and do not auto load HDD drivers. 
-However the setting is still saved so swapping your memcard between PS2s if you have multiple chips still functions as you set it.
+However the setting is still saved so swapping your memcard between PS2s if you
+have multiple chips still functions as you set it.
 
 - v12 and later no longer show MegaMemory Patcher option as Sony blocked it's use electrically for PSTwo Slims.
+
+- V16-v18 is now properly identified in Console Information
 
 ## BootManager MegaPack Downloads
 
