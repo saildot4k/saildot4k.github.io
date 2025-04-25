@@ -331,34 +331,34 @@ will execute a PBAT file named MY_FILE.PBT with the arguments specified. Most of
 
 #### Needs documentation:
 
-EVAL SETTITLE
+EVAL SETTITLE - Evaluate a line
 
-EVAL ADDWIDGET
+EVAL ADDWIDGET - Evaluate a line
 
-SKIPBACK
+SKIPBACK - When returning from a submenu, this menu is skipped(ie returns to the menu before this menu).
 
-RETURN 0/-1
+RETURN 0/-1 - Remove the script from memory if the return value is <0
 
-EXIT 0/-1
+EXIT - 0/-1 Exit from the script (0 )and do not keep it in memory (-1)
 
 FORMAT
 
-$BM.MAJOR_VER$
+$BM.MAJOR_VER$ - BootManager major version
 
-$BM.MINOR_VER$
+$BM.MINOR_VER$ - BootManager major version
 
-$BM.PATCH_VER$
+$BM.PATCH_VER$ - BootManager patch version
 
 
-$BM.CC_MAJOR_VER$
+$BM.CC_MAJOR_VER$ - Crystal Chip major version
 
-$BM.CC_MINOR_VER$
+$BM.CC_MINOR_VER$ - Crystal Chip minor version
 
-CYCLETRAY
+CYCLETRAY - Causes the CDVD drive to recheck the disc. Parameters can be "WAIT", "NOWAIT" or nothing(which is the same as "WAIT"). "WAIT" means "wait until disc has authenticated and fail if disc does not authenticate". "NOWAIT" returns immediately after telling the CDVD drive to reauthenticate.
 
 PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE"
 
-KEEP
+KEEP - keeps in ram for quick recall of script
 
 LOADEXEC "EEELF" "$ARG1$" $ARG2$
 
@@ -367,6 +367,8 @@ LOADEXEC "PBAT" "$ARG1$" $ARG2$
 LOADEXEC "IRX" 
 
 IF MATCHES
+
+IF NOT MATCHES
 
 REBOOTIOP "rom0:UDNL rom0:OSDCNF"
 
@@ -379,6 +381,10 @@ IF NOT MODLOADED "dev9_driver"
 UNMOUNT 
 
 SAVEVARS
+
+SETAUTH - Set the disc authentication type: "OFF", "PS1" or "PS2"
+
+LOADIMG/UNLOADIMG - load and unload an image for theming
 
 ```*``` wildcard(s)
 
