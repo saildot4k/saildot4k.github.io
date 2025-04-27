@@ -61,6 +61,13 @@ If you are an installer and would like a sample, please let me [know!](mailto:in
     Placeholder, not completed
 
 
+-   SCPH-500XX GH-023 Install Diagram
+
+    ---
+
+    Placeholder, not completed
+
+
 -   Installed (pics to come)
 
     ---
@@ -70,23 +77,31 @@ If you are an installer and would like a sample, please let me [know!](mailto:in
 </div>
 
 
-#### GH-026 aka V10
+#### SCPH-500XX GH-026/029 Flex PCB
 
 <div class="grid cards" markdown>
     
--   SCPH-500XX GH-026 Flex Front
+-   SCPH-500XX GH-026/029 Flex Front
 
     ---
 
-    ![GH-026 Flex Front](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Front%20Render.png)
+    ![GH-026/029 Flex Front](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Front%20Render.png)
     In prototype stage...
 
 
--   SCPH-500XX GH-026 Flex Rear
+-   SCPH-500XX GH-026/029 Flex Rear
 
     ---
 
-    ![GH-026 Flex Back](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Back%20Render.png)
+    ![GH-026/029 Flex Back](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Back%20Render.png)
+    In prototype stage...
+
+
+-   SCPH-500XX GH-026/029 Install Diagram
+
+    ---
+
+    Picture Placeholder
     In prototype stage...
 
 
