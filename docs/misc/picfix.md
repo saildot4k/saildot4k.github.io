@@ -124,6 +124,9 @@ If you are an installer and would like a sample, please let me [know!](mailto:in
     ---
 
     ![70K Matrix PICfix Install Diagram](assets/picfix/SCPH-700XX/PicFix%2070k%20Install%20Diagram.jpg)
+    
+    ???+ note "Ground Point"
+    Hint: Place kapton tape on the ground point only exposing the highlighted pink sliver. Carefully rough up the ground point and pre-tin the flex PCB ground point. This will make soldering ground quite easy.
 
 
 -   SCPH-700XX Installed
