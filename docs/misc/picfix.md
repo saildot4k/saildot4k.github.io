@@ -135,6 +135,8 @@ If you are an installer and would like a sample, please let me [know!](mailto:in
     
 </div>
 
+???+ note "Ground Point"
+    Hint: Put Kapton down tape exposing only the highlighted pink semi-circle. Carefully rough up the ground point and pre-tin the flex PCB ground point. This will make soldering ground quite easy.
 
 
 ## Parts Needed
