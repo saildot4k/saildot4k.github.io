@@ -16,7 +16,7 @@ I (R3Z3N) simply applied some artistic touch to make this an easier install that
 
 SCPH-390XX The bug is present in this, but triggers much less often.
 
-SCPH-500XX GH-023 and GH-026 motherboards
+SCPH-500XX GH-023, GH-026 and GH-029 motherboards
 
 SCPH-700XX except if your PS2 is the following model with the circutry in red, you DO NOT NEED THIS FIX!
 
