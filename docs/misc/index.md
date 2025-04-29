@@ -1,6 +1,6 @@
 <div class="grid cards" markdown>
 
--   Matrix Picfix Flex PCB
+-   __Matrix Picfix Flex PCB__
 
     ---
 
@@ -9,7 +9,7 @@
     [![Matrix PicFix](assets/picfix/SCPH-700XX/PicFix_V5_Thin.png){ height="75" align="middle" }](https://ps2modchiptutorials.com/misc/picfix)
 
 
--   RetroGem HDMI Upscaler
+-   __RetroGem HDMI Upscaler__
 
     ---
 
@@ -18,7 +18,7 @@
     [![RetroGem](https://static.wixstatic.com/media/eead71_9cf7b186f624440c9f5fe2e4509068c8~mv2.jpg/v1/fill/w_941,h_551,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/eead71_9cf7b186f624440c9f5fe2e4509068c8~mv2.jpg){ height="75" align="middle" }](https://www.pixelfx.co/hdmi-retro-gem)
 
 
--   iFlash2PS2
+-   __iFlash2PS2__
 
     ---
 
@@ -27,7 +27,7 @@
     [![iFlash2PS2](https://i0.wp.com/arthrimus.com/wp-content/uploads/2024/05/Installation.jpg?fit=1920%2C1920&ssl=1){ height="75" align="middle" }](https://arthrimus.com/product/iflash2ps2-flex-kit/)
 
 
--   Methyele
+-   __Methyele__
 
     ---
 
@@ -36,7 +36,7 @@
     [![Methylene](https://gusse.in/uploads/2023/08/image.png){ height="75" align="middle" }](https://gusse.in/shop/)
 
 
--   MemCard PRO2
+-   __MemCard PRO2__
 
     ---
 
@@ -47,7 +47,7 @@
     [:material-cloud-download: MCP2 Firmware](https://install.appcenter.ms/orgs/beta-ucu9/apps/memcard-pro2/distribution_groups/public)
 
 
--   SD2PSX
+-   __SD2PSX__
 
     ---
 
@@ -58,7 +58,7 @@
     [:material-cloud-download: SD2PSXtd Firmware](https://sd2psxtd.github.io/)
 
 
--   PSXMemCard Gen 2
+-   __PSXMemCard Gen 2__
 
     ---
 
