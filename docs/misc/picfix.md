@@ -14,11 +14,11 @@ I (R3Z3N) simply applied some artistic touch to make this an easier install that
 
 ### Models that need the Matrix Picfix
 
-SCPH-390XX The bug is present in this, but triggers much less often.
+SCPH-390XX The bug is present in this, but triggers much less often. Also known as V8.
 
-SCPH-500XX GH-023 and GH-026 motherboards
+SCPH-500XX GH-023, GH-026 and GH-029 motherboards. Also known as V9, V10 and V11.
 
-SCPH-700XX except if your PS2 is the following model with the circutry in red, you DO NOT NEED THIS FIX!
+SCPH-700XX except if your PS2 is the following model with the circutry in red, you DO NOT NEED THIS FIX! Also known as V12.
 
 ![Sony Laser Fix](assets//picfix/70k%20laser%20fix.jpg)
 
@@ -267,9 +267,9 @@ This is neededed if you provided your own parts. If you purchased assembled from
     
     </div>
 
-## Testing your PIXFix PCB
+## Testing your PICFix PCB
 
-1.      Solder all points except K into your PS2. Note: PS2 should be unplugged from mains power!
+1.  Solder all points except K into your PS2. Note: PS2 should be unplugged from mains power!
 
 2.  Bridge TEST and the 1.5K resistor pad with the middle section next to it.
 
@@ -287,7 +287,7 @@ This is neededed if you provided your own parts. If you purchased assembled from
     
     3.  Desolder your existing resistor bridge, and bridge the other resistor pad.
 
-    4.  Go back to step 5 and retest. If step 5 is succes go to step 7.
+    4.  Go back to step 4 and retest. If step 5 is succes go to step 7.
 
 6.  Desolder the TEST pads
 
