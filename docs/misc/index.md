@@ -72,7 +72,7 @@
 
     ---
 
-    If you do not know what revision your PS2 is, this will help define it to cross reverence with the install diagrams.
+    This link will help you define what revision PS2 you have to cross reference with the install diagrams.
 
     [![PS2DevWiki](https://www.psdevwiki.com/ps2/logo.png){ height="75" align="middle" }](https://www.psdevwiki.com/ps2/Versions_(unofficial))
 
