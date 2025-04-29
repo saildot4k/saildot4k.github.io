@@ -39,4 +39,13 @@
     [![Modzville Logo](thanks/mvusalogo.avif){ height="75" align="middle" }](https://modzvilleusa.com/)
 
 
+-   __PS2 Versions (unofficial)__
+
+    ---
+
+    This link will help you define what revision PS2 you have to cross reference with the install diagrams.
+
+    [![PS2DevWiki](https://www.psdevwiki.com/ps2/logo.png){ height="75" align="middle" }](https://www.psdevwiki.com/ps2/Versions_(unofficial))
+
+
 </div>
