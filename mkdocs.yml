@@ -85,7 +85,8 @@ nav:
   - Home: index.md
   - Crystal Chips:
     - crystal-chips/cc-index.md
-    - Install Diagrams: crystal-chips/cc-install.md
+    - 1.0 Install Diagrams: crystal-chips/cc10-install.md
+    - 1.1+ Install Diagrams: crystal-chips/cc-install.md
     - Video Tutorials: crystal-chips/cc-vids.md
     - Written Tutorials: crystal-chips/cc-writeups.md
     - Files: crystal-chips/cc-files.md
