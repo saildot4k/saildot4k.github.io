@@ -68,5 +68,13 @@
 
     [:material-cloud-download: SD2PSXtd Firmware](https://sd2psxtd.github.io/)
 
+-   PS2 Versions (unofficial)
+
+    ---
+
+    If you do not know what revision your PS2 is, this will help define it to cross reverence with the install diagrams.
+
+    [![PS2DevWiki](https://www.psdevwiki.com/ps2/logo.png){ height="75" align="middle" }](https://www.psdevwiki.com/ps2/Versions_(unofficial))
+
 
 </div>
