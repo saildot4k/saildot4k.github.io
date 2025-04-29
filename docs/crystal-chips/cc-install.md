@@ -2,10 +2,9 @@
 
 !!! soldering "Crystal Chip 1.0 Install Note"
 
-    Crystal Chip 1.0 may use these diagrams for v9 and later. [Otherwise reference the 1.0 diagrams here.](https://ps2modchiptutorials.com/cyrstal-chips/cc10-install/)
+    Crystal Chip 1.0 may use these diagrams for v9 and later. [Otherwise reference the 1.0 diagrams here.](cc10-install.md)
 
-    HOWEVER the 1.0 does NOT use the TO (Tray Open) on v9 PS2s or later, and does 
-    NOT use the HA point for any install.
+    CC 1.0 does NOT use the TO (Tray Open) on v9 PS2s or later, and does NOT use the HA point for any install.
 
     !!! soldering "SD point confusion"
         
