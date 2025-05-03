@@ -43,7 +43,7 @@ If you are an installer and would like a sample, please let me [know!](mailto:in
 
 ### SCPH-500XX Flex PCB
 
-#### GH-023 aka V9
+#### GH-0023 (v9) Flex PCB
 
 <div class="grid cards" markdown>
 
@@ -79,7 +79,7 @@ If you are an installer and would like a sample, please let me [know!](mailto:in
 </div>
 
 
-#### SCPH-500XX GH-0029 Flex PCB
+#### SCPH-500XX GH-026/029 (v10/v11) Flex PCB
 
 <div class="grid cards" markdown>
     
