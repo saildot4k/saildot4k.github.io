@@ -51,7 +51,7 @@ If you are an installer and would like a sample, please let me [know!](mailto:in
 
     ---
 
-    ![GH-026 Flex Front](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Front%20Render.png)
+    ![GH-026 Flex Front](assets/picfix/SCPH-500XX/GH-023/GH-023%20PicFix%20Flex.png)
     In prototype stage...
 
 
@@ -59,7 +59,7 @@ If you are an installer and would like a sample, please let me [know!](mailto:in
 
     ---
 
-    ![GH-026 Flex Rear](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Back%20Render.png)
+    ![GH-026 Flex Rear](assets/picfix/SCPH-500XX/GH-023/GH-023%20PicFix%20Flex%20Rear.png)
     In prototype stage...
 
 
