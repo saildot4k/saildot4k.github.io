@@ -203,7 +203,7 @@ This is neededed if you provided your own parts. If you purchased assembled from
         ---
     
         ![Programmer Socketing](assets/picfix/Tutorial/Programmer_Socketing.png)
-        :warning: If your adapter is different, reference it's document or diagrams on its PCB where pin 1 of the PIC12F507 should plug into with the DIP8 adapter.
+        :warning: If your adapter is different, reference it's document or diagrams on its PCB where pin 1 of the PIC12F507 should plug into for the DIP8 adapter.
 
 
     -   Seat Jumper Settings
@@ -211,7 +211,7 @@ This is neededed if you provided your own parts. If you purchased assembled from
         ---
 
         ![Programmer Jumper Settings](assets/picfix/Tutorial/Jumper_Settings.png)
-        :warning: If your adapter is different, reference it's document or diagrams on its PCB. Your jumper settins may differ for a different adapter.
+        :warning: If your adapter is different, reference it's document or diagrams on its PCB. Your jumper settings may differ for a different adapter.
 
     
     </div>
