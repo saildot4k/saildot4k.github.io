@@ -51,14 +51,16 @@ If you are an installer and would like a sample, please let me [know!](mailto:in
 
     ---
 
-    Placeholder, not completed
+    ![GH-026 Flex Front](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Front%20Render.png)
+    In prototype stage...
 
 
 -   SCPH-500XX GH-023 Flex Rear
 
     ---
 
-    Placeholder, not completed
+    ![GH-026 Flex Rear](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Back%20Render.png)
+    In prototype stage...
 
 
 -   SCPH-500XX GH-023 Install Diagram
@@ -77,7 +79,7 @@ If you are an installer and would like a sample, please let me [know!](mailto:in
 </div>
 
 
-#### SCPH-500XX GH-026/029 Flex PCB
+#### SCPH-500XX GH-0029 Flex PCB
 
 <div class="grid cards" markdown>
     
@@ -85,19 +87,19 @@ If you are an installer and would like a sample, please let me [know!](mailto:in
 
     ---
 
-    ![GH-026/029 Flex Front](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Front%20Render.png)
+    ![GH-029 Flex Front](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Front%20Render.png)
     In prototype stage...
 
 
--   SCPH-500XX GH-026/029 Flex Rear
+-   SCPH-500XX GH-029 Flex Rear
 
     ---
 
-    ![GH-026/029 Flex Back](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Back%20Render.png)
+    ![GH-029 Flex Back](assets/picfix/SCPH-500XX/GH-026/GH-026%20PicFix%20Back%20Render.png)
     In prototype stage...
 
 
--   SCPH-500XX GH-026/029 Install Diagram
+-   SCPH-500XX GH-029 Install Diagram
 
     ---
 
@@ -201,6 +203,7 @@ This is neededed if you provided your own parts. If you purchased assembled from
         ---
     
         ![Programmer Socketing](assets/picfix/Tutorial/Programmer_Socketing.png)
+        :warning: If your adapter is different, reference it's document or diagrams on its PCB where pin 1 of the PIC12F507 should plug into with the DIP8 adapter.
 
 
     -   Seat Jumper Settings
@@ -208,6 +211,7 @@ This is neededed if you provided your own parts. If you purchased assembled from
         ---
 
         ![Programmer Jumper Settings](assets/picfix/Tutorial/Jumper_Settings.png)
+        :warning: If your adapter is different, reference it's document or diagrams on its PCB. Your jumper settins may differ for a different adapter.
 
     
     </div>
