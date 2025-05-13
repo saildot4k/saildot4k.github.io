@@ -300,8 +300,8 @@ To create a new folder.
 
  Note: MKDIR will not create mutliple folders for example if MYFOLDER, FOLDER and FOLDER3 do not exist:
 
- ```
- IF NOT EXISTS "mass:/MYFOLDER/FOLDER2/FOLDER3"
+```
+IF NOT EXISTS "mass:/MYFOLDER/FOLDER2/FOLDER3"
     IF FAIL MKDIR "mass:/MYFOLDER/FOLDER2/FOLDER3"
         MESSAGE "FAILED TO CREATE DIRECTORY!"
     ENDIF
@@ -421,23 +421,24 @@ LOADIMG/UNLOADIMG - load and unload an image for theming
 
 When debugging paste variables where you want in the script. Then run PS2Client to see output via ECHO
 
-```
-    PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE"
 
-    ECHO ""
-    ECHO ""
-    ECHO "PWD: $PWD$"
-    ECHO "SRC_DEV: $SRC_DEV$"
-    ECHO "SRC_PATH: $SRC_PATH$"
-    ECHO "SRC_FILE: $SRC_FILE$"
-    ECHO "ARG0: $ARG0$"
-    ECHO "ARG1: $ARG1$"
-    ECHO "ARG2: $ARG2$"
-    ECHO "ARG3: $ARG3$"
-    ECHO "ARG4: $ARG4$"
-    ECHO "ARG5: $ARG5$"
-    ECHO ""
-    ECHO ""
+```
+PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE"
+
+ECHO ""
+ECHO ""
+ECHO "PWD: $PWD$"
+ECHO "SRC_DEV: $SRC_DEV$"
+ECHO "SRC_PATH: $SRC_PATH$"
+ECHO "SRC_FILE: $SRC_FILE$"
+ECHO "ARG0: $ARG0$"
+ECHO "ARG1: $ARG1$"
+ECHO "ARG2: $ARG2$"
+ECHO "ARG3: $ARG3$"
+ECHO "ARG4: $ARG4$"
+ECHO "ARG5: $ARG5$"
+ECHO ""
+ECHO ""
 ```
 
 #### PS2Client
