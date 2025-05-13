@@ -298,7 +298,8 @@ To create a new folder.
 
  will create a folder MYFOLDER in the USB mass storage.
 
- Note: MKDIR will not create mutliple folders for example:
+ Note: MKDIR will not create mutliple folders for example if MYFOLDER, FOLDER and FOLDER3 do not exist:
+
  ```
  IF NOT EXISTS "mass:/MYFOLDER/FOLDER2/FOLDER3"
     IF FAIL MKDIR "mass:/MYFOLDER/FOLDER2/FOLDER3"
@@ -309,7 +310,9 @@ ENDIF
 
 The workaround is to exploit a bug that thinks it failed
 
-```COPY $PWD$ "mass:/MYFOLDER/MYFOLDER2/MYFOLDER3"```  DO NOT PRECEDE WITH `IF FAIL` as it does think it failed. Contents of folders will not be harmed in my testing if some of it exists.
+```COPY $PWD$ "mass:/MYFOLDER/MYFOLDER2/MYFOLDER3"```
+
+DO NOT PRECEDE WITH `IF FAIL` as it does think it failed. Contents of folders will not be harmed in my testing if some of it exists.
 
 
 #### REDIRFILE
