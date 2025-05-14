@@ -42,5 +42,7 @@
 ### V10 V11 GH-026 GH-029
 ![V10/V11](install-diagrams/cc1.0/cc1_v10.jpg){ width="800" }
 
+## Slim PS2s
+
 ## V12 GH-032 GH-035 Incoming
 TO Point found, manual incoming
