@@ -267,7 +267,17 @@ File manipulation is useful for installation scripts (in APPINFO.PBT). You can m
 #### COPY
 To copy file/directory from source to destination :
 
-```COPY "host:/FOLDER/FILE.TXT" "mass:/FOLDER1/FOLDER2/FILE.TXT"```
+```COPY "host:/FOLDER/FILE.TXT" "mass:/FOLDER1/FOLDER2/FILE.TXT"``` will copy the single file, but will not create destination folder structure.
+
+```COPY "host:/FOLDER" "mass:/FOLDER/FOLDER2"``` will copy contents source folder to destintaion folder
+
+Notes: copying a file to a file only works if prior directories already exist on destination.
+
+```COPY "host:/FOLDER" "mass:/FOLDER1/FOLDER2/FILE.TXT"``` DOES NOT WORK
+
+```COPY "host:/FOLDER" "mass:/FOLDER1/FOLDER2/"``` This does work to create an empty mass:/FOLDER1 but will say it fails if used with ```IF COPY FAIL```
+
+
 
 #### RM
 To delete a file or directory
@@ -287,6 +297,23 @@ To create a new folder.
 ```MKDIR "mass:/MYFOLDER"```
 
  will create a folder MYFOLDER in the USB mass storage.
+
+ Note: MKDIR will not create mutliple folders for example if MYFOLDER, FOLDER and FOLDER3 do not exist:
+
+```
+IF NOT EXISTS "mass:/MYFOLDER/FOLDER2/FOLDER3"
+    IF FAIL MKDIR "mass:/MYFOLDER/FOLDER2/FOLDER3"
+        MESSAGE "FAILED TO CREATE DIRECTORY!"
+    ENDIF
+ENDIF
+```
+
+The workaround is to exploit a bug that thinks it failed
+
+```COPY $PWD$ "mass:/MYFOLDER/MYFOLDER2/MYFOLDER3"```
+
+DO NOT PRECEDE WITH `IF FAIL` as it does think it failed. Contents of folders will not be harmed in my testing if some of it exists.
+
 
 #### REDIRFILE
 To symlink a file to another location. Only works if the environment you use doesn't reboot IOP too soon IE PS2LINK
@@ -389,3 +416,37 @@ LOADIMG/UNLOADIMG - load and unload an image for theming
 ```*``` wildcard(s)
 
 ```?``` single character wildcard
+
+#### Useful Tips
+
+When debugging paste variables where you want in the script. Then run PS2Client to see output via ECHO
+
+
+```
+PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE"
+
+ECHO ""
+ECHO ""
+ECHO "PWD: $PWD$"
+ECHO "SRC_DEV: $SRC_DEV$"
+ECHO "SRC_PATH: $SRC_PATH$"
+ECHO "SRC_FILE: $SRC_FILE$"
+ECHO "ARG0: $ARG0$"
+ECHO "ARG1: $ARG1$"
+ECHO "ARG2: $ARG2$"
+ECHO "ARG3: $ARG3$"
+ECHO "ARG4: $ARG4$"
+ECHO "ARG5: $ARG5$"
+ECHO ""
+ECHO ""
+```
+
+#### PS2Client
+
+Paste and edit this text into plain text file saved as LauchBM2.bat
+
+```ps2client -h IPADDRESS execee host:/BM/BM2.ELF```
+
+In the folder that has PS2Client, paste your BM folder
+
+You can then edit the scripts, and reload menu on Crystal Chip BootManager to see your changes
