@@ -44,5 +44,5 @@
 
 ## Slim PS2s
 
-### V12 GH-032 GH-035 Incoming
+#### V12 GH-032 GH-035 Incoming
 TO Point found, manual incoming
