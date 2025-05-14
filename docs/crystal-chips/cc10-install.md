@@ -4,10 +4,12 @@
 
     Crystal Chip 1.0 uses a different TO point on v1-v8 than CC 1.1 and later.
 
-    CC 1.0 does NOT use the TO (Tray Open) on v9 PS2s or later, and does 
-    NOT use the HA point for any install. 
+    Officially CC 1.0 does NOT use the TO (Tray Open) on v9 PS2s or later, and does 
+    NOT use the HA point for any install. However I have found the TO point (TRAYSW_OUT) in the schematics.
+    I have updated V9 with the TO point, and plan on doing so for V10. V12 is found as well and will add here when complete. 
+    Note added 05/2025
     
-    For installs in V9 and later reference the [CC 1.1 and later diagrams.](cc-install.md)
+    For installs in V10 and later reference the [CC 1.1 and later diagrams.](cc-install.md)
 
     !!! soldering "SD point confusion"
         
