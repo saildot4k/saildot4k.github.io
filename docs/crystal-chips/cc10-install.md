@@ -33,3 +33,6 @@
 
 #### V7 V8
 ![V7/V8](install-diagrams/cc1.0/cc1_v7-8.jpg){ width="800" }
+
+### V9
+![V9](install-diagrams/cc1.0/cc1_v9.jpg){ width="800" }
