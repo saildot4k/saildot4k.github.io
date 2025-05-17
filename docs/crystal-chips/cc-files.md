@@ -1,10 +1,53 @@
-## Crystal Chip FW R34 v3 4/29/2025
+## Crystal Chip FW 34 V4 by R3Z3N 5/17/2025
 
 [Crystal Chip FW R34 v3 with updated Dashboard Scripts by R3Z3N](https://github.com/saildot4k/Crystal-Chip-R34-v3/releases)
 
+Fixes/Changes:
+- SAS (Save Application Support) added as best as possible. Apps can be installed to:
+    mc?:/APPFOLDER/ but this needs an matching mc?:/BM/APPS/APPFOLDER/APPINFO/PBT
+    as there is a bug where we can not search for mc?:/*/APPINFO.PBT sadly. So this is a workaround.
+    This is nice as apps will show in the OSDSYS now.
+    Also:
+    nonmc?:/APPFOLDER 
+    nonmc?:/APPS/APPFOLDER
+    fully work, no odd workarounds.
+    Old APPINFO.PBT still supported.
+
+- Installing from source to source shows a warning, same for CDDVD (cant install/remove from that!) 
+    nor run from PC HOST (not supported)
+
+- Power off added to BootManager. There is no proper restart.elf that I know of yet...
+
+- Fixed System Info not showing console model as needed MATCHES not EQU (and reverse the argument)
+
+- Fixed and added old themes which improperly used LOADING instead of the proper LOADIMG
+
+- v14 and later PS2s no longer show HDD options and do not auto load HDD drivers. 
+    However the setting is still saved so swapping your memcard between PS2s if you
+    have multiple chips still functions as you set it.
+
+- v12 and later no longer show MegaMemory Patcher option as Sony blocked it's use electrically for PSTwo Slims.
+
+- V16-v18 is now properly identified in Console Information
+
+- Added PowerShell scripts to create APPINFO.PBT recursively and non recursively.
+    needs title.cfg included in app folder to create. However if apps need specifically
+    boot command IE `SHUTDOWN MM` or SET `"BM.AUTOLOAD_FSD_EN" "0"` may need to be added to the
+    run section. For example wLE ISR needs SHUTDOWN MM to run from USB.
+    Also need to add REDIRFILE for the apps that support it.
+
+To Do:
+- Help Ripto create title.cfg for his AIO  (ALL IN ONE) app repository
+
+- Still work on 8MB firmware
+
+- Bundle the new apps for the MegaPack
+
+## Crystal Chip FW R34 v3 4/29/2025
+
 (RUNNING CHANGES as of 4/29/2025. I update the date as I go...)
     
-    
+Fixes/Changes:
 - CC1.X firmware options to run BM from MemCard1,2, HDD and USB. HDD/USB boot needs HDD drivers on mc0:/BM/SHARED/
 HDD and USB are commented out, go ahead and uncomment out in BM/FWS/LATEST/FWINFO.PBT to experiment
 
