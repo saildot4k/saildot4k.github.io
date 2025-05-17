@@ -372,10 +372,9 @@ FORMAT
 
 $BM.MAJOR_VER$ - BootManager major version
 
-$BM.MINOR_VER$ - BootManager major version
+$BM.MINOR_VER$ - BootManager minor version
 
 $BM.PATCH_VER$ - BootManager patch version
-
 
 $BM.CC_MAJOR_VER$ - Crystal Chip major version
 
