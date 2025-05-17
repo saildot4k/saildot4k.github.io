@@ -54,9 +54,9 @@
 ## Crystal Chip FW R34 v3 4/29/2025
 
 ???- note "R34 V3 Changes"
-    (RUNNING CHANGES as of 4/29/2025. I update the date as I go...)
-        
+
     Fixes/Changes:
+
     - CC1.X firmware options to run BM from MemCard1,2, HDD and USB. HDD/USB boot needs HDD drivers on mc0:/BM/SHARED/
     HDD and USB are commented out, go ahead and uncomment out in BM/FWS/LATEST/FWINFO.PBT to experiment
 
