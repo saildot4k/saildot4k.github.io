@@ -2,94 +2,103 @@
 
 [Crystal Chip FW R34 v3 with updated Dashboard Scripts by R3Z3N](https://github.com/saildot4k/Crystal-Chip-R34-v3/releases)
 
-Fixes/Changes:
-- SAS (Save Application Support) added as best as possible. Apps can be installed to:
-    mc?:/APPFOLDER/ but this needs an matching mc?:/BM/APPS/APPFOLDER/APPINFO/PBT
-    as there is a bug where we can not search for mc?:/*/APPINFO.PBT sadly. So this is a workaround.
-    This is nice as apps will show in the OSDSYS now.
-    Also:
-    nonmc?:/APPFOLDER 
-    nonmc?:/APPS/APPFOLDER
-    fully work, no odd workarounds.
-    Old APPINFO.PBT still supported.
+???- note "R34 V4 Changes"
+    Fixes/Changes:
 
-- Installing from source to source shows a warning, same for CDDVD (cant install/remove from that!) 
-    nor run from PC HOST (not supported)
+    - SAS (Save Application Support) added as best as possible. Apps can be installed to:
+        mc?:/APPFOLDER/ but this needs an matching mc?:/BM/APPS/APPFOLDER/APPINFO/PBT
+        as there is a bug where we can not search for mc?:/*/APPINFO.PBT sadly. So this is a workaround.
+        This is nice as apps will show in the OSDSYS now.
 
-- Power off added to BootManager. There is no proper restart.elf that I know of yet...
+        Also:
 
-- Fixed System Info not showing console model as needed MATCHES not EQU (and reverse the argument)
+        nonmc?:/APPFOLDER 
 
-- Fixed and added old themes which improperly used LOADING instead of the proper LOADIMG
+        nonmc?:/APPS/APPFOLDER
 
-- v14 and later PS2s no longer show HDD options and do not auto load HDD drivers. 
-    However the setting is still saved so swapping your memcard between PS2s if you
-    have multiple chips still functions as you set it.
+        fully work, no odd workarounds.
 
-- v12 and later no longer show MegaMemory Patcher option as Sony blocked it's use electrically for PSTwo Slims.
+        Old APPINFO.PBT still supported.
 
-- V16-v18 is now properly identified in Console Information
+    - Installing from source to source shows a warning, same for CDDVD (cant install/remove from that!) 
+        nor run from PC HOST (not supported)
 
-- Added PowerShell scripts to create APPINFO.PBT recursively and non recursively.
-    needs title.cfg included in app folder to create. However if apps need specifically
-    boot command IE `SHUTDOWN MM` or SET `"BM.AUTOLOAD_FSD_EN" "0"` may need to be added to the
-    run section. For example wLE ISR needs SHUTDOWN MM to run from USB.
-    Also need to add REDIRFILE for the apps that support it.
+    - Power off added to BootManager. There is no proper restart.elf that I know of yet...
 
-To Do:
-- Help Ripto create title.cfg for his AIO  (ALL IN ONE) app repository
+    - Fixed System Info not showing console model as needed MATCHES not EQU (and reverse the argument)
 
-- Still work on 8MB firmware
+    - Fixed and added old themes which improperly used LOADING instead of the proper LOADIMG
 
-- Bundle the new apps for the MegaPack
+    - v14 and later PS2s no longer show HDD options and do not auto load HDD drivers. 
+        However the setting is still saved so swapping your memcard between PS2s if you
+        have multiple chips still functions as you set it.
+
+    - v12 and later no longer show MegaMemory Patcher option as Sony blocked it's use electrically for PSTwo Slims.
+
+    - V16-v18 is now properly identified in Console Information
+
+    - Added PowerShell scripts to create APPINFO.PBT recursively and non recursively.
+        needs title.cfg included in app folder to create. However if apps need specifically
+        boot command IE `SHUTDOWN MM` or SET `"BM.AUTOLOAD_FSD_EN" "0"` may need to be added to the
+        run section. For example wLE ISR needs SHUTDOWN MM to run from USB.
+        Also need to add REDIRFILE for the apps that support it.
+
+    To Do:
+
+    - Help Ripto create title.cfg for his AIO  (ALL IN ONE) app repository
+
+    - Still work on 8MB firmware
+
+    - Bundle the new apps for the MegaPack
 
 ## Crystal Chip FW R34 v3 4/29/2025
 
-(RUNNING CHANGES as of 4/29/2025. I update the date as I go...)
-    
-Fixes/Changes:
-- CC1.X firmware options to run BM from MemCard1,2, HDD and USB. HDD/USB boot needs HDD drivers on mc0:/BM/SHARED/
-HDD and USB are commented out, go ahead and uncomment out in BM/FWS/LATEST/FWINFO.PBT to experiment
+???- note "R34 V3 Changes"
+    (RUNNING CHANGES as of 4/29/2025. I update the date as I go...)
+        
+    Fixes/Changes:
+    - CC1.X firmware options to run BM from MemCard1,2, HDD and USB. HDD/USB boot needs HDD drivers on mc0:/BM/SHARED/
+    HDD and USB are commented out, go ahead and uncomment out in BM/FWS/LATEST/FWINFO.PBT to experiment
 
-- MMCE device support for example SD2PSX, PsxMemCardGen2, MemCardPro2.
-[SD2PSXTD](https://sd2psxtd.github.io/)
-[MCP2](https://8bitmods.com/memcard-pro2-for-ps2-and-ps1-smoke-black/)
+    - MMCE device support for example SD2PSX, PsxMemCardGen2, MemCardPro2.
+    [SD2PSXTD](https://sd2psxtd.github.io/)
+    [MCP2](https://8bitmods.com/memcard-pro2-for-ps2-and-ps1-smoke-black/)
 
--  ~~Used El Isras USB drivers for exfat support:~~ [BDM Assault](https://github.com/israpps/BDMAssault)
-REASON: Unable to get EXFAT drivers to run apps from USB. Needs further testing.
+    -  ~~Used El Isras USB drivers for exfat support:~~ [BDM Assault](https://github.com/israpps/BDMAssault)
+    REASON: Unable to get EXFAT drivers to run apps from USB. Needs further testing.
 
-- Security Settings added: when pin is set, advanced settings are unaccessible. 
+    - Security Settings added: when pin is set, advanced settings are unaccessible. 
 
-- Updated bminit.pbat to load IRX drivers from where BM is running from,
-otherwise with DEV1/2 would not see/run apps from mc0/1/USB/HDD.
+    - Updated bminit.pbat to load IRX drivers from where BM is running from,
+    otherwise with DEV1/2 would not see/run apps from mc0/1/USB/HDD.
 
-- Updated HDDMOUNT.IRX and BM/SCRIPTS/HDDLOAD.PBT to load __common HDD partition
-instead of +Crystal. This is to keep things consistent with the homebrew community
+    - Updated HDDMOUNT.IRX and BM/SCRIPTS/HDDLOAD.PBT to load __common HDD partition
+    instead of +Crystal. This is to keep things consistent with the homebrew community
 
-- Changed scripts to allow apps to be installed when booted from recovery cd.
+    - Changed scripts to allow apps to be installed when booted from recovery cd.
 
-- Changed scripts to only show options for chip installed! IE no more seeing DFFS
-options on CC 1.XS
+    - Changed scripts to only show options for chip installed! IE no more seeing DFFS
+    options on CC 1.XS
 
-- Changed scripts so that FW choices are only applicable to the chip installed.
-IE CC1.0-1.2 can choose BM run point, CC2.0 DFFS only.
+    - Changed scripts so that FW choices are only applicable to the chip installed.
+    IE CC1.0-1.2 can choose BM run point, CC2.0 DFFS only.
 
-- BootManager app install no longer installs FW files to the dffs: partition to save 
-51KB for CC2.0 owners.
+    - BootManager app install no longer installs FW files to the dffs: partition to save 
+    51KB for CC2.0 owners.
 
-- Show Info gives a little more clarity IE where is BM executed from, what console region codes stand for etc.
+    - Show Info gives a little more clarity IE where is BM executed from, what console region codes stand for etc.
 
-- Cotton Candy theme added, each version of the Crystal Chip is represented!
+    - Cotton Candy theme added, each version of the Crystal Chip is represented!
 
-- Added Italian and Spanish language translations.
+    - Added Italian and Spanish language translations.
 
-- v14 and later PS2s no longer show HDD options and do not auto load HDD drivers. 
-However the setting is still saved so swapping your memcard between PS2s if you
-have multiple chips still functions as you set it.
+    - v14 and later PS2s no longer show HDD options and do not auto load HDD drivers. 
+    However the setting is still saved so swapping your memcard between PS2s if you
+    have multiple chips still functions as you set it.
 
-- v12 and later no longer show MegaMemory Patcher option as Sony blocked it's use electrically for PSTwo Slims.
+    - v12 and later no longer show MegaMemory Patcher option as Sony blocked it's use electrically for PSTwo Slims.
 
-- V16-v18 is now properly identified in Console Information
+    - V16-v18 is now properly identified in Console Information
 
 ## BootManager MegaPack Downloads
 
