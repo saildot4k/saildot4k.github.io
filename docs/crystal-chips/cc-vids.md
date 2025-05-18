@@ -10,3 +10,5 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/njhjhrrdwOs?si=XI5N_8LR8RhXpWcl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
+### Crystal Chip: R34 V4 Changes 5-17-2025
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_JhVFjbGjrg?si=U07dJlsSPVRY7Sg5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
