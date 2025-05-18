@@ -471,15 +471,15 @@ Apps Included and updated as of 3/7/2027:
 
 ## To Do
 
-- [ ] SAS support (Apps from root with prefixes IE mc?:/APP_WLE-ISR-EXFAT-MMCE or mc?:/APP_OPL-MMCE-BETA2)
-- [ ] SAS build for BootManager and it's folder structure
+- [x] SAS support (Apps from root with prefixes IE mc?:/APP_WLE-ISR-EXFAT-MMCE or mc?:/APP_OPL-MMCE-BETA2)
 - [ ] CC1.X Boot method failover IE try next memcard
-- [ ] CC1.X BootManager boots from USB 
-- [ ] CC2.0 8MB Dataflash support in FW
-    * [ ] 1056 Page Support for AT45DB642D in testing
-    * [ ] 256 Page Support for AT45DB621E in testing
+- [x] CC1.X BootManager boots from USB 
+    Commented out in BM/FWS/LATEST/FWINFO.PBT for advanced users to use
 - [x] BM can be ran from Hard Drive (HDD drivers MUST be installed tp mc0)
     * [x] Uploaded to github
     * [ ] Script for ease of use
     * [ ] Document for ease of use
 - [ ] HDD IRXs not installed for V14 and later PS2s
+- [ ] CC2.0 8MB Dataflash support in FW
+    * [ ] 1056 Page Support for AT45DB642D in testing
+    * [ ] 256 Page Support for AT45DB621E in testing
