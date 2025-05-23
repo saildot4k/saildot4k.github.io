@@ -124,7 +124,7 @@
 
 </div>
 
-Apps Included and updated as of 3/7/2027:
+Apps Included and updated as of 3/7/2025:
 
 | Application               | USB (Fat16/32)                  | MMCE Device                       |
 | :------------------------ | :-----------------------------: | :-------------------------------: |
