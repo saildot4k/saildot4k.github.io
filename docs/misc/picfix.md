@@ -14,7 +14,7 @@ I (R3Z3N) simply applied some artistic touch to make this an easier install that
 
 ### Models that need the Matrix Picfix
 
-SCPH-390XX The bug is present in this, but triggers much less often. Also known as V8.
+SCPH-370XX/3900XX The bug is present in this, but triggers much less often. Also known as V7/V8.
 
 SCPH-500XX GH-023, GH-026 and GH-029 motherboards. Also known as V9, V10 and V11.
 
