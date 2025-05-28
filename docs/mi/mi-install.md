@@ -70,7 +70,7 @@
 ![USA V12](install-diagrams/USA-V12.JPG){ width="800" }
 
 ### V12 ASIA
-![ASIA V12](install-diagrams/Japan-Taiwan-V5.JPG){ width="800" }
+![ASIA V12](install-diagrams/Japan-Taiwan-V12.JPG){ width="800" }
 
 ### V12 PAL
 ![PAL V12](install-diagrams/PAL-V12.JPG){ width="800" }
