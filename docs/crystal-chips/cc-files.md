@@ -1,6 +1,6 @@
 ## Crystal Chip FW 34 V5 by R3Z3N 6/27/2025
 
-[:material-cloud-download: Crystal Chip FW R34 v4 with updated Dashboard Scripts by R3Z3N](https://github.com/saildot4k/Crystal-Chip-R34-v5/archive/refs/heads/v5.zip)
+[:material-cloud-download: Crystal Chip FW R34 v5 with updated Dashboard Scripts by R3Z3N](https://github.com/saildot4k/Crystal-Chip-R34-v5/archive/refs/heads/v5.zip)
 
 ???+ note "R34 V5 Changes"
     Fixes/Changes:
