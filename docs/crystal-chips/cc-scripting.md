@@ -424,20 +424,21 @@ When debugging paste variables where you want in the script. Then run PS2Client 
 ```
 PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE"
 
-ECHO ""
-ECHO ""
-ECHO "PWD: $PWD$"
-ECHO "SRC_DEV: $SRC_DEV$"
-ECHO "SRC_PATH: $SRC_PATH$"
-ECHO "SRC_FILE: $SRC_FILE$"
-ECHO "ARG0: $ARG0$"
-ECHO "ARG1: $ARG1$"
-ECHO "ARG2: $ARG2$"
-ECHO "ARG3: $ARG3$"
-ECHO "ARG4: $ARG4$"
-ECHO "ARG5: $ARG5$"
-ECHO ""
-ECHO ""
+    ECHO ""
+    ECHO ""
+    ECHO ARG0: $ARG0$
+    ECHO ARG1: $ARG1$
+    ECHO ARG2: $ARG2$
+    ECHO ARG3: $ARG3$
+    ECHO ARG4: $ARG4$
+    ECHO ARG5: $ARG5$
+    ECHO ARG6: $ARG6$
+    ECHO ARG7: $ARG7$
+    ECHO ARG8: $ARG8$
+    ECHO ARG9: $ARG9$
+    ECHO ARG10: $ARG10$
+    ECHO ARG11: $ARG11$
+    ECHO ARG12: $ARG12$
 ```
 
 #### PS2Client
