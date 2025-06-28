@@ -60,7 +60,6 @@
     - Bundle the new apps for the MegaPack as they are added to ps2wiki.github.io
 
 
-
 ## Crystal Chip FW 34 V4 by R3Z3N 5/17/2025
 
 ???- note "R34 V4 Changes"
