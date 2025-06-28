@@ -26,6 +26,8 @@
     - Configuration Menus hide or inform users when device drivers are missing. For example NET/FTP/HOST and HDD. If net is missing, FTP and HOST
         inform user NET is missing as that is the backing driver. 
 
+    - Added ability to hide apps for RUN/INSTALL/REMOVE. Reference BM/APPS/OSDSYS/APPINFO.PBT or BM/APPS/BM/APPINFO.PBT
+
     - BootManager updates mc:/SYS-CONF/IPCONFIG.DAT if it exists so that your suite of apps that call your network config stay "synced"
 
     - BootManager Installer updated. Allows choosing device drivers before installing and checks if drivers are on source device.
