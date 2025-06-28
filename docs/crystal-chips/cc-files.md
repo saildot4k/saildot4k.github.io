@@ -23,7 +23,7 @@
     - Device Manager now shows which device drivers are installed. Inform users when device drivers are missing such as when FTP is installed but NET 
         is missing. SCPH-75K and later will inform user if HDD driver is unneeded
 
-    - Configuration Menus hide or inform users when device drivers are missing. For example NET/FTP/HOST and HDD. If net is missing, FTP and HOST
+    - Configuration Menus hide or inform users when device drivers are missing. For example NET/FTP/HOST and HDD. If NET is missing, FTP and HOST
         inform user NET is missing as that is the backing driver. 
 
     - Added ability to hide apps for RUN/INSTALL/REMOVE. Reference BM/APPS/OSDSYS/APPINFO.PBT or BM/APPS/BM/APPINFO.PBT
