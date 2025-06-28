@@ -251,179 +251,165 @@ Apps Included and updated as of 3/7/2025:
 
 ## APPINFO.PBT SAS (SAVE APPLICATION SUPPORT) Example
 
-??? note "APPINFO.PBT SAS Example
+??? note "APPINFO.PBT SAS Example"
     ```
-    # SAS (Save Application Support) compliant BM Script:
-    # Due to wildcard bug on memory card, APPINFO.PBT can not be in root folders where elf exists, so APPINFO.PBT will be in mc?:/BM/APPS/
-    # Memory Card structure mc?:/BM/APPS/$SAS$/APPINFO.PBT and elf in mc?:/$SAS$/APPINFO.PBT
-    # Non-Memory Card Structure: device:/$SAS$/APPINFO.PBT or device:/APPS/$SAS$/APPINFO.PBT NOTE: $PWD$ should work for both.
+    # SAS (Save Application Support) compliant BM Script
+    # Due to wildcard bug on memory card and mmce, bootdevice:/BM/SCRIPTS/DEFINEDROOTFOLDER.PBT must exist to work. Update as needed
 
     # Change this information to describe the application and where it should be ran from for memcard (SAS) or other devices (SAS_NON_MC)
     # SAS is the App folder name. SAS_NON_MC defines if app is in root of non-memcard device (non_mc:/$SAS$) or APP folder (non_mc:/APPS/$SAS$)
-    # This is so that you do not have to edit any info below line 20. 
+    # This is so that you do not have to edit any info below line 28.
     #
-    # Some devices are case sensitive! Make sure you case matches!
+    # Some devices are case sensitive! Make sure your case matches!
     #
-    SET "TITLE" "PS2Temps"
-    SET "VERSION" "1.0"
-    SET "AUTHOR" "jolek and akuhak"
-    SET "DESC" "Monitor your PS2 CPU and Mechacon Temps (if applicable)"
+    # Source: website here
+    SET "TITLE" "Appname"
+    SET "VERSION" "version"
+    SET "AUTHOR" "authors here"
+    SET "DESC" "Short blurb"
     SET "MEDIAS" ""
     SET "ELF" "PS2Temps.elf"
     SET "SAS" "DST_PS2TEMPS"
-    # Comment out 1 of the 2 lines below. If app is in non-mc:/$SAS$ comment out line 19. If app is in non-mc:/APPS/$SAS$ comment out line 18
+    # Comment out 1 of the 2 lines below. If app is in non-mc:/$SAS$ comment out the second, if in non-mc:/APPS/$SAS$ comment out the first
     # SET "SAS_NON_MC" "$SAS$"
     SET "SAS_NON_MC" "APPS/$SAS$"
     #
-
+    # If an app does not boot, then one of these compatibility options may need to be set to 0, 1, 2 or 3
+    # 0= No compatibility options, 1= SHUTDOWN "MM", 2= SET "BM.AUTOLOAD_FSD_EN" "0", 3= CC SLEEP
+    SET "COMP_MODE_MC" "0"
+    SET "COMP_MODE_MMCE" "0"
+    SET "COMP_MODE_USB" "0"
+    SET "COMP_MODE_HDD_APA" "0"
+    SET "COMP_MODE_DFFS" "0"
+    #
 
     # Do not change these 2 lines!
     GOTO "$ARG1$"
     RETURN -1
 
-    # :LABEL_NAME
-    #     ADDWIDGET "LABEL" "$ARG2$$TITLE$ v$VERSION$"
-    #     EXIT 0
+    # Used for Autoboot Labels
+    :LABEL_NAME
+        ADDWIDGET "LABEL" "$ARG2$$TITLE$ v$VERSION$"
+        EXIT 0
 
     :QUERY
-        ADDWIDGET "CALL" "$TITLE$" "$BM.TXT_VERSION$: $VERSION$ $BM.TXT_AUTHOR$: $AUTHOR$ $BM.TXT_DESC$: $DESC$" $ARG2$ "$ARG0$" "$ARG3$" "$ARG4$" "$ARG5$"
+        ADDWIDGET "CALL" "$TITLE$" "$BM.TXT_VERSION$: $VERSION$ $BM.TXT_AUTHOR$: $AUTHOR$ $BM.TXT_DESC$: $DESC$" $ARG2$ "$ARG0$" "$ARG3$" "$ARG4$" "$ARG5$" "$TITLE$" "$PWD$" "$SAS$" "$SAS_NON_MC$"
         EXIT 0
 
     :INSTALL
-        PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE"
-
-        IF MATCHES "mc?" "$SRC_DEV$"
-            IF MATCHES "mc?" "$ARG2$" 
-                GOTO "INSTALL_MC_TO_MC"
-            ELSEIF NOT MATCHES "mc?" "$ARG2$"
-                GOTO "INSTALL_MC_TO_NONMC"
-            ENDIF
-        ELSEIF NOT MATCHES "mc?" "$SRC_DEV$"
             IF MATCHES "mc?" "$ARG2$"
-                GOTO "INSTALL_NONMC_TO_MC"
+                GOTO "INSTALL_TO_MC"
             ELSEIF NOT MATCHES "mc?" "$ARG2$"
-                GOTO "INSTALL_NONMC_TO_NONMC"
+                GOTO "INSTALL_TO_NONMC"
             ENDIF
 
-    :INSTALL_MC_TO_MC
-        # Copies where APPINFO.PBT can be found in mc?:/BM/APPS/$SAS$                          
-        IF FAIL COPY "$PWD$" "$ARG2$:/BM/APPS/$SAS$"
-            MESSAGE "Failed installing APPINFO.PBT"
-            RRM "$ARG2$:/BM/APPS/$SAS$"
-            RETURN -1
-        # Copies SAS app folder from root of mc? for SAS support
-        ELSEIF FAIL COPY "$SRC_DEV$:/$SAS$" "$ARG2$:/$SAS$"
-            MESSAGE "Failed installing $TITLE$"
-            RRM "$ARG2$:/$SAS$"
-            RETURN -1
-        ELSEIF NOT EXISTS "$ARG2$:/BM/bman.icn"
-            GOTO "INSTALL_MC_ICON"
-        ELSEIF NOT EXISTS "$ARG2$:/BM/icon.sys"
-            GOTO "INSTALL_MC_ICON"
-        ENDIF
-        EXIT 0
-
-    :INSTALL_MC_TO_NONMC
-        IF FAIL COPY "$SRC_DEV$:/$SAS$" "$ARG2$:/$SAS_NON_MC$"
-            MESSAGE "Failed installing $TITLE$"
-            RRM "$ARG2$:/$SAS_NON_MC$"
-            RETURN -1
-        ENDIF
-        EXIT 0
-
-    :INSTALL_NONMC_TO_NONMC
-        IF FAIL COPY "$PWD$" "$ARG2$:/$SAS_NON_MC$"
-            MESSAGE "Failed installing $TITLE$"
-            RRM "$ARG2$:/$SAS_NON_MC$"
-            RETURN -1
-        ENDIF
-        EXIT 0
-
-    :INSTALL_NONMC_TO_MC
-        # Creates folder and copies where APPINFO.PBT can be found in mc?:/BM/APPS/$SAS$     
-        # NOTE: COPY function below fails HOWEVER does create the $SAS$ folder with nothing in it...
-        # this is why I (R3Z3N) do not use IF FAIL COPY. Trust me, I tried the usual way as found in the BM installer APPINFO.PBT with MKDIR
-        # Odd. Had to use a bug to create this folder...notice the slash at end of destination
-        COPY "$PWD$" "$ARG2$:/BM/APPS/$SAS$/"
-        # Copies where APPINFO.PBT can be found in mc?:/BM/APPS/$SAS$/APPINFO.PBT
-        IF FAIL COPY "$ARG0$" "$ARG2$:/BM/APPS/$SAS$/APPINFO.PBT"
-            MESSAGE "Failed installing APPINFO.PBT"
-            RRM "$ARG2$:/BM/APPS/$SAS$"
-            RETURN -1
-        # Copies SAS app folder to root of mc? for SAS support  
-        ELSEIF FAIL COPY "$PWD$" "$ARG2$:/$SAS$"
+    :INSTALL_TO_MC
+        IF FAIL COPY "$PWD$" "$ARG2$:/$SAS$"
             ECHO "Failed installing $TITLE$"
             MESSAGE "Failed installing $TITLE$"
             RRM "$ARG2$:/$SAS$"
             RETURN -1
-        # Create icons if needed so OSDSYS does not show corrupt
-        ELSEIF NOT EXISTS "$ARG2$:/BM/bman.icn"
-            GOTO "INSTALL_MC_ICON"
-        ELSEIF NOT EXISTS "$ARG2$:/BM/icon.sys"
-            GOTO "INSTALL_MC_ICON"
         ENDIF
         EXIT 0
 
-    :INSTALL_MC_ICON
-        IF FAIL COPY "$BM.BM_PATH$/bman.icn" "$ARG2$:/BM/bman.icn"
-            MESSAGE "Failed to install $BM.BM_PATH$/bman.icn"
-            RETURN -1
-        ELSEIF FAIL COPY "$BM.BM_PATH$/icon.sys" "$ARG2$:/BM/icon.sys"
-            MESSAGE "Failed to install $BM.BM_PATH$/bman.icn"
+    :INSTALL_TO_NONMC
+        IF FAIL COPY "$PWD$" "$ARG2$:/$SAS_NON_MC$"
+            ECHO "Failed installing $TITLE$"
+            MESSAGE "Failed installing $TITLE$"
+            RRM "$ARG2$:/$SAS_NON_MC$"
             RETURN -1
         ENDIF
         EXIT 0
 
     :REMOVE
-        PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE"
-
-        IF MATCHES "mc?" "$SRC_DEV$"
-            GOTO "REMOVE_MC"
-        ELSEIF NOT MATCHES "mc?" "$SRC_DEV$"
-            GOTO "REMOVE_PWD"
-        ENDIF
-
-    :REMOVE_MC
-        IF FAIL RRM "$SRC_DEV$:/$SAS$"
-            MESSAGE "Failed removing $SRC_DEV$:/$SAS$"
-            RETURN -1
-        ENDIF
-        GOTO "REMOVE_PWD"
-
-    :REMOVE_PWD
-        # Odd bug: needs to loop 2x to remove contents, otherwise first run only APPINFO.PBT is removed
         IF FAIL RRM "$PWD$"
-            GOTO "REMOVE_PWD"
-            MESSAGE "Failed removing $TITLE$"
-            RETURN -1
+            IF FAIL RRM "$PWD$"
+            IF FAIL RRM "$PWD$"
+                MESSAGE "Failed removing $TITLE$"
+                RETURN -1
+            ENDIF
+            ENDIF
         ENDIF
         EXIT 0
 
     :RUN
-        PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE"
-
-        IF MATCHES "mc?" "$SRC_DEV$"
-            LOADEXEC "PBAT" "$BM.SCRIPTS$/LOADEXEC.PBT" "$SRC_DEV$:/$SAS$/$ELF$"
-            EXIT 0
-        ELSEIF MATCHES "host" "$SRC_DEV$"
-            MESSAGE "Run with PS2Client instead!"
-            EXIT 0
-        ELSEIF NOT MATCHES "mc?" "$SRC_DEV$"
-            IF MATCHES "host" "$SRC_DEV$"
-                MESSAGE "Run with PS2Client instead on PC!"
-                EXIT 0
-            ELSE
-                LOADEXEC "PBAT" "$BM.SCRIPTS$/LOADEXEC.PBT" "$PWD$/$ELF$"
-                EXIT 0
-            ENDIF
+        IF MATCHES "mc?:/*" "$PWD$"
+            GOTO "RUN_MC"
+        ELSEIF MATCHES "mmce?:/*" "$PWD$"
+            GOTO "RUN_MMCE"
+        ELSEIF MATCHES "mass:/*" "$PWD$"
+            GOTO "RUN_USB"
+        ELSEIF MATCHES "pfs0:/*" "$PWD$"
+            GOTO "RUN_HDD_APA"
+        ELSEIF MATCHES "dffs:/*" "$PWD$"
+            GOTO "RUN_DFFS"
         ENDIF
+
+    :RUN_MC
+        IF EQU "$COMP_MODE_MC$" "1"
+            SHUTDOWN "MM"
+        ELSEIF EQU "$COMP_MODE_MC$" "2"
+            SET "BM.AUTOLOAD_FSD_EN" "0"
+        ELSEIF EQU "$COMP_MODE_MC$" "3"
+            SETBIOS "OFF"
+            SHUTDOWN "ALL"
+        ENDIF
+        GOTO "RUN_COMP_MODE"
+
+    :RUN_MMCE
+        IF EQU "$COMP_MODE_MMCE$" "1"
+            SHUTDOWN "MM"
+        ELSEIF EQU "$COMP_MODE_MMCE$" "2"
+            SET "BM.AUTOLOAD_FSD_EN" "0"
+        ELSEIF EQU "$COMP_MODE_MMCE$" "3"
+            SETBIOS "OFF"
+            SHUTDOWN "ALL"
+        ENDIF
+        GOTO "RUN_COMP_MODE"
+
+    :RUN_USB
+        IF EQU "$COMP_MODE_USB$" "1"
+            SHUTDOWN "MM"
+        ELSEIF EQU "$COMP_MODE_USB$" "2"
+            SET "BM.AUTOLOAD_FSD_EN" "0"
+        ELSEIF EQU "$COMP_MODE_USB$" "3"
+            SETBIOS "OFF"
+            SHUTDOWN "ALL"
+        ENDIF
+        GOTO "RUN_COMP_MODE"
+
+    :RUN_HDD_APA
+        IF EQU "$COMP_MODE_HDD_APA$" "1"
+            SHUTDOWN "MM"
+        ELSEIF EQU "$COMP_MODE_HDD_APA$" "2"
+            SET "BM.AUTOLOAD_FSD_EN" "0"
+        ELSEIF EQU "$COMP_MODE_HDD_APA$" "3"
+            SETBIOS "OFF"
+            SHUTDOWN "ALL"
+        ENDIF
+        GOTO "RUN_COMP_MODE"
+
+    :RUN_DFFS
+        IF EQU "$COMP_MODE_DFFS$" "1"
+            SHUTDOWN "MM"
+        ELSEIF EQU "$COMP_MODE_DFFS$" "2"
+            SET "BM.AUTOLOAD_FSD_EN" "0"
+        ELSEIF EQU "$COMP_MODE_DFFS$" "3"
+            SETBIOS "OFF"
+            SHUTDOWN "ALL"
+        ENDIF
+        GOTO "RUN_COMP_MODE"
+
+    :RUN_COMP_MODE
+        LOADEXEC "PBAT" "$BM.SCRIPTS$/LOADEXEC.PBT" "$PWD$/$ELF$"
         EXIT 0
+
     ```
 
 
-## APPINFO.PBT Example
+## OUTDATED APPINFO.PBT Example
 
-??? note "APPINFO.PBT Example"
+???- note "APPINFO.PBT Example"
     ```
     # Change this information to describe the application.
     SET "TITLE" "APP TITLE"
@@ -557,7 +543,7 @@ Apps Included and updated as of 3/7/2025:
     * [x] Uploaded to github
     * [ ] Script for ease of use
     * [ ] Document for ease of use
-- [ ] HDD IRXs not installed for V14 and later PS2s
-- [ ] CC2.0 8MB Dataflash support in FW
-    * [ ] 1056 Page Support for AT45DB642D in testing
-    * [ ] 256 Page Support for AT45DB621E in testing
+- [x] HDD IRXs not installed for V14 and later PS2s
+- [-] CC2.0 8MB Dataflash support in FW
+    * [-] 1056 Page Support for AT45DB642D in testing
+    * [-] 256 Page Support for AT45DB621E in testing
