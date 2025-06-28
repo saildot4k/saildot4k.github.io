@@ -1,6 +1,65 @@
-## Crystal Chip FW 34 V4 by R3Z3N 5/17/2025
+## Crystal Chip FW 34 V5 by R3Z3N 6/27/2025
 
-[:material-cloud-download: Crystal Chip FW R34 v4 with updated Dashboard Scripts by R3Z3N](https://github.com/saildot4k/Crystal-Chip-R34-v4/archive/refs/heads/v4.zip)
+[:material-cloud-download: Crystal Chip FW R34 v4 with updated Dashboard Scripts by R3Z3N](https://github.com/saildot4k/Crystal-Chip-R34-v5/archive/refs/heads/v5.zip)
+
+???+ note "R34 V5 Changes"
+    Fixes/Changes:
+
+    - SAS (Save Application Support) updated (and probably finalized). There is a script in BM/SCRIPTS/BMRTFLDR.PBT (BootManager Root Folder) \
+        where root folders must be defined, similiar to how FMCB, PS2BBL and OSDMenu also need to define where apps are. 
+        Edit as neeeded to add new folders, delete unneeded folders as necessary. To update, place file on root of
+        any device that you have device drivers installed for. Simply run BootManager, Application Browser and RUN/INSTALL/REMOVE
+        for said device and BootManager will copy the file where it needs to go and SHOULD remove the script from root of said device.
+        If not please manually delete with another app or PC. Simply grab a file from ps2wiki.github.io and drop to root of memory card
+        (once APPINFO.PBT is included with said app)
+
+    - Powershell script to create APPINFO.PBT if title.cfg exists. APPINFO is now much more friendly for user, and allows device specific compatibily options
+
+    - Added option to show directories when browsing for APPS, Devices and Themes
+
+    - Added options to confirm Remove and Install apps/devices and themes which also recalls directory and appname when browsing so you do
+        not loose track of which app you were installing or removing.
+
+    - Device Manager now shows which device drivers are installed. Inform users when device drivers are missing such as when FTP is installed but NET 
+        is missing. SCPH-75K and later will inform user if HDD driver is unneeded
+
+    - Configuration Menus hide or inform users when device drivers are missing. For example NET/FTP/HOST and HDD. If net is missing, FTP and HOST
+        inform user NET is missing as that is the backing driver. 
+
+    - BootManager updates mc:/SYS-CONF/IPCONFIG.DAT if it exists so that your suite of apps that call your network config stay "synced"
+
+    - BootManager Installer updated. Allows choosing device drivers before installing and checks if drivers are on source device.
+        Informs user of Min/Max install just in case CC2.0/SLE users want to save space. Should fit on all 2.0 Models with full install.
+        Warns user if critical or non critical files are not installed. Non critical files continues installing (such as missing icons)
+        CC2.0 Installs no longer install other CC1.0 FW to flash to save more space.
+
+    - 2 Tutorials under Configuration Menu so that users cannot forget hw to update defined root folders, as well as how to use hotkeys.
+
+    - Added French Language thanks to Wanderer!
+
+    - Added Many more themes, 31 in total now. Still need to edit colors for font/title/menu/background. Please inform me if PAL, VGA or 480p
+        alignment needs fixing and what your values are.
+
+    - Fixed bug that "Medias" scripts would never be called
+
+    - Memory Card Manager hides devices that may not be inserted
+
+    - Easter Egg in menus.....
+
+    - Besides themes and apps, this is probably the last update unless I figure out how to show which hotkeys are assigned to what application
+        or god forbid any bugs I may have left. I may consolidate scripts if possible later.
+
+    - OLD APPINFO.PBT is still supported under BM/APPS/ however all the SAS compliant scripts are updated. I recommend using those going forward.
+
+    To Do:
+
+    - Help Ripto create title.cfg for his AIO  (ALL IN ONE) app repository
+
+    - Bundle the new apps for the MegaPack as they are added to ps2wiki.github.io
+
+
+
+## Crystal Chip FW 34 V4 by R3Z3N 5/17/2025
 
 ???- note "R34 V4 Changes"
     Fixes/Changes:
@@ -103,16 +162,16 @@
 
     Unzip and merge with the Firmware Download or move the the root of your USB stick
 
-    [:material-cloud-download: USB](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MegaPack_by_R3Z3N.zip)
+    [:material-cloud-download: USB](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MEGAPACK.zip)
 
 
 -   __SD2PSX/PSXMemCard Gen2__
 
     ---
 
-    Unzip and merge contents to root of your SD2PSX/PSXMemcard Gen2 MMCE device (THIS WILL WIPE YOUR BOOT CARD!) MUST BE ON [FW 1.1.1 or later!](https://sd2psxtd.github.io/download)
+    Unzip and merge contents to root of your SD2PSX/PSXMemcard Gen2 MMCE device (THIS WILL WIPE YOUR BOOT CARD!) MUST BE ON [FW 1.2.0 or later!](https://sd2psxtd.github.io/download)
 
-    [:material-cloud-download: SD2PSX](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/MMCE.zip)
+    [:material-cloud-download: SD2PSX](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/COMBINED_MMCE.zip)
 
 -   __MemCardPro 2__
 
@@ -120,40 +179,65 @@
 
     Unzip and merge contents to root of your MemCardPro 2 MMCE device. Set Crystal Chip Channel 1 as your boot card. MUST BE ON [FW 1.4.0 or later!](https://distribution.appcake.co.uk/install/8bitmods/apps/memcard-pro2/public)
 
-    [:material-cloud-download: MCP2](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/MMCE.zip)
+    [:material-cloud-download: MCP2](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/COMBINED_MMCE.zip)
 
 </div>
 
 Apps Included and updated as of 3/7/2025:
 
-| Application               | USB (Fat16/32)                  | MMCE Device                       |
-| :------------------------ | :-----------------------------: | :-------------------------------: |
-| Crystal Chips BootManager | :material-close-circle-outline: | :material-check-circle:           |
-| BM Themes/Languages       | :material-check-circle:         | :material-check-circle:           |
-| NHDDL Nightly 03/29/25    | :material-check-circle:         | :material-check-circle:           |
-| OPL 1.2 Beta 2201         | :material-check-circle:         | :material-check-circle:           |
-| OPL 1.2 Beta 2049         | :material-check-circle:         | :material-check-circle:           |
-| OPL 1.2 MMCE Beta 2       | :material-check-circle:         | :material-check-circle:           |
-| OPL 1.2 for RetroGem      | :material-check-circle:         | :material-check-circle:           |
-| RetroGem Disc Launcher    | :material-check-circle:         | :material-check-circle:           |
-| Simple Media System       | :material-check-circle:         | :material-check-circle:           |
-| RetroLauncher             | :material-check-circle:         | :material-close-circle-outline:   |
-| OSDXMB                    | :material-check-circle:         | :material-close-circle-outline:   |
-| XEB+ launch script        | :material-check-circle:         | :material-close-circle-outline:   |
-| XEB+                      | :material-close-circle-outline: | :material-close-circle-outline:   |
-| Apollo Save Tool          | :material-check-circle:         | :material-check-circle:           |
-| wLaunchElf by ISR         | :material-check-circle:         | :material-check-circle:           |
-| wLaunchElf by kHn         | :material-check-circle:         | :material-check-circle:           |
-| wLaunchElf Official       | :material-check-circle:         | :material-check-circle:           |
-| Memory Card Annihilator   | :material-check-circle:         | :material-check-circle:           |
-| PS2 Link                  | :material-check-circle:         | :material-check-circle:           |
-| PS2 Link HL               | :material-check-circle:         | :material-check-circle:           |
-| HDD Tester                | :material-check-circle:         | :material-check-circle:           |
-| PS2 RDRAM Test            | :material-check-circle:         | :material-check-circle:           |
-| Mechacon Crash Test       | :material-check-circle:         | :material-check-circle:           |
-| Pad Tester                | :material-check-circle:         | :material-check-circle:           |
-| PS2 Temps                 | :material-check-circle:         | :material-check-circle:           |
-| Neutrino                  | :material-check-circle:         | :material-check-circle: MMCE root |
+| Application                   | USB (Fat16/32)                  | MMCE Device VMC                  |
+| :----------------------------| :-----------------------------: | :-------------------------------: |
+| Crystal Chips BootManager    | :material-close-circle-outline: | :material-check-circle:           |
+| BM Themes                    | :material-check-circle:         | :material-check-circle:           |
+| Apollo Save Tool             | :material-check-circle:         | :material-check-circle:           |
+| Cheat Device MMCE            | :material-check-circle:         | :material-check-circle:           |
+| GSM                          | :material-check-circle:         | :material-check-circle:           |
+| NHDDL                        | :material-check-circle:         | :material-check-circle:           |
+| OPL 1.2.0 B2049 GID          | :material-check-circle:         | :material-check-circle:           |
+| OPL 1.2.0 B2207              | :material-check-circle:         | :material-check-circle:           |
+| OPL MMCE Beta 2              | :material-check-circle:         | :material-check-circle:           |
+| OPL MMCE Beta 3              | :material-check-circle:         | :material-check-circle:           |
+| PSBBN Launcher               | :material-check-circle:         | :material-check-circle:           |
+| Simple Media System          | :material-check-circle:         | :material-check-circle:           |
+| unoffical OPL                | :material-check-circle:         | :material-check-circle:           |
+| unofficial OPL Betrayal      | :material-check-circle:         | :material-check-circle:           |
+| wLE ISR HDD                  | :material-check-circle:         | :material-check-circle:           |
+| wLE ISR XF MM                | :material-check-circle:         | :material-check-circle:           |
+| wLE ISR XF MX                | :material-check-circle:         | :material-check-circle:           |
+| wLE KHN                      | :material-check-circle:         | :material-check-circle:           |
+| wLE XFW                      | :material-check-circle:         | :material-check-circle:           |
+| BOOT Folder for other chips  | :material-check-circle:         | :material-check-circle:           |
+| PS2 Link                     | :material-check-circle:         | :material-check-circle:           |
+| PS2 Link Highloading         | :material-check-circle:         | :material-check-circle:           |
+| PS2 BIOS Drain               | :material-check-circle:         | :material-check-circle:           |
+| PS2 HDD Checker              | :material-check-circle:         | :material-check-circle:           |
+| Memory Card Annihilator      | :material-check-circle:         | :material-check-circle:           |
+| Mechacon Crash Tester        | :material-check-circle:         | :material-check-circle:           |
+| MX4SIO Tester                | :material-check-circle:         | :material-check-circle:           |
+| OG Memory Card Tester        | :material-check-circle:         | :material-check-circle:           |
+| Pad Tester                   | :material-check-circle:         | :material-check-circle:           |
+| PS2 HDD Tester               | :material-check-circle:         | :material-check-circle:           |
+| PS2 RDRAM Test               | :material-check-circle:         | :material-check-circle:           |
+| PS2 Temps                    | :material-check-circle:         | :material-check-circle:           |
+| PicoDrvie                    | :material-check-circle:         | :material-check-circle:           |
+| Xbox 2 PS2                   | :material-check-circle:         | :material-check-circle:           |
+| Xbox 2 PS2 Memory Card       | :material-check-circle:         | :material-check-circle:           |
+| 3D Pinball Player            | :material-check-circle:         | :material-check-circle:           |
+| HERMES                       | :material-check-circle:         | :material-check-circle:           |
+| OSDMenu                      | :material-check-circle:         | :material-check-circle:           |
+| PowerOff                     | :material-check-circle:         | :material-check-circle:           |
+| DKWDRV                       | :material-check-circle:         | :material-check-circle:           |
+| POPSLOADER                   | :material-check-circle:         | :material-check-circle:           |
+| Restart                      | :material-check-circle:         | :material-check-circle:           |
+| IGR to Boot Card             | :material-check-circle:         | :material-check-circle:           |
+| SYS-CONF                     | :material-check-circle:         | :material-check-circle:           |
+| NEUTRINO                     | :material-check-circle: USB Root| :material-check-circle: MMCE root |
+| RETROLauncher                | :material-check-circle: USB Root| :material-check-circle:           |
+| OSD-XMB                      | :material-check-circle: USB Root| :material-check-circle:           |
+| XEB+ NEEDS INSTALL           | :material-close-circle-outline: USB Root | :material-close-circle-outline:   |
+
+
+
 
 
 ??? note "Missing App Notes"
