@@ -1,6 +1,6 @@
 ![AnimatedBanner](https://ps2modchiptutorials.com/assets/homebanner4.png)
 
-In Progress as of 2/14/2025
+In Progress as of 6/27/2025
 
 This sites intended purpose is to give comprehensive install and usage of the last best PS2 modchips.
 
@@ -28,8 +28,8 @@ to a well respected care-taker.
             * [x] Installing and Running Apps
             * [x] R34 v3 Changes (out of date), MMCE added
             * [ ] Configuration options overview
-            * [ ] Using App MegaPacks
-            * [ ] Using PS2Client/Link to help debug
+            * [x] Using App MegaPacks
+            * [x] Using PS2Client/Link to help debug
         * [ ] Written Tutorials
         * [x] Files
             * [x] Firmware/Bootmanager
@@ -38,7 +38,7 @@ to a well respected care-taker.
                 * [x] SD2PSX/PSXMemcard Gen 2 Megapack
                 * [x] MemcardPro 2 Megapack
             * [x] Default APPINFO.PBT
-        * [ ] PBT Scripting overview (wiki is outdated)
+        * [x] PBT Scripting overview (wiki is outdated)
         * [x] Archived Websites
             * [x] Crystal Chip website
             * [x] Crystal Chip wiki

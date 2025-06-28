@@ -1,7 +1,7 @@
 # Overview
 
 ## Crystal Chip Documentation Progress
-???+ note "Progress as of 3/3/2025"
+???+ note "Progress as of 6/27/2025"
 
     - [ ] Crystal Chip documentation
         * [x] Install Diagrams
@@ -10,8 +10,8 @@
             * [x] Installing and Running Apps
             * [x] R34 v3 Changes (out of date), MMCE added
             * [ ] Configuration options overview
-            * [ ] Using App MegaPacks
-            * [ ] Using PS2Client/Link to help debug
+            * [x] Using App MegaPacks
+            * [x] Using PS2Client/Link to help debug
         * [ ] Written Tutorials
         * [x] Files
             * [x] Firmware/Bootmanager
@@ -20,7 +20,7 @@
                 * [x] SD2PSX/PSXMemcard Gen 2 Megapack
                 * [x] MemcardPro 2 Megapack
             * [x] Default APPINFO.PBT
-        * [ ] PBT Scripting overview (wiki is outdated)
+        * [x] PBT Scripting overview (wiki is outdated)
         * [x] Archived Websites
             * [x] Crystal Chip website
             * [x] Crystal Chip wiki
