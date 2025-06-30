@@ -111,7 +111,7 @@
 
     - Bundle the new apps for the MegaPack
 
-## Crystal Chip FW R34 v3 4/29/2025
+## Crystal Chip FW R34 V3 4/29/2025
 
 ???- note "R34 V3 Changes"
 
@@ -251,7 +251,7 @@ Apps Included and updated as of 3/7/2025:
 
 ## APPINFO.PBT SAS (SAVE APPLICATION SUPPORT) Example
 
-??? note "APPINFO.PBT SAS Example"
+???- note "APPINFO.PBT SAS Example"
     ```
     # SAS (Save Application Support) compliant BM Script
     # Due to wildcard bug on memory card and mmce, bootdevice:/BM/SCRIPTS/DEFINEDROOTFOLDER.PBT must exist to work. Update as needed
@@ -465,7 +465,7 @@ Apps Included and updated as of 3/7/2025:
 
 ## APPINFO.PBT with 3 Boot Options Example
 
-??? material-script-text "APPINFO.PBT Example w 3 Boot Options"
+???- material-script-text "APPINFO.PBT Example w 3 Boot Options"
     ```
     # Change this information to describe the application.
     SET "TITLE" "APP TITLE"
