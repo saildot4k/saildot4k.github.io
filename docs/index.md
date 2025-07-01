@@ -13,7 +13,7 @@ Should I ever leave the scene, [email](mailto:info@ps2modchiptutorials.com)/DM m
 to a well respected care-taker.
 
 No thanks to:
-TnA Plastic
+TnA Plastic of psx-place.com and PS2 Scene Discord
 r/PS2 and Mods
 
 
