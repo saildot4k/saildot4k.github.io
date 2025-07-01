@@ -35,7 +35,7 @@
         Warns user if critical or non critical files are not installed. Non critical files continues installing (such as missing icons)
         CC2.0 Installs no longer install other CC1.0 FW to flash to save more space.
 
-    - 2 Tutorials under Configuration Menu so that users cannot forget hw to update defined root folders, as well as how to use hotkeys.
+    - 2 Tutorials under Configuration Menu so that users cannot forget how to update defined root folders, as well as how to use hotkeys.
 
     - Added French Language thanks to Wanderer!
 
