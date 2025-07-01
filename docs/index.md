@@ -12,6 +12,10 @@ so that users have a quick way to have pre-setup memory cards.
 Should I ever leave the scene, [email](mailto:info@ps2modchiptutorials.com)/DM me so that I can transfer domain ownership and github repository
 to a well respected care-taker.
 
+No thanks to:
+TnA Plastic
+r/PS2 and Mods
+
 
 ## Progress Checklist
 
