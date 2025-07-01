@@ -15,9 +15,7 @@ to a well respected care-taker.
 
 No thanks to:
 
-TnA Plastic of psx-place.com
-
-PS2 Scene Discord
+TnA Plastic of PS2 Scene Discord and psx-place.com
 
 r/PS2 and Mods
 
