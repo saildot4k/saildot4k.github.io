@@ -165,6 +165,8 @@ To return to a previous menu/script
 
 ```SETTITLE``` will set the title of the current screen.
 
+```SETTITLE "Install App to...```
+
 
 ## Sections
 #### GOTO
@@ -458,6 +460,12 @@ SHUTDOWN - Shutdown all "ALL", Memory Module "MM", MMIOP "MMIOP"
 
 LOADIMG/UNLOADIMG - load and unload an image for theming
 
+KILLSESS (or kill session, need to recall)
+
+ISIN
+
+PARSECNF
+
 ```*``` wildcard(s)
 
 ```?``` single character wildcard
@@ -467,12 +475,13 @@ Found by running BM.ELF in PCSX2 and looking at memory.
 Need to test....
 
 GETDVDREG, EXECCMD, CC, ILLEGAL, CDSTOP, GETDVDREG, BGCOLOR, SETBACK, SETEXIT, LIBLOADED, DUMPIOP
-TOUCH, ADDMACRO, BOOT, DUMPIOP, LT, GT (less than greater than, already found LTE) and NEQC and EQUC (EQU, NEQ is equal not equal, so what is NEQC?)
+TOUCH, ADDMACRO, BOOT, DUMPIOP,  and NEQC and EQUC (EQU, NEQ is equal not equal, so what is NEQC?)
 DISCONNECT, FINDPAD, FINDCTP1, EXECMD, STABLE, ERROR, COMPLETE, FAILED, BUSY
 
 
-#### Useful Tips
+## Useful Tips
 
+#### Use ECHO and PS2 Client
 When debugging paste variables where you want in the script. Then run PS2Client to see output via ECHO
 
 
