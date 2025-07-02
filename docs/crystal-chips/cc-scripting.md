@@ -130,11 +130,11 @@ will display the widget which let the user to select a value for VALUE_X between
 
 
 #### IP
-To set an IP adress
+To set an IP address
 
 ```ADDWIDGET "IP" "Title" "Description" "IP_ADDRESS_1" "IP_ADDRESS_2" "IP_ADDRESS_3" "IP_ADDRESS_4"```
 
-to set variables IP_ADRESS_1, IP_ADDRESS_2. For example, if you wish to display this IP again, you'll have to call
+to set variables IP_ADDRESS_1, IP_ADDRESS_2 etc. For example, if you wish to display this IP again, you'll have to call
 
 
 ```ECHO "THE IP ADDRESS YOU'VE ENTERED IS $IP_ADDRESS_1$.$IP_ADDRESS_2$.$IP_ADDRESS_3$.$IP_ADDRESS_4$"```
@@ -148,6 +148,12 @@ To call another section of the code
 will call the section "THE_SECTION" of the file $ARG0$ ($ARG0$ will be the file where this widget is executed. The section THE_SECTION is inside the same file). with arguments ARG_2 and ARG_3.
 
 The text ARG_2 and ARG_3 will be available in the section THE_SECTION by calling variables $ARG2$ and $ARG3$. (see Sections below)
+
+#### RETURN
+To return to a previous menu/script
+
+```ADDWIDGET "RETURN" "$BM.TXT_DONE$" "$BM.TXT_RETURN_CONFIG$"```
+
 
 ## Other Widget Commands
 
@@ -219,11 +225,21 @@ ELSEIF EQU "$MY_VARIABLE$" "2"
 ENDIF
 ```
 
-You'll use the ```ELSEIF``` statement when you want the second condition to be verified only if the first was true.
+You'll use the ```ELSEIF``` statement when you want to keep testing for values.
 
+You will use the ```ELSE``` statement when none are true, the last ELSE will be executed.
+
+```
+IF EQU "$MY_VARIABLE$" "1"
+    MESSAGE "The Variable was equal to 1"
+ELSE 
+    MESSAGE "The Variable was something other than 1"
+ENDIF
+```
 
 #### SWITCH
 When you have many case to treat, you can also use the ```SWITCH``` function.
+Can be used with ```ADDWIDGET CALL``` or ```ADDWIDGET CHOICE``` 
 
 ```
 SWITCH "$BM.CNF_VMODE$"
