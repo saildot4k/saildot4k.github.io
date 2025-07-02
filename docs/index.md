@@ -13,6 +13,13 @@ Should I ever leave the scene, [email](mailto:info@ps2modchiptutorials.com)/DM m
 to a well respected care-taker.
 
 
+No thanks to:
+
+TnA Plastic of PS2 Scene Discord and psx-place.com
+
+r/PS2 and Mods
+
+
 ## Progress Checklist
 
 <div class="grid cards" markdown>
