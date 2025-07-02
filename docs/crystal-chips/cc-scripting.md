@@ -221,6 +221,7 @@ ENDIF
 
 You'll use the ```ELSEIF``` statement when you want the second condition to be verified only if the first was true.
 
+
 #### SWITCH
 When you have many case to treat, you can also use the ```SWITCH``` function.
 
@@ -256,10 +257,11 @@ You can see that the BREAK command is used to go out of the SWITCH as soon as a 
 
 File manipulation is useful for installation scripts (in APPINFO.PBT). You can manipulate files on any device :
 
-- mc0 (for memory card 0)
-- mc1 (for memory card 1)
+- mc0 (for memory card 1)
+- mc1 (for memory card 2)
 - mass (for USB device)
-- mmce (for MMCE device)
+- mmce0 (for MMCE device 1)
+- mmce0 (for MMCE device 2)
 - pfs0 (for internal HDD, uses __common partition)
 - dffs (for internal Chip flash memory CC 2.0 ONLY, don't forget 1.1/1.2 can be turned into 2.0!)
 - host (for remote host. Only available if ps2client is launched on the PC and the network and the host server are started on Boot Manager) 
@@ -267,16 +269,15 @@ File manipulation is useful for installation scripts (in APPINFO.PBT). You can m
 #### COPY
 To copy file/directory from source to destination :
 
-```COPY "host:/FOLDER/FILE.TXT" "mass:/FOLDER1/FOLDER2/FILE.TXT"``` will copy the single file, but will not create destination folder structure.
+```COPY "host:/FOLDER" "mass:/FOLDER/FOLDER2"``` will copy contents source folder to destintaion folder if intermediary folders exist.
 
-```COPY "host:/FOLDER" "mass:/FOLDER/FOLDER2"``` will copy contents source folder to destintaion folder
+```COPY "host:/FOLDER/FILE.TXT" "mass:/FOLDER1/FOLDER2/FILE.TXT"``` will copy the single file, but will NOT create destination folder structure if it does not exist.
 
 Notes: copying a file to a file only works if prior directories already exist on destination.
 
 ```COPY "host:/FOLDER" "mass:/FOLDER1/FOLDER2/FILE.TXT"``` DOES NOT WORK
 
 ```COPY "host:/FOLDER" "mass:/FOLDER1/FOLDER2/"``` This does work to create an empty mass:/FOLDER1 but will say it fails if used with ```IF COPY FAIL```
-
 
 
 #### RM
@@ -322,12 +323,21 @@ To symlink a file to another location. Only works if the environment you use doe
 
 ```"$PWD$/IPCONFIG.DAT"``` is where you want the file to "appear" and ```"$BM.BM_PATH$/CONFIG/IPCONFIG.DAT"``` is where the file currently resides.
 
+
 #### EXISTS
 To know if a file/folder exists or not. This command should be used in a IF statement
 
 ```
 IF EXISTS "mc0:/MYFOLDER/MYSCRIPT.PBT"
     COPY "mc0:/MYFOLDER/MYSCRIPT.PBT" "mass:/MYFOLDER/MYSCRIPT.PBT"
+ENDIF
+```
+#### MATCHES
+To know if a STRING matches or not. This command should be used in a IF statement. If a wildcard is used, best to use it in first part of comparison. Second comparison should have NO wildcards.
+
+```
+IF MATCHES "SCPH-300*" "$BM.CONSOLE_MODEL$"
+    MESSAGE "Console is SCPH-300XX"
 ENDIF
 ```
 
@@ -339,6 +349,21 @@ IF FAIL COPY "mass:/MYFOLDER" "mc0:/MYFOLDER
     MESSAGE "Failed to copy MYFOLDER"
     RRM "mc0:/MYFOLDER"
 ENDIF"
+```
+
+#### GTE, GT, LTE, LT
+GTE=Greater than or equal
+
+GT = Greater than
+
+LTE = Less than or equal
+
+LT = Less than or equal
+
+```
+IF GTE "$BM.BIOS_MAJOR_VER$$BM.BIOS_MINOR_VER$" "220"
+    MESSAGE "Unit is SCPH-75k or later and does not support HDD!"
+ENDIF
 ```
 
 #### FPRINT
@@ -355,12 +380,19 @@ To execute an external file.
 
 will execute a PBAT file named MY_FILE.PBT with the arguments specified. Most of the time, you'll specify a section of the PBAT script to be executed as the argument. 
 
+#### KEEP
+Loads script in ram for quicker recall
+
+```KEEP```
+
+
+
 
 #### Needs documentation:
 
-EVAL SETTITLE - Evaluate a line
+EVAL SETTITLE - Evaluate a title, usually with nested $BM.TXT_MYTEXT$
 
-EVAL ADDWIDGET - Evaluate a line
+EVAL ADDWIDGET - Evaluate a widget, usually with nested $BM.TXT_MYTEXT$
 
 SKIPBACK - When returning from a submenu, this menu is skipped(ie returns to the menu before this menu).
 
@@ -382,27 +414,21 @@ $BM.CC_MINOR_VER$ - Crystal Chip minor version
 
 CYCLETRAY - Causes the CDVD drive to recheck the disc. Parameters can be "WAIT", "NOWAIT" or nothing(which is the same as "WAIT"). "WAIT" means "wait until disc has authenticated and fail if disc does not authenticate". "NOWAIT" returns immediately after telling the CDVD drive to reauthenticate.
 
-PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE"
+PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE" - Will let you call Path working directory, source device, source path and source file.
 
-KEEP - keeps in ram for quick recall of script
+LOADEXEC "EEELF" "$ARG1$" $ARG2$ - Executes an elf on EE (ARG1) and passes an argument to it. See NHDDL APPINFO.PBT or OSDSYS APPINFO.PBT
 
-LOADEXEC "EEELF" "$ARG1$" $ARG2$
-
-LOADEXEC "PBAT" "$ARG1$" $ARG2$
+LOADEXEC "PBAT" "$ARG1$" $ARG2$ - Executes a PBAT script ARG1 with ARG2 passed into it as ARG1. Remember ARG0 is always current running script, ARG1 is the current GOTO in the current running script after LOADEXEC...All arguments after are the ARG2 and greater.
 
 LOADEXEC "IRX" 
 
-IF MATCHES
-
-IF NOT MATCHES
-
 REBOOTIOP "rom0:UDNL rom0:OSDCNF"
 
-PEEK
+PEEK(B,H,W) "0x12345678"- PEEK BYTE, HALF-WORD, WORD
 
-POKE
+POKE(B,H,W) "0x12345678" - PEEK BYTE, HALF-WORD, WORD
 
-IF NOT MODLOADED "dev9_driver"
+IF NOT MODLOADED "dev9_driver" - Detemines if IRX is loade. dUnsure how to find names of loaded IRX as is not ELF name.
 
 UNMOUNT 
 
@@ -410,11 +436,24 @@ SAVEVARS
 
 SETAUTH - Set the disc authentication type: "OFF", "PS1" or "PS2"
 
+SETBIOS - Set the bios patches type: "OFF", "PS1" or "PS2"
+
+SHUTDOWN - Shutdown all "ALL", Memory Module "MM", MMIOP "MMIOP"
+
 LOADIMG/UNLOADIMG - load and unload an image for theming
 
 ```*``` wildcard(s)
 
 ```?``` single character wildcard
+
+Found by running BM.ELF in PCSX2 and looking at memory.
+
+Need to test....
+
+GETDVDREG, EXECCMD, CC, ILLEGAL, CDSTOP, GETDVDREG, BGCOLOR, SETBACK, SETEXIT, LIBLOADED, DUMPIOP
+TOUCH, ADDMACRO, BOOT, DUMPIOP, LT, GT (less than greater than, already found LTE) and NEQC and EQUC (EQU, NEQ is equal not equal, so what is NEQC?)
+DISCONNECT, FINDPAD, FINDCTP1, EXECMD, STABLE, ERROR, COMPLETE, FAILED, BUSY
+
 
 #### Useful Tips
 
@@ -422,7 +461,7 @@ When debugging paste variables where you want in the script. Then run PS2Client 
 
 
 ```
-PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE"
+    PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE"
 
     ECHO ""
     ECHO ""
@@ -445,8 +484,8 @@ PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE"
 
 Paste and edit this text into plain text file saved as LauchBM2.bat
 
-```ps2client -h IPADDRESS execee host:/BM/BM2.ELF```
+```ps2client -h 192.168.0.10 execee host:/BM/BM2.ELF```
 
 In the folder that has PS2Client, paste your BM folder
 
-You can then edit the scripts, and reload menu on Crystal Chip BootManager to see your changes
+You can then edit the scripts, and reload menu on Crystal Chip BootManager to see your changes. I recommend to comment out scripts with KEEP for quick testing, though that may break things like PIN testing or adjusting Theme Configurations.
