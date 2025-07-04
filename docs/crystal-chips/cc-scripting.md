@@ -285,7 +285,7 @@ ENDIF
 
 
 #### GTE, GT, LTE, LT
-`GTE`=Greater than or equal
+`GTE` = Greater than or equal
 
 `GT` = Greater than
 
