@@ -62,7 +62,7 @@
 ## BootManager Run/Install/Remove device support
 | :material-disc: CD/DVD  | :material-usb: USB Fat16/32 | Memory Card             | :material-sd: MMCE device     | :material-harddisk: HDD | :material-lan-connect: PC Host   |
 | :---------------------: | :--------------------------: | :---------------------: | :---------------------------: | :---------------------: | :------------------------------: |
-| :material-check-circle: | :material-check-circle:      | :material-check-circle: | :material-alert-circle-check: | :material-check-circle: | :material-check-circle:          |
+| :material-check-circle: | :material-check-circle:      | :material-check-circle: | :material-alert-circle-check: | :material-check-circle: | :material-alert-circle-check:          |
 
 ???+ note "PC Host"
     
