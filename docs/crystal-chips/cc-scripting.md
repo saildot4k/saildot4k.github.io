@@ -97,7 +97,7 @@ To display a menu item
 Types of Widgets:
 
 
-#### LABEL
+##### LABEL
 To display a title.
 
 ```ADDWIDGET "LABEL" "$TXT_LABEL$"```
@@ -105,7 +105,7 @@ To display a title.
 will display a title line with the text contained in the variable TXT_LABEL.
 
 
-#### CHOICE
+##### CHOICE
 To display a choice to set a numerical value to a variable
 
 ```ADDWIDGET "CHOICE" "Title" "Description" "MY_CHOICE"  "CHOICE 1" "CHOICE 2" "CHOICE 3"```
@@ -113,7 +113,7 @@ To display a choice to set a numerical value to a variable
 will display a widget with the specified title and description (the description is displayed in the scroll bar), and will set the variable MY_CHOICE to "0", "1", or "2" depending of the user choice.
 
 
-#### INT
+##### INT
 To set a variable with a number
 
 ```ADDWIDGET "INT" "Title" Description" "MY_NUMBER" "0" "99" 1```
@@ -121,7 +121,7 @@ To set a variable with a number
 will display a widget to store a value between 0 and 99 in the variable MY_NUMBER. The user will be able to increment the number by 1.
 
 
-#### AXIS
+##### AXIS
 To set axis numbers (X,Y)
 
 ```ADDWIDGET "AXIS" "Title" "Description" "VALUE_X" "VALUE_Y" "0" "1920" "1" "0" "1920" "2"```
@@ -129,7 +129,7 @@ To set axis numbers (X,Y)
 will display the widget which let the user to select a value for VALUE_X between 0 and 1920 with an increment of 1 and for VALUE_Y between 0 and 1920 with an increment of 2.
 
 
-#### IP
+##### IP
 To set an IP address
 
 ```ADDWIDGET "IP" "Title" "Description" "IP_ADDRESS_1" "IP_ADDRESS_2" "IP_ADDRESS_3" "IP_ADDRESS_4"```
@@ -140,7 +140,7 @@ to set variables IP_ADDRESS_1, IP_ADDRESS_2 etc. For example, if you wish to dis
 ```ECHO "THE IP ADDRESS YOU'VE ENTERED IS $IP_ADDRESS_1$.$IP_ADDRESS_2$.$IP_ADDRESS_3$.$IP_ADDRESS_4$"```
 
 
-#### CALL
+##### CALL
 To call another section of the code
 
 ```ADDWIDGET "CALL" "Title" "Description" "$ARG0$" "THE_SECTION" "ARG_2" "ARG_3"...```
@@ -148,6 +148,11 @@ To call another section of the code
 will call the section "THE_SECTION" of the file $ARG0$ ($ARG0$ will be the file where this widget is executed. The section THE_SECTION is inside the same file). with arguments ARG_2 and ARG_3.
 
 The text ARG_2 and ARG_3 will be available in the section THE_SECTION by calling variables $ARG2$ and $ARG3$. (see Sections below)
+
+##### COLOR
+
+```ADDWIDGET "COLOR" "MYCOLOR" "Color Hint" "Variable"```
+
 
 #### RETURN
 To return to a previous menu/script
@@ -206,6 +211,8 @@ ELSE
     MESSAGE "The Variable was not equal to 1"
 ENDIF
 ```
+
+
 #### IF NEQ
 You can also turn this code differently :
 
@@ -216,7 +223,9 @@ ELSE
     MESSAGE "The Variable was equal to 0"
 ENDIF
 ```
-#### ELSEIF
+
+
+#### ELSEIF / ELSE
 you can imbricate more than one IF with the keyword ```ELSIF``` :
 
 ```
@@ -238,6 +247,57 @@ ELSE
     MESSAGE "The Variable was something other than 1"
 ENDIF
 ```
+
+
+#### EXISTS
+To know if a file/folder exists or not. This command should be used in a IF statement
+
+```
+IF EXISTS "mc0:/MYFOLDER/MYSCRIPT.PBT"
+    COPY "mc0:/MYFOLDER/MYSCRIPT.PBT" "mass:/MYFOLDER/MYSCRIPT.PBT"
+ENDIF
+```
+
+
+#### MATCHES
+To know if a STRING matches or not. This command should be used in a IF statement. If a wildcard is used, best to use it in first part of comparison. Second comparison should have NO wildcards.
+
+```
+IF MATCHES "SCPH-300*" "$BM.CONSOLE_MODEL$"
+    MESSAGE "Console is SCPH-300XX"
+ENDIF
+```
+
+
+#### FAIL
+Combine with other commands to execute if command failed.
+
+```
+IF FAIL COPY "mass:/MYFOLDER" "mc0:/MYFOLDER
+    MESSAGE "Failed to copy MYFOLDER"
+    IF FAIL RRM "mc0:/MYFOLDER"
+        MESSAGE "Failed to remove mc0:/MYFOLDER!"
+        RETURN -1
+    ENDIF
+ENDIF"
+```
+
+
+#### GTE, GT, LTE, LT
+`GTE`=Greater than or equal
+
+`GT` = Greater than
+
+`LTE` = Less than or equal
+
+`LT` = Less than or equal
+
+```
+IF GTE "$BM.BIOS_MAJOR_VER$$BM.BIOS_MINOR_VER$" "220"
+    MESSAGE "Unit is SCPH-75k or later and does not support HDD!"
+ENDIF
+```
+
 
 #### SWITCH
 When you have many case to treat, you can also use the ```SWITCH``` function.
@@ -271,6 +331,7 @@ ENDS
 
 You can see that the BREAK command is used to go out of the SWITCH as soon as a case has been treated. You can add DEFAULT to take in consideration this CASE if non corresponds.
 
+
 ## File Manipulation
 
 File manipulation is useful for installation scripts (in APPINFO.PBT). You can manipulate files on any device :
@@ -283,6 +344,7 @@ File manipulation is useful for installation scripts (in APPINFO.PBT). You can m
 - pfs0 (for internal HDD, uses __common partition)
 - dffs (for internal Chip flash memory CC 2.0 ONLY, don't forget 1.1/1.2 can be turned into 2.0!)
 - host (for remote host. Only available if ps2client is launched on the PC and the network and the host server are started on Boot Manager) 
+
 
 #### COPY
 To copy file/directory from source to destination :
@@ -305,10 +367,12 @@ To delete a file or directory
 
 will completely delete the folder TMPFOLDER and its contains.```
 
+
 #### RRM
 To delete a file or directy and it's sub-folders (recursively remove). For Example mc0:/TMPFOLDER/SUBFOLDER1
 
 ```RRM "mc0:/TMPFOLDER```
+
 
 #### MKDIR
 To create a new folder.
@@ -341,48 +405,6 @@ To symlink a file to another location. Only works if the environment you use doe
 
 ```"$PWD$/IPCONFIG.DAT"``` is where you want the file to "appear" and ```"$BM.BM_PATH$/CONFIG/IPCONFIG.DAT"``` is where the file currently resides.
 
-
-#### EXISTS
-To know if a file/folder exists or not. This command should be used in a IF statement
-
-```
-IF EXISTS "mc0:/MYFOLDER/MYSCRIPT.PBT"
-    COPY "mc0:/MYFOLDER/MYSCRIPT.PBT" "mass:/MYFOLDER/MYSCRIPT.PBT"
-ENDIF
-```
-#### MATCHES
-To know if a STRING matches or not. This command should be used in a IF statement. If a wildcard is used, best to use it in first part of comparison. Second comparison should have NO wildcards.
-
-```
-IF MATCHES "SCPH-300*" "$BM.CONSOLE_MODEL$"
-    MESSAGE "Console is SCPH-300XX"
-ENDIF
-```
-
-#### FAIL
-Combine with other commands to execute if command failed.
-
-```
-IF FAIL COPY "mass:/MYFOLDER" "mc0:/MYFOLDER
-    MESSAGE "Failed to copy MYFOLDER"
-    RRM "mc0:/MYFOLDER"
-ENDIF"
-```
-
-#### GTE, GT, LTE, LT
-GTE=Greater than or equal
-
-GT = Greater than
-
-LTE = Less than or equal
-
-LT = Less than or equal
-
-```
-IF GTE "$BM.BIOS_MAJOR_VER$$BM.BIOS_MINOR_VER$" "220"
-    MESSAGE "Unit is SCPH-75k or later and does not support HDD!"
-ENDIF
-```
 
 #### FPRINT
 To write out text into a file.
