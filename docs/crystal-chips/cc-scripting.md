@@ -89,7 +89,7 @@ The ^ will tell the MESSAGE command not to interpret the " next to it as the end
 ## Widgets
 Widgets is used to display menus in the screen. There are many Widget types to feet different needs.
 
-#### ADDWIDGET
+### ADDWIDGET
 To display a menu item
 
 ```ADDWIDGET "LABEL" "Main Menu"```
@@ -97,7 +97,7 @@ To display a menu item
 Types of Widgets:
 
 
-##### LABEL
+#### LABEL
 To display a title.
 
 ```ADDWIDGET "LABEL" "$TXT_LABEL$"```
@@ -105,15 +105,7 @@ To display a title.
 will display a title line with the text contained in the variable TXT_LABEL.
 
 
-##### CHOICE
-To display a choice to set a numerical value to a variable
-
-```ADDWIDGET "CHOICE" "Title" "Description" "MY_CHOICE"  "CHOICE 1" "CHOICE 2" "CHOICE 3"```
-
-will display a widget with the specified title and description (the description is displayed in the scroll bar), and will set the variable MY_CHOICE to "0", "1", or "2" depending of the user choice.
-
-
-##### INT
+#### INT
 To set a variable with a number
 
 ```ADDWIDGET "INT" "Title" Description" "MY_NUMBER" "0" "99" 1```
@@ -121,7 +113,7 @@ To set a variable with a number
 will display a widget to store a value between 0 and 99 in the variable MY_NUMBER. The user will be able to increment the number by 1.
 
 
-##### AXIS
+#### AXIS
 To set axis numbers (X,Y)
 
 ```ADDWIDGET "AXIS" "Title" "Description" "VALUE_X" "VALUE_Y" "0" "1920" "1" "0" "1920" "2"```
@@ -129,7 +121,7 @@ To set axis numbers (X,Y)
 will display the widget which let the user to select a value for VALUE_X between 0 and 1920 with an increment of 1 and for VALUE_Y between 0 and 1920 with an increment of 2.
 
 
-##### IP
+#### IP
 To set an IP address
 
 ```ADDWIDGET "IP" "Title" "Description" "IP_ADDRESS_1" "IP_ADDRESS_2" "IP_ADDRESS_3" "IP_ADDRESS_4"```
@@ -140,7 +132,15 @@ to set variables IP_ADDRESS_1, IP_ADDRESS_2 etc. For example, if you wish to dis
 ```ECHO "THE IP ADDRESS YOU'VE ENTERED IS $IP_ADDRESS_1$.$IP_ADDRESS_2$.$IP_ADDRESS_3$.$IP_ADDRESS_4$"```
 
 
-##### CALL
+#### CHOICE
+To display a choice to set a numerical value to a variable
+
+```ADDWIDGET "CHOICE" "Title" "Description" "MY_CHOICE"  "CHOICE 1" "CHOICE 2" "CHOICE 3"```
+
+will display a widget with the specified title and description (the description is displayed in the scroll bar), and will set the variable MY_CHOICE to "0", "1", or "2" depending of the user choice.
+
+
+#### CALL
 To call another section of the code
 
 ```ADDWIDGET "CALL" "Title" "Description" "$ARG0$" "THE_SECTION" "ARG_2" "ARG_3"...```
@@ -149,159 +149,10 @@ will call the section "THE_SECTION" of the file $ARG0$ ($ARG0$ will be the file 
 
 The text ARG_2 and ARG_3 will be available in the section THE_SECTION by calling variables $ARG2$ and $ARG3$. (see Sections below)
 
-##### COLOR
 
-```ADDWIDGET "COLOR" "MYCOLOR" "Color Hint" "Variable"```
-
-
-#### RETURN
-To return to a previous menu/script
-
-```ADDWIDGET "RETURN" "$BM.TXT_DONE$" "$BM.TXT_RETURN_CONFIG$"```
-
-
-## Other Widget Commands
-
-#### CLEARWIDGETS
-
-```CLEARWIDGETS``` without arguments will clear the screen of any widget.
-
-#### SETTITLE
-
-```SETTITLE``` will set the title of the current screen.
-
-```SETTITLE "Install App to...```
-
-
-## Sections
-#### GOTO
-A PBAT script is divided into sections. You can define a new section using the sign ":"
-
-You can navigate thru sections with the GOTO command.
-
-Here is a piece of code to understand how sections work :
-
-```
-GOTO "MAIN_MENU"
-
-:A_SECTION
-    ECHO "We are in the A_SECTION section".
-
-:MAIN_MENU
-    ADDWIDGET INT "Value to export" "Choose a number that will be exported to another section" "THE_NUMBER" "0" "10" "1"
-    ADDWIDGET CALL "Go to Config Menu" "Will display the Config Menu" "$ARG0$" "CONFIG_MENU" " "$THE_NUMBER$"
-
-:CONFIG_MENU
-    CLEARWIDGETS
-    MESSAGE "The Number you choose was : $ARG2$"
-```
-
-
-If this script is called, the section MAIN_MENU will be executed first because of the GOTO. In MAIN_MENU, the variable $THE_NUMBER$ is choosen by the user and the code will jump to CONFIG_MENU with the variable exported.
-
-## Conditions
-
-#### IF EQU
-You can execute code with conditions thanks to the IF statement.
-
-```
-IF EQU "$MY_VARIABLE$" "1"
-    MESSAGE "The Variable was equal to 1"
-ELSE
-    MESSAGE "The Variable was not equal to 1"
-ENDIF
-```
-
-
-#### IF NEQ
-You can also turn this code differently :
-
-```
-IF NEQ "$MY_VARIABLE$" "0"
-    MESSAGE "The Variable was not equal to 0"
-ELSE
-    MESSAGE "The Variable was equal to 0"
-ENDIF
-```
-
-
-#### ELSEIF / ELSE
-you can imbricate more than one IF with the keyword ```ELSIF``` :
-
-```
-IF EQU "$MY_VARIABLE$" "1"
-    MESSAGE "The Variable was equal to 1"
-ELSEIF EQU "$MY_VARIABLE$" "2"
-    MESSAGE "The Variable was equal to 2"
-ENDIF
-```
-
-You'll use the ```ELSEIF``` statement when you want to keep testing for values.
-
-You will use the ```ELSE``` statement when none are true, the last ELSE will be executed.
-
-```
-IF EQU "$MY_VARIABLE$" "1"
-    MESSAGE "The Variable was equal to 1"
-ELSE 
-    MESSAGE "The Variable was something other than 1"
-ENDIF
-```
-
-
-#### EXISTS
-To know if a file/folder exists or not. This command should be used in a IF statement
-
-```
-IF EXISTS "mc0:/MYFOLDER/MYSCRIPT.PBT"
-    COPY "mc0:/MYFOLDER/MYSCRIPT.PBT" "mass:/MYFOLDER/MYSCRIPT.PBT"
-ENDIF
-```
-
-
-#### MATCHES
-To know if a STRING matches or not. This command should be used in a IF statement. If a wildcard is used, best to use it in first part of comparison. Second comparison should have NO wildcards.
-
-```
-IF MATCHES "SCPH-300*" "$BM.CONSOLE_MODEL$"
-    MESSAGE "Console is SCPH-300XX"
-ENDIF
-```
-
-
-#### FAIL
-Combine with other commands to execute if command failed.
-
-```
-IF FAIL COPY "mass:/MYFOLDER" "mc0:/MYFOLDER
-    MESSAGE "Failed to copy MYFOLDER"
-    IF FAIL RRM "mc0:/MYFOLDER"
-        MESSAGE "Failed to remove mc0:/MYFOLDER!"
-        RETURN -1
-    ENDIF
-ENDIF"
-```
-
-
-#### GTE, GT, LTE, LT
-`GTE`=Greater than or equal
-
-`GT` = Greater than
-
-`LTE` = Less than or equal
-
-`LT` = Less than or equal
-
-```
-IF GTE "$BM.BIOS_MAJOR_VER$$BM.BIOS_MINOR_VER$" "220"
-    MESSAGE "Unit is SCPH-75k or later and does not support HDD!"
-ENDIF
-```
-
-
-#### SWITCH
+##### SWITCH
 When you have many case to treat, you can also use the ```SWITCH``` function.
-Can be used with ```ADDWIDGET CALL``` or ```ADDWIDGET CHOICE``` 
+Will be used with ```ADDWIDGET CALL``` or ```ADDWIDGET CHOICE``` 
 
 ```
 SWITCH "$BM.CNF_VMODE$"
@@ -330,6 +181,171 @@ ENDS
 ```
 
 You can see that the BREAK command is used to go out of the SWITCH as soon as a case has been treated. You can add DEFAULT to take in consideration this CASE if non corresponds.
+
+#### COLOR
+
+```ADDWIDGET "COLOR" "MYCOLOR" "Color Hint" "Variable"```
+
+
+#### RETURN
+To return to a previous menu/script
+
+```ADDWIDGET "RETURN" "$BM.TXT_DONE$" "$BM.TXT_RETURN_CONFIG$"```
+
+
+## Other Widget Commands
+
+#### CLEARWIDGETS
+
+```CLEARWIDGETS``` without arguments will clear the screen of any widget.
+
+#### SETTITLE
+
+```SETTITLE``` will set the title of the current screen.
+
+```SETTITLE "Install App to...```
+
+
+## Sections
+
+#### GOTO
+A PBAT script is divided into sections. You can define a new section using the sign ":"
+
+You can navigate thru sections with the GOTO command.
+
+Here is a piece of code to understand how sections work :
+
+```
+GOTO "MAIN_MENU"
+
+:A_SECTION
+    ECHO "We are in the A_SECTION section".
+
+:MAIN_MENU
+    ADDWIDGET INT "Value to export" "Choose a number that will be exported to another section" "THE_NUMBER" "0" "10" "1"
+    ADDWIDGET CALL "Go to Config Menu" "Will display the Config Menu" "$ARG0$" "CONFIG_MENU" " "$THE_NUMBER$"
+
+:CONFIG_MENU
+    CLEARWIDGETS
+    MESSAGE "The Number you choose was : $ARG2$"
+```
+
+
+If this script is called, the section MAIN_MENU will be executed first because of the GOTO. In MAIN_MENU, the variable $THE_NUMBER$ is choosen by the user and the code will jump to CONFIG_MENU with the variable exported.
+
+## Conditions
+
+### IF 
+
+`IF` All conditions will start with `IF`. There exists `ELSIF`, `ELSE` and `ENDIF`. See below for further usage.
+
+#### EQU
+You can execute code with conditions thanks to the IF statement.
+
+```
+IF EQU "$MY_VARIABLE$" "1"
+    MESSAGE "The Variable was equal to 1"
+ELSE
+    MESSAGE "The Variable was not equal to 1"
+ENDIF
+```
+
+
+#### NEQ
+You can also turn this code differently :
+
+```
+IF NEQ "$MY_VARIABLE$" "0"
+    MESSAGE "The Variable was not equal to 0"
+ELSE
+    MESSAGE "The Variable was equal to 0"
+ENDIF
+```
+
+
+#### EXISTS
+To know if a file/folder exists or not. This command should be used in a IF statement
+
+```
+IF EXISTS "mc0:/MYFOLDER/MYSCRIPT.PBT"
+    COPY "mc0:/MYFOLDER/MYSCRIPT.PBT" "mass:/MYFOLDER/MYSCRIPT.PBT"
+ENDIF
+```
+
+
+#### MATCHES
+To know if a STRING matches or not. This command should be used in a IF statement. If a wildcard is used, best to use it in first part of comparison. Second comparison should have NO wildcards.
+
+```
+IF MATCHES "SCPH-300*" "$BM.CONSOLE_MODEL$"
+    MESSAGE "Console is SCPH-300XX"
+ENDIF
+```
+
+
+#### GTE, GT, LTE, LT
+`GTE`=Greater than or equal
+
+`GT` = Greater than
+
+`LTE` = Less than or equal
+
+`LT` = Less than or equal
+
+```
+IF GTE "$BM.BIOS_MAJOR_VER$$BM.BIOS_MINOR_VER$" "220"
+    MESSAGE "Unit is SCPH-75k or later and does not support HDD!"
+ENDIF
+```
+
+
+#### FAIL
+Combine with other commands to execute if command failed.
+
+```
+IF FAIL COPY "mass:/MYFOLDER" "mc0:/MYFOLDER
+    MESSAGE "Failed to copy MYFOLDER"
+    IF FAIL RRM "mc0:/MYFOLDER"
+        MESSAGE "Failed to remove mc0:/MYFOLDER!"
+        RETURN -1
+    ENDIF
+ENDIF"
+```
+
+
+#### ELSEIF / ELSE
+you can imbricate more than one IF with the keyword ```ELSIF``` :
+
+```
+IF EQU "$MY_VARIABLE$" "1"
+    MESSAGE "The Variable was equal to 1"
+ELSEIF EQU "$MY_VARIABLE$" "2"
+    MESSAGE "The Variable was equal to 2"
+ENDIF
+```
+
+You'll use the ```ELSEIF``` statement when you want to keep testing for values.
+
+You will use the ```ELSE``` statement when none are true, the last ELSE will be executed.
+
+```
+IF EQU "$MY_VARIABLE$" "1"
+    MESSAGE "The Variable was equal to 1"
+ELSE 
+    MESSAGE "The Variable was something other than 1"
+ENDIF
+```
+
+#### ENDIF
+Any condition starting with `IF` must have an `ENDIF`
+
+```
+IF
+ELSEIF
+ELSEIF
+ELSE
+ENDIF
+```
 
 
 ## File Manipulation
