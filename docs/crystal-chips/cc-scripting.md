@@ -238,7 +238,7 @@ If this script is called, the section MAIN_MENU will be executed first because o
 
 ### IF 
 
-`IF` All conditions will start with `IF`. There exists `ELSIF`, `ELSE` and `ENDIF`. See below for further usage.
+All conditions will start with `IF`. There exists `ELSIF`, `ELSE` and `ENDIF`. See below for further usage.
 
 #### EQU
 You can execute code with conditions thanks to the IF statement.
@@ -314,7 +314,7 @@ ENDIF"
 ```
 
 
-#### ELSEIF / ELSE
+### ELSEIF / ELSE
 you can imbricate more than one IF with the keyword ```ELSIF``` :
 
 ```
@@ -337,7 +337,7 @@ ELSE
 ENDIF
 ```
 
-#### ENDIF
+### ENDIF
 Any condition starting with `IF` must have an `ENDIF`
 
 ```
