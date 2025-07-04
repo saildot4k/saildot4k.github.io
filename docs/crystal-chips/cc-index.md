@@ -70,12 +70,19 @@
     ```ps2client -h hostname/ip listen```
     Homebrew must be in same folder thatn PS2 Client is running from. 
     IE: ~/PS2Client/BM/APPS/APPFOLDER/
+    or SAS compliant:
+    ~/PS2Client/
+    ~/PS2Client/APPS/
     You still need an associated APPINFO.PBT
+
+    Unable to RUN homebrew from PC Host
 
 ???+ note "MMCE devices"
 
     It is best to install apps to MMCE devices using your PC. It seems there are bugs such as moving files
     between mc0/1 and mmmce0/1. I hope for updated IRXs or it just may be a limitation to the SIO2 Bus.
+
+    Removing from MCP2 MMCE does not work. I have disabled REMOVE from MMCE.
 
 ???+ note "USB Exfat"
 
