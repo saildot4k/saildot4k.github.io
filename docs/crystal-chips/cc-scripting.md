@@ -182,6 +182,7 @@ ENDS
 
 You can see that the BREAK command is used to go out of the SWITCH as soon as a case has been treated. You can add DEFAULT to take in consideration this CASE if non corresponds.
 
+
 #### COLOR
 
 ```ADDWIDGET "COLOR" "MYCOLOR" "Color Hint" "Variable"```
