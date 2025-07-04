@@ -240,8 +240,12 @@ If this script is called, the section MAIN_MENU will be executed first because o
 
 All conditions will start with `IF`. There exists `ELSIF`, `ELSE` and `ENDIF`. See below for further usage.
 
-#### EQU
-You can execute code with conditions thanks to the IF statement.
+#### EQU / NEQ
+`EQU` = Equal
+`NEQ` = NOT Equal
+`EQUC` = Equal ? (unknown...)
+`NEQC` = NOT Equal ? (unknown...)
+
 
 ```
 IF EQU "$MY_VARIABLE$" "1"
@@ -252,7 +256,6 @@ ENDIF
 ```
 
 
-#### NEQ
 You can also turn this code differently :
 
 ```
@@ -362,6 +365,8 @@ File manipulation is useful for installation scripts (in APPINFO.PBT). You can m
 - dffs (for internal Chip flash memory CC 2.0 ONLY, don't forget 1.1/1.2 can be turned into 2.0!)
 - host (for remote host. Only available if ps2client is launched on the PC and the network and the host server are started on Boot Manager) 
 
+Combine the below commands with `IF FAIL` and `ELSEIF FAIL` for error handling
+
 
 #### COPY
 To copy file/directory from source to destination :
@@ -384,12 +389,15 @@ To delete a file or directory
 
 will completely delete the folder TMPFOLDER and its contains.```
 
+Most likley the same script as RRM
+
 
 #### RRM
 To delete a file or directy and it's sub-folders (recursively remove). For Example mc0:/TMPFOLDER/SUBFOLDER1
 
 ```RRM "mc0:/TMPFOLDER```
 
+Most likely the same script as RM
 
 #### MKDIR
 To create a new folder.
@@ -428,7 +436,7 @@ To write out text into a file.
 
 ```FPRINT "mass:/MY_TEXT.TXT"  "This text will be written into MY_TEXT.TXT."```
 
-Be careful, if the file exists already, the content will be replaced.
+Be careful, if the file exists already, the content will be replaced though a bug does exist where text is appended instead of file replaced especially if file has line breaks.
 
 
 #### LOADEXEC
@@ -486,11 +494,11 @@ PEEK(B,H,W) "0x12345678"- PEEK BYTE, HALF-WORD, WORD
 
 POKE(B,H,W) "0x12345678" - PEEK BYTE, HALF-WORD, WORD
 
-IF NOT MODLOADED "dev9_driver" - Detemines if IRX is loade. dUnsure how to find names of loaded IRX as is not ELF name.
+IF NOT MODLOADED "dev9_driver" - Detemines if IRX is loaded. Unsure how to find names of loaded IRX as is not ELF name.
 
 UNMOUNT 
 
-SAVEVARS
+SAVEVARS - Save variables
 
 SETAUTH - Set the disc authentication type: "OFF", "PS1" or "PS2"
 
@@ -502,9 +510,9 @@ LOADIMG/UNLOADIMG - load and unload an image for theming
 
 KILLSESS (or kill session, need to recall)
 
-ISIN
+ISIN - if text is within a file
 
-PARSECNF
+PARSECNF - parses disc CNF. Reference BM/SCRIPTS/BMCONT.PBT
 
 ```*``` wildcard(s)
 
