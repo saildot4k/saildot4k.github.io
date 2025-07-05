@@ -340,6 +340,14 @@ Determines if text is within a file
     ENDIF
 ```
 
+#### NOT
+Combine with `IF`/`ELSEIF` and another condition. Do NOT use with `EQU`, `EQUC`, `NEQ`, `NEQC`
+
+``` IF NOT EXISTS "mc0:/SYS-CONF/IPCONFIG.DAT"
+        FPRINT "mc0:/SYS-CONF/IPCONFIG.DAT" "192.168.0.10"
+    ENDIF
+```
+
 
 ### ELSEIF / ELSE
 you can imbricate more than one IF with the keyword ```ELSIF``` :
