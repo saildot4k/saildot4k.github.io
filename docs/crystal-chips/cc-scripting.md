@@ -212,7 +212,11 @@ To return to a previous menu/script
 #### GOTO
 A PBAT script is divided into sections. You can define a new section using the sign ":"
 
-You can navigate thru sections with the GOTO command.
+You can navigate thru sections with the GOTO command. 
+
+Do NOT use GOTO to jump to a label which is within an IF statement! Doing so will result in script failure. 
+
+GOTO does NOT support passing arguments/values
 
 Here is a piece of code to understand how sections work :
 
@@ -316,6 +320,26 @@ IF FAIL COPY "mass:/MYFOLDER" "mc0:/MYFOLDER
 ENDIF"
 ```
 
+#### MODLOADED
+Detemines if IRX is loaded. Unsure how to find names of loaded IRX as is not ELF name.
+
+```
+IF NOT MODLOADED "dev9_driver"
+    IF FAIL LOADEXEC "IRX" "$BM.DRIVER_PATH$/PS2DEV9.IRX"
+        ECHO "Failed loading PS2DEV9.IRX!"
+        RETURN -1
+    ENDIF
+ENDIF
+```
+
+#### ISIN
+Determines if text is within a file
+
+``` IF ISIN "MY_FILE.TXT" "HELLO_WORLD"
+        MESSAGE "HELLO WORLD!"
+    ENDIF
+```
+
 
 ### ELSEIF / ELSE
 you can imbricate more than one IF with the keyword ```ELSIF``` :
@@ -399,6 +423,7 @@ To delete a file or directy and it's sub-folders (recursively remove). For Examp
 
 Most likely the same script as RM
 
+
 #### MKDIR
 To create a new folder.
 
@@ -460,15 +485,18 @@ PBATS is usually used to call multiple scripts to print APPS,DEVS,THEMS,LANGS to
 
 In the called script, MY_ARGUMENT2 will be the first variable in the afformentioned called script, which can be recalled in said script with $ARG2$
 
+
 #### LOADEXEC "EEELF"
 ```LOADEXEC "EEELF" "MY_FILE.ELF" "MY_ARGUMENT1" "MY_ARGUMENT2"```
 
 will execute MY_FILE.ELF with MY_ARGUMENT1 and MY_ARGUMENT2 passed to the elf should it support arg(v).
 
+
 #### LOADEXEC "IRX"
 ```LOADEXEC "IRX" "MY_FILE.IRX"```
 
 will execute an IRX (device driver usually) to add functionality to BOOTMANAGER. Most IRXs do not support arg(v).
+
 
 ## Keeping Script in Memory
 
@@ -476,7 +504,6 @@ will execute an IRX (device driver usually) to add functionality to BOOTMANAGER.
 Loads script in ram for quicker recall
 
 ```KEEP```
-
 
 
 ## Needs documentation:
@@ -507,19 +534,11 @@ CYCLETRAY - Causes the CDVD drive to recheck the disc. Parameters can be "WAIT",
 
 PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE" - Will let you call Path working directory, source device, source path and source file.
 
-LOADEXEC "EEELF" "$ARG1$" $ARG2$ - Executes an elf on EE (ARG1) and passes an argument to it. See NHDDL APPINFO.PBT or OSDSYS APPINFO.PBT
-
-LOADEXEC "PBAT" "$ARG1$" $ARG2$ - Executes a PBAT script ARG1 with ARG2 passed into it as ARG1. Remember ARG0 is always current running script, ARG1 is the current GOTO in the current running script after LOADEXEC...All arguments after are the ARG2 and greater.
-
-LOADEXEC "IRX" 
-
 REBOOTIOP "rom0:UDNL rom0:OSDCNF"
 
 PEEK(B,H,W) "0x12345678"- PEEK BYTE, HALF-WORD, WORD
 
 POKE(B,H,W) "0x12345678" - PEEK BYTE, HALF-WORD, WORD
-
-IF NOT MODLOADED "dev9_driver" - Detemines if IRX is loaded. Unsure how to find names of loaded IRX as is not ELF name.
 
 UNMOUNT 
 
@@ -548,8 +567,14 @@ Found by running BM.ELF in PCSX2 and looking at memory.
 Need to test....
 
 GETDVDREG, EXECCMD, CC, ILLEGAL, CDSTOP, GETDVDREG, BGCOLOR, SETBACK, SETEXIT, LIBLOADED, DUMPIOP
-TOUCH, ADDMACRO, BOOT, DUMPIOP,  and NEQC and EQUC (EQU, NEQ is equal not equal, so what is NEQC?)
+TOUCH, ADDMACRO, BOOT, DUMPIOP,
 DISCONNECT, FINDPAD, FINDCTP1, EXECMD, STABLE, ERROR, COMPLETE, FAILED, BUSY
+
+SETENV - "SETENV" allows you to create a variable which are shared with all sessions: `SETENV "MY_SHARED_VAR" "My shared value"` DOES THIS STILL EXIST?
+
+PARSECNF command to PBAT. parses disc CNF. Reference BM/SCRIPTS/BMCONT.PBT `PARSECNF "cdrom0:\SYSTEM.CNF" "BOOT_NAME" "BOOT_TYPE"`
+
+LOADSRAM - `LOADSRAM "mc0:/BOOT/BM/PS1LOGO.BIN"`
 
 
 ## Useful Tips
