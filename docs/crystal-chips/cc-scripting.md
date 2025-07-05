@@ -333,19 +333,21 @@ ENDIF
 ```
 
 #### ISIN
-Determines if text is within a file
+Determines if text is within a file.
 
-``` IF ISIN "MY_FILE.TXT" "HELLO_WORLD"
-        MESSAGE "HELLO WORLD!"
-    ENDIF
+```
+IF ISIN "MY_FILE.TXT" "HELLO_WORLD"
+    MESSAGE "HELLO WORLD!"
+ENDIF
 ```
 
 #### NOT
 Combine with `IF`/`ELSEIF` and another condition. Do NOT use with `EQU`, `EQUC`, `NEQ`, `NEQC`
 
-``` IF NOT EXISTS "mc0:/SYS-CONF/IPCONFIG.DAT"
-        FPRINT "mc0:/SYS-CONF/IPCONFIG.DAT" "192.168.0.10"
-    ENDIF
+```
+IF NOT EXISTS "mc0:/SYS-CONF/IPCONFIG.DAT"
+    FPRINT "mc0:/SYS-CONF/IPCONFIG.DAT" "192.168.0.10"
+ENDIF
 ```
 
 
@@ -473,12 +475,14 @@ To call/execute another part of the same script or another script and pass varia
 
 Will execute a "TYPE" of loadexec: `PBAT`,`PBATS` `EEELF`, `IRX`
 
+
 #### LOADEXEC "PBAT"
 ```LOADEXEC "PBAT" "MY_FILE.PBT" "MY_ARGUMENT1" "MY_ARGUMENT2"```
 
 will execute a PBAT file named MY_FILE.PBT with the arguments specified. Most of the time, you'll specify a section of the same PBAT script to be executed as the argument. 
 
 In the called script, MY_ARGUMENT2 will be the first variable in the afformentioned called script, which can be recalled in said script with $ARG2$
+
 
 #### LOADEXEC "PBATS"
 ```LOADEXEC "PBATS" "MY_*.PBT" "MY_ARGUMENT1" "MY_ARGUMENT2"```
@@ -555,8 +559,6 @@ SHUTDOWN - Shutdown all "ALL", Memory Module "MM", MMIOP "MMIOP"
 LOADIMG/UNLOADIMG - load and unload an image for theming
 
 KILLSESS (or kill session, need to recall)
-
-ISIN - if text is within a file
 
 PARSECNF - parses disc CNF. Reference BM/SCRIPTS/BMCONT.PBT
 
