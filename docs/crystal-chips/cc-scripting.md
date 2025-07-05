@@ -414,22 +414,16 @@ Notes: copying a file to a file only works if prior directories already exist on
 ```COPY "host:/FOLDER" "mass:/FOLDER1/FOLDER2/"``` This does work to create an empty mass:/FOLDER1 but will say it fails if used with ```IF COPY FAIL```
 
 
-#### RM
+#### RM/RRM
 To delete a file or directory
 
-```RM "mc0:/TMPFOLDER"```
+`RM` Remove
 
-will completely delete the folder TMPFOLDER and its contains.```
+`RRM` Recursive Remove
 
-Most likley the same script as RRM
+```RRM "mc0:/TMPFOLDER"```
 
-
-#### RRM
-To delete a file or directy and it's sub-folders (recursively remove). For Example mc0:/TMPFOLDER/SUBFOLDER1
-
-```RRM "mc0:/TMPFOLDER```
-
-Most likely the same script as RM
+Most likely same script as informed by Crystal Chip Team since there is little reason for RM to exist.
 
 
 #### MKDIR
