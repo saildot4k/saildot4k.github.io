@@ -26,15 +26,18 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
+    - navigation.instant
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.path
+    - navigation.top
     - content.code.copy
     - content.code.select
     - content.code.annotate
     - toc.follow
+    - toc.integrate
   icon:
     admonition:
       soldering: material/soldering-iron
