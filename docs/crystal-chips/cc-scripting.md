@@ -308,7 +308,7 @@ ENDIF
 
 
 #### FAIL
-Combine with other commands to execute if command failed.
+Combine with other file manipulation commands or LOADEXEC
 
 ```
 IF FAIL COPY "mass:/MYFOLDER" "mc0:/MYFOLDER
@@ -469,7 +469,7 @@ Be careful, if the file exists already, the content will be replaced though a bu
 
 
 ## LOADEXEC - Passing Variables
-To call/execute another part of the same script or another script and pass variables or args.
+To call/execute another section of the same or different script and pass variables or args as ARG1-X.
 
 ``````LOADEXEC "TYPE" "ARG0" "ARG1" "ARG2"```
 
@@ -479,7 +479,7 @@ Will execute a "TYPE" of loadexec: `PBAT`,`PBATS` `EEELF`, `IRX`
 #### LOADEXEC "PBAT"
 ```LOADEXEC "PBAT" "MY_FILE.PBT" "MY_ARGUMENT1" "MY_ARGUMENT2"```
 
-will execute a PBAT file named MY_FILE.PBT with the arguments specified. Most of the time, you'll specify a section of the same PBAT script to be executed as the argument. 
+will execute a PBAT file named MY_FILE.PBT and GOTO section "MY_ARGUMENT1" (ARG1) with "MY_ARGUMENT2" set as variable ARG2. Most of the time, you'll specify a section of the same PBAT script to be executed as the argument. 
 
 In the called script, MY_ARGUMENT2 will be the first variable in the afformentioned called script, which can be recalled in said script with $ARG2$
 
