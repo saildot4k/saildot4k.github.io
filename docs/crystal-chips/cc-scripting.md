@@ -9,7 +9,7 @@ To set a new variable, you have to specify the type :
 
 **Possible variable types are:**
 
-- STRING : string (assumed if nothing is set)
+- STRING : string (assumed if the below types are not set)
 
 - U8/S8 : Signed/Unsigned 8-bits number
 
