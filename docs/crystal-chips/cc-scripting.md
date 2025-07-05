@@ -439,13 +439,38 @@ To write out text into a file.
 Be careful, if the file exists already, the content will be replaced though a bug does exist where text is appended instead of file replaced especially if file has line breaks.
 
 
-#### LOADEXEC
-To execute an external file.
+## LOADEXEC - Passing Variables
+To call/execute another part of the same script or another script and pass variables or args.
 
+``````LOADEXEC "TYPE" "ARG0" "ARG1" "ARG2"```
+
+Will execute a "TYPE" of loadexec: `PBAT`,`PBATS` `EEELF`, `IRX`
+
+#### LOADEXEC "PBAT"
 ```LOADEXEC "PBAT" "MY_FILE.PBT" "MY_ARGUMENT1" "MY_ARGUMENT2"```
 
-will execute a PBAT file named MY_FILE.PBT with the arguments specified. Most of the time, you'll specify a section of the PBAT script to be executed as the argument. 
+will execute a PBAT file named MY_FILE.PBT with the arguments specified. Most of the time, you'll specify a section of the same PBAT script to be executed as the argument. 
 
+In the called script, MY_ARGUMENT2 will be the first variable in the afformentioned called script, which can be recalled in said script with $ARG2$
+
+#### LOADEXEC "PBATS"
+```LOADEXEC "PBATS" "MY_*.PBT" "MY_ARGUMENT1" "MY_ARGUMENT2"```
+
+PBATS is usually used to call multiple scripts to print APPS,DEVS,THEMS,LANGS to screen as choices. In the called PBAT GOTO section will most likely be ADDWIDGET "CALL"...to pass ARGS back to this script.
+
+In the called script, MY_ARGUMENT2 will be the first variable in the afformentioned called script, which can be recalled in said script with $ARG2$
+
+#### LOADEXEC "EEELF"
+```LOADEXEC "EEELF" "MY_FILE.ELF" "MY_ARGUMENT1" "MY_ARGUMENT2"```
+
+will execute MY_FILE.ELF with MY_ARGUMENT1 and MY_ARGUMENT2 passed to the elf should it support arg(v).
+
+#### LOADEXEC "IRX"
+```LOADEXEC "IRX" "MY_FILE.IRX"```
+
+will execute an IRX (device driver usually) to add functionality to BOOTMANAGER. Most IRXs do not support arg(v).
+
+## Keeping Script in Memory
 
 #### KEEP
 Loads script in ram for quicker recall
