@@ -574,7 +574,7 @@ SETENV - "SETENV" allows you to create a variable which are shared with all sess
 
 PARSECNF command to PBAT. parses disc CNF. Reference BM/SCRIPTS/BMCONT.PBT `PARSECNF "cdrom0:\SYSTEM.CNF" "BOOT_NAME" "BOOT_TYPE"`
 
-LOADSRAM - `LOADSRAM "mc0:/BOOT/BM/PS1LOGO.BIN"`
+LOADSRAM - `LOADSRAM "mc0:/BOOT/BM/PS1LOGO.BIN"`  I believe used exclusively for passing PS1 Logo checks.
 
 
 ## Useful Tips
