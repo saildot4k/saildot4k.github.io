@@ -299,12 +299,19 @@ All conditions will start with `IF`. There exists `ELSIF`, `ELSE` and must be te
 #### EQU, NEQ / GTE, GT, LTE, LT
 Numerical Conditions
 - `EQU` = Equal
+
 - `NEQ` = NOT Equal
+
 - `EQUC` = Equal ? (unknown...)
+
 - `NEQC` = NOT Equal ? (unknown...)
+
 - `GTE` = Greater than or equal
+
 - `GT` = Greater than
+
 - `LTE` = Less than or equal
+
 - `LT` = Less than or equal
 
 
