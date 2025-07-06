@@ -78,6 +78,19 @@ UNSET "MY_DIGIT"
 ```
 
 
+### SAVEVARS 
+Save variables that start with `BM.CNF_`
+
+```
+IF FAIL SAVEVARS "BM.CNF_*" "$BM.BM_PATH$/CONFIG/BMCONF.PBT"
+        MESSAGE "$BM.TXT_SAVE_CONF_FAIL$"
+    ELSE
+        SET "BM.CONFIG_CHANGED" "0"
+    ENDIF
+    GOTO "MENU_MAIN"
+ENDIF
+```
+
 ## **Messages**
 Messages can be displayed either on the output console, or in the TV screen.
 
@@ -629,6 +642,53 @@ Loads script in ram for quicker recall
 KEEP
 ```
 
+## Pre-Defined Variables
+
+### PARSEPATH
+To be able to recall specifc parts or whole path of script.
+```
+PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE" 
+```
+
+Will let you call Path working directory, source device, source path and source file.
+
+Note, you can allways call $PWD$, but the others require `PARSEPATH` to define and recall.
+
+
+### Crystal Chip Info
+- `$BM.MAJOR_VER$` - BootManager major version
+
+- `$BM.MINOR_VER$` - BootManager minor version
+
+- `$BM.PATCH_VER$` - BootManager patch version
+
+- `$BM.CC_MAJOR_VER$` - Crystal Chip major version
+
+- `$BM.CC_MINOR_VER$` - Crystal Chip minor version
+
+- `$BM.BM_PATH$` - Path to root BM folder ie device:/BM Note there is no `/` included
+
+- `$BM.SCRIPTS$` - Path to BOOTMANAGER scripts folder. Typically device:/BM/SCRIPTS Note there is no `/` included
+
+- `$BM.DRIVER_PATH$` - Path to SHARED folder. Typciallcy device:/BM/SHARED Note there is no `/` included
+
+
+
+## PS2 Info
+- `$BM.CONSOLE_MODEL$` - Consoe model IE SCPH-70012 (best model!)
+
+- `$BM.BIOS_MAJOR_VER$` - PS2 BOOTROM major version
+
+- `$BM.BIOS_MINOR_VER$` - PS2 BOOTROM minor version
+
+- `$BM.CONSOLE_REGION$` - Console Region
+
+- `$BM.ROMVER_REGION$` - BOOTROM Region
+
+- `$BM.MECHA_REGION$` - Mechacon Region
+
+
+
 
 ## **Needs documentation:**
 
@@ -644,19 +704,8 @@ EXIT - 0/-1 Exit from the script (0 )and do not keep it in memory (-1)
 
 FORMAT
 
-$BM.MAJOR_VER$ - BootManager major version
-
-$BM.MINOR_VER$ - BootManager minor version
-
-$BM.PATCH_VER$ - BootManager patch version
-
-$BM.CC_MAJOR_VER$ - Crystal Chip major version
-
-$BM.CC_MINOR_VER$ - Crystal Chip minor version
 
 CYCLETRAY - Causes the CDVD drive to recheck the disc. Parameters can be "WAIT", "NOWAIT" or nothing(which is the same as "WAIT"). "WAIT" means "wait until disc has authenticated and fail if disc does not authenticate". "NOWAIT" returns immediately after telling the CDVD drive to reauthenticate.
-
-PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE" - Will let you call Path working directory, source device, source path and source file.
 
 REBOOTIOP "rom0:UDNL rom0:OSDCNF"
 
@@ -665,8 +714,6 @@ PEEK(B,H,W) "0x12345678"- PEEK BYTE, HALF-WORD, WORD
 POKE(B,H,W) "0x12345678" - PEEK BYTE, HALF-WORD, WORD
 
 UNMOUNT 
-
-SAVEVARS - Save variables
 
 SETAUTH - Set the disc authentication type: "OFF", "PS1" or "PS2"
 
@@ -679,7 +726,6 @@ LOADIMG/UNLOADIMG - load and unload an image for theming
 KILLSESS (or kill session, need to recall)
 
 PARSECNF - parses disc CNF. Reference BM/SCRIPTS/BMCONT.PBT
-
 
 Found by running BM.ELF in PCSX2 and looking at memory.
 
