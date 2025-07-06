@@ -18,6 +18,12 @@ MY APP TITLE
 [EXEC]
 /APPFOLDER/MY_APP.ELF
 [/EXEC]
+[AUTHOR]
+AWESOME DEV
+[/AUTHOR]
+[DESC]
+MY_APP  runs cool shit.
+[/DESC]
 [/HEADER]
 [INSTALL]
 _MKDIR /APPFOLDER
@@ -56,6 +62,7 @@ Supported actions are as follows:
 - `MKDIR [dir]` - Make a directory.
 
 - `RMDIR [dir]` - Remove a directory.
+
 
 ## Action Fail
 When a `_` charater is added to the start of the action, i.e. `RMDIR` becomes `_RMDIR`, then if that action fails the installation process will continue. Otherwise if an action fails the installation process will fail and ToxicOS will give an error.
