@@ -76,7 +76,7 @@ markdown_extensions:
   
 extra:
   social:
-  - icon: /fontawesome/regular/envelope
+  - icon: fontawesome/regular/envelope
     name: send me an email
     link: mailto:info@ps2modchiptutorials.com
   - icon: fontawesome/brands/x-twitter
