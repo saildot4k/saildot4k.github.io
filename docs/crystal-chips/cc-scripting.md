@@ -296,11 +296,16 @@ If this script is called, the section `MAIN_MENU` will be executed first because
 
 All conditions will start with `IF`. There exists `ELSIF`, `ELSE` and must be terminated with `ENDIF`. See below for further usage.
 
-#### EQU / NEQ
+#### EQU, NEQ / GTE, GT, LTE, LT
+Numerical Conditions
 - `EQU` = Equal
 - `NEQ` = NOT Equal
 - `EQUC` = Equal ? (unknown...)
 - `NEQC` = NOT Equal ? (unknown...)
+- `GTE` = Greater than or equal
+- `GT` = Greater than
+- `LTE` = Less than or equal
+- `LT` = Less than or equal
 
 
 ```
@@ -312,13 +317,21 @@ ENDIF
 ```
 
 
-You can also turn this code differently :
+You can also turn this code differently:
 
 ```
 IF NEQ "$MY_VARIABLE$" "0"
     MESSAGE "The Variable was not equal to 0"
 ELSE
     MESSAGE "The Variable was equal to 0"
+ENDIF
+```
+
+You can evaluate if a number is larger or less than or equal another variable:
+
+```
+IF GTE "$BM.BIOS_MAJOR_VER$$BM.BIOS_MINOR_VER$" "220"
+    MESSAGE "Unit is SCPH-75k or later and does not support HDD!"
 ENDIF
 ```
 
@@ -339,22 +352,6 @@ To know if a STRING matches or not. This command should be used in a IF statemen
 ```
 IF MATCHES "SCPH-300*" "$BM.CONSOLE_MODEL$"
     MESSAGE "Console is SCPH-300XX"
-ENDIF
-```
-
-
-#### GTE, GT, LTE, LT
-`GTE` = Greater than or equal
-
-`GT` = Greater than
-
-`LTE` = Less than or equal
-
-`LT` = Less than or equal
-
-```
-IF GTE "$BM.BIOS_MAJOR_VER$$BM.BIOS_MINOR_VER$" "220"
-    MESSAGE "Unit is SCPH-75k or later and does not support HDD!"
 ENDIF
 ```
 
