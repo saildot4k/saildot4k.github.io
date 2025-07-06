@@ -50,11 +50,13 @@ SET "MY_DIGIT" "34"
 
 **Call an existing variable**
 
-To call an already defined variable, you have to surround it with ```$``` :
+To call an already defined variable, you have to surround it with `$` :
 
-`ECHO "$MY_DIGIT$"`
+```
+ECHO "$MY_DIGIT$"
+```
 
-will display ```34``` in the output console for example PS2Client.
+will display `34` in the output console for example PS2Client.
 
 
 !!! note "Where to save defined variables:"
@@ -63,13 +65,17 @@ will display ```34``` in the output console for example PS2Client.
 
     If you want your variable to be saved in the configuration file of Boot Manager, the name MUST begin with "BM.CNF".
 
-```SET "BM.CNF_MY_DEFINITION" "$MY_DIGIT$"```
+```
+SET "BM.CNF_MY_DEFINITION" "$MY_DIGIT$"
+```
 
 
 ### UNSET
 To remove a string or number
 
-```UNSET "MY_DIGIT"```
+```
+UNSET "MY_DIGIT"
+```
 
 
 ## Messages
@@ -78,22 +84,28 @@ Messages can be displayed either on the output console, or in the TV screen.
 ### ECHO
 To output text to console (PS2Client)
 
-```ECHO "The value of MY_DIGIT is : $MY_DIGIT$"```
+```
+ECHO "The value of MY_DIGIT is : $MY_DIGIT$"
+```
 
 will return the text and the contain of the variable in the output console which will be in most case the console where you launched ps2client.
 
 ### MESSAGE
 To display text on the tv screen
 
-```MESSAGE "Installation Complete"```
+```
+MESSAGE "Installation Complete!"
+```
 
-will return the text on the TV screen.
+will return the text `Installation Complete!` on the TV screen.
 
 **Escaping characters**
 
 You can escape a character with ^
 
-```MESSAGE "The Crystal Chip is ^"astonishing^"".```
+```
+MESSAGE "The Crystal Chip is ^"astonishing^""
+```
 
 The ^ will tell the MESSAGE command not to interpret the " next to it as the end of the string character.
 
@@ -104,7 +116,9 @@ Widgets is used to display menus in the screen. There are many Widget types to f
 ### ADDWIDGET
 To display a menu item
 
-```ADDWIDGET "LABEL" "Main Menu"```
+```
+ADDWIDGET "LABEL" "Main Menu"
+```
 
 Types of Widgets:
 
@@ -112,7 +126,9 @@ Types of Widgets:
 ### LABEL
 To display a title.
 
-```ADDWIDGET "LABEL" "$TXT_LABEL$"```
+```
+ADDWIDGET "LABEL" "$TXT_LABEL$"
+```
 
 will display a title line with the text contained in the variable TXT_LABEL.
 
@@ -120,7 +136,9 @@ will display a title line with the text contained in the variable TXT_LABEL.
 ### INT
 To set a variable with a number
 
-```ADDWIDGET "INT" "Title" Description" "MY_NUMBER" "0" "99" 1```
+```
+ADDWIDGET "INT" "Title" Description" "MY_NUMBER" "0" "99" "1"
+```
 
 will display a widget to store a value between 0 and 99 in the variable MY_NUMBER. The user will be able to increment the number by 1.
 
@@ -128,7 +146,9 @@ will display a widget to store a value between 0 and 99 in the variable MY_NUMBE
 ### AXIS
 To set axis numbers (X,Y)
 
-```ADDWIDGET "AXIS" "Title" "Description" "VALUE_X" "VALUE_Y" "0" "1920" "1" "0" "1920" "2"```
+```
+ADDWIDGET "AXIS" "Title" "Description" "VALUE_X" "VALUE_Y" "0" "1920" "1" "0" "1920" "2"
+```
 
 will display the widget which let the user to select a value for VALUE_X between 0 and 1920 with an increment of 1 and for VALUE_Y between 0 and 1920 with an increment of 2.
 
@@ -136,18 +156,24 @@ will display the widget which let the user to select a value for VALUE_X between
 ### IP
 To set an IP address
 
-```ADDWIDGET "IP" "Title" "Description" "IP_ADDRESS_1" "IP_ADDRESS_2" "IP_ADDRESS_3" "IP_ADDRESS_4"```
+```
+ADDWIDGET "IP" "Title" "Description" "IP_ADDRESS_1" "IP_ADDRESS_2" "IP_ADDRESS_3" "IP_ADDRESS_4"
+```
 
 to set variables IP_ADDRESS_1, IP_ADDRESS_2 etc. For example, if you wish to display this IP again, you'll have to call
 
 
-```ECHO "THE IP ADDRESS YOU'VE ENTERED IS $IP_ADDRESS_1$.$IP_ADDRESS_2$.$IP_ADDRESS_3$.$IP_ADDRESS_4$"```
+```
+ECHO "THE IP ADDRESS YOU'VE ENTERED IS $IP_ADDRESS_1$.$IP_ADDRESS_2$.$IP_ADDRESS_3$.$IP_ADDRESS_4$"
+```
 
 
 ### CHOICE
 To display a choice to set a numerical value to a variable
 
-```ADDWIDGET "CHOICE" "Title" "Description" "MY_CHOICE"  "CHOICE 1" "CHOICE 2" "CHOICE 3"```
+```
+ADDWIDGET "CHOICE" "Title" "Description" "MY_CHOICE"  "CHOICE 1" "CHOICE 2" "CHOICE 3"
+```
 
 will display a widget with the specified title and description (the description is displayed in the scroll bar), and will set the variable MY_CHOICE to "0", "1", or "2" depending of the user choice.
 
@@ -155,16 +181,18 @@ will display a widget with the specified title and description (the description 
 ### CALL
 To call another section of the code
 
-```ADDWIDGET "CALL" "Title" "Description" "$ARG0$" "THE_SECTION" "ARG_2" "ARG_3"...```
+```
+ADDWIDGET "CALL" "Title" "Description" "$ARG0$" "THE_SECTION" "ARG2" "ARG3"...
+```
 
-will call the section "THE_SECTION" of the file $ARG0$ ($ARG0$ will be the file where this widget is executed. The section THE_SECTION is inside the same file). with arguments ARG_2 and ARG_3.
+will call the section `THE_SECTION` of the file `$ARG0$` (`$ARG0$` will be the file where this widget is executed. The section THE_SECTION is inside the same file). with arguments `ARG2` and `ARG3`.
 
-The text ARG_2 and ARG_3 will be available in the section THE_SECTION by calling variables $ARG2$ and $ARG3$. (see Sections below)
+The text `ARG2` and `ARG3` will be available in the section THE_SECTION by calling variables $ARG2$ and $ARG3$. (see Sections below)
 
 
 #### SWITCH
-When you have many case to treat, you can also use the ```SWITCH``` function.
-Will be used with ```ADDWIDGET CALL``` or ```ADDWIDGET CHOICE``` 
+When you have many case to treat, you can also use the `SWITCH` function.
+Will be used with `ADDWIDGET CALL` or `ADDWIDGET CHOICE` 
 
 ```
 SWITCH "$BM.CNF_VMODE$"
@@ -197,38 +225,49 @@ You can see that the BREAK command is used to go out of the SWITCH as soon as a 
 
 ### COLOR
 
-```ADDWIDGET "COLOR" "MYCOLOR" "Color Hint" "Variable"```
+```
+ADDWIDGET "COLOR" "MYCOLOR" "Color Hint" "Variable"
+```
 
 
 ### RETURN
 To return to a previous menu/script
 
-```ADDWIDGET "RETURN" "$BM.TXT_DONE$" "$BM.TXT_RETURN_CONFIG$"```
+```
+ADDWIDGET "RETURN" "$BM.TXT_DONE$" "$BM.TXT_RETURN_CONFIG$"
+```
 
 
 ## Other Widget Commands
 
 ### CLEARWIDGETS
+Will clear the screen of all widgets.
 
-```CLEARWIDGETS``` without arguments will clear the screen of any widget.
+```
+CLEARWIDGETS
+``` 
+
+
 
 ### SETTITLE
 
-```SETTITLE``` will set the title of the current screen.
+`SETTITLE` will set the title of the current screen.
 
-```SETTITLE "Install App to...```
+```
+SETTITLE "Install App to...
+```
 
 
 ## Sections
 
 ### GOTO
-A PBAT script is divided into sections. You can define a new section using the sign ":"
+A PBAT script is divided into sections. You can define a new section using the sign `:`
 
 You can navigate thru sections with the GOTO command. 
 
 Do NOT use GOTO to jump to a label which is within an IF statement! Doing so will result in script failure. 
 
-GOTO does NOT support passing arguments/values
+GOTO does NOT support passing arguments/values!
 
 Here is a piece of code to understand how sections work :
 
@@ -248,13 +287,14 @@ GOTO "MAIN_MENU"
 ```
 
 
-If this script is called, the section MAIN_MENU will be executed first because of the GOTO. In MAIN_MENU, the variable $THE_NUMBER$ is choosen by the user and the code will jump to CONFIG_MENU with the variable exported.
+If this script is called, the section `MAIN_MENU` will be executed first because of the `GOTO`. In `MAIN_MENU`, the variable `$THE_NUMBER$` is choosen by the user and the code will jump to `CONFIG_MENU` with the variable exported.
+
 
 ## Conditions
 
 ### IF 
 
-All conditions will start with `IF`. There exists `ELSIF`, `ELSE` and `ENDIF`. See below for further usage.
+All conditions will start with `IF`. There exists `ELSIF`, `ELSE` and must be terminated with `ENDIF`. See below for further usage.
 
 #### EQU / NEQ
 `EQU` = Equal
@@ -364,7 +404,7 @@ ENDIF
 
 
 ### ELSEIF / ELSE
-you can imbricate more than one IF with the keyword ```ELSIF``` :
+You can imbricate more than one IF with the keyword `ELSIF` :
 
 ```
 IF EQU "$MY_VARIABLE$" "1"
@@ -374,9 +414,9 @@ ELSEIF EQU "$MY_VARIABLE$" "2"
 ENDIF
 ```
 
-You'll use the ```ELSEIF``` statement when you want to keep testing for values.
+You'll use the `ELSEIF` statement when you want to keep testing for values.
 
-You will use the ```ELSE``` statement when none are true, the last ELSE will be executed.
+You will use the `ELSE` statement when none are true, the last ELSE will be executed.
 
 ```
 IF EQU "$MY_VARIABLE$" "1"
@@ -402,30 +442,46 @@ ENDIF
 
 File manipulation is useful for installation scripts (in APPINFO.PBT). You can manipulate files on any device :
 
-- mc0 (for memory card 1)
-- mc1 (for memory card 2)
-- mass (for USB device)
-- mmce0 (for MMCE device 1)
-- mmce0 (for MMCE device 2)
-- pfs0 (for internal HDD, uses __common partition)
-- dffs (for internal Chip flash memory CC 2.0 ONLY, don't forget 1.1/1.2 can be turned into 2.0!)
-- host (for remote host. Only available if ps2client is launched on the PC and the network and the host server are started on Boot Manager) 
+- `mc0` (for memory card 1)
+- `mc1` (for memory card 2)
+- `mass` (for USB device)
+- `mmce0` (for MMCE device 1)
+- `mmce0` (for MMCE device 2)
+- `pfs0` (for internal HDD, uses __common partition)
+- `dffs` (for internal Chip flash memory CC 2.0 ONLY, don't forget 1.1/1.2 can be turned into 2.0!)
+- `host` (for remote host. Only available if ps2client is launched on the PC and the network and the host server are started on Boot Manager) 
 
-Combine the below commands with `IF FAIL` and `ELSEIF FAIL` for error handling
+Combine the below commands with `IF FAIL` and `ELSEIF FAIL` for error handling.
 
 
 ### COPY
 To copy file/directory from source to destination :
 
-```COPY "host:/FOLDER" "mass:/FOLDER/FOLDER2"``` will copy contents source folder to destintaion folder if intermediary folders exist.
+```
+COPY "host:/FOLDER" "mass:/FOLDER/FOLDER2"
+```
 
-```COPY "host:/FOLDER/FILE.TXT" "mass:/FOLDER1/FOLDER2/FILE.TXT"``` will copy the single file, but will NOT create destination folder structure if it does not exist.
+will copy contents source folder to destintaion folder if intermediary folders exist.
 
-Notes: copying a file to a file only works if prior directories already exist on destination.
+```
+COPY "host:/FOLDER1/FILE.TXT" "mass:/FOLDER1/FOLDER2/FILE.TXT"
+```
 
-```COPY "host:/FOLDER" "mass:/FOLDER1/FOLDER2/FILE.TXT"``` DOES NOT WORK
+    will copy the single file, but will NOT create destination folder structure if it does not exist.
 
-```COPY "host:/FOLDER" "mass:/FOLDER1/FOLDER2/"``` This does work to create an empty mass:/FOLDER1 but will say it fails if used with ```IF COPY FAIL```
+    Notes: copying a file to a file only works if prior directories already exist on destination.
+
+```
+COPY "host:/FOLDER" "mass:/FOLDER1NOTEXISTS/FOLDER2/FILE.TXT"
+```
+
+^DOES NOT WORK!
+
+```
+COPY "host:/FOLDER" "mass:/FOLDER1NOTEXISTS/FOLDER2/"
+```
+
+    This does work to create an empty `mass:/FOLDER1` but will say it fails if used with `IF COPY FAIL`. Note the ending `/`
 
 
 ### RM/RRM
@@ -435,19 +491,23 @@ To delete a file or directory
 
 `RRM` Recursive Remove
 
-```RRM "mc0:/TMPFOLDER"```
+```
+RRM "mc0:/TMPFOLDER"
+```
 
-Most likely same script as informed by Crystal Chip Team since there is little reason for RM to exist.
+    Most likely same script as informed by Crystal Chip Team since there is little reason for RM to exist.
 
 
 ### MKDIR
 To create a new folder.
 
-```MKDIR "mass:/MYFOLDER"```
+```
+MKDIR "mass:/MYFOLDER"
+```
 
- will create a folder MYFOLDER in the USB mass storage.
+    will create a folder MYFOLDER in the USB mass storage.
 
- Note: MKDIR will not create mutliple folders for example if MYFOLDER, FOLDER and FOLDER3 do not exist:
+    Note: MKDIR will not create mutliple folders for example if MYFOLDER, FOLDER and FOLDER3 do not exist:
 
 ```
 IF NOT EXISTS "mass:/MYFOLDER/FOLDER2/FOLDER3"
@@ -459,7 +519,9 @@ ENDIF
 
 The workaround is to exploit a bug that thinks it failed
 
-```COPY $PWD$ "mass:/MYFOLDER/MYFOLDER2/MYFOLDER3"```
+```
+COPY $PWD$ "mass:/MYFOLDER/MYFOLDER2/MYFOLDER3"
+```
 
 DO NOT PRECEDE WITH `IF FAIL` as it does think it failed. Contents of folders will not be harmed in my testing if some of it exists.
 
@@ -467,29 +529,39 @@ DO NOT PRECEDE WITH `IF FAIL` as it does think it failed. Contents of folders wi
 ### REDIRFILE
 To symlink a file to another location. Only works if the environment you use doesn't reboot IOP too soon IE PS2LINK
 
-```REDIRFILE "$PWD$/IPCONFIG.DAT" "$BM.BM_PATH$/CONFIG/IPCONFIG.DAT"```
+```
+REDIRFILE "$PWD$/IPCONFIG.DAT" "$BM.BM_PATH$/CONFIG/IPCONFIG.DAT"
+```
 
-```"$PWD$/IPCONFIG.DAT"``` is where you want the file to "appear" and ```"$BM.BM_PATH$/CONFIG/IPCONFIG.DAT"``` is where the file currently resides.
+`"$PWD$/IPCONFIG.DAT"` is where you want the file to "appear" and `"$BM.BM_PATH$/CONFIG/IPCONFIG.DAT"` is where the file currently resides.
 
 
 ### FPRINT
 To write out text into a file.
 
-```FPRINT "mass:/MY_TEXT.TXT"  "This text will be written into MY_TEXT.TXT."```
+```
+FPRINT "mass:/MY_TEXT.TXT"  "This text will be written into MY_TEXT.TXT."
+```
 
 Be careful, if the file exists already, the content will be replaced though a bug does exist where text is appended instead of file replaced especially if file has line breaks.
 
 
 ## LOADEXEC - Passing Variables
-To call/execute another section of the same or different script and pass variables or args as ARG1-X.
+To call/execute another section of the same or different script, elf or irx and pass variables or args as `ARG1`-`ARGX`
 
-``````LOADEXEC "TYPE" "ARG0" "ARG1" "ARG2"```
+```
+LOADEXEC "TYPE" "ARG0" "ARG1" "ARG2"
+```
 
 Will execute a "TYPE" of loadexec: `PBAT`,`PBATS` `EEELF`, `IRX`
 
 
 ### PBAT
-```LOADEXEC "PBAT" "MY_FILE.PBT" "MY_ARGUMENT1" "MY_ARGUMENT2"```
+To execute another PBAT script and pass variables.
+
+```
+LOADEXEC "PBAT" "MY_FILE.PBT" "MY_ARGUMENT1" "MY_ARGUMENT2"
+```
 
 will execute a PBAT file named MY_FILE.PBT and GOTO section "MY_ARGUMENT1" (ARG1) with "MY_ARGUMENT2" set as variable ARG2. Most of the time, you'll specify a section of the same PBAT script to be executed as the argument. 
 
@@ -497,7 +569,11 @@ In the called script, MY_ARGUMENT2 will be the first variable in the afformentio
 
 
 ### PBATS
-```LOADEXEC "PBATS" "MY_*.PBT" "MY_ARGUMENT1" "MY_ARGUMENT2"```
+To execute multiple PBAT scripts and pass variables.
+
+```
+LOADEXEC "PBATS" "MY_*.PBT" "MY_ARGUMENT1" "MY_ARGUMENT2"
+```
 
 PBATS is usually used to call multiple scripts to print APPS,DEVS,THEMS,LANGS to screen as choices. In the called PBAT GOTO section will most likely be ADDWIDGET "CALL"...to pass ARGS back to this script.
 
@@ -505,23 +581,49 @@ In the called script, MY_ARGUMENT2 will be the first variable in the afformentio
 
 
 ### EEELF
-```LOADEXEC "EEELF" "MY_FILE.ELF" "MY_ARGUMENT1" "MY_ARGUMENT2"```
+To execute an ELF file and pass arguments.
+
+```
+LOADEXEC "EEELF" "MY_FILE.ELF" "MY_ARGUMENT1" "MY_ARGUMENT2"
+```
 
 will execute MY_FILE.ELF with MY_ARGUMENT1 and MY_ARGUMENT2 passed to the elf should it support arg(v).
 
 
 ### IRX
-```LOADEXEC "IRX" "MY_FILE.IRX"```
+To load a an IRX module. Most IRXs do not support arg(v).
+
+```
+LOADEXEC "IRX" "MY_FILE.IRX"
+```
 
 will execute an IRX (device driver usually) to add functionality to BOOTMANAGER. Most IRXs do not support arg(v).
 
+
+## Wildcards
+
+`*` wildcard(s)
+
+`?` single character wildcard
+
+When used with conditions, be sure to set in first variable.
+
+Also used often to call multiple PBATS via `LOADEXEC "PBATS"` to show apps/devices avaliable.
+
+```
+IF MATCHES "SCPH-300*" "$BM.CONSOLE_MODEL$"
+    MESSAGE "Console is SCPH-300XX"
+ENDIF
+```
 
 ## Keeping Script in Memory
 
 ### KEEP
 Loads script in ram for quicker recall
 
-```KEEP```
+```
+KEEP
+```
 
 
 ## Needs documentation:
@@ -574,9 +676,6 @@ KILLSESS (or kill session, need to recall)
 
 PARSECNF - parses disc CNF. Reference BM/SCRIPTS/BMCONT.PBT
 
-```*``` wildcard(s)
-
-```?``` single character wildcard
 
 Found by running BM.ELF in PCSX2 and looking at memory.
 
