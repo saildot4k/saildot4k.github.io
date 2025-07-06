@@ -5,7 +5,7 @@ hide:
 
 # BootManager Scripting Documentation
 
-## Variables
+# Variables
 Variables are used to store values.
 
 To set a new variable, you have to specify the type :
@@ -29,7 +29,7 @@ To set a new variable, you have to specify the type :
 
 **Examples**
 
-#### SET
+### SET
 To store a string or number
 
 ```SET "U8" "MY_DIGIT" "235"```
@@ -59,23 +59,23 @@ will display ```34``` in the output console for example PS2Client.
 ```SET "BM.CNF_MY_DEFINITION" "$MY_DIGIT$"```
 
 
-#### UNSET
+### UNSET
 To remove a string or number
 
 ```UNSET "MY_DIGIT"```
 
 
-## Messages
+# Messages
 Messages can be displayed either on the output console, or in the TV screen.
 
-#### ECHO
+### ECHO
 To output text to console (PS2Client)
 
 ```ECHO "The value of MY_DIGIT is : $MY_DIGIT$"```
 
 will return the text and the contain of the variable in the output console which will be in most case the console where you launched ps2client.
 
-#### MESSAGE
+### MESSAGE
 To display text on the tv screen
 
 ```MESSAGE "Installation Complete"```
@@ -91,10 +91,10 @@ You can escape a character with ^
 The ^ will tell the MESSAGE command not to interpret the " next to it as the end of the string character.
 
 
-## Widgets
+# Widgets
 Widgets is used to display menus in the screen. There are many Widget types to feet different needs.
 
-### ADDWIDGET
+## ADDWIDGET
 To display a menu item
 
 ```ADDWIDGET "LABEL" "Main Menu"```
@@ -102,7 +102,7 @@ To display a menu item
 Types of Widgets:
 
 
-#### LABEL
+### LABEL
 To display a title.
 
 ```ADDWIDGET "LABEL" "$TXT_LABEL$"```
@@ -110,7 +110,7 @@ To display a title.
 will display a title line with the text contained in the variable TXT_LABEL.
 
 
-#### INT
+### INT
 To set a variable with a number
 
 ```ADDWIDGET "INT" "Title" Description" "MY_NUMBER" "0" "99" 1```
@@ -118,7 +118,7 @@ To set a variable with a number
 will display a widget to store a value between 0 and 99 in the variable MY_NUMBER. The user will be able to increment the number by 1.
 
 
-#### AXIS
+### AXIS
 To set axis numbers (X,Y)
 
 ```ADDWIDGET "AXIS" "Title" "Description" "VALUE_X" "VALUE_Y" "0" "1920" "1" "0" "1920" "2"```
@@ -126,7 +126,7 @@ To set axis numbers (X,Y)
 will display the widget which let the user to select a value for VALUE_X between 0 and 1920 with an increment of 1 and for VALUE_Y between 0 and 1920 with an increment of 2.
 
 
-#### IP
+### IP
 To set an IP address
 
 ```ADDWIDGET "IP" "Title" "Description" "IP_ADDRESS_1" "IP_ADDRESS_2" "IP_ADDRESS_3" "IP_ADDRESS_4"```
@@ -137,7 +137,7 @@ to set variables IP_ADDRESS_1, IP_ADDRESS_2 etc. For example, if you wish to dis
 ```ECHO "THE IP ADDRESS YOU'VE ENTERED IS $IP_ADDRESS_1$.$IP_ADDRESS_2$.$IP_ADDRESS_3$.$IP_ADDRESS_4$"```
 
 
-#### CHOICE
+### CHOICE
 To display a choice to set a numerical value to a variable
 
 ```ADDWIDGET "CHOICE" "Title" "Description" "MY_CHOICE"  "CHOICE 1" "CHOICE 2" "CHOICE 3"```
@@ -145,7 +145,7 @@ To display a choice to set a numerical value to a variable
 will display a widget with the specified title and description (the description is displayed in the scroll bar), and will set the variable MY_CHOICE to "0", "1", or "2" depending of the user choice.
 
 
-#### CALL
+### CALL
 To call another section of the code
 
 ```ADDWIDGET "CALL" "Title" "Description" "$ARG0$" "THE_SECTION" "ARG_2" "ARG_3"...```
@@ -155,7 +155,7 @@ will call the section "THE_SECTION" of the file $ARG0$ ($ARG0$ will be the file 
 The text ARG_2 and ARG_3 will be available in the section THE_SECTION by calling variables $ARG2$ and $ARG3$. (see Sections below)
 
 
-##### SWITCH
+#### SWITCH
 When you have many case to treat, you can also use the ```SWITCH``` function.
 Will be used with ```ADDWIDGET CALL``` or ```ADDWIDGET CHOICE``` 
 
@@ -188,33 +188,33 @@ ENDS
 You can see that the BREAK command is used to go out of the SWITCH as soon as a case has been treated. You can add DEFAULT to take in consideration this CASE if non corresponds.
 
 
-#### COLOR
+### COLOR
 
 ```ADDWIDGET "COLOR" "MYCOLOR" "Color Hint" "Variable"```
 
 
-#### RETURN
+### RETURN
 To return to a previous menu/script
 
 ```ADDWIDGET "RETURN" "$BM.TXT_DONE$" "$BM.TXT_RETURN_CONFIG$"```
 
 
-## Other Widget Commands
+# Other Widget Commands
 
-#### CLEARWIDGETS
+### CLEARWIDGETS
 
 ```CLEARWIDGETS``` without arguments will clear the screen of any widget.
 
-#### SETTITLE
+### SETTITLE
 
 ```SETTITLE``` will set the title of the current screen.
 
 ```SETTITLE "Install App to...```
 
 
-## Sections
+# Sections
 
-#### GOTO
+### GOTO
 A PBAT script is divided into sections. You can define a new section using the sign ":"
 
 You can navigate thru sections with the GOTO command. 
@@ -243,13 +243,13 @@ GOTO "MAIN_MENU"
 
 If this script is called, the section MAIN_MENU will be executed first because of the GOTO. In MAIN_MENU, the variable $THE_NUMBER$ is choosen by the user and the code will jump to CONFIG_MENU with the variable exported.
 
-## Conditions
+# Conditions
 
-### IF 
+## IF 
 
 All conditions will start with `IF`. There exists `ELSIF`, `ELSE` and `ENDIF`. See below for further usage.
 
-#### EQU / NEQ
+### EQU / NEQ
 `EQU` = Equal
 `NEQ` = NOT Equal
 `EQUC` = Equal ? (unknown...)
@@ -276,7 +276,7 @@ ENDIF
 ```
 
 
-#### EXISTS
+### EXISTS
 To know if a file/folder exists or not. This command should be used in a IF statement
 
 ```
@@ -286,7 +286,7 @@ ENDIF
 ```
 
 
-#### MATCHES
+### MATCHES
 To know if a STRING matches or not. This command should be used in a IF statement. If a wildcard is used, best to use it in first part of comparison. Second comparison should have NO wildcards.
 
 ```
@@ -296,7 +296,7 @@ ENDIF
 ```
 
 
-#### GTE, GT, LTE, LT
+### GTE, GT, LTE, LT
 `GTE` = Greater than or equal
 
 `GT` = Greater than
@@ -312,7 +312,7 @@ ENDIF
 ```
 
 
-#### FAIL
+### FAIL
 Combine with other file manipulation commands or LOADEXEC
 
 ```
@@ -325,7 +325,7 @@ IF FAIL COPY "mass:/MYFOLDER" "mc0:/MYFOLDER
 ENDIF"
 ```
 
-#### MODLOADED
+### MODLOADED
 Detemines if IRX is loaded. Unsure how to find names of loaded IRX as is not ELF name.
 
 ```
@@ -337,7 +337,7 @@ IF NOT MODLOADED "dev9_driver"
 ENDIF
 ```
 
-#### ISIN
+### ISIN
 Determines if text is within a file.
 
 ```
@@ -346,7 +346,7 @@ IF ISIN "MY_FILE.TXT" "HELLO_WORLD"
 ENDIF
 ```
 
-#### NOT
+### NOT
 Combine with `IF`/`ELSEIF` and another condition. Do NOT use with `EQU`, `EQUC`, `NEQ`, `NEQC`
 
 ```
@@ -356,7 +356,7 @@ ENDIF
 ```
 
 
-### ELSEIF / ELSE
+## ELSEIF / ELSE
 you can imbricate more than one IF with the keyword ```ELSIF``` :
 
 ```
@@ -379,7 +379,7 @@ ELSE
 ENDIF
 ```
 
-### ENDIF
+## ENDIF
 Any condition starting with `IF` must have an `ENDIF`
 
 ```
@@ -391,7 +391,7 @@ ENDIF
 ```
 
 
-## File Manipulation
+# File Manipulation
 
 File manipulation is useful for installation scripts (in APPINFO.PBT). You can manipulate files on any device :
 
@@ -407,7 +407,7 @@ File manipulation is useful for installation scripts (in APPINFO.PBT). You can m
 Combine the below commands with `IF FAIL` and `ELSEIF FAIL` for error handling
 
 
-#### COPY
+### COPY
 To copy file/directory from source to destination :
 
 ```COPY "host:/FOLDER" "mass:/FOLDER/FOLDER2"``` will copy contents source folder to destintaion folder if intermediary folders exist.
@@ -421,7 +421,7 @@ Notes: copying a file to a file only works if prior directories already exist on
 ```COPY "host:/FOLDER" "mass:/FOLDER1/FOLDER2/"``` This does work to create an empty mass:/FOLDER1 but will say it fails if used with ```IF COPY FAIL```
 
 
-#### RM/RRM
+### RM/RRM
 To delete a file or directory
 
 `RM` Remove
@@ -433,7 +433,7 @@ To delete a file or directory
 Most likely same script as informed by Crystal Chip Team since there is little reason for RM to exist.
 
 
-#### MKDIR
+### MKDIR
 To create a new folder.
 
 ```MKDIR "mass:/MYFOLDER"```
@@ -457,7 +457,7 @@ The workaround is to exploit a bug that thinks it failed
 DO NOT PRECEDE WITH `IF FAIL` as it does think it failed. Contents of folders will not be harmed in my testing if some of it exists.
 
 
-#### REDIRFILE
+### REDIRFILE
 To symlink a file to another location. Only works if the environment you use doesn't reboot IOP too soon IE PS2LINK
 
 ```REDIRFILE "$PWD$/IPCONFIG.DAT" "$BM.BM_PATH$/CONFIG/IPCONFIG.DAT"```
@@ -465,7 +465,7 @@ To symlink a file to another location. Only works if the environment you use doe
 ```"$PWD$/IPCONFIG.DAT"``` is where you want the file to "appear" and ```"$BM.BM_PATH$/CONFIG/IPCONFIG.DAT"``` is where the file currently resides.
 
 
-#### FPRINT
+### FPRINT
 To write out text into a file.
 
 ```FPRINT "mass:/MY_TEXT.TXT"  "This text will be written into MY_TEXT.TXT."```
@@ -473,7 +473,7 @@ To write out text into a file.
 Be careful, if the file exists already, the content will be replaced though a bug does exist where text is appended instead of file replaced especially if file has line breaks.
 
 
-## LOADEXEC - Passing Variables
+# LOADEXEC - Passing Variables
 To call/execute another section of the same or different script and pass variables or args as ARG1-X.
 
 ``````LOADEXEC "TYPE" "ARG0" "ARG1" "ARG2"```
@@ -481,7 +481,7 @@ To call/execute another section of the same or different script and pass variabl
 Will execute a "TYPE" of loadexec: `PBAT`,`PBATS` `EEELF`, `IRX`
 
 
-#### LOADEXEC "PBAT"
+### LOADEXEC "PBAT"
 ```LOADEXEC "PBAT" "MY_FILE.PBT" "MY_ARGUMENT1" "MY_ARGUMENT2"```
 
 will execute a PBAT file named MY_FILE.PBT and GOTO section "MY_ARGUMENT1" (ARG1) with "MY_ARGUMENT2" set as variable ARG2. Most of the time, you'll specify a section of the same PBAT script to be executed as the argument. 
@@ -489,7 +489,7 @@ will execute a PBAT file named MY_FILE.PBT and GOTO section "MY_ARGUMENT1" (ARG1
 In the called script, MY_ARGUMENT2 will be the first variable in the afformentioned called script, which can be recalled in said script with $ARG2$
 
 
-#### LOADEXEC "PBATS"
+### LOADEXEC "PBATS"
 ```LOADEXEC "PBATS" "MY_*.PBT" "MY_ARGUMENT1" "MY_ARGUMENT2"```
 
 PBATS is usually used to call multiple scripts to print APPS,DEVS,THEMS,LANGS to screen as choices. In the called PBAT GOTO section will most likely be ADDWIDGET "CALL"...to pass ARGS back to this script.
@@ -497,27 +497,27 @@ PBATS is usually used to call multiple scripts to print APPS,DEVS,THEMS,LANGS to
 In the called script, MY_ARGUMENT2 will be the first variable in the afformentioned called script, which can be recalled in said script with $ARG2$
 
 
-#### LOADEXEC "EEELF"
+### LOADEXEC "EEELF"
 ```LOADEXEC "EEELF" "MY_FILE.ELF" "MY_ARGUMENT1" "MY_ARGUMENT2"```
 
 will execute MY_FILE.ELF with MY_ARGUMENT1 and MY_ARGUMENT2 passed to the elf should it support arg(v).
 
 
-#### LOADEXEC "IRX"
+### LOADEXEC "IRX"
 ```LOADEXEC "IRX" "MY_FILE.IRX"```
 
 will execute an IRX (device driver usually) to add functionality to BOOTMANAGER. Most IRXs do not support arg(v).
 
 
-## Keeping Script in Memory
+# Keeping Script in Memory
 
-#### KEEP
+### KEEP
 Loads script in ram for quicker recall
 
 ```KEEP```
 
 
-## Needs documentation:
+# Needs documentation:
 
 EVAL SETTITLE - Evaluate a title, usually with nested $BM.TXT_MYTEXT$
 
@@ -586,9 +586,9 @@ PARSECNF command to PBAT. parses disc CNF. Reference BM/SCRIPTS/BMCONT.PBT `PARS
 LOADSRAM - `LOADSRAM "mc0:/BOOT/BM/PS1LOGO.BIN"`  I believe used exclusively for passing PS1 Logo checks.
 
 
-## Useful Tips
+# Useful Tips
 
-#### Use ECHO and PS2 Client
+### Use ECHO and PS2 Client
 When debugging paste variables where you want in the script. Then run PS2Client to see output via ECHO
 
 
@@ -612,7 +612,7 @@ When debugging paste variables where you want in the script. Then run PS2Client 
     ECHO ARG12: $ARG12$
 ```
 
-#### PS2Client
+### PS2Client
 
 Paste and edit this text into plain text file saved as LauchBM2.bat
 
