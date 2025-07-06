@@ -4,7 +4,7 @@ hide:
 ---
 # BOOTMANAGER Scripting Reference List (PBAT)
 
-## Variables
+## **Variables**
 Variables are used to store values.
 
 To set a new variable, you have to specify the type :
@@ -78,7 +78,7 @@ UNSET "MY_DIGIT"
 ```
 
 
-## Messages
+## **Messages**
 Messages can be displayed either on the output console, or in the TV screen.
 
 ### ECHO
@@ -110,7 +110,7 @@ MESSAGE "The Crystal Chip is ^"astonishing^""
 The ^ will tell the MESSAGE command not to interpret the " next to it as the end of the string character.
 
 
-## Widgets
+## **Widgets**
 Widgets is used to display menus in the screen. There are many Widget types to feet different needs.
 
 ### ADDWIDGET
@@ -238,7 +238,7 @@ ADDWIDGET "RETURN" "$BM.TXT_DONE$" "$BM.TXT_RETURN_CONFIG$"
 ```
 
 
-## Other Widget Commands
+## **Other Widget Commands**
 
 ### CLEARWIDGETS
 Will clear the screen of all widgets.
@@ -258,7 +258,7 @@ SETTITLE "Install App to...
 ```
 
 
-## Sections
+## **Sections**
 
 ### GOTO
 A PBAT script is divided into sections. You can define a new section using the sign `:`
@@ -290,7 +290,7 @@ GOTO "MAIN_MENU"
 If this script is called, the section `MAIN_MENU` will be executed first because of the `GOTO`. In `MAIN_MENU`, the variable `$THE_NUMBER$` is choosen by the user and the code will jump to `CONFIG_MENU` with the variable exported.
 
 
-## Conditions
+## **Conditions**
 
 ### IF 
 
@@ -438,7 +438,7 @@ ENDIF
 ```
 
 
-## File Manipulation
+## **File Manipulation**
 
 File manipulation is useful for installation scripts (in APPINFO.PBT). You can manipulate files on any device :
 
@@ -546,7 +546,7 @@ FPRINT "mass:/MY_TEXT.TXT"  "This text will be written into MY_TEXT.TXT."
 Be careful, if the file exists already, the content will be replaced though a bug does exist where text is appended instead of file replaced especially if file has line breaks.
 
 
-## LOADEXEC - Passing Variables
+## **LOADEXEC - Passing Variables**
 To call/execute another section of the same or different script, elf or irx and pass variables or args as `ARG1`-`ARGX`
 
 ```
@@ -600,7 +600,7 @@ LOADEXEC "IRX" "MY_FILE.IRX"
 will execute an IRX (device driver usually) to add functionality to BOOTMANAGER. Most IRXs do not support arg(v).
 
 
-## Wildcards
+## **Wildcards**
 
 `*` wildcard(s)
 
@@ -616,7 +616,7 @@ IF MATCHES "SCPH-300*" "$BM.CONSOLE_MODEL$"
 ENDIF
 ```
 
-## Keeping Script in Memory
+## *Keeping Script in Memory*
 
 ### KEEP
 Loads script in ram for quicker recall
@@ -626,7 +626,7 @@ KEEP
 ```
 
 
-## Needs documentation:
+## **Needs documentation:**
 
 EVAL SETTITLE - Evaluate a title, usually with nested $BM.TXT_MYTEXT$
 
@@ -692,7 +692,7 @@ PARSECNF command to PBAT. parses disc CNF. Reference BM/SCRIPTS/BMCONT.PBT `PARS
 LOADSRAM - `LOADSRAM "mc0:/BOOT/BM/PS1LOGO.BIN"`  I believe used exclusively for passing PS1 Logo checks.
 
 
-## Debugging
+## **Debugging**
 
 ### Use ECHO and PS2 Client
 When debugging paste ECHO where you want in the script. Then run PS2Client to see output via ECHO
