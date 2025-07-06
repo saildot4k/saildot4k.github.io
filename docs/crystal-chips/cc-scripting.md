@@ -48,7 +48,7 @@ Once the type is set, you can assign a new value to the variable :
 SET "MY_DIGIT" "34"
 ```
 
-**Call an existing variable**
+*Call an existing variable*
 
 To call an already defined variable, you have to surround it with `$` :
 
@@ -99,7 +99,7 @@ MESSAGE "Installation Complete!"
 
 will return the text `Installation Complete!` on the TV screen.
 
-**Escaping characters**
+*Escaping characters*
 
 You can escape a character with ^
 
