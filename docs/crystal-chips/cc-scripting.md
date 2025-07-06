@@ -3,8 +3,6 @@ hide:
   - navigation
 ---
 
-# BootManager Scripting Documentation
-
 # Variables
 Variables are used to store values.
 
