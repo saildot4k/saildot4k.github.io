@@ -15,13 +15,13 @@ SET "STRING" "MY_VARIABLE" "Mod your life"
 
 **Possible variable types are:**
 
-- STRING : string (assumed if the below types are not set)
+- `STRING` : string (assumed if the below types are not set)
 
-- U8/S8 : Signed/Unsigned 8-bits number
+- `U8/S8` : Signed/Unsigned 8-bits number
 
-- U16/S16 : Signed/Unsigned 16-bits number
+- `U16/S16` : Signed/Unsigned 16-bits number
 
-- U32/S32 : Signed/Unsigned 32-bits number
+- `U32/S32` : Signed/Unsigned 32-bits number
 
 !!! note "Signed/Unsigned definition"
 
@@ -175,7 +175,7 @@ To display a choice to set a numerical value to a variable
 ADDWIDGET "CHOICE" "Title" "Description" "MY_CHOICE"  "CHOICE 1" "CHOICE 2" "CHOICE 3"
 ```
 
-will display a widget with the specified title and description (the description is displayed in the scroll bar), and will set the variable MY_CHOICE to "0", "1", or "2" depending of the user choice.
+will display a widget with the specified title and description (the description is displayed in the scroll bar), and will set the variable MY_CHOICE to "0", "1", or "2" depending of the user choice. `CHOICE 1` will be 0 when `$MY_CHOICE$` is recalled. `COICE 2` will be 1 and so forth.
 
 
 ### CALL
@@ -297,10 +297,10 @@ If this script is called, the section `MAIN_MENU` will be executed first because
 All conditions will start with `IF`. There exists `ELSIF`, `ELSE` and must be terminated with `ENDIF`. See below for further usage.
 
 #### EQU / NEQ
-`EQU` = Equal
-`NEQ` = NOT Equal
-`EQUC` = Equal ? (unknown...)
-`NEQC` = NOT Equal ? (unknown...)
+- `EQU` = Equal
+- `NEQ` = NOT Equal
+- `EQUC` = Equal ? (unknown...)
+- `NEQC` = NOT Equal ? (unknown...)
 
 
 ```
@@ -546,7 +546,7 @@ FPRINT "mass:/MY_TEXT.TXT"  "This text will be written into MY_TEXT.TXT."
 Be careful, if the file exists already, the content will be replaced though a bug does exist where text is appended instead of file replaced especially if file has line breaks.
 
 
-## **LOADEXEC - Passing Variables**
+## **Executing and passing variables between sections/scripts**
 To call/execute another section of the same or different script, elf or irx and pass variables or args as `ARG1`-`ARGX`
 
 ```
@@ -616,7 +616,7 @@ IF MATCHES "SCPH-300*" "$BM.CONSOLE_MODEL$"
 ENDIF
 ```
 
-## *Keeping Script in Memory*
+## **Keeping Script in Memory**
 
 ### KEEP
 Loads script in ram for quicker recall
@@ -722,7 +722,9 @@ When debugging paste ECHO where you want in the script. Then run PS2Client to se
 
 Paste and edit this text into plain text file saved as LauchBM2.bat
 
-```ps2client -h 192.168.0.10 execee host:/BM/BM2.ELF```
+```
+ps2client -h 192.168.0.10 execee host:/BM/BM2.ELF
+```
 
 In the folder that has PS2Client, paste your BM folder
 
