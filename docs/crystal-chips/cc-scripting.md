@@ -248,7 +248,6 @@ CLEARWIDGETS
 ``` 
 
 
-
 ### SETTITLE
 
 `SETTITLE` will set the title of the current screen.
@@ -376,6 +375,7 @@ IF FAIL COPY "mass:/MYFOLDER" "mc0:/MYFOLDER
 ENDIF"
 ```
 
+
 #### MODLOADED
 Detemines if IRX is loaded. Unsure how to find names of loaded IRX as is not ELF name.
 
@@ -471,9 +471,9 @@ will copy contents source folder to destintaion folder if intermediary folders e
 COPY "host:/FOLDER1/FILE.TXT" "mass:/FOLDER1/FOLDER2/FILE.TXT"
 ```
 
-    will copy the single file, but will NOT create destination folder structure if it does not exist.
+will copy the single file, but will NOT create destination folder structure if it does not exist.
 
-    Notes: copying a file to a file only works if prior directories already exist on destination.
+Notes: copying a file to a file only works if prior directories already exist on destination.
 
 ```
 COPY "host:/FOLDER" "mass:/FOLDER1NOTEXISTS/FOLDER2/FILE.TXT"
@@ -485,7 +485,7 @@ COPY "host:/FOLDER" "mass:/FOLDER1NOTEXISTS/FOLDER2/FILE.TXT"
 COPY "host:/FOLDER" "mass:/FOLDER1NOTEXISTS/FOLDER2/"
 ```
 
-    This does work to create an empty `mass:/FOLDER1` but will say it fails if used with `IF COPY FAIL`. Note the ending `/`
+This does work to create an empty `mass:/FOLDER1` but will say it fails if used with `IF COPY FAIL`. Note the ending `/`
 
 
 ### RM/RRM
@@ -499,7 +499,7 @@ To delete a file or directory
 RRM "mc0:/TMPFOLDER"
 ```
 
-    Most likely same script as informed by Crystal Chip Team since there is little reason for RM to exist.
+Most likely same script as informed by Crystal Chip Team since there is little reason for RM to exist.
 
 
 ### MKDIR
@@ -509,9 +509,9 @@ To create a new folder.
 MKDIR "mass:/MYFOLDER"
 ```
 
-    will create a folder MYFOLDER in the USB mass storage.
+will create a folder MYFOLDER in the USB mass storage.
 
-    Note: MKDIR will not create mutliple folders for example if MYFOLDER, FOLDER and FOLDER3 do not exist:
+Note: MKDIR will not create mutliple folders for example if MYFOLDER, FOLDER and FOLDER3 do not exist:
 
 ```
 IF NOT EXISTS "mass:/MYFOLDER/FOLDER2/FOLDER3"
