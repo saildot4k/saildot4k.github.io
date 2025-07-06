@@ -2,8 +2,9 @@
 hide:
   - navigation
 ---
+# BOOTMANAGER Scripting Reference List (PBAT)
 
-# Variables
+## Variables
 Variables are used to store values.
 
 To set a new variable, you have to specify the type :
@@ -63,7 +64,7 @@ To remove a string or number
 ```UNSET "MY_DIGIT"```
 
 
-# Messages
+## Messages
 Messages can be displayed either on the output console, or in the TV screen.
 
 ### ECHO
@@ -89,10 +90,10 @@ You can escape a character with ^
 The ^ will tell the MESSAGE command not to interpret the " next to it as the end of the string character.
 
 
-# Widgets
+## Widgets
 Widgets is used to display menus in the screen. There are many Widget types to feet different needs.
 
-## ADDWIDGET
+### ADDWIDGET
 To display a menu item
 
 ```ADDWIDGET "LABEL" "Main Menu"```
@@ -197,7 +198,7 @@ To return to a previous menu/script
 ```ADDWIDGET "RETURN" "$BM.TXT_DONE$" "$BM.TXT_RETURN_CONFIG$"```
 
 
-# Other Widget Commands
+## Other Widget Commands
 
 ### CLEARWIDGETS
 
@@ -210,7 +211,7 @@ To return to a previous menu/script
 ```SETTITLE "Install App to...```
 
 
-# Sections
+## Sections
 
 ### GOTO
 A PBAT script is divided into sections. You can define a new section using the sign ":"
@@ -241,13 +242,13 @@ GOTO "MAIN_MENU"
 
 If this script is called, the section MAIN_MENU will be executed first because of the GOTO. In MAIN_MENU, the variable $THE_NUMBER$ is choosen by the user and the code will jump to CONFIG_MENU with the variable exported.
 
-# Conditions
+## Conditions
 
-## IF 
+### IF 
 
 All conditions will start with `IF`. There exists `ELSIF`, `ELSE` and `ENDIF`. See below for further usage.
 
-### EQU / NEQ
+#### EQU / NEQ
 `EQU` = Equal
 `NEQ` = NOT Equal
 `EQUC` = Equal ? (unknown...)
@@ -274,7 +275,7 @@ ENDIF
 ```
 
 
-### EXISTS
+#### EXISTS
 To know if a file/folder exists or not. This command should be used in a IF statement
 
 ```
@@ -284,7 +285,7 @@ ENDIF
 ```
 
 
-### MATCHES
+#### MATCHES
 To know if a STRING matches or not. This command should be used in a IF statement. If a wildcard is used, best to use it in first part of comparison. Second comparison should have NO wildcards.
 
 ```
@@ -294,7 +295,7 @@ ENDIF
 ```
 
 
-### GTE, GT, LTE, LT
+#### GTE, GT, LTE, LT
 `GTE` = Greater than or equal
 
 `GT` = Greater than
@@ -310,7 +311,7 @@ ENDIF
 ```
 
 
-### FAIL
+#### FAIL
 Combine with other file manipulation commands or LOADEXEC
 
 ```
@@ -323,7 +324,7 @@ IF FAIL COPY "mass:/MYFOLDER" "mc0:/MYFOLDER
 ENDIF"
 ```
 
-### MODLOADED
+#### MODLOADED
 Detemines if IRX is loaded. Unsure how to find names of loaded IRX as is not ELF name.
 
 ```
@@ -335,7 +336,7 @@ IF NOT MODLOADED "dev9_driver"
 ENDIF
 ```
 
-### ISIN
+#### ISIN
 Determines if text is within a file.
 
 ```
@@ -344,7 +345,7 @@ IF ISIN "MY_FILE.TXT" "HELLO_WORLD"
 ENDIF
 ```
 
-### NOT
+#### NOT
 Combine with `IF`/`ELSEIF` and another condition. Do NOT use with `EQU`, `EQUC`, `NEQ`, `NEQC`
 
 ```
@@ -354,7 +355,7 @@ ENDIF
 ```
 
 
-## ELSEIF / ELSE
+### ELSEIF / ELSE
 you can imbricate more than one IF with the keyword ```ELSIF``` :
 
 ```
@@ -377,7 +378,7 @@ ELSE
 ENDIF
 ```
 
-## ENDIF
+### ENDIF
 Any condition starting with `IF` must have an `ENDIF`
 
 ```
@@ -389,7 +390,7 @@ ENDIF
 ```
 
 
-# File Manipulation
+## File Manipulation
 
 File manipulation is useful for installation scripts (in APPINFO.PBT). You can manipulate files on any device :
 
@@ -471,7 +472,7 @@ To write out text into a file.
 Be careful, if the file exists already, the content will be replaced though a bug does exist where text is appended instead of file replaced especially if file has line breaks.
 
 
-# LOADEXEC - Passing Variables
+## LOADEXEC - Passing Variables
 To call/execute another section of the same or different script and pass variables or args as ARG1-X.
 
 ``````LOADEXEC "TYPE" "ARG0" "ARG1" "ARG2"```
@@ -479,7 +480,7 @@ To call/execute another section of the same or different script and pass variabl
 Will execute a "TYPE" of loadexec: `PBAT`,`PBATS` `EEELF`, `IRX`
 
 
-### LOADEXEC "PBAT"
+### PBAT
 ```LOADEXEC "PBAT" "MY_FILE.PBT" "MY_ARGUMENT1" "MY_ARGUMENT2"```
 
 will execute a PBAT file named MY_FILE.PBT and GOTO section "MY_ARGUMENT1" (ARG1) with "MY_ARGUMENT2" set as variable ARG2. Most of the time, you'll specify a section of the same PBAT script to be executed as the argument. 
@@ -487,7 +488,7 @@ will execute a PBAT file named MY_FILE.PBT and GOTO section "MY_ARGUMENT1" (ARG1
 In the called script, MY_ARGUMENT2 will be the first variable in the afformentioned called script, which can be recalled in said script with $ARG2$
 
 
-### LOADEXEC "PBATS"
+### PBATS
 ```LOADEXEC "PBATS" "MY_*.PBT" "MY_ARGUMENT1" "MY_ARGUMENT2"```
 
 PBATS is usually used to call multiple scripts to print APPS,DEVS,THEMS,LANGS to screen as choices. In the called PBAT GOTO section will most likely be ADDWIDGET "CALL"...to pass ARGS back to this script.
@@ -495,19 +496,19 @@ PBATS is usually used to call multiple scripts to print APPS,DEVS,THEMS,LANGS to
 In the called script, MY_ARGUMENT2 will be the first variable in the afformentioned called script, which can be recalled in said script with $ARG2$
 
 
-### LOADEXEC "EEELF"
+### EEELF
 ```LOADEXEC "EEELF" "MY_FILE.ELF" "MY_ARGUMENT1" "MY_ARGUMENT2"```
 
 will execute MY_FILE.ELF with MY_ARGUMENT1 and MY_ARGUMENT2 passed to the elf should it support arg(v).
 
 
-### LOADEXEC "IRX"
+### IRX
 ```LOADEXEC "IRX" "MY_FILE.IRX"```
 
 will execute an IRX (device driver usually) to add functionality to BOOTMANAGER. Most IRXs do not support arg(v).
 
 
-# Keeping Script in Memory
+## Keeping Script in Memory
 
 ### KEEP
 Loads script in ram for quicker recall
@@ -515,7 +516,7 @@ Loads script in ram for quicker recall
 ```KEEP```
 
 
-# Needs documentation:
+## Needs documentation:
 
 EVAL SETTITLE - Evaluate a title, usually with nested $BM.TXT_MYTEXT$
 
@@ -584,7 +585,7 @@ PARSECNF command to PBAT. parses disc CNF. Reference BM/SCRIPTS/BMCONT.PBT `PARS
 LOADSRAM - `LOADSRAM "mc0:/BOOT/BM/PS1LOGO.BIN"`  I believe used exclusively for passing PS1 Logo checks.
 
 
-# Useful Tips
+## Useful Tips
 
 ### Use ECHO and PS2 Client
 When debugging paste variables where you want in the script. Then run PS2Client to see output via ECHO
