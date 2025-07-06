@@ -646,6 +646,7 @@ KEEP
 
 ### PARSEPATH
 To be able to recall specifc parts or whole path of script.
+
 ```
 PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE" 
 ```
