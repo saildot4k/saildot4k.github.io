@@ -9,7 +9,9 @@ Variables are used to store values.
 
 To set a new variable, you have to specify the type :
 
-```SET "STRING" "MY_VARIABLE" "Mod your life"```
+```
+SET "STRING" "MY_VARIABLE" "Mod your life"
+```
 
 **Possible variable types are:**
 
