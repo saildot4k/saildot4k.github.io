@@ -674,7 +674,7 @@ Note, you can allways call $PWD$, but the others require `PARSEPATH` to define a
 
 
 
-## PS2 Info
+### PS2 Info
 - `$BM.CONSOLE_MODEL$` - Consoe model IE SCPH-70012 (best model!)
 
 - `$BM.BIOS_MAJOR_VER$` - PS2 BOOTROM major version
