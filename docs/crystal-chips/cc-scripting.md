@@ -585,7 +585,7 @@ PARSECNF command to PBAT. parses disc CNF. Reference BM/SCRIPTS/BMCONT.PBT `PARS
 LOADSRAM - `LOADSRAM "mc0:/BOOT/BM/PS1LOGO.BIN"`  I believe used exclusively for passing PS1 Logo checks.
 
 
-## Useful Tips
+## Debugging
 
 ### Use ECHO and PS2 Client
 When debugging paste variables where you want in the script. Then run PS2Client to see output via ECHO
