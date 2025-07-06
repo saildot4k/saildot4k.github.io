@@ -33,20 +33,26 @@ SET "STRING" "MY_VARIABLE" "Mod your life"
 ### SET
 To store a string or number
 
-```SET "U8" "MY_DIGIT" "235"```
+```
+SET "U8" "MY_DIGIT" "235"
+```
 
-```SET "S32" "MY_OTHER_DIGIT" "-3420"```
+```
+SET "S32" "MY_OTHER_DIGIT" "-3420"
+```
 
 
 Once the type is set, you can assign a new value to the variable :
 
-```SET "MY_DIGIT" "34"```
+```
+SET "MY_DIGIT" "34"
+```
 
 **Call an existing variable**
 
 To call an already defined variable, you have to surround it with ```$``` :
 
-```ECHO "$MY_DIGIT$"```
+`ECHO "$MY_DIGIT$"`
 
 will display ```34``` in the output console for example PS2Client.
 
