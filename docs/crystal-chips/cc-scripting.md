@@ -588,12 +588,10 @@ LOADSRAM - `LOADSRAM "mc0:/BOOT/BM/PS1LOGO.BIN"`  I believe used exclusively for
 ## Debugging
 
 ### Use ECHO and PS2 Client
-When debugging paste variables where you want in the script. Then run PS2Client to see output via ECHO
+When debugging paste ECHO where you want in the script. Then run PS2Client to see output via ECHO
 
 
 ```
-    PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE"
-
     ECHO ""
     ECHO ""
     ECHO ARG0: $ARG0$
@@ -609,6 +607,8 @@ When debugging paste variables where you want in the script. Then run PS2Client 
     ECHO ARG10: $ARG10$
     ECHO ARG11: $ARG11$
     ECHO ARG12: $ARG12$
+    ECHO ""
+    ECHO ""
 ```
 
 ### PS2Client
