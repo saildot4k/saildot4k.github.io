@@ -42,7 +42,7 @@ v1.0 (2003-02-17)
 Note: Configuration Menu is only supported in flash version 2.0 or higher. Dev.olution Mode 2 is only supported in flash version 1.8 or higher.
 
 DMS3 Startup Modes:
-!(dms3_controller-modes)[assets/dms3_controller-modes.jpg]
+![dms3_controller-modes](assets/Controller/dms3_controller-modes.jpg)
 
 PS2 - X
 PSX - O - Circle
