@@ -100,13 +100,20 @@ nav:
     - PBT Scripting: crystal-chips/cc-scripting.md
     - Archived Website: crystal-chips/cc-archived.md
   - DMS4:
-    - dms4/index.md
+    - dms4/dms4-index.md
     - Install Diagrams: dms4/dms4-install.md
     - Video Tutorials: dms4/dms4-vids.md
     - Written Tutorials: dms4/dms4-writeups.md
     - Files: dms4/dms4-files.md
     - DMS4 Scripting: dms4/dms4-scripting.md
     - Archived Website: dms4/dms4-archived.md
+  - DMS3:
+    - dms3/dms3-index.md
+    - Install Diagrams: dms3/dms3-install.md
+    - Video Tutorials: dms3/dms3-vids.md
+    - Written Tutorials: dms3/dms3-writeups.md
+    - Files: dms3/dms3-files.md
+    - Archived Website: dms3/dms3-archived.md
   - Ghost 2:
     - ghost2/index.md
     - Install Diagrams: ghost2/ghost2-install.md
