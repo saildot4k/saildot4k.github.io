@@ -9,7 +9,7 @@ Specifically for this site, more writeups, VMC packages for MMCE devices like Me
 so that users have a quick way to have pre-setup memory cards. 
 
 
-Should I ever leave the scene, [email](mailto:info@ps2modchiptutorials.com)/DM me so that I can transfer domain ownership and github repository
+Should I ever leave the scene, [:material-email-outline:](mailto:info@ps2modchiptutorials.com) or DM [:simple-discord:](https://discord.com/users/.r3z3n) me so that I can transfer domain ownership and github repository
 to a well respected care-taker.
 
 
@@ -60,9 +60,10 @@ r/PS2 and Mods
             * [ ] Firmware, Toxic Config/OS
             * [ ] Adding apps
         * [ ] Written Tutorials
+            * [x] Scripting
         * [ ] Files
             * [ ] Recovery CDs
-            * [ ] Toxic OS
+            * [x] Toxic OS
         * [x] Archived Websites
 
 </div>
