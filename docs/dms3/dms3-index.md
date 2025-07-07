@@ -1,3 +1,5 @@
+# Placeholder. Will probablly be last chip(s) to be updated
+
 ============================
 ChangeLog for DMS3 Hardware:
 ============================
