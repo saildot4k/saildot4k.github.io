@@ -41,6 +41,8 @@ From STANDBY >> RESET (wait for blue led on), RESET (..), RESET (..), RESET (..)
 
 ## Boot Hotkey options:
 
+![G2_Hotkeys](assets/G2_Hotkeys.png){ width="300" }
+
 
 - L1 = Force Games to load in PSX mode (if you want to skip auto-detect,
 when you know the disk is PSX format).
