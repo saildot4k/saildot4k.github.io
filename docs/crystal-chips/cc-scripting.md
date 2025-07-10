@@ -800,6 +800,7 @@ SHUTDOWN "MM"
 ## **Memory Manipulation**
 
 ### PEEK/POKE
+`PEEK` = look at ram addreess and store as value, `POKE` = insert value at ram address.
 
 `PEEKB`, `PEEKH`, `PEEKW`, `POKEB`, `POKEH`, `POKEW`
 
