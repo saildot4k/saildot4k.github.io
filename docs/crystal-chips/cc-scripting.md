@@ -389,7 +389,7 @@ ENDIF
 
 
 #### FAIL
-Combine with other file manipulation commands, `LOADEXEC` or `LOADSRAM`
+Combine with other file manipulation commands, conditions or `LOADEXEC` or `LOADSRAM`. There may be more...
 
 ```
 IF FAIL COPY "mass:/MYFOLDER" "mc0:/MYFOLDER
@@ -399,6 +399,12 @@ IF FAIL COPY "mass:/MYFOLDER" "mc0:/MYFOLDER
         RETURN -1
     ENDIF
 ENDIF"
+```
+
+``` 
+IF NOT FAIL COPY "mc0:/BOOT" "mc1:/BOOT"
+    MESSAGE "Successfully copied ^"mc0:/BOOT^" to ^"mc1:/BOOT^"!"
+ENDIF
 ```
 
 
@@ -426,7 +432,7 @@ ENDIF
 
 
 #### NOT
-Combine with `IF`/`ELSEIF` and another condition. Do NOT use with `EQU`, `EQUC`, `NEQ`, `NEQC`
+Combine with `IF`/`ELSEIF` and another condition.
 
 ```
 IF NOT EXISTS "mc0:/SYS-CONF/IPCONFIG.DAT"
