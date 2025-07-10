@@ -424,7 +424,7 @@ ENDIF
 #### ISIN
 Determines if text is within a file.
 
-```
+```PBAT
 IF ISIN "MY_FILE.TXT" "HELLO_WORLD"
     MESSAGE "HELLO WORLD!"
 ENDIF
