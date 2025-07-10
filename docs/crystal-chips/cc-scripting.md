@@ -737,19 +737,18 @@ Note, you can allways call $PWD$, but the others require `PARSEPATH` to define a
 - `$BM.DRIVER_PATH$` - Path to SHARED folder. Typciallcy device:/BM/SHARED Note there is no `/` included
 
 
-
 ### PS2 Info
-- `$BM.CONSOLE_MODEL$` - Consoe model IE SCPH-70012 (best model!)
+- `$BM.CONSOLE_MODEL$` - PS2 Console model IE SCPH-70012 (best model!)
+
+- `$BM.CONSOLE_REGION$` - PS2 Console Region
 
 - `$BM.BIOS_MAJOR_VER$` - PS2 BOOTROM major version
 
 - `$BM.BIOS_MINOR_VER$` - PS2 BOOTROM minor version
 
-- `$BM.CONSOLE_REGION$` - Console Region
+- `$BM.ROMVER_REGION$` - PS2 BOOTROM Region
 
-- `$BM.ROMVER_REGION$` - BOOTROM Region
-
-- `$BM.MECHA_REGION$` - Mechacon Region
+- `$BM.MECHA_REGION$` - PS2 Mechacon Region
 
 
 ## **Compatibility CMDs**
