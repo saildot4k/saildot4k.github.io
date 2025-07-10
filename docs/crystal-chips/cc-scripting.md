@@ -9,7 +9,7 @@ Variables are used to store values.
 
 To set a new variable, you have to specify the type :
 
-```
+```pbat
 SET "STRING" "MY_VARIABLE" "Mod your life"
 ```
 
@@ -33,18 +33,18 @@ SET "STRING" "MY_VARIABLE" "Mod your life"
 ### SET
 To store a string or number
 
-```
+```pbat
 SET "U8" "MY_DIGIT" "235"
 ```
 
-```
+```pbat
 SET "S32" "MY_OTHER_DIGIT" "-3420"
 ```
 
 
 Once the type is set, you can assign a new value to the variable :
 
-```
+```pbat
 SET "MY_DIGIT" "34"
 ```
 
@@ -52,7 +52,7 @@ SET "MY_DIGIT" "34"
 
 To call an already defined variable, you have to surround it with `$` :
 
-```
+```pbat
 ECHO "$MY_DIGIT$"
 ```
 
@@ -65,7 +65,7 @@ will display `34` in the output console for example PS2Client.
 
     If you want your variable to be saved in the configuration file of Boot Manager, the name MUST begin with "BM.CNF".
 
-```
+```pbat
 SET "BM.CNF_MY_DEFINITION" "$MY_DIGIT$"
 ```
 
@@ -73,7 +73,7 @@ SET "BM.CNF_MY_DEFINITION" "$MY_DIGIT$"
 ### UNSET
 To remove a string or number
 
-```
+```pbat
 UNSET "MY_DIGIT"
 ```
 
@@ -81,7 +81,7 @@ UNSET "MY_DIGIT"
 ### SAVEVARS 
 Save variables that start with `BM.CNF_`
 
-```
+```pbat
 IF FAIL SAVEVARS "BM.CNF_*" "$BM.BM_PATH$/CONFIG/BMCONF.PBT"
         MESSAGE "$BM.TXT_SAVE_CONF_FAIL$"
     ELSE
@@ -98,7 +98,7 @@ Messages can be displayed either on the output console, or in the TV screen.
 ### ECHO
 To output text to console (PS2Client)
 
-```
+```pbat
 ECHO "The value of MY_DIGIT is : $MY_DIGIT$"
 ```
 
@@ -108,7 +108,7 @@ will return the text and the contain of the variable in the output console which
 ### MESSAGE
 To display text on the tv screen
 
-```
+```pbat
 MESSAGE "Installation Complete!"
 ```
 
@@ -118,7 +118,7 @@ will return the text `Installation Complete!` on the TV screen.
 
 You can escape a character with ^
 
-```
+```pbat
 MESSAGE "The Crystal Chip is ^"astonishing^""
 ```
 
@@ -131,7 +131,7 @@ Widgets is used to display menus in the screen. There are many Widget types to f
 ### ADDWIDGET
 To display a menu item
 
-```
+```pbat
 ADDWIDGET "LABEL" "Main Menu"
 ```
 
@@ -141,7 +141,7 @@ Types of Widgets:
 ### LABEL
 To display a title.
 
-```
+```pbat
 ADDWIDGET "LABEL" "$TXT_LABEL$"
 ```
 
@@ -151,7 +151,7 @@ will display a title line with the text contained in the variable TXT_LABEL.
 ### INT
 To set a variable with a number
 
-```
+```pbat
 ADDWIDGET "INT" "Title" Description" "MY_NUMBER" "0" "99" "1"
 ```
 
@@ -161,7 +161,7 @@ will display a widget to store a value between 0 and 99 in the variable MY_NUMBE
 ### AXIS
 To set axis numbers (X,Y)
 
-```
+```pbat
 ADDWIDGET "AXIS" "Title" "Description" "VALUE_X" "VALUE_Y" "0" "1920" "1" "0" "1920" "2"
 ```
 
@@ -171,14 +171,14 @@ will display the widget which let the user to select a value for VALUE_X between
 ### IP
 To set an IP address
 
-```
+```pbat
 ADDWIDGET "IP" "Title" "Description" "IP_ADDRESS_1" "IP_ADDRESS_2" "IP_ADDRESS_3" "IP_ADDRESS_4"
 ```
 
 to set variables IP_ADDRESS_1, IP_ADDRESS_2 etc. For example, if you wish to display this IP again, you'll have to call
 
 
-```
+```pbat
 ECHO "THE IP ADDRESS YOU'VE ENTERED IS $IP_ADDRESS_1$.$IP_ADDRESS_2$.$IP_ADDRESS_3$.$IP_ADDRESS_4$"
 ```
 
@@ -186,7 +186,7 @@ ECHO "THE IP ADDRESS YOU'VE ENTERED IS $IP_ADDRESS_1$.$IP_ADDRESS_2$.$IP_ADDRESS
 ### CHOICE
 To display a choice to set a numerical value to a variable
 
-```
+```pbat
 ADDWIDGET "CHOICE" "Title" "Description" "MY_CHOICE"  "CHOICE 1" "CHOICE 2" "CHOICE 3"
 ```
 
@@ -196,7 +196,7 @@ will display a widget with the specified title and description (the description 
 ### CALL
 To call another section of the code
 
-```
+```pbat
 ADDWIDGET "CALL" "Title" "Description" "$ARG0$" "THE_SECTION" "ARG2" "ARG3"...
 ```
 
@@ -209,7 +209,7 @@ The text `ARG2` and `ARG3` will be available in the section THE_SECTION by calli
 When you have many case to treat, you can also use the `SWITCH` function.
 Will be used with `ADDWIDGET CALL` or `ADDWIDGET CHOICE` 
 
-```
+```pbat
 SWITCH "$BM.CNF_VMODE$"
     CASE 1
     # PAL
@@ -240,7 +240,7 @@ You can see that the BREAK command is used to go out of the SWITCH as soon as a 
 
 ### COLOR
 
-```
+```pbat
 ADDWIDGET "COLOR" "MYCOLOR" "Color Hint" "Variable"
 ```
 
@@ -248,7 +248,7 @@ ADDWIDGET "COLOR" "MYCOLOR" "Color Hint" "Variable"
 ### RETURN
 To return to a previous menu/script
 
-```
+```pbat
 ADDWIDGET "RETURN" "$BM.TXT_DONE$" "$BM.TXT_RETURN_CONFIG$"
 ```
 
@@ -258,7 +258,7 @@ ADDWIDGET "RETURN" "$BM.TXT_DONE$" "$BM.TXT_RETURN_CONFIG$"
 ### CLEARWIDGETS
 Will clear the screen of all widgets.
 
-```
+```pbat
 CLEARWIDGETS
 ``` 
 
@@ -267,18 +267,18 @@ CLEARWIDGETS
 
 `SETTITLE` will set the title of the current screen.
 
-```
+```pbat
 SETTITLE "Install App to...
 ```
 
 ### EVAL
 Used with `ADDWIDGET` and `SETTITLE` to evaluate nested variables
 
-```
+```pbat
 EVAL SETTITLE "$$BM.TXT_$ARG2$_$ARG3$_FROM$$"
 ```
 
-```
+```pbat
 EVAL ADDWIDGET "LABEL" "$$BM.TXT_$ARG3$$$"
 ```
 
@@ -295,7 +295,7 @@ GOTO does NOT support passing arguments/values!
 
 Here is a piece of code to understand how sections work :
 
-```
+```pbat
 GOTO "MAIN_MENU"
 
 :A_SECTION
@@ -340,7 +340,7 @@ Numerical Conditions
 - `LT` = Less than or equal
 
 
-```
+```pbat
 IF EQU "$MY_VARIABLE$" "1"
     MESSAGE "The Variable was equal to 1"
 ELSE
@@ -351,7 +351,7 @@ ENDIF
 
 You can also turn this code differently:
 
-```
+```pbat
 IF NEQ "$MY_VARIABLE$" "0"
     MESSAGE "The Variable was not equal to 0"
 ELSE
@@ -361,7 +361,7 @@ ENDIF
 
 You can evaluate if a number is larger or less than or equal another variable:
 
-```
+```pbat
 IF GTE "$BM.BIOS_MAJOR_VER$$BM.BIOS_MINOR_VER$" "220"
     MESSAGE "Unit is SCPH-75k or later and does not support HDD!"
 ENDIF
@@ -371,7 +371,7 @@ ENDIF
 #### EXISTS
 To know if a file/folder exists or not. This command should be used in a IF statement
 
-```
+```pbat
 IF EXISTS "mc0:/MYFOLDER/MYSCRIPT.PBT"
     COPY "mc0:/MYFOLDER/MYSCRIPT.PBT" "mass:/MYFOLDER/MYSCRIPT.PBT"
 ENDIF
@@ -381,7 +381,7 @@ ENDIF
 #### MATCHES
 To know if a STRING matches or not. This command should be used in a IF statement. If a wildcard is used, best to use it in first part of comparison. Second comparison should have NO wildcards.
 
-```
+```pbat
 IF MATCHES "SCPH-300*" "$BM.CONSOLE_MODEL$"
     MESSAGE "Console is SCPH-300XX"
 ENDIF
@@ -391,7 +391,7 @@ ENDIF
 #### FAIL
 Combine with other file manipulation commands, conditions or `LOADEXEC` or `LOADSRAM`. There may be more...
 
-```
+```pbat
 IF FAIL COPY "mass:/MYFOLDER" "mc0:/MYFOLDER
     MESSAGE "Failed to copy MYFOLDER"
     IF FAIL RRM "mc0:/MYFOLDER"
@@ -401,7 +401,7 @@ IF FAIL COPY "mass:/MYFOLDER" "mc0:/MYFOLDER
 ENDIF"
 ```
 
-``` 
+```pbat
 IF NOT FAIL COPY "mc0:/BOOT" "mc1:/BOOT"
     MESSAGE "Successfully copied ^"mc0:/BOOT^" to ^"mc1:/BOOT^"!"
 ENDIF
@@ -434,7 +434,7 @@ ENDIF
 #### NOT
 Combine with `IF`/`ELSEIF` and another condition.
 
-```
+```pbat
 IF NOT EXISTS "mc0:/SYS-CONF/IPCONFIG.DAT"
     FPRINT "mc0:/SYS-CONF/IPCONFIG.DAT" "192.168.0.10"
 ENDIF
@@ -444,7 +444,7 @@ ENDIF
 ### ELSEIF / ELSE
 You can imbricate more than one IF with the keyword `ELSIF` :
 
-```
+```pbat
 IF EQU "$MY_VARIABLE$" "1"
     MESSAGE "The Variable was equal to 1"
 ELSEIF EQU "$MY_VARIABLE$" "2"
@@ -456,7 +456,7 @@ You'll use the `ELSEIF` statement when you want to keep testing for values.
 
 You will use the `ELSE` statement when none are true, the last ELSE will be executed.
 
-```
+```pbat
 IF EQU "$MY_VARIABLE$" "1"
     MESSAGE "The Variable was equal to 1"
 ELSE 
@@ -468,7 +468,7 @@ ENDIF
 ### ENDIF
 Any condition starting with `IF` must have an `ENDIF`
 
-```
+```pbat
 IF
 ELSEIF
 ELSEIF
@@ -495,13 +495,13 @@ Combine the below commands with `IF FAIL` and `ELSEIF FAIL` for error handling.
 ### COPY
 To copy file/directory from source to destination :
 
-```
+```pbat
 COPY "host:/FOLDER" "mass:/FOLDER/FOLDER2"
 ```
 
 will copy contents source folder to destintaion folder if intermediary folders exist.
 
-```
+```pbat
 COPY "host:/FOLDER1/FILE.TXT" "mass:/FOLDER1/FOLDER2/FILE.TXT"
 ```
 
@@ -509,13 +509,13 @@ will copy the single file, but will NOT create destination folder structure if i
 
 Notes: copying a file to a file only works if prior directories already exist on destination.
 
-```
+```pbat
 COPY "host:/FOLDER" "mass:/FOLDER1NOTEXISTS/FOLDER2/FILE.TXT"
 ```
 
 ^DOES NOT WORK!
 
-```
+```pbat
 COPY "host:/FOLDER" "mass:/FOLDER1NOTEXISTS/FOLDER2/"
 ```
 
@@ -529,7 +529,7 @@ To delete a file or directory
 
 `RRM` Recursive Remove
 
-```
+```pbat
 RRM "mc0:/TMPFOLDER"
 ```
 
@@ -538,7 +538,7 @@ Most likely same script as informed by Crystal Chip Team since there is little r
 ### FORMAT
 To erase file system and initialize Memory Card or Crystal Chip flash
 
-```
+```pbat
 FORMAT "dffs:/"
 ```
 
@@ -546,7 +546,7 @@ FORMAT "dffs:/"
 ### MKDIR
 To create a new folder.
 
-```
+```pbat
 MKDIR "mass:/MYFOLDER"
 ```
 
@@ -554,7 +554,7 @@ will create a folder MYFOLDER in the USB mass storage.
 
 Note: MKDIR will not create mutliple folders for example if MYFOLDER, FOLDER and FOLDER3 do not exist:
 
-```
+```pbat
 IF NOT EXISTS "mass:/MYFOLDER/FOLDER2/FOLDER3"
     IF FAIL MKDIR "mass:/MYFOLDER/FOLDER2/FOLDER3"
         MESSAGE "FAILED TO CREATE DIRECTORY!"
@@ -564,7 +564,7 @@ ENDIF
 
 The workaround is to exploit a bug that thinks it failed
 
-```
+```pbat
 COPY $PWD$ "mass:/MYFOLDER/MYFOLDER2/MYFOLDER3"
 ```
 
@@ -574,7 +574,7 @@ DO NOT PRECEDE WITH `IF FAIL` as it does think it failed. Contents of folders wi
 ### REDIRFILE
 To symlink a file to another location. Only works if the environment you use doesn't reboot IOP too soon IE PS2LINK
 
-```
+```pbat
 REDIRFILE "$PWD$/IPCONFIG.DAT" "$BM.BM_PATH$/CONFIG/IPCONFIG.DAT"
 ```
 
@@ -583,7 +583,7 @@ REDIRFILE "$PWD$/IPCONFIG.DAT" "$BM.BM_PATH$/CONFIG/IPCONFIG.DAT"
 ### UNMOUNT
 To unmount a device such as HDD
 
-```
+```pbat
 UNMOUNT "pfs0:"
 ```
 
@@ -591,7 +591,7 @@ UNMOUNT "pfs0:"
 ### FPRINT
 To write out text into a file.
 
-```
+```pbat
 FPRINT "mass:/MY_TEXT.TXT"  "This text will be written into MY_TEXT.TXT."
 ```
 
@@ -601,7 +601,7 @@ Be careful, if the file exists already, the content will be replaced though a bu
 ## **Executing and passing variables between sections/scripts**
 To call/execute another section of the same or different script, elf or irx and pass variables or args as `ARG1`-`ARGX`
 
-```
+```pbat
 LOADEXEC "TYPE" "ARG0" "ARG1" "ARG2"
 ```
 
@@ -611,7 +611,7 @@ Will execute a "TYPE" of loadexec: `PBAT`,`PBATS` `EEELF`, `IRX`
 ### PBAT
 To execute another PBAT script and pass variables.
 
-```
+```pbat
 LOADEXEC "PBAT" "MY_FILE.PBT" "MY_ARGUMENT1" "MY_ARGUMENT2"
 ```
 
@@ -623,7 +623,7 @@ In the called script, MY_ARGUMENT2 will be the first variable in the afformentio
 ### PBATS
 To execute multiple PBAT scripts and pass variables.
 
-```
+```pbat
 LOADEXEC "PBATS" "MY_*.PBT" "MY_ARGUMENT1" "MY_ARGUMENT2"
 ```
 
@@ -635,7 +635,7 @@ In the called script, MY_ARGUMENT2 will be the first variable in the afformentio
 ### EEELF
 To execute an ELF file and pass arguments.
 
-```
+```pbat
 LOADEXEC "EEELF" "MY_FILE.ELF" "MY_ARGUMENT1" "MY_ARGUMENT2"
 ```
 
@@ -645,7 +645,7 @@ will execute MY_FILE.ELF with MY_ARGUMENT1 and MY_ARGUMENT2 passed to the elf sh
 ### IRX
 To load a an IRX module. Most IRXs do not support arg(v).
 
-```
+```pbat
 LOADEXEC "IRX" "MY_FILE.IRX"
 ```
 
@@ -662,7 +662,7 @@ When used with conditions, be sure to set in first variable.
 
 Also used often to call multiple PBATS via `LOADEXEC "PBATS"` to show apps/devices avaliable.
 
-```
+```pbat
 IF MATCHES "SCPH-300*" "$BM.CONSOLE_MODEL$"
     MESSAGE "Console is SCPH-300XX"
 ENDIF
@@ -673,35 +673,35 @@ ENDIF
 ### KEEP
 Loads script in ram for quicker recall
 
-```
+```pbat
 KEEP
 ```
 
 ### RETURN
 Remove the script from memory if the return value is <0
 
-```
+```pbat
 RETURN 0
 ```
 
 ### EXIT
 Exit from the script (0 )and do not keep it in memory (-1)
 
-```
+```pbat
 EXIT 0
 ```
 
 ### KILLSESS
 I believe to exit a script and not keep in memory FROM another script that is currently "running". Reference BM/SCRIPTS/BMMENUS.PBT
 
-```
+```pbat
 KILLSESS "$BM.SCRIPTS$/CONFMENU.PBT"
 ```
 
 ### SKIPBACK
 When returning from a submenu, this menu is skipped(ie returns to the menu before this menu).
 
-```
+```pbat
 SKIPBACK
 ```
 
@@ -710,7 +710,7 @@ SKIPBACK
 ### LOADIMG/UNLOADIMG
 Load and unload an image for a theme
 
-```
+```pbat
 LOADIMG "mc0:/BM/THMS/MYTHEME/IMAGE.BMP"
 ```
 
@@ -720,7 +720,7 @@ LOADIMG "mc0:/BM/THMS/MYTHEME/IMAGE.BMP"
 ### PARSEPATH
 To be able to recall specifc parts or whole path of script.
 
-```
+```pbat
 PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE" 
 ```
 
@@ -772,7 +772,7 @@ Set disc type forced authentication:
 
 - `PS2`
 
-```
+```pbat
 SETAUTH "PS2"
 ```
 
@@ -785,7 +785,7 @@ Set the bios pathes type:
 
 - `PS2`
 
-```
+```pbat
 SETBIOS "PS2"
 ```
 
@@ -798,7 +798,7 @@ Shutdown portions of how Crystal Chips work:
 
 - `MMIOP` - Memory Module on IOP
 
-```
+```pbat
 SHUTDOWN "MM"
 ```
 
@@ -816,13 +816,13 @@ SHUTDOWN "MM"
 
 - `W` - Word
 
-```
+```pbat
 PEEKB "0x1F40200F" "MY_VAR_NAME"
 ```
 
 Reference BM/DEVS/CDVD/DEVINFO.PBT
 
-```
+```pbat
 POKEW "0x00101234" "0x12"
 ```
 
@@ -832,34 +832,34 @@ POKEW "0x00101234" "0x12"
 ### GETDISKTYPE
 Gets disk type as hex value "0xXX"
 
-```
+```pbat
 GETDISKTYPE "DISK_TYPE"
 ```
 
 ### PARSCNF
 Parses CNF file on root of disk to store as variable. Reference BM/SCRIPTS/BMCONT.PBT
 
-```
+```pbat
 PARSECNF "cdrom0:\SYSTEM.CNF" "BM.BOOT_TYPE" "BM.BOOT_NAME"
 ```
 
 ### CYCLETRAY
 Causes the CDVD drive to recheck the disc. Parameters can be `WAIT`, `NOWAIT` or nothing (which is the same as `WAIT`). `WAIT` means "wait until disc has authenticated and fail if disc does not authenticate". `NOWAIT` returns immediately after telling the CDVD drive to reauthenticate.
 
-```
+```pbat
 CYCLETRAY "WAIT"
 ```
 
 ### LOADSRAM
 Used to pass PS1 logo check without displaying logo
 
-```
+```pbat
 LOADSRAM "mc0:/BOOT/BM/PS1LOGO.BIN"
 ```
 
 For BOOTROM 2.00 and lower (SCPH-700XX or earlier)
 
-```
+```pbat
 LOADSRAM "mc0:/BOOT/BM/PS1LOGO2.BIN"
 ```
 
@@ -871,7 +871,7 @@ For BOOTROM 2.20 and greater (SCPH-750XX or later)
 ### REBOOTIOP
 Reboot IOP and reload modules
 
-```
+```pbat
 REBOOTIOP "rom0:UDNL rom0:OSDCNF"
 ```
 
@@ -891,7 +891,7 @@ Need to test these to document properly as they are not documented at all. Found
 ### Use ECHO and PS2 Client
 When debugging paste ECHO where you want in the script. Then run PS2Client to see output via ECHO
 
-```
+```pbat
     ECHO ""
     ECHO ""
     ECHO ARG0: $ARG0$
