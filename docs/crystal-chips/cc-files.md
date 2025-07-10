@@ -252,7 +252,7 @@ Apps Included and updated as of 3/7/2025:
 ## APPINFO.PBT SAS (SAVE APPLICATION SUPPORT) Example
 
 ???- note "APPINFO.PBT SAS Example"
-    ```
+    ```pbat
     # SAS (Save Application Support) compliant BM Script
     # Due to wildcard bug on memory card and mmce, bootdevice:/BM/SCRIPTS/DEFINEDROOTFOLDER.PBT must exist to work. Update as needed
 
@@ -407,10 +407,10 @@ Apps Included and updated as of 3/7/2025:
     ```
 
 
-## OUTDATED APPINFO.PBT Example
+## APPINFO.PBT Example for BM/APPS/
 
 ???- note "APPINFO.PBT Example"
-    ```
+    ```pbat
     # Change this information to describe the application.
     SET "TITLE" "APP TITLE"
     SET "VERSION" "version here"
@@ -466,7 +466,7 @@ Apps Included and updated as of 3/7/2025:
 ## APPINFO.PBT with 3 Boot Options Example
 
 ???- material-script-text "APPINFO.PBT Example w 3 Boot Options"
-    ```
+    ```pbat
     # Change this information to describe the application.
     SET "TITLE" "APP TITLE"
     SET "VERSION" "version here"
