@@ -681,11 +681,27 @@ Exit from the script (0 )and do not keep it in memory (-1)
 EXIT 0
 ```
 
+### KILLSESS
+I believe to exit a script and not keep in memory FROM another script that is currently "running". Reference BM/SCRIPTS/BMMENUS.PBT
+
+```
+KILLSESS "$BM.SCRIPTS$/CONFMENU.PBT"
+```
+
 ### SKIPBACK
 When returning from a submenu, this menu is skipped(ie returns to the menu before this menu).
 
 ```
 SKIPBACK
+```
+
+## Theme Specific
+
+### LOADIMG/UNLOADIMG
+Load and unload an image for a theme
+
+```
+LOADIMG "mc0:/BM/THMS/MYTHEME/IMAGE.BMP"
 ```
 
 
@@ -800,7 +816,21 @@ POKEW "0x00101234" "0x12"
 ```
 
 
-## Check CDVD for Authentication
+## CDVD Commands
+
+### GETDISKTYPE
+Gets disk type as hex value "0xXX"
+
+```
+GETDISKTYPE "DISK_TYPE"
+```
+
+### PARSCNF
+Parses CNF file on root of disk to store as variable. Reference BM/SCRIPTS/BMCONT.PBT
+
+```
+PARSECNF "cdrom0:\SYSTEM.CNF" "BM.BOOT_TYPE" "BM.BOOT_NAME"
+```
 
 ### CYCLETRAY
 Causes the CDVD drive to recheck the disc. Parameters can be `WAIT`, `NOWAIT` or nothing (which is the same as `WAIT`). `WAIT` means "wait until disc has authenticated and fail if disc does not authenticate". `NOWAIT` returns immediately after telling the CDVD drive to reauthenticate.
@@ -815,11 +845,13 @@ Used to pass PS1 logo check without displaying logo
 ```
 LOADSRAM "mc0:/BOOT/BM/PS1LOGO.BIN"
 ```
+
 For BOOTROM 2.00 and lower (SCPH-700XX or earlier)
 
 ```
 LOADSRAM "mc0:/BOOT/BM/PS1LOGO2.BIN"
 ```
+
 For BOOTROM 2.20 and greater (SCPH-750XX or later)
 
 
@@ -833,18 +865,9 @@ REBOOTIOP "rom0:UDNL rom0:OSDCNF"
 ```
 
 
-## **Needs documentation:**
+## **Needs documentation and testing:**
 
-
-LOADIMG/UNLOADIMG - load and unload an image for theming
-
-KILLSESS (or kill session, need to recall)
-
-SETENV - "SETENV" allows you to create a variable which are shared with all sessions: `SETENV "MY_SHARED_VAR" "My shared value"` DOES THIS STILL EXIST?
-
-PARSECNF command to PBAT. parses disc CNF. Reference BM/SCRIPTS/BMCONT.PBT `PARSECNF "cdrom0:\SYSTEM.CNF" "BOOT_NAME" "BOOT_TYPE"`
-
-LOADSRAM - `LOADSRAM "mc0:/BOOT/BM/PS1LOGO.BIN"`  I believe used exclusively for passing PS1 Logo checks.
+SETENV - "SETENV" allows you to create a variable which are shared with all sessions: `SETENV "MY_SHARED_VAR" "My shared value"` DOES THIS STILL EXIST? 
 
 ### Found by running BM.ELF in PCSX2 and looking at memory.
 Need to test these to document properly as they are not documented at all. Found in RAM by running BM2.ELF in PCSX2
