@@ -299,11 +299,11 @@ Here is a piece of code to understand how sections work :
 GOTO "MAIN_MENU"
 
 :A_SECTION
-    ECHO "We are in the A_SECTION section".
+    ECHO "We are in the A_SECTION section."
 
 :MAIN_MENU
     ADDWIDGET "INT" "Value to export" "Choose a number that will be exported to another section" "THE_NUMBER" "0" "10" "1"
-    ADDWIDGET "CALL" "Go to Config Menu" "Will display the Config Menu" "$ARG0$" "CONFIG_MENU" " "$THE_NUMBER$"
+    ADDWIDGET "CALL" "Go to Config Menu" "Will display the Config Menu" "$ARG0$" "CONFIG_MENU" "$THE_NUMBER$"
 
 :CONFIG_MENU
     CLEARWIDGETS
