@@ -799,7 +799,7 @@ SHUTDOWN "MM"
 
 ## **Memory Manipulation**
 
-### PEEK and POKE
+### PEEK/POKE
 
 `PEEKB`, `PEEKH`, `PEEKW`, `POKEB`, `POKEH`, `POKEW`
 
@@ -886,7 +886,6 @@ Need to test these to document properly as they are not documented at all. Found
 ### Use ECHO and PS2 Client
 When debugging paste ECHO where you want in the script. Then run PS2Client to see output via ECHO
 
-
 ```
     ECHO ""
     ECHO ""
@@ -906,6 +905,7 @@ When debugging paste ECHO where you want in the script. Then run PS2Client to se
     ECHO ""
     ECHO ""
 ```
+
 
 ### PS2Client
 
