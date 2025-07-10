@@ -644,9 +644,9 @@ will execute an IRX (device driver usually) to add functionality to BOOTMANAGER.
 
 ## **Wildcards**
 
-`*` wildcard(s)
+- `*` wildcard(s)
 
-`?` single character wildcard
+- `?` single character wildcard
 
 When used with conditions, be sure to set in first variable.
 
