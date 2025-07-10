@@ -152,7 +152,7 @@ will display a title line with the text contained in the variable TXT_LABEL.
 To set a variable with a number
 
 ```pbat
-ADDWIDGET "INT" "Title" Description" "MY_NUMBER" "0" "99" "1"
+ADDWIDGET "INT" "Title" "Description" "MY_NUMBER" "0" "99" "1"
 ```
 
 will display a widget to store a value between 0 and 99 in the variable MY_NUMBER. The user will be able to increment the number by 1.
@@ -207,7 +207,7 @@ The text `ARG2` and `ARG3` will be available in the section THE_SECTION by calli
 
 #### SWITCH
 When you have many case to treat, you can also use the `SWITCH` function.
-Will be used with `ADDWIDGET CALL` or `ADDWIDGET CHOICE` 
+Will be used with `ADDWIDGET "CALL"` or `ADDWIDGET "CHOICE"` 
 
 ```pbat
 SWITCH "$BM.CNF_VMODE$"
@@ -302,8 +302,8 @@ GOTO "MAIN_MENU"
     ECHO "We are in the A_SECTION section".
 
 :MAIN_MENU
-    ADDWIDGET INT "Value to export" "Choose a number that will be exported to another section" "THE_NUMBER" "0" "10" "1"
-    ADDWIDGET CALL "Go to Config Menu" "Will display the Config Menu" "$ARG0$" "CONFIG_MENU" " "$THE_NUMBER$"
+    ADDWIDGET "INT" "Value to export" "Choose a number that will be exported to another section" "THE_NUMBER" "0" "10" "1"
+    ADDWIDGET "CALL" "Go to Config Menu" "Will display the Config Menu" "$ARG0$" "CONFIG_MENU" " "$THE_NUMBER$"
 
 :CONFIG_MENU
     CLEARWIDGETS
@@ -627,7 +627,7 @@ To execute multiple PBAT scripts and pass variables.
 LOADEXEC "PBATS" "MY_*.PBT" "MY_ARGUMENT1" "MY_ARGUMENT2"
 ```
 
-PBATS is usually used to call multiple scripts to print APPS,DEVS,THEMS,LANGS to screen as choices. In the called PBAT GOTO section will most likely be ADDWIDGET "CALL"...to pass ARGS back to this script.
+PBATS is usually used to call multiple scripts to print APPS,DEVS,THEMS,LANGS to screen as choices. In the called PBAT GOTO section will most likely be `ADDWIDGET "CALL"`...to pass ARGS back to this script.
 
 In the called script, MY_ARGUMENT2 will be the first variable in the afformentioned called script, which can be recalled in said script with $ARG2$
 
