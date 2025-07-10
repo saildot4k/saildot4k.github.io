@@ -252,7 +252,7 @@ Apps Included and updated as of 3/7/2025:
 ## APPINFO.PBT SAS (SAVE APPLICATION SUPPORT) Example
 
 ???- note "APPINFO.PBT SAS Example"
-    ```pbat linenums="1"
+    ```pbat linenums="1" hl_lines="10-17 19 20 24-29"
     # SAS (Save Application Support) compliant BM Script
     # Due to wildcard bug on memory card and mmce, bootdevice:/BM/SCRIPTS/DEFINEDROOTFOLDER.PBT must exist to work. Update as needed
 
