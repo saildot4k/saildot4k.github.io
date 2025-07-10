@@ -720,7 +720,7 @@ PARSEPATH "$PWD$" "SRC_DEV" "SRC_PATH" "SRC_FILE"
 
 Will let you call Path working directory, source device, source path and source file.
 
-Note, you can allways call $PWD$, but the others require `PARSEPATH` to define and recall.
+Note: you can always call `$PWD$`, but the others require `PARSEPATH` to define and recall.
 
 
 ### Crystal Chip Info
@@ -738,7 +738,7 @@ Note, you can allways call $PWD$, but the others require `PARSEPATH` to define a
 
 - `$BM.SCRIPTS$` - Path to BOOTMANAGER scripts folder. Typically device:/BM/SCRIPTS Note there is no `/` included
 
-- `$BM.DRIVER_PATH$` - Path to SHARED folder. Typciallcy device:/BM/SHARED Note there is no `/` included
+- `$BM.DRIVER_PATH$` - Path to SHARED folder. Typically device:/BM/SHARED Note there is no `/` included
 
 
 ### PS2 Info
