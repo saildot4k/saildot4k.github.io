@@ -809,6 +809,20 @@ Causes the CDVD drive to recheck the disc. Parameters can be `WAIT`, `NOWAIT` or
 CYCLETRAY "WAIT"
 ```
 
+### LOADSRAM
+Used to pass PS1 logo check without displaying logo
+
+```
+LOADSRAM "mc0:/BOOT/BM/PS1LOGO.BIN"
+```
+For BOOTROM 2.00 and lower (SCPH-700XX or earlier)
+
+```
+LOADSRAM "mc0:/BOOT/BM/PS1LOGO2.BIN"
+```
+For BOOTROM 2.20 and greater (SCPH-750XX or later)
+
+
 ## Reboot IOP and reload modules
 
 ### REBOOTIOP
