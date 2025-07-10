@@ -1,4 +1,4 @@
-##BOOT MODE FOR G.2
+## BOOT MODE FOR G.2
 
 
 Tap RESET button on PS2 a number of times after power up. The modes are as follows:
@@ -39,7 +39,9 @@ From STANDBY >> RESET (wait for blue led on), RESET (..), RESET (..), RESET (..)
     For v12+ (SCPH-70k+) : You can use the Green Led as Timing Indication since there is no Blue Led anymore on this sytem.
 
 
-##Boot Hotkey options:
+## Boot Hotkey options:
+
+![G2_Hotkeys](assets/G2_Hotkeys.png){ width="800" }
 
 
 - L1 = Force Games to load in PSX mode (if you want to skip auto-detect,
@@ -53,3 +55,9 @@ card must be present in slot 1.
 - Arrow RIGHT = load boot1.elf from memory card 1.
 - Arrow DOWN = load boot2.elf from memory card 1.
 - Arrow LEFT = load boot3.elf from memory card 1. 
+
+## Issues
+
+Use FW 1.31 and G2 Manager 1.30. 2.22 never had a released G2 manager that works...
+
+Use PS2 in RGB video out else accessing PS2 Browser (OSDSYS) has no video output.
