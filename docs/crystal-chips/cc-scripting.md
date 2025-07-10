@@ -877,9 +877,7 @@ SETENV - "SETENV" allows you to create a variable which are shared with all sess
 ### Found by running BM.ELF in PCSX2 and looking at memory.
 Need to test these to document properly as they are not documented at all. Found in RAM by running BM2.ELF in PCSX2
 
-`GETDVDREG`, `EXECCMD`, `CC`, `ILLEGAL`, `CDSTOP`, `GETDVDREG`, `BGCOLOR`, `SETBACK`, `SETEXIT`, `LIBLOADED`,
-`TOUCH`, `ADDMACRO`, `BOOT`, `DUMPIOP`, `DISCONNECT`, `FINDPAD`, `FINDCTP1`, `EXECMD`, `STABLE`, `ERROR`, `COMPLETE`, `FAILED`, `BUSY`
-
+`GETDVDREG`, `EXECCMD`, `CC`, `ILLEGAL`, `CDSTOP`, `GETDVDREG`, `BGCOLOR`, `SETBACK`, `SETEXIT`, `LIBLOADED`, `TOUCH`, `ADDMACRO`, `BOOT`, `DUMPIOP`, `DISCONNECT`, `FINDPAD`, `FINDCTP1`, `EXECMD`, `STABLE`, `ERROR`, `COMPLETE`, `FAILED`, `BUSY`
 
 
 ## **Debugging**
