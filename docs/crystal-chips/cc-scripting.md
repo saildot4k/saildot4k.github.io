@@ -91,6 +91,7 @@ IF FAIL SAVEVARS "BM.CNF_*" "$BM.BM_PATH$/CONFIG/BMCONF.PBT"
 ENDIF
 ```
 
+
 ## **Messages**
 Messages can be displayed either on the output console, or in the TV screen.
 
@@ -102,6 +103,7 @@ ECHO "The value of MY_DIGIT is : $MY_DIGIT$"
 ```
 
 will return the text and the contain of the variable in the output console which will be in most case the console where you launched ps2client.
+
 
 ### MESSAGE
 To display text on the tv screen
@@ -412,6 +414,7 @@ IF NOT MODLOADED "dev9_driver"
 ENDIF
 ```
 
+
 #### ISIN
 Determines if text is within a file.
 
@@ -420,6 +423,7 @@ IF ISIN "MY_FILE.TXT" "HELLO_WORLD"
     MESSAGE "HELLO WORLD!"
 ENDIF
 ```
+
 
 #### NOT
 Combine with `IF`/`ELSEIF` and another condition. Do NOT use with `EQU`, `EQUC`, `NEQ`, `NEQC`
@@ -454,6 +458,7 @@ ELSE
 ENDIF
 ```
 
+
 ### ENDIF
 Any condition starting with `IF` must have an `ENDIF`
 
@@ -467,7 +472,6 @@ ENDIF
 
 
 ## **File Manipulation**
-
 File manipulation is useful for installation scripts (in APPINFO.PBT). You can manipulate files on any device :
 
 - `mc0` (for memory card 1)
