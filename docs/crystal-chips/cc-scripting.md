@@ -411,7 +411,7 @@ ENDIF
 #### MODLOADED
 Detemines if IRX is loaded. Unsure how to find names of loaded IRX as is not ELF name.
 
-```
+```pbat
 IF NOT MODLOADED "dev9_driver"
     IF FAIL LOADEXEC "IRX" "$BM.DRIVER_PATH$/PS2DEV9.IRX"
         ECHO "Failed loading PS2DEV9.IRX!"
