@@ -25,6 +25,7 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
+      - run: pip install git+https://github.com/techwritescode/pygments-pbat-lexer#egg=pygments-pbat-lexer
       - run: pip install mkdocs-material 
       - run: pip install mkdocs-glightbox
       - run: pip install pymdown-extensions
