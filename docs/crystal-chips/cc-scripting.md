@@ -387,7 +387,7 @@ ENDIF
 
 
 #### FAIL
-Combine with other file manipulation commands or LOADEXEC
+Combine with other file manipulation commands, `LOADEXEC` or `LOADSRAM`
 
 ```
 IF FAIL COPY "mass:/MYFOLDER" "mc0:/MYFOLDER
@@ -695,7 +695,7 @@ When returning from a submenu, this menu is skipped(ie returns to the menu befor
 SKIPBACK
 ```
 
-## Theme Specific
+## **Theme Specific**
 
 ### LOADIMG/UNLOADIMG
 Load and unload an image for a theme
@@ -705,7 +705,7 @@ LOADIMG "mc0:/BM/THMS/MYTHEME/IMAGE.BMP"
 ```
 
 
-## Pre-Defined Variables
+## **Pre-Defined Variables**
 
 ### PARSEPATH
 To be able to recall specifc parts or whole path of script.
@@ -752,7 +752,7 @@ Note, you can allways call $PWD$, but the others require `PARSEPATH` to define a
 - `$BM.MECHA_REGION$` - Mechacon Region
 
 
-## Compatibility CMDs
+## **Compatibility CMDs**
 
 ### SETAUTH
 Set disc type forced authentication:
@@ -793,7 +793,8 @@ Shutdown portions of how Crystal Chips work:
 SHUTDOWN "MM"
 ```
 
-## Memory Manipulation
+
+## **Memory Manipulation**
 
 ### PEEK and POKE
 
@@ -816,7 +817,7 @@ POKEW "0x00101234" "0x12"
 ```
 
 
-## CDVD Commands
+## **CDVD Commands**
 
 ### GETDISKTYPE
 Gets disk type as hex value "0xXX"
@@ -855,7 +856,7 @@ LOADSRAM "mc0:/BOOT/BM/PS1LOGO2.BIN"
 For BOOTROM 2.20 and greater (SCPH-750XX or later)
 
 
-## Reboot IOP and reload modules
+## **Reboot IOP and reload modules**
 
 ### REBOOTIOP
 Reboot IOP and reload modules
