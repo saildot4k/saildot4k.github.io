@@ -269,6 +269,16 @@ CLEARWIDGETS
 SETTITLE "Install App to...
 ```
 
+### EVAL
+Used with `ADDWIDGET` and `SETTITLE` to evaluate nested variables
+
+```
+EVAL SETTITLE "$$BM.TXT_$ARG2$_$ARG3$_FROM$$"
+```
+
+```
+EVAL ADDWIDGET "LABEL" "$$BM.TXT_$ARG3$$$"
+```
 
 ## **Sections**
 
@@ -515,6 +525,13 @@ RRM "mc0:/TMPFOLDER"
 
 Most likely same script as informed by Crystal Chip Team since there is little reason for RM to exist.
 
+### FORMAT
+To erase file system and initialize Memory Card or Crystal Chip flash
+
+```
+FORMAT "dffs:/"
+```
+
 
 ### MKDIR
 To create a new folder.
@@ -552,6 +569,13 @@ REDIRFILE "$PWD$/IPCONFIG.DAT" "$BM.BM_PATH$/CONFIG/IPCONFIG.DAT"
 ```
 
 `"$PWD$/IPCONFIG.DAT"` is where you want the file to "appear" and `"$BM.BM_PATH$/CONFIG/IPCONFIG.DAT"` is where the file currently resides.
+
+### UNMOUNT
+To unmount a device such as HDD
+
+```
+UNMOUNT "pfs0:"
+```
 
 
 ### FPRINT
@@ -643,6 +667,28 @@ Loads script in ram for quicker recall
 KEEP
 ```
 
+### RETURN
+Remove the script from memory if the return value is <0
+
+```
+RETURN 0
+```
+
+### EXIT
+Exit from the script (0 )and do not keep it in memory (-1)
+
+```
+EXIT 0
+```
+
+### SKIPBACK
+When returning from a submenu, this menu is skipped(ie returns to the menu before this menu).
+
+```
+SKIPBACK
+```
+
+
 ## Pre-Defined Variables
 
 ### PARSEPATH
@@ -690,58 +736,108 @@ Note, you can allways call $PWD$, but the others require `PARSEPATH` to define a
 - `$BM.MECHA_REGION$` - Mechacon Region
 
 
+## Compatibility CMDs
+
+### SETAUTH
+Set disc type forced authentication:
+
+- `OFF`
+
+- `PS1`
+
+- `PS2`
+
+```
+SETAUTH "PS2"
+```
+
+### SETBIOS
+Set the bios pathes type:
+
+- `OFF`
+
+- `PS1`
+
+- `PS2`
+
+```
+SETBIOS "PS2"
+```
+
+### SHUTDOWN 
+Shutdown portions of how Crystal Chips work:
+
+- `ALL`
+
+- `MM` - Memory Module
+
+- `MMIOP` - Memory Module on IOP
+
+```
+SHUTDOWN "MM"
+```
+
+## Memory Manipulation
+
+### PEEK and POKE
+
+`PEEKB`, `PEEKH`, `PEEKW`, `POKEB`, `POKEH`, `POKEW`
+
+- `B` - Byte
+
+- `H` - Half Word
+
+- `W` - Word
+
+```
+PEEKB "0x1F40200F" "MY_VAR_NAME"
+```
+
+Reference BM/DEVS/CDVD/DEVINFO.PBT
+
+```
+POKEW "0x00101234" "0x12"
+```
+
+
+## Check CDVD for Authentication
+
+### CYCLETRAY
+Causes the CDVD drive to recheck the disc. Parameters can be `WAIT`, `NOWAIT` or nothing (which is the same as `WAIT`). `WAIT` means "wait until disc has authenticated and fail if disc does not authenticate". `NOWAIT` returns immediately after telling the CDVD drive to reauthenticate.
+
+```
+CYCLETRAY "WAIT"
+```
+
+## Reboot IOP and reload modules
+
+### REBOOTIOP
+Reboot IOP and reload modules
+
+```
+REBOOTIOP "rom0:UDNL rom0:OSDCNF"
+```
 
 
 ## **Needs documentation:**
 
-EVAL SETTITLE - Evaluate a title, usually with nested $BM.TXT_MYTEXT$
-
-EVAL ADDWIDGET - Evaluate a widget, usually with nested $BM.TXT_MYTEXT$
-
-SKIPBACK - When returning from a submenu, this menu is skipped(ie returns to the menu before this menu).
-
-RETURN 0/-1 - Remove the script from memory if the return value is <0
-
-EXIT - 0/-1 Exit from the script (0 )and do not keep it in memory (-1)
-
-FORMAT
-
-
-CYCLETRAY - Causes the CDVD drive to recheck the disc. Parameters can be "WAIT", "NOWAIT" or nothing(which is the same as "WAIT"). "WAIT" means "wait until disc has authenticated and fail if disc does not authenticate". "NOWAIT" returns immediately after telling the CDVD drive to reauthenticate.
-
-REBOOTIOP "rom0:UDNL rom0:OSDCNF"
-
-PEEK(B,H,W) "0x12345678"- PEEK BYTE, HALF-WORD, WORD
-
-POKE(B,H,W) "0x12345678" - PEEK BYTE, HALF-WORD, WORD
-
-UNMOUNT 
-
-SETAUTH - Set the disc authentication type: "OFF", "PS1" or "PS2"
-
-SETBIOS - Set the bios patches type: "OFF", "PS1" or "PS2"
-
-SHUTDOWN - Shutdown all "ALL", Memory Module "MM", MMIOP "MMIOP"
 
 LOADIMG/UNLOADIMG - load and unload an image for theming
 
 KILLSESS (or kill session, need to recall)
-
-PARSECNF - parses disc CNF. Reference BM/SCRIPTS/BMCONT.PBT
-
-Found by running BM.ELF in PCSX2 and looking at memory.
-
-Need to test....
-
-GETDVDREG, EXECCMD, CC, ILLEGAL, CDSTOP, GETDVDREG, BGCOLOR, SETBACK, SETEXIT, LIBLOADED, DUMPIOP
-TOUCH, ADDMACRO, BOOT, DUMPIOP,
-DISCONNECT, FINDPAD, FINDCTP1, EXECMD, STABLE, ERROR, COMPLETE, FAILED, BUSY
 
 SETENV - "SETENV" allows you to create a variable which are shared with all sessions: `SETENV "MY_SHARED_VAR" "My shared value"` DOES THIS STILL EXIST?
 
 PARSECNF command to PBAT. parses disc CNF. Reference BM/SCRIPTS/BMCONT.PBT `PARSECNF "cdrom0:\SYSTEM.CNF" "BOOT_NAME" "BOOT_TYPE"`
 
 LOADSRAM - `LOADSRAM "mc0:/BOOT/BM/PS1LOGO.BIN"`  I believe used exclusively for passing PS1 Logo checks.
+
+### Found by running BM.ELF in PCSX2 and looking at memory.
+Need to test these to document properly as they are not documented at all. Found in RAM by running BM2.ELF in PCSX2
+
+`GETDVDREG`, `EXECCMD`, `CC`, `ILLEGAL`, `CDSTOP`, `GETDVDREG`, `BGCOLOR`, `SETBACK`, `SETEXIT`, `LIBLOADED`,
+`TOUCH`, `ADDMACRO`, `BOOT`, `DUMPIOP`, `DISCONNECT`, `FINDPAD`, `FINDCTP1`, `EXECMD`, `STABLE`, `ERROR`, `COMPLETE`, `FAILED`, `BUSY`
+
 
 
 ## **Debugging**
