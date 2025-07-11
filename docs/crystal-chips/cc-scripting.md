@@ -302,14 +302,13 @@ GOTO "MAIN_MENU"
     ECHO "We are in the A_SECTION section."
 
 :MAIN_MENU
-    ADDWIDGET "INT" "Value to export" "Choose a number that will be exported to another section" "THE_NUMBER" "0" "10" "1"
-    ADDWIDGET "CALL" "Go to Config Menu" "Will display the Config Menu" "$ARG0$" "CONFIG_MENU" "$THE_NUMBER$"
+    ADDWIDGET "INT" "Value to export" "Scroller Text" "THE_NUMBER" "0" "10" "1"
+    ADDWIDGET "CALL" "Go to Config Menu" "Scroller Text" "$ARG0$" "CONFIG_MENU" "$THE_NUMBER$"
 
 :CONFIG_MENU
     CLEARWIDGETS
     MESSAGE "The Number you choose was : $ARG2$"
 ```
-
 
 If this script is called, the section `MAIN_MENU` will be executed first because of the `GOTO`. In `MAIN_MENU`, the variable `$THE_NUMBER$` is choosen by the user and the code will jump to `CONFIG_MENU` with the variable exported.
 
