@@ -2,9 +2,8 @@
 
 ## Hotkeys
 
-![MI_Hotkeys](assets/MI_Hotkeys.png
+![MI_Hotkeys](assets/MI_Hotkeys.png)
 
-)
 ## Infinity option configuration menu :
 
 Press TRIANGLE + CIRCLE to enter the configuration menu.
