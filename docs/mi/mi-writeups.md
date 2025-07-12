@@ -2,7 +2,7 @@
 
 ## Hotkeys
 
-![MI_Hotkeys](assets/MI_Hotkeys.png)
+![MI_Hotkeys](assets/MI_Hotkeys.png){ width="800" }
 
 ## Infinity option configuration menu :
 
