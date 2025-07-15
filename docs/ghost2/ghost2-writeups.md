@@ -1,4 +1,4 @@
-## Boot Hotkey options:
+## Hotkeys:
 
 ![G2_Hotkeys](assets/G2_Hotkeys.png){ width="800" }
 
@@ -6,7 +6,7 @@
 
     G2 Manager MUST be installed on memory card 1 to access, or access via cd. In order to mak changes, boot to Flash Upgrade mode by pressing reset 4x once every blink/second.
 
-## BOOT MODE FOR G.2
+## Boot Modes
 Tap RESET button on PS2 a number of times after power up, about 1x per second. The modes are as follows from STANDBY (RED LED):
 
 | Mode          | Number of Reset Taps | Description |
