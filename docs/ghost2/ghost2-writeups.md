@@ -12,7 +12,7 @@ Tap RESET button on PS2 a number of times after power up, about 1x per second. T
 | Mode          | Number of Reset Taps | Description |
 | :-----------: | :------------------: | :---------- |
 | Default       | 1                    | Autodetect and all features on. |
-| Ghost         | 2                    | The same as above (1) but switches chip off when the game is loaded. This is to be compatible with some homebrew. It will be activated every time you press the RESET button, but only to load the game, then it goes to sleep again. |
+| Ghost         | 2                    | The same as above (1) but switches chip off when the game is loaded. This is to be compatible with some homebrew and games. It will be activated every time you press the RESET button, but only to load the game, then it goes to sleep again. |
 | Chip Off      | 3                    | Switches mod chip off completely, PS2 behaves as it has not been modified. |
 | Flash Upgrade | 4                    | The same as (1) but enables write to EEPROM - in all previous modes any write/erase/modify operations are not possible because EEPROM is hardware write protected. |
 | Recovery Mode | 5                    | Program EEPROM for the first time (blank EEPROM), to reprogram it if corrupted etc.  |
