@@ -3,22 +3,23 @@
 
 ![MI_Hotkeys](assets/MI_Hotkeys.png){ width="800" }
 
+
 ## Boot Modes
 To enter recovery mode:
 
 V1-V12 and V14 PAL: Hold the reset button until the blue eject light turns on.
 
-V14+ USA and JAP
+V14 and later USA and JAP:
 
     - USA : Hold reset until blue eject lights turn on, wait 3 seconds and tap reset again.
 
     - JAP : Hold reset until blue eject lights turn on, wait 3 seconds and tap reset, wait 3 more
 seconds and tap reset again. 
 
+
 ## Infinity option configuration menu :
 
 Press TRIANGLE + CIRCLE to enter the configuration menu.
-
 
 PS2 SCREEN FIX:
 
@@ -72,7 +73,7 @@ BOOT MODE:
  
  - DEV2: Execute BOOT.ELF on HDD. Same as Pressing L1 on boot.
  
-  - DVDV: Force DVD video mode. Same as Pressing CIRCLE on boot.
+ - DVDV: Force DVD video mode. Same as Pressing CIRCLE on boot.
 
 PAD DETECT TIME  : 2-10  : Select time to wait for connected pad on boot. Only useful if pad is left unconnected.
 
