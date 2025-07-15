@@ -7,20 +7,7 @@
     G2 Manager MUST be installed on memory card 1 to access, or access via cd. In order to mak changes, boot to Flash Upgrade mode by pressing reset 4x once every blink/second.
 
 ## BOOT MODE FOR G.2
-Tap RESET button on PS2 a number of times after power up, about 1x per second. The modes are as follows:
-
-(from STANDBY, when the LED on reset button is RED)
-
-1. Default mode - with autodetect and all features on. This is the only mode users probably will ever need except recovery mode which has to be entered at least once to program eeprom.
-
-2. Ghost mode - the same as above (1) but switches chip off when the game is loaded. This is to be compatible with some utilities such as RegionX, players etc. When you load for example RegionX disk and you're asked to insert movie disk to play, the chip is already off at that time and when you put the disk the machine will not detect it as ps2disk - the mod chip is off (in sleep state). It will be activated every time you press the RESET button, but only to load the game, then it goes to sleep again. This mode is enabled in sw so we can reprogram it to anything else later on if needed.
-
-3. Chip off - switches mod chip off completely, ps2 behaves as it has not been modified.
-
-4. Flash upgrade - the same as (1) but enables write to EEPROM - in all previous modes any write/erase/modify operations are not possible because EEPROM is hardware write protected. We use it during development to reprogram EEPROM via network adaptor or USB.
-
-5. Recovery mode - used to program EEPROM for the first time (blank EEPROM), to reprogram it if corrupted etc. This mode doesn't apply a single patch to cdvd nor bios bus, that's why it is possible to reprogram EEPROM when it's not usable. User doesn't need to do anything - just enter recovery the mode, put the recovery CD and wait for the recovery process to complete. Please note - as there are NO PATCHES applied to ps2 in recovery mode we have to use 2 version of recovery disk - one for Jap region, and one for PAL region. This is because Japanese and PAL ps2 check for "Licensed by.." string when load PSX disk (and in this case the recovery disk as a PSX disk for ps2). American machines don't do this check by some reason so you can use either Jap or PAL recovery CD. It doesn't matter which one to use as there's no differences in EEPROM file. So customers will need to download ISO image of recovery disk for either JAP or PAL region, Americans can use either of them.
-
+Tap RESET button on PS2 a number of times after power up, about 1x per second. The modes are as follows from STANDBY (RED LED):
 
 | Mode          | Number of Reset Taps | Description |
 | :-----------: | :------------------: | :---------- |
@@ -34,6 +21,7 @@ Tap RESET button on PS2 a number of times after power up, about 1x per second. T
 ???+ note "Recovery Mode"
 
     Please note - as there are NO PATCHES applied to ps2 in recovery mode we have to use 2 version of recovery disk - one for Jap region, and one for PAL region. This is because Japanese and PAL ps2 check for "Licensed by.." string when load PSX disk (and in this case the recovery disk as a PSX disk for ps2). American machines don't do this check by some reason so you can use either Jap or PAL recovery CD. It doesn't matter which one to use as there's no differences in EEPROM file. So customers will need to download ISO image of recovery disk for either JAP or PAL region, Americans can use either of them.
+
 
 ## Issues
 
