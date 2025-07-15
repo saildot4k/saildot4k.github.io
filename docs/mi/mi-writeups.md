@@ -5,7 +5,7 @@
 
 ???+ note "Infinity Manager"
 
-    Infinity Manager, which gets installed to mc0:/BOOT/MANAGER.ELF is another menu that needs a config file to define a few more boot options.
+    Infinity Manager, which may be installed to mc0:/BOOT/MANAGER.ELF is another menu that needs a config file to define a few more boot options.
     Due to homebrew as of late such as OSDMenu and PS2BBL, instead of using Infinity Manager, one can name another homebrew to MANAGER.ELF for one more added hotkey.
 
 
