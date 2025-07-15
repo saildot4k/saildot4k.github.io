@@ -1,5 +1,21 @@
-## BOOT MODE FOR G.2
+## Boot Hotkey options:
 
+![G2_Hotkeys](assets/G2_Hotkeys.png){ width="800" }
+
+
+- L1 = Force Games to load in PSX mode (if you want to skip auto-detect,
+when you know the disk is PSX format).
+- R1 = Fast Boot for PS2 disks (skips PS2 Logo).
+- TRIANGLE = Ghost2 Manager - Ghost2 Manager must be installed and a memory
+card must be present in slot 1.
+- O = Dev Mode (starts file boot.elf).
+- X = Override Dev Mode (if it's been selected as default mode in GH2 Manager).
+- Arrow UP = load boot0.elf from memory card 1.
+- Arrow RIGHT = load boot1.elf from memory card 1.
+- Arrow DOWN = load boot2.elf from memory card 1.
+- Arrow LEFT = load boot3.elf from memory card 1. 
+
+## BOOT MODE FOR G.2
 
 Tap RESET button on PS2 a number of times after power up. The modes are as follows:
 (from STANDBY, when the LED on reset button is RED)
@@ -38,23 +54,6 @@ From STANDBY >> RESET (wait for blue led on), RESET (..), RESET (..), RESET (..)
 
     For v12+ (SCPH-70k+) : You can use the Green Led as Timing Indication since there is no Blue Led anymore on this sytem.
 
-
-## Boot Hotkey options:
-
-![G2_Hotkeys](assets/G2_Hotkeys.png){ width="800" }
-
-
-- L1 = Force Games to load in PSX mode (if you want to skip auto-detect,
-when you know the disk is PSX format).
-- R1 = Fast Boot for PS2 disks (skips PS2 Logo).
-- TRIANGLE = Ghost2 Manager - Ghost2 Manager must be installed and a memory
-card must be present in slot 1.
-- O = Dev Mode (starts file boot.elf).
-- X = Override Dev Mode (if it's been selected as default mode in GH2 Manager).
-- Arrow UP = load boot0.elf from memory card 1.
-- Arrow RIGHT = load boot1.elf from memory card 1.
-- Arrow DOWN = load boot2.elf from memory card 1.
-- Arrow LEFT = load boot3.elf from memory card 1. 
 
 ## Issues
 
