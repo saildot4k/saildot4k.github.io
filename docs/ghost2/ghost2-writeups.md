@@ -2,18 +2,9 @@
 
 ![G2_Hotkeys](assets/G2_Hotkeys.png){ width="800" }
 
+???+ note "G2 Manager"
 
-- L1 = Force Games to load in PSX mode (if you want to skip auto-detect,
-when you know the disk is PSX format).
-- R1 = Fast Boot for PS2 disks (skips PS2 Logo).
-- TRIANGLE = Ghost2 Manager - Ghost2 Manager must be installed and a memory
-card must be present in slot 1.
-- O = Dev Mode (starts file boot.elf).
-- X = Override Dev Mode (if it's been selected as default mode in GH2 Manager).
-- Arrow UP = load boot0.elf from memory card 1.
-- Arrow RIGHT = load boot1.elf from memory card 1.
-- Arrow DOWN = load boot2.elf from memory card 1.
-- Arrow LEFT = load boot3.elf from memory card 1. 
+    G2 Manager MUST be installed on memory card 1 to access, or access via cd. In order to mak changes, boot to Flash Upgrade mode by pressing reset 4x once every blink/second.
 
 ## BOOT MODE FOR G.2
 
