@@ -12,6 +12,6 @@
 ## BOOT MODE for Crystal Chip
 Each press of the reset button is about once per second, after every blink on Slims.
 
-Recovery Mode: Reset 3x
+ - Recovery Mode: Reset 3x
 
-Disable Chip: Reset 6x
+ - Disable Chip: Reset 6x
