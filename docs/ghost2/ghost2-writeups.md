@@ -24,10 +24,10 @@ Tap RESET button on PS2 a number of times after power up, about 1x per second. T
 
 | Mode          | Number of Reset Taps | Description |
 | :-----------: | :------------------: | :---------- |
-| Default       | 1                    | Autodetect and all features on. This is the only mode users probably will ever need except recovery mode which has to be entered at least once to program eeprom. |
-| Ghost         | 2                    | The same as above (1) but switches chip off when the game is loaded. This is to be compatible with some utilities such as RegionX, players etc. When you load for example RegionX disk and you're asked to insert movie disk to play, the chip is already off at that time and when you put the disk the machine will not detect it as ps2disk - the mod chip is off (in sleep state). It will be activated every time you press the RESET button, but only to load the game, then it goes to sleep again. This mode is enabled in sw so we can reprogram it to anything else later on if needed. |
-| Chip Off      | 3                    | Switches mod chip off completely, ps2 behaves as it has not been modified. |
-| Flash Upgrade | 4                    | The same as (1) but enables write to EEPROM - in all previous modes any write/erase/modify operations are not possible because EEPROM is hardware write protected. We use it during development to reprogram EEPROM via network adaptor or USB. |
+| Default       | 1                    | Autodetect and all features on. |
+| Ghost         | 2                    | The same as above (1) but switches chip off when the game is loaded. This is to be compatible with some homebrew. It will be activated every time you press the RESET button, but only to load the game, then it goes to sleep again. |
+| Chip Off      | 3                    | Switches mod chip off completely, PS2 behaves as it has not been modified. |
+| Flash Upgrade | 4                    | The same as (1) but enables write to EEPROM - in all previous modes any write/erase/modify operations are not possible because EEPROM is hardware write protected. |
 | Recovery Mode | 5                    | Program EEPROM for the first time (blank EEPROM), to reprogram it if corrupted etc.  |
 
 
