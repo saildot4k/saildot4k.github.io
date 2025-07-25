@@ -99,7 +99,7 @@ See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentati
 | BM Themes                    | :material-check-circle:         | :material-check-circle:           |
 | Apollo Save Tool             | :material-check-circle:         | :material-check-circle:           |
 | GSM                          | :material-check-circle:         | :material-check-circle:           |
-| NHDDL                        | :material-check-circle:         | :material-check-circle:           |
+| NHDDL (edit OSDMENU.INI)     | :material-check-circle:         | :material-check-circle:           |
 | OPL 1.2.0 B2049 GID          | :material-check-circle:         | :material-check-circle:           |
 | OPL 1.2.0 B2210              | :material-check-circle:         | :material-check-circle:           |
 | OPL MMCE Beta 3              | :material-check-circle:         | :material-check-circle:           |
