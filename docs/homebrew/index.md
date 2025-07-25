@@ -138,6 +138,10 @@ See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentati
 | OSD-XMB (USB)                | :material-check-circle: USB Root| :material-check-circle-outline:   |
 | XEB+ (USB) NEEDS INSTALL     | :material-close-circle-outline: USB Root | :material-close-circle-outline:   |
 
+???+ note "NHDDL"
+
+    NHDDL supports ArgV which decreases boot time. Edit mc:/SYS-CONF/OSDMENU.INI as needed. See [NHDDL](https://github.com/pcm720/nhddl?tab=readme-ov-file#passing-arguments) and [OSDMenu](https://github.com/pcm720/OSDMenu?tab=readme-ov-file#fmcb-handler) docs.
+    
 
 ???+ note "Missing App Notes"
 
