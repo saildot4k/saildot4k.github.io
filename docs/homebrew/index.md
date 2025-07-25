@@ -131,7 +131,7 @@ See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentati
 | XEB+ (USB) NEEDS INSTALL     | :material-close-circle-outline: USB Root | :material-close-circle-outline:   |
 
 
-??? note "Missing App Notes"
+???+ note "Missing App Notes"
 
     - XEB+ Xmas Edition must be acquired from official sources due to license
         - Can only be ran from USB!
