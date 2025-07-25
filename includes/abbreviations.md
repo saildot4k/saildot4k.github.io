@@ -13,3 +13,4 @@
 *[VMC]: Virtual Memory Card used by MMCE Device or OPL
 *[OPL]: Open PS2 Loader
 *[OEM]: Original Equipment Manufacturer
+*[Loader]: ISO loader such as OPL or Neutrino
