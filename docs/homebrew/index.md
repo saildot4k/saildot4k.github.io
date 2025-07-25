@@ -1,7 +1,7 @@
 # Homebrew
 
 ## MegaPack Downloads
-
+SD2PSX, PSXMemCard Gen2 and MemCardPro 2 downloads are ready to go.
 <div class="grid cards" markdown>
 
 -   __USB (Fat16/32)__
@@ -25,7 +25,7 @@
 
     ---
 
-    Unzip and merge contents to root of your MemCardPro 2 MMCE device. Set "3rd Gen Modchips" as your boot card. MUST BE ON [FW 1.4.0 or later!](https://distribution.appcake.co.uk/install/8bitmods/apps/memcard-pro2/public)
+    Unzip and merge contents to root of your MemCardPro 2 MMCE device. Set "3rd Gen Modchips" as your boot card and disable SD Card Compatibility. [Manual](https://manuals.plus/memcardpro2/mcp201-stone-age-gamer-manual#the_webui) MUST BE ON [FW 1.4.0 or later!](https://distribution.appcake.co.uk/install/8bitmods/apps/memcard-pro2/public)
 
     [:material-cloud-download: MCP2](https://github.com/saildot4k/ps2homebrewstore/raw/refs/heads/main/docs/assets/MEMCARDPRO2.zip)
 
