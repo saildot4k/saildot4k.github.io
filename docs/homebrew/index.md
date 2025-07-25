@@ -1,4 +1,5 @@
 # Homebrew
+![MCBOWSER1.PNG](assets/MCBROWSER1.png){ height="7255" align="left" } ![MCBOWSER2.PNG](assets/MCBROWSER2.png){ height="25" align="right" }
 
 ## MegaPack Downloads
 SD2PSX, PSXMemCard Gen2 and MemCardPro 2 downloads are ready to go for 3rd Gen Modchips ONLY! There is no signed exploit like FMCB included. Why? Because not all modchips play nice with this. PS2BBL is included simply as a way to add more/consistent hotkeys across all modchips.
@@ -32,8 +33,6 @@ SD2PSX, PSXMemCard Gen2 and MemCardPro 2 downloads are ready to go for 3rd Gen M
 
 
 </div>
-
-![MCBOWSER1.PNG](assets/MCBROWSER1.png){ height="75" align="left" } ![MCBOWSER2.PNG](assets/MCBROWSER2.png){ height="75" align="right" }
 
 
 ## PS2BBL Hotkeys
