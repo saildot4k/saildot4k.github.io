@@ -51,7 +51,7 @@
 
     ---
 
-    Open Source Multipurpose Memory Card Emulator
+    Open Source MMCE
 
     [![MCP2](https://sd2psx.net/assets/images/sd2psx.jpg){ height="75" align="middle" }](https://sd2psx.net/)
 
@@ -62,7 +62,7 @@
 
     ---
 
-    Open Source Multipurpose Memory Card Emulator based on SD2PSX
+    Open Source MMCE based on SD2PSX
 
     [![PSXMEMCARDGEN2](https://www.bitfunx.com/wp-content/uploads/2024/12/PsxMemCard-Gen2-1.jpg){ height="75" align="middle" }](https://www.bitfunx.com/product/psxmemcard-gen2-memory-card-for-playstation1-ps-one-playstation2-game-consoles/)
 
