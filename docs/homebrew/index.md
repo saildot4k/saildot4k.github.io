@@ -1,19 +1,4 @@
-## Firmware
-
-[:material-cloud-download: Offical Flash v0.6](firmware/DMS4-Official-Flash-0.6.zip) ALL DMS4 modchips
-
-[:material-cloud-download: Toxic BIOS 1.4](firmware/ToxicBIOS-1.4.zip) ALL DMS4 Modchips
-
-[:material-cloud-download: Toxic OS v0.41](firmware/ToxicOS-0.41.zip) DMS4 Pro and DMS4 SE Pro
-
-[:material-cloud-download: Toxic OS Manual](firmware/toxicos_manual.pdf)
-
-
-## USB Driver for Toxic OS
-
-[:material-cloud-download: USB Drivers](firmware/DMS4-Official-Flash-0.6.zip) DMS4 Pro and DMS4 SE Pro
-
-## MegaPack Downloads
+# MegaPack Downloads
 
 <div class="grid cards" markdown>
 
@@ -44,7 +29,60 @@
 
 </div>
 
-Apps Included and updated as of 7/23/2025:
+## PS2BBL Hotkeys
+My Megapacks include PS2BBL as mc?:/BOOT/BOOT.ELF and wLE ISR Exfat as mc?:/BOOT/BOOT2.ELF
+
+Set your modchip to boot from memory card, usually called DEV1. This is to ensure that one download works for all 3rd gen modchips that use such structure.
+Prior to PS2BBL booting, your modchip firmware will determine hotkeys. Once you see the PS2BBL logo, you have 5 seconds to push a hotkey, else [OSDMenu](https://github.com/pcm720/OSDMenu) will launch, and if that is not found, wLE ISR Exfat will launch so long as you do not delete/mess up your BOOT or SYS-CONF folders.
+
+See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentation/configuration.html#launch-keys) for documentation.
+
+???+ note "PS2BBL Hotkeys"
+
+    ```
+    # PlayStation2 Basic Bootloader config file
+    # configurations:
+    SKIP_PS2LOGO = 1
+    EJECT_TRAY = 0
+    OSDHISTORY_READ = 0
+    KEY_READ_WAIT_TIME = 5000
+    LOGO_DISPLAY = 2
+
+    # APPLICATIONS:
+
+    LK_AUTO_E1 = mc?:/SYS_OSDMENU/osdmenu.elf
+    LK_AUTO_E2 = mc?:/BOOT/osdmenu.elf
+    LK_AUTO_E3 = mc?:/BOOT/BOOT2.ELF
+
+    LK_START_E1 = $CDVD
+
+    LK_SELECT_E1 = $CDVD_NO_PS2LOGO
+
+    LK_TRIANGLE_E1 = mc?:/APP_WLE-ISR-XF-MM/WLE-ISR-XF-MM.ELF
+    LK_TRIANGLE_E2 = mc?:/APP_WLE-ISR-XF/WLE-ISR-XF.ELF
+    LK_TRIANGLE_E3 = mc?:/BOOT/BOOT2.ELF
+
+    LK_R1_E1 = mmce?:/NEUTRINO/nhddl.elf
+    LK_R1_E2 = mc?:/APP_NHDDL/nhddl.elf
+    LK_R1_E3 = mc?:/NEUTRINO/nhddl.elf
+
+    LK_R2_E1 = mc?:/APP_OPL-120B2210/OPL-120B2210.ELF
+    LK_R2_E2 = mc?:/APP_OPL-120B2049GID/OPL-120B2049GID.ELF
+
+    LK_L1_E1 = hdd0:hdd0:__system:pfs:/p2lboot/PSBBN.ELF
+    LK_L1_E2 = hdd0:__system:pfs:/osdmenu/hosdmenu.elf
+    LK_L1_E3 = hdd0:__boot:pfs:/boot.elf
+
+    LK_L2_E1 = mc?:/APP_OPL-MMCE-BETA3/OPL-MMCE-BETA3.ELF
+    LK_L2_E2 = mc?:/APP_OPL-MMCE-BETA2/OPL-MMCE-BETA2.ELF
+    ```
+
+    ???+ note "Emergency Mode"
+
+        If something breaks on your setup but PS2BBL still boots, just hold R1+START. It will trigger emergency mode where PS2BBL will try to boot `RESCUE.ELF` from USB device Root on an endless loop. Recommended to rename wLE ISR Exfat to `RESCUE.ELF`
+
+
+## Apps Included and updated as of 7/23/2025:
 
 | Application                   | USB (Fat16/32)                  | MMCE Device VMC                  |
 | :----------------------------| :-----------------------------: | :-------------------------------: |
@@ -100,6 +138,3 @@ Apps Included and updated as of 7/23/2025:
     - RetroLauncher is unable to be burned to CD so it is not included on the CD installer.
         - Can only be ran from USB!
     - OSDXMB can only be ran from USB!
-
-## PS2 Homebrew
-Click [HERE](docs/homebrew/index.md) for MMCE VMC downloads. These are ready to go for you! (Multipurpose Memory Card Emulator Virtual Memory Cards)
