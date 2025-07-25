@@ -6,6 +6,6 @@
 *[DMS]: Dev.olution Memory System: Started by the DMS3 team and inherted by many others.
 *[FMCB]: Free Memory Card Boot
 *[FHDB]: Free Hard Drive Boot
-*[FDVD]: Free DVD Boot
+*[FDVDB]: Free DVD Boot
 *[PS2BBL]: PlayStation 2 Basic Boot Loader
 *[ELF]: Executable and Linkable Format. Executables/Applications for PS2
