@@ -1,4 +1,4 @@
-# MegaPack Downloads
+## MegaPack Downloads
 
 <div class="grid cards" markdown>
 
@@ -82,7 +82,7 @@ See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentati
         If something breaks on your setup but PS2BBL still boots, just hold R1+START. It will trigger emergency mode where PS2BBL will try to boot `RESCUE.ELF` from USB device Root on an endless loop. Recommended to rename wLE ISR Exfat to `RESCUE.ELF`
 
 
-## Apps Included and updated as of 7/23/2025:
+## Apps as of 7/23/2025:
 
 | Application                   | USB (Fat16/32)                  | MMCE Device VMC                  |
 | :----------------------------| :-----------------------------: | :-------------------------------: |

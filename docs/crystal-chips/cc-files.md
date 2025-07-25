@@ -154,7 +154,7 @@
 
 
 ## PS2 Homebrew
-Click [HERE](docs/homebrew/index.md) for MMCE VMC downloads. These are ready to go for you! (Multipurpose Memory Card Emulator Virtual Memory Cards)
+Click [HERE](homebrew/index.md) for MMCE VMC downloads. These are ready to go for you! (Multipurpose Memory Card Emulator Virtual Memory Cards)
 
 ## APPINFO.PBT SAS (SAVE APPLICATION SUPPORT) Example
 

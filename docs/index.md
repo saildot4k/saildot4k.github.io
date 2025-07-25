@@ -15,9 +15,9 @@ to a well respected care-taker.
 
 ???+ note "No thanks to:"
 
-TnA Plastic of PS2 Scene Discord and psx-place.com
+    TnA Plastic of PS2 Scene Discord and psx-place.com
 
-r/PS2 and Mods
+    r/PS2 and Mods
 
 
 ## PS2 Homebrew
@@ -37,7 +37,7 @@ Click [HERE](homebrew/index.md) for MMCE VMC downloads. These are ready to go fo
         * [ ] Video Tutorials
             * [x] Firmware & BootManager Installation
             * [x] Installing and Running Apps
-            * [x] R34 v3 Changes (out of date), MMCE added
+            * [ ] R34 v5 Changes
             * [ ] Configuration options overview
             * [x] Using App MegaPacks
             * [x] Using PS2Client/Link to help debug
