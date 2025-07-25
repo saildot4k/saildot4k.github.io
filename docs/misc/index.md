@@ -40,7 +40,7 @@
 
     ---
 
-    Multipurpose Memory Card Emulator
+    Multipurpose Memory Card Emulator[^1]
 
     [![MCP2](https://cdn11.bigcommerce.com/s-l8hbi0olq7/images/stencil/1280x1280/products/474/2111/iso-console__25786.1699006494.jpg){ height="75" align="middle" }](https://8bitmods.com/memcard-pro2-for-ps2-and-ps1-charcoal-black/)
 
@@ -51,7 +51,7 @@
 
     ---
 
-    Open Source MMCE
+    Open Source MMCE[^1]
 
     [![MCP2](https://sd2psx.net/assets/images/sd2psx.jpg){ height="75" align="middle" }](https://sd2psx.net/)
 
@@ -62,7 +62,7 @@
 
     ---
 
-    Open Source MMCE based on SD2PSX
+    Open Source MMCE[^1] based on SD2PSX
 
     [![PSXMEMCARDGEN2](https://www.bitfunx.com/wp-content/uploads/2024/12/PsxMemCard-Gen2-1.jpg){ height="75" align="middle" }](https://www.bitfunx.com/product/psxmemcard-gen2-memory-card-for-playstation1-ps-one-playstation2-game-consoles/)
 
@@ -70,3 +70,6 @@
 
 
 </div>
+
+[^1]: 
+    Multipurpose Memory Card Emulator acts as "unlimited" virtual memory cards just as compatible as sony OEM cards up to 64 or 128MB with boot card support. Recommened A2 rated SD card. Can also act as storage for homebrew and ISOS. Much faster than USB and MX4SIO
