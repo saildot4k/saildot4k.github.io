@@ -97,7 +97,8 @@ extra:
 
 # Page tree
 nav:
-  - Home: index.md
+  - Home: 
+    - index.md
     - Homebrew Downloads: homebrew/index.md
     - Recommended Accessories: - misc/index.md
     - Thanks and Links: thanks.md
