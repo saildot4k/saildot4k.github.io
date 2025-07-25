@@ -1,12 +1,11 @@
-### Firmware ISOs
+### Firmware
 
-???+ note "I.ELF"
+[:material-cloud-download: 1.93 FW Extracted](firmware/InfinityFW193-Extracted.zip) 
 
-    You can extract I.ELF from Isos and run to update your firmware from Memory Card.
-    I shall eventually do this for SD2PSX/MCP2 for ease of updating without working DVD drive, needing to burn CD or needing another PS2.
+Grab this file, place on usb stick and launch with wLE ISR.
 
 
-[:material-cloud-download: FW 1.93](firmware/InfinityFW193.zip)
+[:material-cloud-download: FW 1.9 ISO](firmware/InfinityFW193.zip)
 
 ???- "OLD Firmware"
 
