@@ -86,12 +86,11 @@ See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentati
 
 ## Apps as of 7/23/2025:
 
-| Application                   | USB (Fat16/32)                  | MMCE Device VMC                  |
+| Application                   | USB (Fat16/32/Exfat)           | MMCE Device VMC                  |
 | :----------------------------| :-----------------------------: | :-------------------------------: |
 | Crystal Chips BootManager    | :material-close-circle:         | :material-check-circle:           |
 | BM Themes                    | :material-check-circle:         | :material-check-circle:           |
 | Apollo Save Tool             | :material-check-circle:         | :material-check-circle:           |
-| Cheat Device MMCE            | :material-check-circle:         | :material-check-circle:           |
 | GSM                          | :material-check-circle:         | :material-check-circle:           |
 | NHDDL                        | :material-check-circle:         | :material-check-circle:           |
 | OPL 1.2.0 B2049 GID          | :material-check-circle:         | :material-check-circle:           |
