@@ -13,11 +13,11 @@ There is no signed exploit[^3] like FMCB included. Why? Because not all modchips
 
 <div class="grid cards" markdown>
 
--   __USB (Fat16/32)__
+-   __USB (Fat16/32/Exfat)__
 
     ---
 
-    Unzip and merge to the the root of your USB stick. Follow README.txt within.
+    Unzip and merge to the the root of your USB stick[^5]. Follow README.txt within.
 
     [:material-cloud-download: USB](https://github.com/saildot4k/ps2homebrewstore/raw/refs/heads/main/docs/assets/USB.zip)
 
@@ -164,3 +164,4 @@ See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentati
     [FMCB](https://israpps.github.io/FreeMcBoot-Installer/), [FHDB](https://israpps.github.io/FreeMcBoot-Installer/test/FHDB-TUTO.html), [FDVDB](https://github.com/CTurt/FreeDVDBoot), [OpenTuna](https://github.com/ps2homebrew/opentuna-installer) and [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/) are signed exploits. They take advantage of a vulnurability in the PS2 update mechanism to autoboot an ELF(s) via memory card or internal hard drive[^4]
 [^4]: 
     Internal Hard Drives are compatible with all models up to SCPH-700XX. Recommend [Offical Sony Network Adapter](https://www.psdevwiki.com/ps2/Network_Adaptor) and Bitfunx Sata Upgrade for Phats, or [iFlash2PS2](https://arthrimus.com/product/iflash2ps2-flex-kit/) for SCPH-700XX Slim
+[^5]: Crystal Chip and DMS3/4 does not support Exfat in BM or ToxicOS. For those use MBR/Fat32.
