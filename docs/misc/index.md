@@ -72,4 +72,4 @@
 </div>
 
 [^1]: 
-    Multipurpose Memory Card Emulator acts as "unlimited" virtual memory cards just as compatible as sony OEM cards up to 64 or 128MB with boot card support. Recommened A2 rated SD card. Can also act as storage for homebrew and ISOS. Much faster than USB and MX4SIO
+    Multipurpose Memory Card Emulator acts as "unlimited" virtual memory cards just as compatible as sony OEM cards up to 64 or 128MB with boot card support. Recommened A2 rated SD card. Can also act as storage for homebrew and ISOS. Much faster than USB and MX4SIO. Need a compatible Loader.
