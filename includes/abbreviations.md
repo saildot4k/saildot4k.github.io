@@ -9,3 +9,6 @@
 *[FDVDB]: Free DVD Boot
 *[PS2BBL]: PlayStation 2 Basic Boot Loader
 *[ELF]: Executable and Linkable Format. Executables/Applications for PS2
+*[MMCE]: Multipurpose Memory Card Emulator: SD2PSX, PSxMemCard Gen2, MemCardPro 2
+*[VMC]: Virtual Memory Card used by MMCE Device or OPL
+*[OPL]: Open PS2 Loader

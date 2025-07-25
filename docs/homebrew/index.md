@@ -17,7 +17,7 @@ There is no signed exploit[^3] like FMCB included. Why? Because not all modchips
 
     ---
 
-    Unzip and merge with the Firmware Download or move the the root of your USB stick
+    Unzip and merge to the the root of your USB stick. Follow README.txt within.
 
     [:material-cloud-download: USB](https://github.com/saildot4k/ps2homebrewstore/raw/refs/heads/main/docs/assets/USB.zip)
 
@@ -26,7 +26,7 @@ There is no signed exploit[^3] like FMCB included. Why? Because not all modchips
 
     ---
 
-    Unzip and merge contents to root of your SD2PSX/PSXMemcard Gen2 MMCE device (THIS WILL WIPE YOUR BOOT CARD!) MUST BE ON [FW 1.2.0 or later!](https://sd2psxtd.github.io/download)
+    Unzip and merge contents to root of your MMCE device (THIS WILL WIPE YOUR BOOT CARD!) MUST BE ON [FW 1.2.0 or later!](https://sd2psxtd.github.io/download)
 
     [:material-cloud-download: SD2PSX](https://github.com/saildot4k/ps2homebrewstore/raw/refs/heads/main/docs/assets/SD2PSX.zip)
 
@@ -34,7 +34,7 @@ There is no signed exploit[^3] like FMCB included. Why? Because not all modchips
 
     ---
 
-    Unzip and merge contents to root of your MemCardPro 2 MMCE device. Set "3rd Gen Modchips" as your boot card and disable SD Card Compatibility. [Manual](https://manuals.plus/memcardpro2/mcp201-stone-age-gamer-manual#the_webui) MUST BE ON [FW 1.4.0 or later!](https://distribution.appcake.co.uk/install/8bitmods/apps/memcard-pro2/public)
+    Unzip and merge contents to root of your MMCE device. Set "3rd Gen Modchips" as your boot card and disable SD Card Compatibility. [Manual](https://manuals.plus/memcardpro2/mcp201-stone-age-gamer-manual#the_webui) MUST BE ON [FW 1.4.0 or later!](https://distribution.appcake.co.uk/install/8bitmods/apps/memcard-pro2/public)
 
     [:material-cloud-download: MCP2](https://github.com/saildot4k/ps2homebrewstore/raw/refs/heads/main/docs/assets/MEMCARDPRO2.zip)
 
