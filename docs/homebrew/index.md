@@ -151,7 +151,7 @@ See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentati
         - Can only be ran from USB!
     - OSDXMB can only be ran from USB!
 
-## Footnotes
+
 
 [^1]: SAS Icons courtesy of BlackNinja, Ripto, Berion and Yornn
 [^2]: UMCS
