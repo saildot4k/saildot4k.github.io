@@ -5,7 +5,7 @@
 
 
 ## MegaPack Downloads
-SD2PSX, PSXMemCard Gen2 and MemCardPro 2 downloads are ready to go for 3rd Gen Modchips ONLY! There is no signed exploit like FMCB included. Why? Because not all modchips play nice with this. PS2BBL is included simply as a way to add more/consistent hotkeys across all modchips.
+SD2PSX, PSXMemCard Gen2 and MemCardPro 2 downloads are ready to go for 3rd Gen Modchips ONLY utilizing SAS[^1] and UMCS[^2] There is no signed exploit like FMCB included. Why? Because not all modchips play nice with this. PS2BBL is included simply as a way to add more/consistent hotkeys across all modchips.
 
 <div class="grid cards" markdown>
 
@@ -150,3 +150,8 @@ See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentati
     - RetroLauncher is unable to be burned to CD so it is not included on the CD installer.
         - Can only be ran from USB!
     - OSDXMB can only be ran from USB!
+
+## Footnotes
+
+[^1]: SAS Icons courtesy of BlackNinja, Ripto, Berion and Yornn
+[^2]: UMCS

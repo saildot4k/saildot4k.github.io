@@ -70,11 +70,18 @@ markdown_extensions:
       use_pygments: true
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
   - tables
+  - footnotes
+  - abbr
+
+watch:
+  - includes
   
 extra:
   social:
@@ -91,6 +98,10 @@ extra:
 # Page tree
 nav:
   - Home: index.md
+    - Homebrew Downloads: homebrew/index.md
+    - Recommended Accessories: - misc/index.md
+    - Thanks and Links: thanks.md
+    - Blog: - blog/index.md
   - Crystal Chips:
     - crystal-chips/cc-index.md
     - 1.0 Install Diagrams: crystal-chips/cc10-install.md
