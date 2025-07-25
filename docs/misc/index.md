@@ -6,7 +6,7 @@
 
     Protect your 50K and 70K Laser from the dreaded Mechacon crash!
 
-    [![Matrix PicFix](assets/picfix/SCPH-700XX/PicFix_V5_Thin.png){ height="75" align="middle" }](misc/picfix.md)
+    [![Matrix PicFix](assets/picfix/SCPH-700XX/PicFix_V5_Thin.png){ height="75" align="middle" }](picfix.md)
 
 
 -   __RetroGem HDMI Upscaler__
