@@ -163,7 +163,7 @@
 
     Unzip and merge with the Firmware Download or move the the root of your USB stick
 
-    [:material-cloud-download: USB](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/BM_MEGAPACK.zip)
+    [:material-cloud-download: USB](https://github.com/saildot4k/ps2homebrewstore/raw/refs/heads/main/docs/assets/USB.zip)
 
 
 -   __SD2PSX/PSXMemCard Gen2__
@@ -172,19 +172,19 @@
 
     Unzip and merge contents to root of your SD2PSX/PSXMemcard Gen2 MMCE device (THIS WILL WIPE YOUR BOOT CARD!) MUST BE ON [FW 1.2.0 or later!](https://sd2psxtd.github.io/download)
 
-    [:material-cloud-download: SD2PSX](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/COMBINED_MMCE.zip)
+    [:material-cloud-download: SD2PSX](https://github.com/saildot4k/ps2homebrewstore/raw/refs/heads/main/docs/assets/SD2PSX.zip)
 
 -   __MemCardPro 2__
 
     ---
 
-    Unzip and merge contents to root of your MemCardPro 2 MMCE device. Set Crystal Chip Channel 1 as your boot card. MUST BE ON [FW 1.4.0 or later!](https://distribution.appcake.co.uk/install/8bitmods/apps/memcard-pro2/public)
+    Unzip and merge contents to root of your MemCardPro 2 MMCE device. Set "3rd Gen Modchips" as your boot card. MUST BE ON [FW 1.4.0 or later!](https://distribution.appcake.co.uk/install/8bitmods/apps/memcard-pro2/public)
 
-    [:material-cloud-download: MCP2](https://github.com/saildot4k/BootManager-MegaPack/raw/refs/heads/main/COMBINED_MMCE.zip)
+    [:material-cloud-download: MCP2](https://github.com/saildot4k/ps2homebrewstore/raw/refs/heads/main/docs/assets/MEMCARDPRO2.zip)
 
 </div>
 
-Apps Included and updated as of 3/7/2025:
+Apps Included and updated as of 7/23/2025:
 
 | Application                   | USB (Fat16/32)                  | MMCE Device VMC                  |
 | :----------------------------| :-----------------------------: | :-------------------------------: |
@@ -195,10 +195,9 @@ Apps Included and updated as of 3/7/2025:
 | GSM                          | :material-check-circle:         | :material-check-circle:           |
 | NHDDL                        | :material-check-circle:         | :material-check-circle:           |
 | OPL 1.2.0 B2049 GID          | :material-check-circle:         | :material-check-circle:           |
-| OPL 1.2.0 B2207              | :material-check-circle:         | :material-check-circle:           |
-| OPL MMCE Beta 2              | :material-check-circle:         | :material-check-circle:           |
+| OPL 1.2.0 B2210              | :material-check-circle:         | :material-check-circle:           |
 | OPL MMCE Beta 3              | :material-check-circle:         | :material-check-circle:           |
-| PSBBN Launcher               | :material-check-circle:         | :material-check-circle:           |
+| OPL MMCE Beta 2              | :material-check-circle:         | :material-check-circle:           |
 | Simple Media System          | :material-check-circle:         | :material-check-circle:           |
 | unoffical OPL                | :material-check-circle:         | :material-check-circle:           |
 | unofficial OPL Betrayal      | :material-check-circle:         | :material-check-circle:           |
@@ -210,32 +209,28 @@ Apps Included and updated as of 3/7/2025:
 | BOOT Folder for other chips  | :material-check-circle:         | :material-check-circle:           |
 | PS2 Link                     | :material-check-circle:         | :material-check-circle:           |
 | PS2 Link Highloading         | :material-check-circle:         | :material-check-circle:           |
-| PS2 BIOS Drain               | :material-check-circle:         | :material-check-circle:           |
 | PS2 HDD Checker              | :material-check-circle:         | :material-check-circle:           |
 | Memory Card Annihilator      | :material-check-circle:         | :material-check-circle:           |
 | Mechacon Crash Tester        | :material-check-circle:         | :material-check-circle:           |
-| MX4SIO Tester                | :material-check-circle:         | :material-check-circle:           |
-| OG Memory Card Tester        | :material-check-circle:         | :material-check-circle:           |
 | Pad Tester                   | :material-check-circle:         | :material-check-circle:           |
 | PS2 HDD Tester               | :material-check-circle:         | :material-check-circle:           |
-| PS2 RDRAM Test               | :material-check-circle:         | :material-check-circle:           |
 | PS2 Temps                    | :material-check-circle:         | :material-check-circle:           |
 | PicoDrvie                    | :material-check-circle:         | :material-check-circle:           |
 | Xbox 2 PS2                   | :material-check-circle:         | :material-check-circle:           |
-| Xbox 2 PS2 Memory Card       | :material-check-circle:         | :material-check-circle:           |
-| 3D Pinball Player            | :material-check-circle:         | :material-check-circle:           |
+| Xbox 2 PS2 Lite              | :material-check-circle:         | :material-check-circle:           |
 | HERMES                       | :material-check-circle:         | :material-check-circle:           |
-| OSDMenu                      | :material-check-circle:         | :material-check-circle:           |
+| OSDMenu (in BOOT folder)     | :material-check-circle:         | :material-check-circle:           |
 | PowerOff                     | :material-check-circle:         | :material-check-circle:           |
+| Restart                      | :material-check-circle:         | :material-check-circle:           |
 | DKWDRV                       | :material-check-circle:         | :material-check-circle:           |
 | POPSLOADER                   | :material-check-circle:         | :material-check-circle:           |
 | Restart                      | :material-check-circle:         | :material-check-circle:           |
 | IGR to Boot Card             | :material-check-circle:         | :material-check-circle:           |
 | SYS-CONF                     | :material-check-circle:         | :material-check-circle:           |
 | NEUTRINO                     | :material-check-circle: USB Root| :material-check-circle: MMCE root |
-| RETROLauncher                | :material-check-circle: USB Root| :material-check-circle:           |
-| OSD-XMB                      | :material-check-circle: USB Root| :material-check-circle:           |
-| XEB+ NEEDS INSTALL           | :material-close-circle-outline: USB Root | :material-close-circle-outline:   |
+| RETROLauncher (USB)          | :material-check-circle: USB Root| :material-check-circle-outline:   |
+| OSD-XMB (USB)                | :material-check-circle: USB Root| :material-check-circle-outline:   |
+| XEB+ (USB) NEEDS INSTALL     | :material-close-circle-outline: USB Root | :material-close-circle-outline:   |
 
 
 
