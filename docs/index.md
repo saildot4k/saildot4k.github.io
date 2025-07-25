@@ -13,11 +13,12 @@ Should I ever leave the scene, [:material-email-outline:](mailto:info@ps2modchip
 to a well respected care-taker.
 
 
-No thanks to:
+???+ note "No thanks to:"
 
 TnA Plastic of PS2 Scene Discord and psx-place.com
 
 r/PS2 and Mods
+
 
 ## PS2 Homebrew
 Click [HERE](docs/homebrew/index.md) for MMCE VMC downloads. These are ready to go for you! (Multipurpose Memory Card Emulator Virtual Memory Cards)
