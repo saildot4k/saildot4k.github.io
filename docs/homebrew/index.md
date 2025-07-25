@@ -39,7 +39,7 @@ Prior to PS2BBL booting, your modchip firmware will determine hotkeys. Once you 
 
 See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentation/configuration.html#launch-keys) for documentation.
 
-???+ note "PS2BBL Hotkeys"
+???+ note "PS2BBL Hotkeys @ mc?:/SYS-CONF/PS2BBL.INI"
 
     ```
     # PlayStation2 Basic Bootloader config file
