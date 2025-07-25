@@ -93,7 +93,7 @@ See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentati
 
 ## Apps as of 7/23/2025:
 
-| Application                   | USB (Fat16/32/Exfat)           | MMCE Device VMC                  |
+| Application                  | USB (Fat16/32/Exfat)            | MMCE Device VMC                   |
 | :----------------------------| :-----------------------------: | :-------------------------------: |
 | Crystal Chips BootManager    | :material-close-circle:         | :material-check-circle:           |
 | BM Themes                    | :material-check-circle:         | :material-check-circle:           |
