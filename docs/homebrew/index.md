@@ -1,5 +1,7 @@
 # Homebrew
-![MCBOWSER1.PNG](assets/MCBROWSER1.png){ width="300" align=left } ![MCBOWSER2.PNG](assets/MCBROWSER2.png){ width="300" align=right }
+![MCBOWSER1.PNG](assets/MCBROWSER1.png){ width="225" align=right } 
+
+![MCBOWSER2.PNG](assets/MCBROWSER2.png){ width="225" align=right }
 
 
 ## MegaPack Downloads
