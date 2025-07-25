@@ -100,9 +100,9 @@ nav:
   - Home: 
     - index.md
     - Homebrew Downloads: homebrew/index.md
-    - Recommended Accessories: - misc/index.md
+    - Recommended Accessories: misc/index.md
     - Thanks and Links: thanks.md
-    - Blog: - blog/index.md
+    - Blog: blog/index.md
   - Crystal Chips:
     - crystal-chips/cc-index.md
     - 1.0 Install Diagrams: crystal-chips/cc10-install.md
