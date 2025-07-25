@@ -156,12 +156,14 @@
 ## PS2 Homebrew
 Click [HERE](homebrew/index.md) for MMCE VMC downloads. These are ready to go for you! (Multipurpose Memory Card Emulator Virtual Memory Cards)
 
+
 ## APPINFO.PBT SAS (SAVE APPLICATION SUPPORT) Example
 
-???- note "APPINFO.PBT SAS Example"
+???- abstract "APPINFO.PBT SAS Example"
+
     ```pbat linenums="1" hl_lines="10-17 19 20 24-28"
     # SAS (Save Application Support) compliant BM Script
-    # Due to wildcard bug on memory card and mmce, bootdevice:/BM/SCRIPTS/BMRTFLDR must exist to work. Update as needed.
+    # Due to wildcard bug on memory card and mmce, bootdevice:/BM/SCRIPTS/BMRTFLDR.PBT must exist to work. Update as needed.
 
     # Change this information to describe the application and where it should be ran from for memcard (SAS) or other devices (SAS_NON_MC)
     # SAS is the App folder name. SAS_NON_MC defines if app is in root of non-memcard device (non_mc:/$SAS$) or APP folder (non_mc:/APPS/$SAS$)
@@ -170,8 +172,8 @@ Click [HERE](homebrew/index.md) for MMCE VMC downloads. These are ready to go fo
     # Some devices are case sensitive! Make sure your case matches!
     #
     # Source: website here
-    SET "TITLE" "Appname"
-    SET "VERSION" "version"
+    SET "TITLE" "[DST] PS2Temps"
+    SET "VERSION" "1.0"
     SET "AUTHOR" "authors here"
     SET "DESC" "Short blurb"
     SET "MEDIAS" ""
@@ -316,7 +318,7 @@ Click [HERE](homebrew/index.md) for MMCE VMC downloads. These are ready to go fo
 
 ## APPINFO.PBT Example for BM/APPS/
 
-???- note "APPINFO.PBT Example"
+???- abstract "APPINFO.PBT Example"
 
     ```pbat linenums="1"
     # Change this information to describe the application.
@@ -364,7 +366,7 @@ Click [HERE](homebrew/index.md) for MMCE VMC downloads. These are ready to go fo
 
 ## APPINFO.PBT with 3 Boot Options Example
 
-???- material-script-text "APPINFO.PBT Example w 3 Boot Options"
+???- abstract "APPINFO.PBT Example w 3 Boot Options"
     ```pbat linenums="1"
     # Change this information to describe the application.
     SET "TITLE" "APP TITLE"

@@ -50,7 +50,7 @@ Prior to PS2BBL booting, your modchip firmware will determine hotkeys. Once you 
 
 See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentation/configuration.html#launch-keys) for documentation.
 
-???+ note "PS2BBL Hotkeys @ `mc?:/SYS-CONF/PS2BBL.INI`"
+!!! example "PS2BBL Hotkeys @ `mc?:/SYS-CONF/PS2BBL.INI`"
 
     ```
     # PlayStation2 Basic Bootloader config file
@@ -90,7 +90,7 @@ See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentati
     LK_L2_E2 = mc?:/APP_OPL-MMCE-BETA2/OPL-MMCE-BETA2.ELF
     ```
 
-    ???+ note "Emergency Mode"
+    !!! warning "Emergency Mode"
 
         If something breaks on your setup but PS2BBL still boots, just hold R1+START. It will trigger emergency mode where PS2BBL will try to boot `RESCUE.ELF` from USB device Root on an endless loop. Recommended to rename wLE ISR Exfat to `RESCUE.ELF`
 
@@ -142,12 +142,12 @@ See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentati
 | OSD-XMB (USB)                | :material-check-circle: USB Root| :material-check-circle-outline:   |
 | XEB+ (USB) NEEDS INSTALL     | :material-close-circle-outline: USB Root | :material-close-circle-outline:   |
 
-???+ note "NHDDL"
+!!! tip "NHDDL"
 
     NHDDL supports ArgV which decreases boot time. Edit `mc:/SYS-CONF/OSDMENU.CNF` as needed. See [NHDDL](https://github.com/pcm720/nhddl?tab=readme-ov-file#passing-arguments) and [OSDMenu](https://github.com/pcm720/OSDMenu?tab=readme-ov-file#fmcb-handler) docs.
 
 
-???+ note "Missing App Notes"
+!!! tip "Missing App Notes"
 
     - XEB+ Xmas Edition must be acquired from official sources due to license
         - Can only be ran from USB!
