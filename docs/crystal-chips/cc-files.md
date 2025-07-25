@@ -159,7 +159,7 @@ Click [HERE](homebrew/index.md) for MMCE VMC downloads. These are ready to go fo
 
 ## APPINFO.PBT SAS (SAVE APPLICATION SUPPORT) Example
 
-???- abstract "APPINFO.PBT SAS Example"
+???- example "APPINFO.PBT SAS Example"
 
     ```pbat linenums="1" hl_lines="10-17 19 20 24-28"
     # SAS (Save Application Support) compliant BM Script
@@ -317,8 +317,7 @@ Click [HERE](homebrew/index.md) for MMCE VMC downloads. These are ready to go fo
 
 
 ## APPINFO.PBT Example for BM/APPS/
-
-???- abstract "APPINFO.PBT Example"
+???- example "APPINFO.PBT Example"
 
     ```pbat linenums="1"
     # Change this information to describe the application.
@@ -365,8 +364,8 @@ Click [HERE](homebrew/index.md) for MMCE VMC downloads. These are ready to go fo
 
 
 ## APPINFO.PBT with 3 Boot Options Example
+???- example "APPINFO.PBT Example w 3 Boot Options"
 
-???- abstract "APPINFO.PBT Example w 3 Boot Options"
     ```pbat linenums="1"
     # Change this information to describe the application.
     SET "TITLE" "APP TITLE"
@@ -440,11 +439,4 @@ Click [HERE](homebrew/index.md) for MMCE VMC downloads. These are ready to go fo
 - [ ] CC1.X Boot method failover IE try next memcard
 - [x] CC1.X BootManager boots from USB 
     Commented out in BM/FWS/LATEST/FWINFO.PBT for advanced users to use
-- [x] BM can be ran from Hard Drive (HDD drivers MUST be installed tp mc0)
-    * [x] Uploaded to github
-    * [ ] Script for ease of use
-    * [ ] Document for ease of use
 - [x] HDD IRXs not installed for V14 and later PS2s
-- [-] CC2.0 8MB Dataflash support in FW
-    * [-] 1056 Page Support for AT45DB642D in testing
-    * [-] 256 Page Support for AT45DB621E in testing
