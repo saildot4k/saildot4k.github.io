@@ -153,5 +153,5 @@ See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentati
 
 
 
-[^1]: [SAS](https://ps2wiki.github.io/sas-apps-archive/) Icons courtesy of BlackNinja, Ripto, Berion and Yornn
-[^2]: [UMCS](https://ps2wiki.github.io/sas-apps-archive/psu-categories/umcs.html)
+[^1]: [Save Application System](https://ps2wiki.github.io/sas-apps-archive/) Icons courtesy of BlackNinja, Ripto, Berion and Yornn
+[^2]: [Universal Memory Card Structure](https://ps2wiki.github.io/sas-apps-archive/psu-categories/umcs.html)
