@@ -158,7 +158,8 @@ See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentati
 
 
 [^1]: [Save Application System](https://ps2wiki.github.io/sas-apps-archive/) Icons courtesy of BlackNinja, Ripto, Berion and Yornn
-[^2]: [Universal Memory Card Structure](https://ps2wiki.github.io/sas-apps-archive/psu-categories/umcs.html)
+[^2]: 
+    [Universal Memory Card Structure](https://ps2wiki.github.io/sas-apps-archive/psu-categories/umcs.html) `mc?:/BOOT` and `mc?:/SYS-CONF` structure that utilizes PS2BBL as BOOT.ELF and wLE ISR Exfat as BOOT2.ELF. Failover configs for both exist in SYS-CONF along with any other common file type shared between apps such as IPCONFIG.DAT
 [^3]: 
     [FMCB](https://israpps.github.io/FreeMcBoot-Installer/), [FHDB](https://israpps.github.io/FreeMcBoot-Installer/test/FHDB-TUTO.html), [FDVDB](https://github.com/CTurt/FreeDVDBoot), [OpenTuna](https://github.com/ps2homebrew/opentuna-installer) and [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/) are signed exploits. They take advantage of a vulnurability in the PS2 update mechanism to autoboot an ELF(s) via memory card or internal hard drive[^4]
 [^4]: 
