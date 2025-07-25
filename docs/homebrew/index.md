@@ -30,7 +30,7 @@
 </div>
 
 ## PS2BBL Hotkeys
-My Megapacks include PS2BBL as mc?:/BOOT/BOOT.ELF and wLE ISR Exfat as mc?:/BOOT/BOOT2.ELF
+My Megapacks include [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentation/configuration.html#launch-keys) as mc?:/BOOT/BOOT.ELF and wLE ISR Exfat as mc?:/BOOT/BOOT2.ELF
 
 Set your modchip to boot from memory card, usually called DEV1. This is to ensure that one download works for all 3rd gen modchips that use such structure.
 Prior to PS2BBL booting, your modchip firmware will determine hotkeys. Once you see the PS2BBL logo, you have 5 seconds to push a hotkey, else [OSDMenu](https://github.com/pcm720/OSDMenu) will launch, and if that is not found, wLE ISR Exfat will launch so long as you do not delete/mess up your BOOT or SYS-CONF folders.
