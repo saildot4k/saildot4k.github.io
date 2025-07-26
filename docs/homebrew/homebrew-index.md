@@ -2,7 +2,13 @@
 <div class="grid cards" markdown>
 
 - ![MCBOWSER1.PNG](assets/MCBROWSER1.png)
+/// caption
+Launch from here...
+///
 - ![MCBOWSER2.PNG](assets/MCBROWSER2.png)
+/// caption
+via OSDMenu!
+///
 
 </div>
 
