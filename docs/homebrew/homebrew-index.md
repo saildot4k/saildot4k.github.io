@@ -1,11 +1,11 @@
 # Homebrew
 <div class="grid cards" markdown>
 
-- ![MCBOWSER1.PNG](assets/MCBROWSER1.png)
+- ![MCBOWSER1.PNG](assets/MCBROWSER1.png){ height="75" }
 /// caption
 Launch from here...
 ///
-- ![MCBOWSER2.PNG](assets/MCBROWSER2.png)
+- ![MCBOWSER2.PNG](assets/MCBROWSER2.png){ height="75" }
 /// caption
 via OSDMenu!
 ///
@@ -87,8 +87,9 @@ See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentati
     LK_R1_E2 = mc?:/APP_NHDDL/nhddl.elf
     LK_R1_E3 = mc?:/NEUTRINO/nhddl.elf
 
-    LK_R2_E1 = mc?:/APP_OPL-120B2210/OPL-120B2210.ELF
-    LK_R2_E2 = mc?:/APP_OPL-120B2049GID/OPL-120B2049GID.ELF
+    LK_R2_E1 = mc?:/APP_OPL-120B2238/OPL-120B2238.ELF
+    LK_R2_E2 = mc?:/APP_OPL-120B2238/OPL-120B2210.ELF
+    LK_R2_E3 = mc?:/APP_OPL-120B2049GID/OPL-120B2049GID.ELF
 
     LK_L1_E1 = hdd0:__system:pfs:/p2lboot/PSBBN.ELF
     LK_L1_E2 = hdd0:__system:pfs:/osdmenu/hosdmenu.elf
