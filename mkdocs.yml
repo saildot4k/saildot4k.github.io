@@ -99,9 +99,6 @@ extra:
 nav:
   - Home: 
     - index.md
-    - Homebrew Downloads: homebrew/index.md
-    - Recommended Accessories: misc/index.md
-    - Thanks and Links: thanks.md
   - Crystal Chips:
     - crystal-chips/index.md
     - 1.0 Install Diagrams: crystal-chips/cc10-install.md
