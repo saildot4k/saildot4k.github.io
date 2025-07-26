@@ -82,7 +82,7 @@ See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentati
     LK_R2_E1 = mc?:/APP_OPL-120B2210/OPL-120B2210.ELF
     LK_R2_E2 = mc?:/APP_OPL-120B2049GID/OPL-120B2049GID.ELF
 
-    LK_L1_E1 = hdd0:hdd0:__system:pfs:/p2lboot/PSBBN.ELF
+    LK_L1_E1 = hdd0:__system:pfs:/p2lboot/PSBBN.ELF
     LK_L1_E2 = hdd0:__system:pfs:/osdmenu/hosdmenu.elf
     LK_L1_E3 = hdd0:__boot:pfs:/boot.elf
 
