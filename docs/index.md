@@ -1,5 +1,7 @@
 ![AnimatedBanner](https://ps2modchiptutorials.com/assets/homebanner4.png)
 
+# Welcome!
+
 In Progress as of 6/27/2025
 
 This sites intended purpose is to give comprehensive install and usage of the last best PS2 modchips.
