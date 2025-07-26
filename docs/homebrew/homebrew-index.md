@@ -1,11 +1,11 @@
 # Homebrew
 <div class="grid cards" markdown>
 
-- ![MCBOWSER1.PNG](assets/MCBROWSER1.png){ width="100" }
+- ![MCBOWSER1.PNG](assets/MCBROWSER1.png)
 /// caption
 Launch from here...
 ///
-- ![MCBOWSER2.PNG](assets/MCBROWSER2.png){ width="100" }
+- ![MCBOWSER2.PNG](assets/MCBROWSER2.png)
 /// caption
 via OSDMenu!
 ///
