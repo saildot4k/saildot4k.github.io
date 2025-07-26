@@ -1,9 +1,4 @@
 # Homebrew
-![MCBOWSER1.PNG](assets/MCBROWSER1.png){ width="225"} 
-
-![MCBOWSER2.PNG](assets/MCBROWSER2.png){ width="225"}
-
-
 <div class="grid cards" markdown>
 
 - ![MCBOWSER1.PNG](assets/MCBROWSER1.png)
