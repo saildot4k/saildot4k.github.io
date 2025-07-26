@@ -99,7 +99,7 @@ extra:
 nav:
   - Home: 
     - index.md
-    - Homebrew Downloads: homebrew/index.md
+    - Homebrew Downloads: homebrew/homebrew-index.md
     - Recommended Accessories: misc/index.md
     - Thanks and Links: thanks.md
     - Blog: blog/index.md
@@ -128,21 +128,21 @@ nav:
     - Team Files: dms3/dms3-files.md
     - Archived Website: dms3/dms3-archived.md
   - Ghost 2:
-    - ghost2/index.md
+    - ghost2/ghost2-index.md
     - Install Diagrams: ghost2/ghost2-install.md
     - Video Tutorials: ghost2/ghost2-vids.md
     - Written Tutorials: ghost2/ghost2-writeups.md
     - Team Files: ghost2/ghost2-files.md
     - Archived Website: ghost2/ghost2-archived
   - Matrix Infinity and clones:
-    - mi/index.md
+    - mi/mi-index.md
     - Install Diagrams: mi/mi-install.md
     - Video Tutorials: mi/mi-vids.md
     - Written Tutorials: mi/mi-writeups.md
     - Team Files: mi/mi-files.md
     - Archived Website: mi/mi-archived.md
   - Homebrew Downloads:
-    - homebrew/index.md
+    - homebrew/homebrew-index.md
   - Recommended Accessories:
     - misc/index.md
     - Matrix Picfix: misc/picfix.md
