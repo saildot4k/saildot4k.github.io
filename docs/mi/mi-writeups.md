@@ -1,7 +1,20 @@
 
 ## Hotkeys
 
-![MI_Hotkeys](assets/MI_Hotkeys.png){ width="800" }
+<div class="grid" markdown>
+
+=== "Matrix Infinity FW"
+
+    ![MI_Hotkeys](assets/MI_Hotkeys.png){ width="800" }
+
+=== "PS2BBL"
+
+    ![PS2BBL_Hotkeys](assets/PS2BBL_Hotkeys.png){ width="800" }
+    /// caption
+    Config @ mc?:/SYS-CONF/PS2BBL.INI
+    ///
+
+</div>
 
 ???+ note "Infinity Manager"
 
