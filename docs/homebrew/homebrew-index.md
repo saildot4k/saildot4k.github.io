@@ -79,7 +79,7 @@ See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentati
 
     LK_SELECT_E1 = $CDVD_NO_PS2LOGO
 
-    LK_TRIANGLE_E1 = mc?:/APP_WLE-ISR-XF-MM/WLE-ISR-XF-MM.ELF
+    LK_TRIANGLE_E1 = mass:/RESCUE.ELF
     LK_TRIANGLE_E2 = mc?:/APP_WLE-ISR-XF/WLE-ISR-XF.ELF
     LK_TRIANGLE_E3 = mc?:/BOOT/BOOT2.ELF
 
