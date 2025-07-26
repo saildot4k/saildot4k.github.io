@@ -58,50 +58,14 @@ Prior to PS2BBL booting, your modchip firmware will determine hotkeys. Once you 
 
 See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentation/configuration.html#launch-keys) for documentation.
 
-!!! example "PS2BBL Hotkeys @ `mc?:/SYS-CONF/PS2BBL.INI`"
+![PS2BBL_Hotkeys](assets/PS2BBL_Hotkeys.png){ width="800" }
+/// caption
+Config @ mc?:/SYS-CONF/PS2BBL.INI
+///
 
-    ```
-    # PlayStation2 Basic Bootloader config file
-    # configurations:
-    SKIP_PS2LOGO = 1
-    EJECT_TRAY = 0
-    OSDHISTORY_READ = 0
-    KEY_READ_WAIT_TIME = 5000
-    LOGO_DISPLAY = 2
+!!! warning "Emergency Mode"
 
-    # APPLICATIONS:
-
-    LK_AUTO_E1 = mc?:/SYS_OSDMENU/osdmenu.elf
-    LK_AUTO_E2 = mc?:/BOOT/osdmenu.elf
-    LK_AUTO_E3 = mc?:/BOOT/BOOT2.ELF
-
-    LK_START_E1 = $CDVD
-
-    LK_SELECT_E1 = $CDVD_NO_PS2LOGO
-
-    LK_TRIANGLE_E1 = mass:/RESCUE.ELF
-    LK_TRIANGLE_E2 = mc?:/APP_WLE-ISR-XF/WLE-ISR-XF.ELF
-    LK_TRIANGLE_E3 = mc?:/BOOT/BOOT2.ELF
-
-    LK_R1_E1 = mmce?:/NEUTRINO/nhddl.elf
-    LK_R1_E2 = mc?:/APP_NHDDL/nhddl.elf
-    LK_R1_E3 = mc?:/NEUTRINO/nhddl.elf
-
-    LK_R2_E1 = mc?:/APP_OPL-120B2238/OPL-120B2238.ELF
-    LK_R2_E2 = mc?:/APP_OPL-120B2238/OPL-120B2210.ELF
-    LK_R2_E3 = mc?:/APP_OPL-120B2049GID/OPL-120B2049GID.ELF
-
-    LK_L1_E1 = hdd0:__system:pfs:/p2lboot/PSBBN.ELF
-    LK_L1_E2 = hdd0:__system:pfs:/osdmenu/hosdmenu.elf
-    LK_L1_E3 = hdd0:__boot:pfs:/boot.elf
-
-    LK_L2_E1 = mc?:/APP_OPL-MMCE-BETA3/OPL-MMCE-BETA3.ELF
-    LK_L2_E2 = mc?:/APP_OPL-MMCE-BETA2/OPL-MMCE-BETA2.ELF
-    ```
-
-    !!! warning "Emergency Mode"
-
-        If something breaks on your setup but PS2BBL still boots, just hold `R1+START`. It will trigger emergency mode where PS2BBL will try to boot `RESCUE.ELF` from USB device Root on an endless loop. Recommended to rename wLE ISR Exfat to `RESCUE.ELF`
+    If something breaks on your setup but PS2BBL still boots, just hold `R1+START`. It will trigger emergency mode where PS2BBL will try to boot `RESCUE.ELF` from USB device Root on an endless loop. Recommended to rename wLE ISR Exfat to `RESCUE.ELF`
 
 
 ## Apps as of 7/23/2025:
