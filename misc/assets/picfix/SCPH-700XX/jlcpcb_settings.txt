@@ -1,0 +1,4 @@
+Base Material: Flex
+Layers: 2
+PCB: Thickness .11mm
+All other settings are fine. If you like, choose a different Coverlay Color and Silkscreen
