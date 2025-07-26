@@ -248,4 +248,4 @@ Grab this file, place on usb stick and launch with wLE ISR.
 [:material-cloud-download: DEV 2 (HDD) Installer v1.1 ](apps/Dev2Installv11.zip)
 
 ## PS2 Homebrew
-Click [HERE](homebrew/homebrew-index.md) for MMCE VMC downloads. These are ready to go for you! (Multipurpose Memory Card Emulator Virtual Memory Cards)
+Click [HERE](homebrew/index.md) for MMCE VMC downloads. These are ready to go for you! (Multipurpose Memory Card Emulator Virtual Memory Cards)

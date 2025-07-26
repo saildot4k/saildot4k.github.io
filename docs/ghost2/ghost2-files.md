@@ -23,4 +23,4 @@ Note: G2 Manager Version displayed was never fixed by team. Shows FW version, NO
 
 
 ## PS2 Homebrew
-Click [HERE](homebrew/homebrew-index.md) for MMCE VMC downloads. These are ready to go for you! (Multipurpose Memory Card Emulator Virtual Memory Cards)
+Click [HERE](homebrew/index.md) for MMCE VMC downloads. These are ready to go for you! (Multipurpose Memory Card Emulator Virtual Memory Cards)
