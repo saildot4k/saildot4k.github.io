@@ -1,8 +1,15 @@
 # Homebrew
-![MCBOWSER1.PNG](assets/MCBROWSER1.png){ width="225" align=right } 
+![MCBOWSER1.PNG](assets/MCBROWSER1.png){ width="225"} 
 
-![MCBOWSER2.PNG](assets/MCBROWSER2.png){ width="225" align=right }
+![MCBOWSER2.PNG](assets/MCBROWSER2.png){ width="225"}
 
+
+<div class="grid cards" markdown>
+
+- ![MCBOWSER1.PNG](assets/MCBROWSER1.png)
+- ![MCBOWSER2.PNG](assets/MCBROWSER2.png)
+
+</div>
 
 ## MegaPack Downloads
 SD2PSX, PSXMemCard Gen2 and MemCardPro 2 downloads are ready to go for 3rd Gen Modchips ONLY. 
@@ -157,7 +164,7 @@ See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentati
 
 
 
-[^1]: [Save Application System](https://ps2wiki.github.io/sas-apps-archive/) Icons courtesy of BlackNinja, Ripto, Berion and Yornn
+[^1]: [Save Application System](https://ps2wiki.github.io/sas-apps-archive/) Icons courtesy of koraxial, Ripto, Berion and Yornn
 [^2]: 
     [Universal Memory Card Structure](https://ps2wiki.github.io/sas-apps-archive/psu-categories/umcs.html) `mc?:/BOOT` and `mc?:/SYS-CONF` structure that utilizes PS2BBL as BOOT.ELF and wLE ISR Exfat as BOOT2.ELF. Failover configs for both exist in SYS-CONF along with any other common file type shared between apps such as IPCONFIG.DAT
 [^3]: 
