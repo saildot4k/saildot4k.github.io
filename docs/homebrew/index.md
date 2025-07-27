@@ -73,7 +73,6 @@ Config @ mc?:/SYS-CONF/PS2BBL.INI
 
     === "PS2BBL.INI"
 
-        ```
         # PlayStation2 Basic Bootloader config file
         # configurations:
         SKIP_PS2LOGO = 1
@@ -109,11 +108,9 @@ Config @ mc?:/SYS-CONF/PS2BBL.INI
 
         LK_L2_E1 = mc?:/APP_OPL-MMCE-BETA3/OPL-MMCE-BETA3.ELF
         LK_L2_E2 = mc?:/APP_OPL-MMCE-BETA2/OPL-MMCE-BETA2.ELF
-        ```
 
     === "OSDMENU.CNF"
 
-        ```
         hacked_OSDSYS = 1
         OSDSYS_video_mode = AUTO
         OSDSYS_Inner_Browser = 0
@@ -219,11 +216,9 @@ Config @ mc?:/SYS-CONF/PS2BBL.INI
         path1_OSDSYS_ITEM_250 = POWEROFF
         # --------------------------------------------------
 
-        ```
 
     === "LAUNCHELF.CNF
 
-        ```
         CNF_version = 3
         LK_auto_E1 = MISC/OSDSYS
         LK_Circle_E1 = MISC/About uLE
@@ -310,7 +305,6 @@ Config @ mc?:/SYS-CONF/PS2BBL.INI
         LK_R3_Title = Exit to PS2BBL(BOOT.ELF)
         LK_Select_Title = wLaunchELF Settings (Configure)
         PathPad_Lock = 0
-        ```
 
 
     </div>
