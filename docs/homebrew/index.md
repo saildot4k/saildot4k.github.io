@@ -80,7 +80,7 @@ Config @ mc?:/SYS-CONF/PS2BBL.INI
 | NHDDL (edit OSDMENU.INI)     | :material-check-circle:         | :material-check-circle:           |
 | OPL 1.2.0 B2049 GID          | :material-check-circle:         | :material-check-circle:           |
 | OPL 1.2.0 B2210              | :material-check-circle:         | :material-check-circle:           |
-| OPL 1.2.0 B2238              | :material-check-circle:         | :material-check-circle:           |
+| OPL 1.2.0 B2241              | :material-check-circle:         | :material-check-circle:           |
 | OPL MMCE Beta 3              | :material-check-circle:         | :material-check-circle:           |
 | OPL MMCE Beta 2              | :material-check-circle:         | :material-check-circle:           |
 | Simple Media System          | :material-check-circle:         | :material-check-circle:           |
