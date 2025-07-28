@@ -69,7 +69,7 @@ Config @ mc?:/SYS-CONF/PS2BBL.INI
     If something breaks on your setup but PS2BBL still boots, just hold `R1+START`. It will trigger emergency mode where PS2BBL will try to boot `RESCUE.ELF` from USB device Root on an endless loop. Recommended to rename wLE ISR Exfat to `RESCUE.ELF`
 
 
-## Apps as of 7/23/2025:
+## Apps as of 7/28/2025:
 
 | Application                  | USB (Fat16/32/Exfat)            | MMCE Device VMC                   |
 | :----------------------------| :-----------------------------: | :-------------------------------: |
