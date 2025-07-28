@@ -5,7 +5,7 @@
 Grab this file, place on usb stick and launch with wLE ISR.
 
 
-[:material-cloud-download: FW 1.9 ISO](firmware/InfinityFW193.zip)
+[:material-cloud-download: FW 1.93 ISO](firmware/InfinityFW193.zip)
 
 ???- "OLD Firmware"
 
