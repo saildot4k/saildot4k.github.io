@@ -1,4 +1,5 @@
 # Homebrew
+
 <div class="grid cards" markdown>
 
 - ![MCBOWSER1.PNG](assets/MCBROWSER1.png)
@@ -67,23 +68,6 @@ Config @ mc?:/SYS-CONF/PS2BBL.INI
 
     If something breaks on your setup but PS2BBL still boots, just hold `R1+START`. It will trigger emergency mode where PS2BBL will try to boot `RESCUE.ELF` from USB device Root on an endless loop. Recommended to rename wLE ISR Exfat to `RESCUE.ELF`
 
-
-
-<div class="grid" markdown>
-
---- "Unordered list"
-
-    * Sed sagittis eleifend rutrum
-    * Donec vitae suscipit est
-    * Nulla tempor lobortis orci
-
---- "Ordered list"
-
-    1. Sed sagittis eleifend rutrum
-    2. Donec vitae suscipit est
-    3. Nulla tempor lobortis orci
-
-</div>
 
 ## Apps as of 7/23/2025:
 
