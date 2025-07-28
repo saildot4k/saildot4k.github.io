@@ -67,23 +67,23 @@ Config @ mc?:/SYS-CONF/PS2BBL.INI
 
     If something breaks on your setup but PS2BBL still boots, just hold `R1+START`. It will trigger emergency mode where PS2BBL will try to boot `RESCUE.ELF` from USB device Root on an endless loop. Recommended to rename wLE ISR Exfat to `RESCUE.ELF`
 
-??? example "PS2BBL.INI, OSDMENU.CNF and LAUNCHELF contents"
 
-    <div class="grid" markdown>
 
-    === "Unordered list"
+<div class="grid" markdown>
 
-        * Sed sagittis eleifend rutrum
-        * Donec vitae suscipit est
-        * Nulla tempor lobortis orci
+=== "Unordered list"
 
-    === "Ordered list"
+    * Sed sagittis eleifend rutrum
+    * Donec vitae suscipit est
+    * Nulla tempor lobortis orci
 
-        1. Sed sagittis eleifend rutrum
-        2. Donec vitae suscipit est
-        3. Nulla tempor lobortis orci
+=== "Ordered list"
 
-    </div>
+    1. Sed sagittis eleifend rutrum
+    2. Donec vitae suscipit est
+    3. Nulla tempor lobortis orci
+
+</div>
 
 ## Apps as of 7/23/2025:
 
