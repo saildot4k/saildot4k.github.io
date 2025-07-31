@@ -141,7 +141,8 @@ nav:
     - misc/index.md
     - Matrix Picfix: misc/picfix.md
   - Thanks and Links: thanks.md
-  - Blog: blog/index.md
+  - Blog: 
+    - blog/index.md
 
 
 
