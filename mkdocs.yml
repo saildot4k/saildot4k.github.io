@@ -97,8 +97,7 @@ extra:
 
 # Page tree
 nav:
-  - Home: 
-    - index.md
+  - Home: index.md
   - Crystal Chips:
     - crystal-chips/index.md
     - 1.0 Install Diagrams: crystal-chips/cc10-install.md
@@ -137,14 +136,12 @@ nav:
     - Written Tutorials: mi/mi-writeups.md
     - Team Files: mi/mi-files.md
     - Archived Website: mi/mi-archived.md
-  - Homebrew Downloads:
-    - homebrew/index.md
+  - Homebrew Downloads: homebrew/index.md
   - Recommended Accessories:
     - misc/index.md
     - Matrix Picfix: misc/picfix.md
   - Thanks and Links: thanks.md
-  - Blog:
-    - blog/index.md
+  - Blog: blog/index.md
 
 
 
