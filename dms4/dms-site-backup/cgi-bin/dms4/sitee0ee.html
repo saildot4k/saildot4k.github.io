@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 127.0.0.1/cgi-bin/dms4/site.pl?page=specs-dms4_professional by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 May 2025 18:13:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-1" /><!-- /Added by HTTrack -->
+<head>
+  <title>::. DMS4 .:: D.M.S. 4 Modchip for the Playstation2 - Chip, Modchip, Linux Loading Chip, Modding, PS2, Playstation2, PSX2</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script language="JavaScript">
+
+  <!--
+
+  function MM_preloadImages() { //v3.0
+
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+
+  }
+
+
+
+  function MM_findObj(n, d) { //v4.01
+
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+
+  }
+
+
+
+  function MM_nbGroup(event, grpName) { //v3.0
+
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+
+  if (event == "init" && args.length > 2) {
+
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+
+      nbArr[nbArr.length] = img;
+
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+
+        if (!img.MM_up) img.MM_up = img.src;
+
+        img.src = img.MM_dn = args[i+1];
+
+        nbArr[nbArr.length] = img;
+
+    } }
+
+  } else if (event == "over") {
+
+    document.MM_nbOver = nbArr = new Array();
+
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+
+      if (!img.MM_up) img.MM_up = img.src;
+
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+
+      nbArr[nbArr.length] = img;
+
+    }
+
+  } else if (event == "out" ) {
+
+    for (i=0; i < document.MM_nbOver.length; i++) {
+
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+
+  } else if (event == "down") {
+
+    if ((nbArr = document[grpName]) != null)
+
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+
+    document[grpName] = nbArr = new Array();
+
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+
+      if (!img.MM_up) img.MM_up = img.src;
+
+      img.src = img.MM_dn = args[i+1];
+
+      nbArr[nbArr.length] = img;
+
+  } }
+
+  }
+
+
+
+  function flevSubmitForm() { // v1.1
+
+        // Copyright 2002, Marja Ribbers-de Vroed, FlevOOware (www.flevooware.nl/dreamweaver/)
+
+        var sF = arguments[0], oF = MM_findObj(sF), sA = (arguments.length > 1) ? arguments[1] : ""; 
+
+        if (oF) {if (sA != "") {oF.action = sA;} oF.submit(); document.MM_returnValue = false;}
+
+  }
+
+  //-->
+
+  </script>
+  <style>
+
+  body {
+
+        scrollbar-base-color: #000000;
+
+  }
+
+
+
+  input {
+
+    border: 1px solid #ffffff;
+
+        background: #000000;
+
+        font-family: Arial, Verdana, sans-serif;
+
+        font-size: 9 px;
+
+        color: #ffffff;
+
+  }
+
+
+
+  textarea {
+
+    border: 1px solid #ffffff;
+
+        background: #000000;
+
+        font-family: Arial, Verdana, sans-serif;
+
+        font-size: 9 px;
+
+        color: #ffffff;
+
+  }
+
+  select {
+
+    border: 1px solid #ffffff;
+
+        background: #000000;
+
+        font-family: Arial, Verdana, sans-serif;
+
+        font-size: 9 px;
+
+        color: #ffffff;
+
+  }
+
+  a {
+
+        color: #ffffff;
+
+        font-variant: normal;
+
+        font-style: normal;;
+
+  }
+
+  a:hover
+
+  {
+
+   background: #ffffff;
+
+        color: #181B3B;
+
+        font-variant: normal;
+
+        font-style: normal;;
+
+  }
+
+
+
+  hr {
+
+  border: 1px solid #181B3B;
+
+  color: #FFFFFF;
+
+  background-color: #FFFFFF;
+
+  height: 3px;
+
+  }
+
+  </style>
+</head>
+<body bgcolor="#000000" text="#FFFFFF" onload="MM_preloadImages('../../dms4/webgfx/navi/1.gif','../../dms4/webgfx/navi/2.gif','../../dms4/webgfx/navi/3.gif','../../dms4/webgfx/navi/4.gif','../../dms4/webgfx/navi/5.gif','../../dms4/webgfx/navi/6.gif','../../dms4/webgfx/navi/7.gif')" link="#BFC0D1" vlink="#BFC0D1" alink="#BFC0D1">
+  <table width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr>
+      <td><img src="../../dms4/webgfx/topline.gif" width="800" height="158"></td>
+    </tr>
+    <tr>
+      <td>
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>
+              <a href="site9ba3.html?page=home" onclick="MM_nbGroup('down','group1','_1_off','../../dms4/webgfx/navi/1.gif',1)" onmouseover="MM_nbGroup('over','_1_off','../../dms4/webgfx/navi/1.gif','../../dms4/webgfx/navi/1.gif',1)" onmouseout="MM_nbGroup('out')"><img name="_1_off" src="../../dms4/webgfx/navi/1_off.gif" border="0" onload="" width="197" height="31" alt="Homepage" id="_1_off"></a>
+            </td>
+            <td>
+              <a href="siteb1ba.html?page=downloads" onclick="MM_nbGroup('down','group1','_2_off','../../dms4/webgfx/navi/2.gif',1)" onmouseover="MM_nbGroup('over','_2_off','../../dms4/webgfx/navi/2.gif','../../dms4/webgfx/navi/2.gif',1)" onmouseout="MM_nbGroup('out')"><img name="_2_off" src="../../dms4/webgfx/navi/2_off.gif" border="0" onload="" width="96" height="31" alt="Downloads" id="_2_off"></a>
+            </td>
+            <td>
+              <a href="sitec782.html?page=diagrams" onclick="MM_nbGroup('down','group1','_3_off','../../dms4/webgfx/navi/3.gif',1)" onmouseover="MM_nbGroup('over','_3_off','../../dms4/webgfx/navi/3.gif','../../dms4/webgfx/navi/3.gif',1)" onmouseout="MM_nbGroup('out')"><img name="_3_off" src="../../dms4/webgfx/navi/3_off.gif" border="0" onload="" width="84" height="31" alt="Diagrams" id="_3_off"></a>
+            </td>
+            <td>
+              <a href="site362c.html?page=specs" onclick="MM_nbGroup('down','group1','_4_off','../../dms4/webgfx/navi/4.gif',1)" onmouseover="MM_nbGroup('over','_4_off','../../dms4/webgfx/navi/4.gif','../../dms4/webgfx/navi/4.gif',1)" onmouseout="MM_nbGroup('out')"><img name="_4_off" src="../../dms4/webgfx/navi/4_off.gif" border="0" onload="" width="105" height="31" alt="Specs" id="_4_off"></a>
+            </td>
+            <td>
+              <a href="sitefe9c.html?page=faq" onclick="MM_nbGroup('down','group1','_5_off','../../dms4/webgfx/navi/5.gif',1)" onmouseover="MM_nbGroup('over','_5_off','../../dms4/webgfx/navi/5.gif','../../dms4/webgfx/navi/5.gif',1)" onmouseout="MM_nbGroup('out')"><img name="_5_off" src="../../dms4/webgfx/navi/5_off.gif" border="0" onload="" width="51" height="31" alt="F.A.Q.s" id="_5_off"></a>
+            </td>
+            <td>
+              <a href="site8fe4.html?page=distributors" onclick="MM_nbGroup('down','group1','_6_off','../../dms4/webgfx/navi/6.gif',1)" onmouseover="MM_nbGroup('over','_6_off','../../dms4/webgfx/navi/6.gif','../../dms4/webgfx/navi/6.gif',1)" onmouseout="MM_nbGroup('out')"><img name="_6_off" src="../../dms4/webgfx/navi/6_off.gif" border="0" onload="" width="102" height="31" alt="Distributors" id="_6_off"></a>
+            </td>
+            <td>
+              <a href="sitebc7f.html?page=news" onclick="MM_nbGroup('down','group1','_7_off','../../dms4/webgfx/navi/7.gif',1)" onmouseover="MM_nbGroup('over','_7_off','../../dms4/webgfx/navi/7.gif','../../dms4/webgfx/navi/7.gif',1)" onmouseout="MM_nbGroup('out')"><img name="_7_off" src="../../dms4/webgfx/navi/7_off.gif" border="0" onload="" width="165" height="31" alt="News" id="_7_off"></a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td background="../../dms4/webgfx/naviback.gif">
+        <table width="800" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="120">&nbsp;</td>
+            <td><font face="Arial, Helvetica, sans-serif" size="1" color="#333333"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif"><img src="../../dms4/webgfx/dot.gif"> <a href="siteebe8.html?page=specs-dms4_lite">DMS4_LITE</a> <img src="../../dms4/webgfx/dot.gif"> <a href="sitee0ee.html?page=specs-dms4_professional">DMS4_PROFESSIONAL</a></font></font></td>
+            <td width="120">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="../../dms4/webgfx/midline.gif" width="800" height="63" name="forum" usemap="#forumMap" border="0" id="forum"></td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center">
+          <font color="#408CB3" size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong><font color="#3174A6"><img src="../../dms4/webgfx/headlines/specs.gif"></font></strong></font>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td background="../../dms4/webgfx/content_back.gif">
+        <table width="800" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="120">&nbsp;</td>
+            <td align="left" valign="top">
+              <font face="Arial, Helvetica, sans-serif" size="1" color="#333333"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif"><b>Specs DMS4 Professional</b><br>
+              <br>
+              DMS4 PRO - DEV.olution Memory System 4 Professional<br>
+              <br></font></font>
+              <center>
+                <font face="Arial, Helvetica, sans-serif" size="1" color="#333333"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif"><img src="../../dms4/uploads/dms4pro_big.jpg"></font></font>
+              </center><font face="Arial, Helvetica, sans-serif" size="1" color="#333333"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif"><br>
+              <br>
+              The fourth generation has arrived. DMS4 professional offers amateur coders and developres the ability to boot<br>
+              <br>
+              "Homebrew" applications on their console, for development purposes. Furthermore DMS4 Pro allows you to watch<br>
+              Multi-region DVD's on your system. Compatibility is comprehensive (Jap/USA/Asian V1-V10).<br>
+              The feature packed big brother of the DMS4 Lite has a 2MB flash to store Homebrew ELF files within the internal flash<br>
+              memory. The DMS4 Pro has all the features of the Lite, further it boasts enhanced security, larger flash memory and will<br>
+              have extra features added in software at no extra cost in future update builds.<br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <b>Auto-detect and boot of all media types</b><br>
+              <br>
+              <br>
+              DMS4 will automatically detect whether a PS1, PS2 CD-R, DVD-R, DVD+R, DVD-RW, DVD9 or DVD+RW (Homebrew Elf's), original domestic CD/DVD is inserted and then boot it without any interaction from the user.<br>
+              <br>
+              <br>
+              <b>Reduced wire Count</b><br>
+              <br>
+              <br>
+              17 wires for v1-v7 PAL/USA or 18 wires for v1-v7 Japan/Asian<br>
+              18 wires for v9-v10 USA and PAL (19 with DVD+/-RW support / T wire) or 19 wires for V8,9 and 10 Japan/Asian (20 with DVD+/-RW support / T wire)<br>
+              <br>
+              <br>
+              <b>High capacity flash</b><br>
+              <br>
+              We now use a 2MB flash in our design to accomodate future flash upgrades with enhancements and extra integrated features.<br>
+              <br>
+              <br>
+              <br>
+              <b>Unrivaled boot success rate and compatibility</b><br>
+              <br>
+              <br>
+              The boot rate of DMS4 is nigh on 100%. The DMS4 Supports V1-V10 USA/ASIAN and PAL<br>
+              <br>
+              <br>
+              <b>Flash upgrade via CD</b><br>
+              <br>
+              The popular CD flash upgrade first introduced by DMS3 and has been retained offering a choice of firmware upgrade<br>
+              <br>
+              options.<br>
+              <br>
+              <br>
+              <b>DVD region Free with RCE support.</b><br>
+              <br>
+              Watch all region DVD movies on your PS2.<br>
+              <br>
+              <br>
+              <b>Colour Fix</b><br>
+              <br>
+              Force the colour mode to your choice.<br>
+              <br>
+              <b>Screen Fix</b><br>
+              <br>
+              Green screen removed for Playback of DVD Movies.<br>
+              <br>
+              <br>
+              <b>DEV.olution Mode 1</b><br>
+              <br>
+              Load appliactions and software from your PS2 Memory card using our specially integrated DEV.olution mode.<br>
+              <br>
+              <br>
+              <b>DEV.olution Mode 2</b><br>
+              <br>
+              Load applications and software from your PS2 HDD using our specially integrated software. DEV.olution 2 is the successor to DEV.olution 1 mode.<br>
+              <br>
+              <br>
+              <b>Software Modchip disable</b><br>
+              <br>
+              Disable the Modchip in software by pushing Square on the Joypad.<br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <b><br>
+              <br></b></font></font>
+            </td>
+            <td width="120">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="../../dms4/webgfx/line.gif" width="800" height="8"></td>
+    </tr>
+    <tr>
+      <td>
+        <table width="800" border="0" cellspacing="0" cellpadding="0" background="../../dms4/webgfx/content_back.gif">
+          <tr>
+            <td width="120">&nbsp;</td>
+            <td align="right" valign="middle">
+              <form style="margin-bottom:0;" name="form1" method="post" action="http://127.0.0.1/cgi-bin/dms4/site.pl" id="form1">
+                <div align="center">
+                  <font face="Verdana, Arial, Helvetica, sans-serif" size="1"><font color="#BFC0D1">Sitemap dms4.com<br>
+                  <font color="#181B3B"><br>
+                  -</font></font> <b><font color="#3174A6"><select name="page" id="select" onchange="flevSubmitForm('form1','site.html');return document.MM_returnValue">
+                    <option value="home" selected>
+                      Select a page to view :
+                    </option>
+                    <option value="home">
+                      -------------------------------------------------------------------------
+                    </option>
+                    <option value="diagrams">
+                      DIAGRAMS
+                    </option>
+                    <option value="distributors-become a distributor">
+                      DISTRIBUTORS-BECOME A DISTRIBUTOR
+                    </option>
+                    <option value="distributors">
+                      DISTRIBUTORS
+                    </option>
+                    <option value="downloads-read me first">
+                      DOWNLOADS-READ ME FIRST
+                    </option>
+                    <option value="downloads">
+                      DOWNLOADS
+                    </option>
+                    <option value="faq-bios update">
+                      FAQ-BIOS UPDATE
+                    </option>
+                    <option value="faq-installation">
+                      FAQ-INSTALLATION
+                    </option>
+                    <option value="faq-troubleshooting">
+                      FAQ-TROUBLESHOOTING
+                    </option>
+                    <option value="faq">
+                      FAQ
+                    </option>
+                    <option value="home-contact us">
+                      HOME-CONTACT US
+                    </option>
+                    <option value="home-disclaimer">
+                      HOME-DISCLAIMER
+                    </option>
+                    <option value="news">
+                      NEWS
+                    </option>
+                    <option value="specs-dms4_lite">
+                      SPECS-DMS4 LITE
+                    </option>
+                    <option value="specs-dms4_professional">
+                      SPECS-DMS4 PROFESSIONAL
+                    </option>
+                    <option value="specs">
+                      SPECS
+                    </option>
+                  </select><br>
+                  <br></font></b></font>
+                </div>
+              </form>
+            </td>
+            <td width="120">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="../../dms4/webgfx/line.gif" width="800" height="8"></td>
+    </tr>
+    <tr>
+      <td><img src="../../dms4/webgfx/downline.gif" width="800" height="111"></td>
+    </tr>
+  </table><map name="forumMap" id="forumMap">
+    <area shape="rect" coords="321,7,481,21" href="http://web02063.prolocation.net/phpBB2/index.php" target="_blank">
+  </map>
+</body>
+
+<!-- Mirrored from 127.0.0.1/cgi-bin/dms4/site.pl?page=specs-dms4_professional by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 May 2025 18:13:55 GMT -->
+</html>
