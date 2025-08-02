@@ -15,9 +15,9 @@ Should I ever leave the scene, [:material-email-outline:](mailto:info@ps2modchip
 to a well respected care-taker.
 
 
-???+ note "No thanks to:"
+!!! danger "No thanks to:"
 
-    TnA Plastic of PS2 Scene Discord and psx-place.com
+    TnA Plastic of PS2 Scene Discord, psx-place.com and r/ps2homebrew
 
     r/PS2 and Mods
 
