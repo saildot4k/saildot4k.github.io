@@ -4,7 +4,7 @@
 
 ???+ note "G2 Manager"
 
-    G2 Manager MUST be installed on memory card 1 to access, or access via cd. In order to mak changes, boot to Flash Upgrade mode by pressing reset 4x once every blink/second.
+    G2 Manager MUST be installed on memory card 1 to access, or access via cd. In order to make changes, boot to Flash Upgrade mode by pressing reset 4x once every blink/second.
 
 ## Boot Modes
 Tap RESET button on PS2 a number of times after power up, about 1x per second. The modes are as follows from STANDBY (RED LED):
