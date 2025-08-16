@@ -35,23 +35,24 @@ There is no signed exploit[^3] like FMCB included. Why? Because not all modchips
 
     ---
 
-    Unzip and merge contents to root of your MMCE device (THIS WILL WIPE YOUR BOOT CARD!) MUST BE ON [FW 1.2.0 or later!](https://sd2psxtd.github.io/download)
+    Unzip and merge contents to root of your MMCE device (THIS WILL WIPE YOUR BOOT CARDS!) Short press either button to select BOOT card 7: `MODCHIP AIO` if your card supports "DEV 1" or BOOT card 1: `PS2BBL AIO`. MUST BE ON [FW 1.2.0 or later!](https://sd2psxtd.github.io/download)
 
-    [:material-cloud-download: SD2PSX](https://github.com/saildot4k/ps2homebrewstore/raw/refs/heads/main/docs/assets/SD2PSX.zip)
+    [:material-cloud-download: SD2PSX](https://github.com/saildot4k/ps2homebrewstore/raw/refs/heads/main/docs/assets/MMCE-ALL.7z)
 
 -   __MemCardPro 2__
 
     ---
 
-    Unzip and merge contents to root of your MMCE device. Set "3rd Gen Modchips" as your boot card and disable SD Card Compatibility. [Manual](https://manuals.plus/memcardpro2/mcp201-stone-age-gamer-manual#the_webui) MUST BE ON [FW 1.4.0 or later!](https://distribution.appcake.co.uk/install/8bitmods/apps/memcard-pro2/public)
+    Unzip and merge contents to root of your MMCE device. Use the WEB UI to set boot card to `MODCHIP AIO`. [Manual](https://manuals.plus/memcardpro2/mcp201-stone-age-gamer-manual#the_webui) MUST BE ON [FW 1.4.0 or later!](https://distribution.appcake.co.uk/install/8bitmods/apps/memcard-pro2/public)
 
-    [:material-cloud-download: MCP2](https://github.com/saildot4k/ps2homebrewstore/raw/refs/heads/main/docs/assets/MEMCARDPRO2.zip)
+    [:material-cloud-download: MCP2](https://github.com/saildot4k/ps2homebrewstore/raw/refs/heads/main/docs/assets/MMCE-ALL.7z)
 
 
 </div>
 
 
 ## PS2BBL Hotkeys
+
 My Megapacks include [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentation/configuration.html#launch-keys) as `mc?:/BOOT/BOOT.ELF` and [wLE ISR Exfat](https://github.com/israpps/wLaunchELF_ISR) as `mc?:/BOOT/BOOT2.ELF`
 
 Set your modchip to boot from memory card, usually called DEV1. This is to ensure that one download works for all 3rd gen modchips that use such structure.
@@ -59,7 +60,7 @@ Prior to PS2BBL booting, your modchip firmware will determine hotkeys. Once you 
 
 See [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/documentation/configuration.html#launch-keys) for documentation.
 
-![PS2BBL_Hotkeys](assets/PS2BBL_Hotkeys.png){ width="800" }
+![PS2BBL_Hotkeys](https://github.com/saildot4k/ps2homebrewstore/raw/refs/heads/main/docs/exploits/assets/PS2BBL_Hotkeys.png){ width="800" }
 /// caption
 Config @ mc?:/SYS-CONF/PS2BBL.INI
 ///
@@ -77,12 +78,11 @@ Config @ mc?:/SYS-CONF/PS2BBL.INI
 | BM Themes                    | :material-check-circle:         | :material-check-circle:           |
 | Apollo Save Tool             | :material-check-circle:         | :material-check-circle:           |
 | GSM                          | :material-check-circle:         | :material-check-circle:           |
-| NHDDL (edit OSDMENU.INI)     | :material-check-circle:         | :material-check-circle:           |
-| OPL 1.2.0 B2049 GID          | :material-check-circle:         | :material-check-circle:           |
-| OPL 1.2.0 B2210              | :material-check-circle:         | :material-check-circle:           |
+| NHDDL (edit nhddl.yaml )     | :material-check-circle:         | :material-check-circle:           |
+| OPL 1.2.0 B2049 GID          | :material-check-circle:         | :material-close-circle:           |
+| OPL 1.2.0 B2210              | :material-check-circle:         | :material-close-circle:           |
 | OPL 1.2.0 B2241              | :material-check-circle:         | :material-check-circle:           |
 | OPL MMCE Beta 3              | :material-check-circle:         | :material-check-circle:           |
-| OPL MMCE Beta 2              | :material-check-circle:         | :material-check-circle:           |
 | Simple Media System          | :material-check-circle:         | :material-check-circle:           |
 | unoffical OPL                | :material-check-circle:         | :material-check-circle:           |
 | unofficial OPL Betrayal      | :material-check-circle:         | :material-check-circle:           |
@@ -100,7 +100,8 @@ Config @ mc?:/SYS-CONF/PS2BBL.INI
 | Pad Tester                   | :material-check-circle:         | :material-check-circle:           |
 | PS2 HDD Tester               | :material-check-circle:         | :material-check-circle:           |
 | PS2 Temps                    | :material-check-circle:         | :material-check-circle:           |
-| PicoDrvie                    | :material-check-circle:         | :material-check-circle:           |
+| PicoDrive 2.05               | :material-check-circle:         | :material-check-circle:           |
+| ROM Version Checker          | :material-check-circle:         | :material-check-circle:           |
 | Xbox 2 PS2                   | :material-check-circle:         | :material-check-circle:           |
 | Xbox 2 PS2 Lite              | :material-check-circle:         | :material-check-circle:           |
 | HERMES                       | :material-check-circle:         | :material-check-circle:           |
