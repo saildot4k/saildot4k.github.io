@@ -804,7 +804,7 @@ SHUTDOWN "MM"
 ### File System Driver Autoload
 Do not autoload file system drivers after app launch
 
-`SET `"BM.AUTOLOAD_FSD_EN" "0"`
+`SET "BM.AUTOLOAD_FSD_EN" "0"`
 
 ## **Memory Manipulation**
 
