@@ -26,26 +26,27 @@ There is no signed exploit[^3] like FMCB included. Why? Because not all modchips
 
     ---
 
-    Unzip and merge to the the root of your USB stick[^5]. Follow README.txt within.
-
     [:material-cloud-download: USB](https://github.com/saildot4k/ps2homebrewstore/raw/refs/heads/main/docs/assets/USB.zip)
+
+    Unzip and merge to the the root of your USB stick[^5]. Follow README.txt within.
 
 
 -   __SD2PSX/PSXMemCard Gen2__
 
     ---
 
+    [:material-cloud-download: SD2PSX](https://github.com/saildot4k/ps2homebrewstore/raw/refs/heads/main/docs/assets/MMCE-ALL.7z)
+
     Unzip and merge contents to root of your MMCE device (THIS WILL WIPE YOUR BOOT CARDS!) Short press either button to select BOOT card 7: `MODCHIP AIO` if your card supports "DEV 1" or BOOT card 1: `PS2BBL AIO`. MUST BE ON [FW 1.2.0 or later!](https://sd2psxtd.github.io/download)
 
-    [:material-cloud-download: SD2PSX](https://github.com/saildot4k/ps2homebrewstore/raw/refs/heads/main/docs/assets/MMCE-ALL.7z)
 
 -   __MemCardPro 2__
 
     ---
 
-    Unzip and merge contents to root of your MMCE device. Use the WEB UI to set boot card to `MODCHIP AIO`. [Manual](https://manuals.plus/memcardpro2/mcp201-stone-age-gamer-manual#the_webui) MUST BE ON [FW 1.4.0 or later!](https://distribution.appcake.co.uk/install/8bitmods/apps/memcard-pro2/public)
-
     [:material-cloud-download: MCP2](https://github.com/saildot4k/ps2homebrewstore/raw/refs/heads/main/docs/assets/MMCE-ALL.7z)
+
+    Unzip and merge contents to root of your MMCE device. Use the WEB UI to set boot card to `MODCHIP AIO`. [Manual](https://manuals.plus/memcardpro2/mcp201-stone-age-gamer-manual#the_webui) MUST BE ON [FW 1.4.0 or later!](https://distribution.appcake.co.uk/install/8bitmods/apps/memcard-pro2/public)
 
 
 </div>
@@ -135,9 +136,9 @@ Config @ mc?:/SYS-CONF/PS2BBL.INI
 
 [^1]: [Save Application System](https://ps2wiki.github.io/sas-apps-archive/) Icons courtesy of koraxial, Ripto, Berion and Yornn
 [^2]: 
-    [Universal Memory Card Structure](https://ps2wiki.github.io/sas-apps-archive/psu-categories/umcs.html) `mc?:/BOOT` and `mc?:/SYS-CONF` structure that utilizes PS2BBL as BOOT.ELF and wLE ISR Exfat as BOOT2.ELF. Failover configs for both exist in SYS-CONF along with any other common file type shared between apps such as IPCONFIG.DAT
+    [Universal Memory Card Structure](https://ps2wiki.github.io/sas-apps-archive/psu-categories/umcs.html) `mc?:/BOOT`, `mc?:/SYS-CONF` and `mc?:/APPS` structure that utilizes PS2BBL as BOOT.ELF and wLE ISR Exfat as BOOT2.ELF. Failover configs for both exist in SYS-CONF along with any other common file type shared between apps such as IPCONFIG.DAT
 [^3]: 
     [FMCB](https://israpps.github.io/FreeMcBoot-Installer/), [FHDB](https://israpps.github.io/FreeMcBoot-Installer/test/FHDB-TUTO.html), [FDVDB](https://github.com/CTurt/FreeDVDBoot), [OpenTuna](https://github.com/ps2homebrew/opentuna-installer) and [PS2BBL](https://israpps.github.io/PlayStation2-Basic-BootLoader/) are signed exploits. They take advantage of a vulnurability in the PS2 update mechanism to autoboot an ELF(s) via memory card or internal hard drive[^4]
 [^4]: 
-    Internal Hard Drives are compatible with all models up to SCPH-700XX. Recommend [Offical Sony Network Adapter](https://www.psdevwiki.com/ps2/Network_Adaptor) and Bitfunx Sata Upgrade for Phats, or [iFlash2PS2](https://arthrimus.com/product/iflash2ps2-flex-kit/) for SCPH-700XX Slim
-[^5]: Crystal Chip BM and DMS3/4 Toxic OS do not support Exfat. Use MBR/Fat32, otherwise supported in homebrew such as wLE ISR Exfat.
+    Internal Hard Drives are compatible with all models up to and including SCPH-700XX. Recommend [Offical Sony Network Adapter](https://www.psdevwiki.com/ps2/Network_Adaptor) and Bitfunx Sata Upgrade for Phats, or [iFlash2PS2](https://arthrimus.com/product/iflash2ps2-flex-kit/) for SCPH-700XX Slim
+[^5]: Crystal Chip BM and DMS3/4 Toxic OS do not support exFAT. Use MBR/FAT32, otherwise supported in homebrew such as wLE ISR Exfat.
