@@ -13,14 +13,14 @@ config:
 ---
 flowchart LR
  subgraph s2["DSP"]
-        n7["Process Data"]
-        n8["ECC Data is bogus?"]
+        n7["Process<br>Data"]
+        n8["ECC Data<br>is bogus?"]
         n9["DSP Crashes"]
-        n10["Continue with normal operation"]
-        n11["Was the DSP sending a pulse to the laser?"]
+        n10["Continue with<br>normal operation"]
+        n11["Was the DSP<br>sending a pulse<br>to the laser?"]
   end
  subgraph s3["LASER"]
-        n14["Pulse drive coils"]
+        n14["Pulse driven<br>coils"]
   end
     n7 --> n8
     n8 -- YES --> n9
@@ -28,7 +28,7 @@ flowchart LR
     n9 --> n11
     n11 --> n12["YES"] & n13["NO"]
     n12 -- BURN! --> n14
-    n13 -- "Non-repsonsive until console reset" --> s3
+    n13 -- "Non-repsonsive</br>until console reset" --> s3
     s3 -- Read data from disc --> n7
     n8@{ shape: diam}
     n11@{ shape: diam}
