@@ -51,11 +51,11 @@ I (R3Z3N) simply applied some artistic touch to make this an easier install that
 
 ### Models that need the Matrix Picfix
 
-SCPH-370XX/3900XX The bug is present in this, but triggers much less often. Also known as V7/V8.
+__SCPH-370XX/3900XX__ The bug is present in this, but triggers much less often. Also known as V7/V8.
 
-SCPH-500XX GH-023, GH-026 and GH-029 motherboards. Also known as V9, V10 and V11.
+__SCPH-500XX__ GH-023, GH-026 and GH-029 motherboards. Also known as V9, V10 and V11.
 
-SCPH-700XX except if your PS2 is the following model with the circutry in red, you DO NOT NEED THIS FIX! Also known as V12.
+__SCPH-700XX__ except if your PS2 is the following model with the circutry in red, you DO NOT NEED THIS FIX! Also known as V12.
 
 ![Sony Laser Fix](assets//picfix/70k%20laser%20fix.jpg)
 
