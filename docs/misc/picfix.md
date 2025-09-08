@@ -3,8 +3,44 @@
 ## What is the PICfix and why is it needed?
 Why? In an attempt to curb piracy, $ony designed the laser to fail and burn up. Sadly this [backfired](https://www.gamesindustry.biz/sony-reaches-settlement-in-ps2-disc-read-error-case#:~:text=Now%20a%20settlement%20has%20been,their%20console%20%2D%20at%20SCEA's%20discretion.)
 
-![Mermaid Chart](assets/picfix/whylaserburns_mermaid.jpg)
-Courtesy of [El Isra](https://github.com/israpps)
+
+```mermaid
+---
+config:
+  theme: mc
+  layout: dagre
+  look: neo
+---
+flowchart LR
+ subgraph s2["DSP"]
+        n7["Process Data"]
+        n8["ECC Data is bogus?"]
+        n9["DSP Crashes"]
+        n10["Continue with normal operation"]
+        n11["Was the DSP sending a pulse to the laser?"]
+  end
+ subgraph s3["LASER"]
+        n14["Pulse drive coils"]
+  end
+    n7 --> n8
+    n8 -- YES --> n9
+    n8 -- NO --> n10
+    n9 --> n11
+    n11 --> n12["YES"] & n13["NO"]
+    n12 -- BURN! --> n14
+    n13 -- "Non-repsonsive until console reset" --> s3
+    s3 -- Read data from disc --> n7
+    n8@{ shape: diam}
+    n11@{ shape: diam}
+    linkStyle 1 stroke:#FF6D00,fill:none
+    linkStyle 2 stroke:#00C853,fill:none
+    linkStyle 3 stroke:#FF6D00,fill:none
+    linkStyle 4 stroke:#FF6D00,fill:none
+    linkStyle 5 stroke:#00C853,fill:none
+    linkStyle 6 stroke:#D50000,fill:none
+    linkStyle 7 stroke:#00C853,fill:none
+```
+Mermaid chart courtesy of [El Isra](https://github.com/israpps)
 
 Invented by the Matrix Team, they designed a cheap and easy fix for V9-V12 PS2s, documented [here](https://github.com/MechaResearch/MechaPwn/blob/master/docs/PICfix.md) and refined by HaloSlayer255 and [ModzvillUSA](https://modzvilleusa.com/products/ps2-matrix-picfix-for-v9-v12-ps2-consoles). When the DSP (Digital Signal Processor) crashes, this shuts down the PS2 instead of letting the laser burn up.
 
