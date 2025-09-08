@@ -40,7 +40,8 @@ flowchart LR
     linkStyle 6 stroke:#D50000,fill:none
     linkStyle 7 stroke:#00C853,fill:none
 ```
-Mermaid chart courtesy of [El Isra](https://github.com/israpps)
+_Mermaid chart courtesy of [El Isra](https://github.com/israpps)_
+
 
 Invented by the Matrix Team, they designed a cheap and easy fix for V9-V12 PS2s, documented [here](https://github.com/MechaResearch/MechaPwn/blob/master/docs/PICfix.md) and refined by HaloSlayer255 and [ModzvillUSA](https://modzvilleusa.com/products/ps2-matrix-picfix-for-v9-v12-ps2-consoles). When the DSP (Digital Signal Processor) crashes, this shuts down the PS2 instead of letting the laser burn up.
 
